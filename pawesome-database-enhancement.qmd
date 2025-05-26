@@ -1,0 +1,78 @@
+---
+title: "Pawesome Pet Services Database Enhancement"
+format:
+  html:
+    toc: true
+---
+
+# Pawesome Pet Services: Database Redesign
+
+This project involved restructuring and expanding the **Pawesome Pet Services** database to better meet the needs of a growing business. The redesign improves the management of services, appointments, and pet information by creating more scalable and normalized relationships.
+
+## 🐾 Key Changes
+
+### ✅ Dropped Columns
+- Removed `service` from the `Appointments` table
+- Removed `breed` and `species` from the `Pets` table
+
+### ✅ Added New Tables
+- **`services`**: Tracks available services and their descriptions
+- **`breeds`**: Stores pet breed and species info
+- **`appointmentservices`**: Join table for many-to-many relationship between appointments and services
+
+### ✅ Restructured Relationships
+- One-to-many: Pets ➝ Breeds
+- Many-to-many: Appointments ⬌ Services
+
+## 🗂️ ERD Diagram
+
+![ERD of Enhanced Database](EDR Diagram.png)
+
+## 📌 Outcome
+
+The updated schema supports:
+- Accurate service tracking per appointment
+- Organized breed/species classification
+- Cleaner queries through normalization
+
+## ⚙️ Tools Used
+- **MySQL Workbench** for modeling and DDL execution
+- **ERD Diagram** for schema visualization
+
+This redesign enables better scalability and maintainability as the company continues to grow.
+---
+
+## 🧮 SQL Scenario Highlights
+
+As part of the database redesign and validation process, I wrote and executed several SQL queries to test relationships, filtering, and compound logic in the new schema.
+
+### 🔍 Filtering and Conditions 
+
+- **Upcoming Appointments**: Queried appointments after a certain date  
+- **Email Filtering**: Used `IN` and `NOT IN` to find or exclude clients by email  
+- **Name Pattern Matching**: Found pets whose names end in "a" using `LIKE`  
+- **Missing Data Checks**: Used `IS NULL` to find pets with unrecorded weight
+
+### 🔗 Advanced Joins 
+
+- **Cross Join**: Combined every pet with every client to simulate matching scenarios  
+- **Inner Join**: Pulled appointments with pet and client names  
+- **Subquery Join**: Listed pets with above-average weight  
+- **Multi-table Join**: Merged appointments with service and pet info  
+- **Self-Join**: Found clients with the same last name
+
+### 🧰 Set Operators 
+
+- **UNION**: Combined client and pet emails  
+- **INTERSECT**: Found shared phone numbers between clients and emergency contacts  
+- **EXCEPT**: Identified pets without appointments  
+- **Sorted UNION**: Merged names from clients and pets, sorted alphabetically
+
+These exercises confirmed that the schema was functioning correctly and provided practice with real-world query logic.
+
+## 📥 Related Files
+
+- [Assignment PDF](Week 2 Assignment_ Enhancing the Pawesome Pet Services Database.pdf)
+- [Filtering and Conditions Example](Week 3 Assignment Filtering Result Sets in SQL (1).sql)
+- [Advanced Joins](Week4Joins (1).sql)
+- [Set Operators](Week5 (1).sql)

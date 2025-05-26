@@ -1,0 +1,43 @@
+---
+title: "Water Filling Station Case Study"
+format:
+  html:
+    toc: true
+---
+# Water Filling Station Quality Control
+
+This project simulated a water bottle filling station to analyze how accurately the process distributes volume across time. The goal was to assess the filling consistency and determine whether the process was within statistical control.
+
+## 🔬 Objective
+
+We investigated if variations in bottle weight were due to **common causes** or **special causes** using **X-bar** and **R control charts**. Our aim was to evaluate and improve the process reliability by detecting inconsistencies caused by manual filling errors.
+
+## 🧪 Method
+
+- 10 samples were collected, each containing 5 bottles
+- Bottles were filled manually at 5-minute intervals
+- Each bottle was weighed and recorded
+- Summary statistics (mean, range, standard deviation) were calculated
+- X-bar and R charts were generated using Excel
+
+## 📊 Results
+
+- **Mean weight:** 355g  
+- **Standard deviation:** 6.49g  
+- **Range:** 15.8g  
+- **X-bar and R charts** showed no points outside of control limits
+
+Despite being technically in control, wide control limits indicated significant variation — likely from human error during manual fills.
+
+## 🔧 Improvement Plan
+
+- Replace manual operators with an **automated filling mechanism**
+- Use **mass-based sensors** to stop filling at the correct weight
+- Reduce variation by eliminating human inconsistency
+
+This simple automation could greatly reduce variability and tighten the control limits for better product consistency and cost savings.
+
+## 📥 Project Materials
+
+- [Project Plan (PDF)](project 2 plan.pdf)
+- [Final Report (PDF)](Project 2  (Completed).docx.pdf)

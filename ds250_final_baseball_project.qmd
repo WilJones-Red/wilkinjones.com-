@@ -1,0 +1,188 @@
+---
+title: "Client Report - Finding Relationships in Baseball"
+subtitle: "Course DS 250"
+author: "Wil Jones"
+format:
+  html:
+    self-contained: true
+    page-layout: full
+    title-block-banner: true
+    toc: true
+    toc-depth: 3
+    toc-location: body
+    number-sections: false
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: hover
+    code-tools:
+        source: false
+        toggle: true
+        caption: See code
+execute: 
+  warning: false
+---
+
+```{python}
+import pandas as pd 
+import numpy as np
+import sqlite3
+from lets_plot import *
+
+LetsPlot.setup_html(isolated_frame=True)
+```
+
+```{python}
+sqlite_file = 'lahmansbaseballdb.sqlite'
+con = sqlite3.connect(sqlite_file)
+```
+
+## QUESTION -- TASK 1
+
+__Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.__  
+
+```{python}
+query = '''
+SELECT s.playerID, MAX(sp.schoolID) AS schoolID, MAX(s.salary) AS salary, s.yearID, s.teamID
+FROM CollegePlaying sp
+JOIN Salaries s ON sp.playerID = s.playerID
+WHERE sp.schoolID = 'idbyuid'
+GROUP BY s.playerID, s.yearID, s.teamID
+ORDER BY salary DESC;
+'''
+df_byu = pd.read_sql_query(query, con)
+df_byu
+```
+
+## QUESTION -- TASK 2
+
+__This three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)__  
+
+a. At least 1 at-bat  
+```{python}
+query = '''
+SELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg
+FROM Batting
+WHERE AB >= 1
+ORDER BY batting_avg DESC, playerID
+LIMIT 5;
+'''
+df_avg_1ab = pd.read_sql_query(query, con)
+df_avg_1ab
+```
+
+b. At least 10 at-bats  
+```{python}
+query = '''
+SELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg
+FROM Batting
+WHERE AB >= 10
+ORDER BY batting_avg DESC, playerID
+LIMIT 5;
+'''
+df_avg_10ab = pd.read_sql_query(query, con)
+df_avg_10ab
+```
+
+c. Career batting average (100+ AB total)  
+```{python}
+query = '''
+SELECT playerID, CAST(SUM(H) AS FLOAT)/SUM(AB) AS career_avg
+FROM Batting
+GROUP BY playerID
+HAVING SUM(AB) >= 100
+ORDER BY career_avg DESC, playerID
+LIMIT 5;
+'''
+df_avg_career = pd.read_sql_query(query, con)
+df_avg_career
+```
+
+## QUESTION -- TASK 3
+
+__Pick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?__
+
+```{python}
+query = '''
+SELECT yearID, teamID, SUM(HR) AS total_HR
+FROM Batting
+WHERE teamID IN ('NYA', 'BOS')
+GROUP BY yearID, teamID
+ORDER BY yearID, teamID;
+'''
+df_hr = pd.read_sql_query(query, con)
+df_hr
+```
+
+```{python}
+# Visualization of Yankees vs. Red Sox Home Runs Over Time
+ggplot(df_hr, aes(x='yearID', y='total_HR', color='teamID')) + \
+    geom_line(size=1.2) + \
+    ggtitle("Yankees vs. Red Sox: Total Home Runs by Year") + \
+    labs(x="Year", y="Total Home Runs", color="Team") + \
+    theme_minimal()
+```
+
+_Based on the graph, we observe fluctuations in home run totals over time for both teams. In recent years, the Yankees have consistently hit more home runs compared to the Red Sox, especially post-2010. This could indicate a shift in hitting strategy, roster strength, or ballpark influence._
+
+---
+
+## STRETCH QUESTION -- TASK 1
+
+__Advanced Salary Distribution by Position (with Case Statement):__  
+
+```{python}
+query = '''
+WITH main_pos AS (
+  SELECT playerID, yearID, Pos, COUNT(*) AS games
+  FROM Fielding
+  GROUP BY playerID, yearID, Pos
+),
+most_played AS (
+  SELECT playerID, yearID, Pos
+  FROM (
+    SELECT *, ROW_NUMBER() OVER (PARTITION BY playerID, yearID ORDER BY games DESC) AS rn
+    FROM main_pos
+  )
+  WHERE rn = 1
+)
+SELECT mp.Pos AS position,
+       ROUND(AVG(s.salary), 2) AS average_salary,
+       COUNT(DISTINCT s.playerID) AS total_players,
+       MAX(s.salary) AS highest_salary,
+       CASE
+         WHEN AVG(s.salary) > 3000000 THEN 'High Salary'
+         WHEN AVG(s.salary) BETWEEN 2000000 AND 3000000 THEN 'Medium Salary'
+         ELSE 'Low Salary'
+       END AS salary_category
+FROM most_played mp
+JOIN Salaries s ON mp.playerID = s.playerID AND mp.yearID = s.yearID
+GROUP BY mp.Pos
+ORDER BY average_salary DESC;
+'''
+df_salary_pos = pd.read_sql_query(query, con)
+df_salary_pos
+```
+
+## STRETCH QUESTION -- TASK 2
+
+__Advanced Career Longevity and Performance (with Subqueries):__
+
+```{python}
+query = '''
+WITH player_years AS (
+  SELECT playerID, MIN(yearID) AS start_year, MAX(yearID) AS end_year, COUNT(DISTINCT yearID) AS career_length
+  FROM Batting
+  GROUP BY playerID
+  HAVING SUM(G) >= 10
+)
+SELECT py.playerID, p.nameFirst, p.nameLast, py.career_length
+FROM player_years py
+JOIN people p ON py.playerID = p.playerID
+ORDER BY py.career_length DESC
+LIMIT 10;
+'''
+df_longevity = pd.read_sql_query(query, con)
+df_longevity
+```

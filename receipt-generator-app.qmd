@@ -1,0 +1,26 @@
+---
+title: "Grocery Receipt Generator Application"
+format:
+  html:
+    toc: true
+---
+
+# Grocery Store Receipt Generator
+
+This Python project implements a **GUI-based receipt system** for a grocery store. The app reads from two external CSV files (`products.csv` and `request.csv`) and generates a detailed receipt, applying taxes, discounts, and even a randomized coupon offer.
+
+## 🧾 Features
+
+- GUI built using `tkinter`
+- Selects and parses product and purchase data from CSV files
+- Calculates subtotal, tax, and total
+- Applies **BOGO 50% discount** for a specific item (D083)
+- Generates randomized coupon on checkout
+- Adds timestamps and return policy messaging
+- Shows animated loading bar for user feedback
+
+## 📂 Downloads
+
+- [View Python Source Code](receipts.py)
+- [Download Product Data](products.csv)
+- [View Purchase Requests](request.csv)

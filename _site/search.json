@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "📄 Resume\nDownload My Resume (PDF)\nOr view it embedded below:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "“The ultimate measure of a man is not where he stands in moments of convenience and comfort, but where he stands at times of challenge and controversy.” — Martin Luther King, Jr.\n\n\n\n\nHi, I’m Wilkin Jones\nI’m a data science student at BYU–Idaho looking for internship opportunities. I enjoy working with Python, SQL, and building insights from messy data.\n\nLocation: Idaho Falls, ID\n\nEducation: Brigham Young University - Idaho\n\nSeeking internships in: Data Science, Data Visualization, Data Management, or Data Governance"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "👨‍💻 About Wilkin\nI’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\n\n🐍 Languages: Python, SQL\n\n📊 Tools: Pandas, Scikit-learn, Tableau\n\n🌱 Currently Learning: Machine Learning, Time Series Forecasting"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, Jupyter, Seaborn\nGoal: Explored correlations between player stats and salaries.\nSee full report\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
+  },
+  {
+    "objectID": "projects.html#fraud-detection-case-study",
+    "href": "projects.html#fraud-detection-case-study",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: Python, Pandas, Matplotlib\nOverview: Detected suspicious transactions in multiple companies using statistical models.\nView on GitHub"
+  },
+  {
+    "objectID": "projects.html#baseball-data-analysis",
+    "href": "projects.html#baseball-data-analysis",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: Python, Jupyter, Seaborn\nGoal: Explored correlations between player stats and salaries.\nSee full report"
+  },
+  {
+    "objectID": "projects.html#tuberculosis-case-study",
+    "href": "projects.html#tuberculosis-case-study",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study"
+  },
+  {
+    "objectID": "tb-insights.html",
+    "href": "tb-insights.html",
+    "title": "Tuberculosis Insights",
+    "section": "",
+    "text": "This Tableau dashboard explores trends in tuberculosis (TB) cases globally using World Health Organization data. I analyzed key dimensions like country, age group, and gender to identify at-risk populations.\n\n\n\nIndia and China account for the majority of TB cases worldwide\nThe 25–34 age group consistently had the highest number of cases\nMales reported significantly more cases than females across all years\n\n\n\n\n\nPython (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards\n\n\n\n\n👉 Click to view the Tableau dashboard\n\n\n\n\nPresentation Slides (PDF)\n\n\n\n\n\nDownload Slides (PDF)"
+  },
+  {
+    "objectID": "tb-insights.html#key-findings",
+    "href": "tb-insights.html#key-findings",
+    "title": "Tuberculosis Insights",
+    "section": "",
+    "text": "India and China account for the majority of TB cases worldwide\nThe 25–34 age group consistently had the highest number of cases\nMales reported significantly more cases than females across all years"
+  },
+  {
+    "objectID": "tb-insights.html#tools-used",
+    "href": "tb-insights.html#tools-used",
+    "title": "Tuberculosis Insights",
+    "section": "",
+    "text": "Python (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards"
+  },
+  {
+    "objectID": "tb-insights.html#interactive-dashboard",
+    "href": "tb-insights.html#interactive-dashboard",
+    "title": "Tuberculosis Insights",
+    "section": "",
+    "text": "👉 Click to view the Tableau dashboard"
+  },
+  {
+    "objectID": "tb-insights.html#downloadables",
+    "href": "tb-insights.html#downloadables",
+    "title": "Tuberculosis Insights",
+    "section": "",
+    "text": "Presentation Slides (PDF)"
+  },
+  {
+    "objectID": "water-filling-case.html",
+    "href": "water-filling-case.html",
+    "title": "Water Filling Station Case Study",
+    "section": "",
+    "text": "This project simulated a water bottle filling station to analyze how accurately the process distributes volume across time. The goal was to assess the filling consistency and determine whether the process was within statistical control.\n\n\nWe investigated if variations in bottle weight were due to common causes or special causes using X-bar and R control charts. Our aim was to evaluate and improve the process reliability by detecting inconsistencies caused by manual filling errors.\n\n\n\n\n10 samples were collected, each containing 5 bottles\nBottles were filled manually at 5-minute intervals\nEach bottle was weighed and recorded\nSummary statistics (mean, range, standard deviation) were calculated\nX-bar and R charts were generated using Excel\n\n\n\n\n\nMean weight: 355g\n\nStandard deviation: 6.49g\n\nRange: 15.8g\n\nX-bar and R charts showed no points outside of control limits\n\nDespite being technically in control, wide control limits indicated significant variation — likely from human error during manual fills.\n\n\n\n\nReplace manual operators with an automated filling mechanism\nUse mass-based sensors to stop filling at the correct weight\nReduce variation by eliminating human inconsistency\n\nThis simple automation could greatly reduce variability and tighten the control limits for better product consistency and cost savings.\n\n\n\n\nProject Plan (PDF)\nFinal Report (PDF)"
+  },
+  {
+    "objectID": "water-filling-case.html#objective",
+    "href": "water-filling-case.html#objective",
+    "title": "Water Filling Station Case Study",
+    "section": "",
+    "text": "We investigated if variations in bottle weight were due to common causes or special causes using X-bar and R control charts. Our aim was to evaluate and improve the process reliability by detecting inconsistencies caused by manual filling errors."
+  },
+  {
+    "objectID": "water-filling-case.html#method",
+    "href": "water-filling-case.html#method",
+    "title": "Water Filling Station Case Study",
+    "section": "",
+    "text": "10 samples were collected, each containing 5 bottles\nBottles were filled manually at 5-minute intervals\nEach bottle was weighed and recorded\nSummary statistics (mean, range, standard deviation) were calculated\nX-bar and R charts were generated using Excel"
+  },
+  {
+    "objectID": "water-filling-case.html#results",
+    "href": "water-filling-case.html#results",
+    "title": "Water Filling Station Case Study",
+    "section": "",
+    "text": "Mean weight: 355g\n\nStandard deviation: 6.49g\n\nRange: 15.8g\n\nX-bar and R charts showed no points outside of control limits\n\nDespite being technically in control, wide control limits indicated significant variation — likely from human error during manual fills."
+  },
+  {
+    "objectID": "water-filling-case.html#improvement-plan",
+    "href": "water-filling-case.html#improvement-plan",
+    "title": "Water Filling Station Case Study",
+    "section": "",
+    "text": "Replace manual operators with an automated filling mechanism\nUse mass-based sensors to stop filling at the correct weight\nReduce variation by eliminating human inconsistency\n\nThis simple automation could greatly reduce variability and tighten the control limits for better product consistency and cost savings."
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html",
+    "href": "pawesome-database-enhancement.html",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "This project involved restructuring and expanding the Pawesome Pet Services database to better meet the needs of a growing business. The redesign improves the management of services, appointments, and pet information by creating more scalable and normalized relationships.\n\n\n\n\n\nRemoved service from the Appointments table\nRemoved breed and species from the Pets table\n\n\n\n\n\nservices: Tracks available services and their descriptions\nbreeds: Stores pet breed and species info\nappointmentservices: Join table for many-to-many relationship between appointments and services\n\n\n\n\n\nOne-to-many: Pets ➝ Breeds\nMany-to-many: Appointments ⬌ Services\n\n\n\n\n\n\n\n\nERD of Enhanced Database\n\n\n\n\n\nThe updated schema supports: - Accurate service tracking per appointment - Organized breed/species classification - Cleaner queries through normalization\n\n\n\n\nMySQL Workbench for modeling and DDL execution\nERD Diagram for schema visualization\n\n\n\n\n\n\n\nAs part of the database redesign and validation process, I wrote and executed several SQL queries to test relationships, filtering, and compound logic in the new schema.\n\n\n\nUpcoming Appointments: Queried appointments after a certain date\n\nEmail Filtering: Used IN and NOT IN to find or exclude clients by email\n\nName Pattern Matching: Found pets whose names end in “a” using LIKE\n\nMissing Data Checks: Used IS NULL to find pets with unrecorded weight\n\n\n\n\n\nCross Join: Combined every pet with every client to simulate matching scenarios\n\nInner Join: Pulled appointments with pet and client names\n\nSubquery Join: Listed pets with above-average weight\n\nMulti-table Join: Merged appointments with service and pet info\n\nSelf-Join: Found clients with the same last name\n\n\n\n\n\nUNION: Combined client and pet emails\n\nINTERSECT: Found shared phone numbers between clients and emergency contacts\n\nEXCEPT: Identified pets without appointments\n\nSorted UNION: Merged names from clients and pets, sorted alphabetically\n\nThese exercises confirmed that the schema was functioning correctly and provided practice with real-world query logic.\n\n\n\n\n\nAssignment PDF\nFiltering and Conditions Example\nAdvanced Joins\nSet Operators"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#key-changes",
+    "href": "pawesome-database-enhancement.html#key-changes",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "Removed service from the Appointments table\nRemoved breed and species from the Pets table\n\n\n\n\n\nservices: Tracks available services and their descriptions\nbreeds: Stores pet breed and species info\nappointmentservices: Join table for many-to-many relationship between appointments and services\n\n\n\n\n\nOne-to-many: Pets ➝ Breeds\nMany-to-many: Appointments ⬌ Services"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#erd-diagram",
+    "href": "pawesome-database-enhancement.html#erd-diagram",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "ERD of Enhanced Database"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#outcome",
+    "href": "pawesome-database-enhancement.html#outcome",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "The updated schema supports: - Accurate service tracking per appointment - Organized breed/species classification - Cleaner queries through normalization"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#tools-used",
+    "href": "pawesome-database-enhancement.html#tools-used",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "MySQL Workbench for modeling and DDL execution\nERD Diagram for schema visualization"
+  },
+  {
+    "objectID": "airplane-anova-study.html",
+    "href": "airplane-anova-study.html",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "This project involved flying paper airplanes with different designs and paper weights to determine how these two factors — individually and together — affect flight distance.\n\n\n\n\n\nH₀: No interaction between plane design and paper weight\n\nHₐ: There is interaction between plane design and paper weight\n\n\n\n\n\nH₀: All plane designs have the same mean flight distance\n\nHₐ: At least one plane design differs\n\n\n\n\n\nH₀: All paper weights yield the same mean flight distance\n\nHₐ: At least one paper weight differs\n\n\n\n\n\nEach of the 6 combinations (3 designs × 2 paper weights) was flown 10 times, with distance recorded. The results were analyzed using a two-way ANOVA to check for interaction and main effects.\n\n\n\n\nThe p-value for interaction was 0.005, which is less than ɑ = 0.05\n➤ This means there is a significant interaction between plane design and paper weight\nBecause interaction was present, main effects were not interpreted independently\n\n\n\n\n\nManual flight testing and randomized trials\nData summarized and evaluated in Excel\nTwo-way ANOVA completed and interpreted as part of statistical coursework\n\n\n\n\nThe experiment confirmed that the effectiveness of a plane design depends on the type of paper used, and vice versa. Interaction effects are real and impactful — emphasizing the importance of context when designing experiments.\n\n\n\n\nExperiment Plan (PDF)\nANOVA Summary (PDF)"
+  },
+  {
+    "objectID": "airplane-anova-study.html#hypotheses-tested",
+    "href": "airplane-anova-study.html#hypotheses-tested",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "H₀: No interaction between plane design and paper weight\n\nHₐ: There is interaction between plane design and paper weight\n\n\n\n\n\nH₀: All plane designs have the same mean flight distance\n\nHₐ: At least one plane design differs\n\n\n\n\n\nH₀: All paper weights yield the same mean flight distance\n\nHₐ: At least one paper weight differs"
+  },
+  {
+    "objectID": "airplane-anova-study.html#data-collection",
+    "href": "airplane-anova-study.html#data-collection",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "Each of the 6 combinations (3 designs × 2 paper weights) was flown 10 times, with distance recorded. The results were analyzed using a two-way ANOVA to check for interaction and main effects."
+  },
+  {
+    "objectID": "airplane-anova-study.html#anova-results",
+    "href": "airplane-anova-study.html#anova-results",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "The p-value for interaction was 0.005, which is less than ɑ = 0.05\n➤ This means there is a significant interaction between plane design and paper weight\nBecause interaction was present, main effects were not interpreted independently"
+  },
+  {
+    "objectID": "airplane-anova-study.html#tools-used",
+    "href": "airplane-anova-study.html#tools-used",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "Manual flight testing and randomized trials\nData summarized and evaluated in Excel\nTwo-way ANOVA completed and interpreted as part of statistical coursework"
+  },
+  {
+    "objectID": "airplane-anova-study.html#conclusion",
+    "href": "airplane-anova-study.html#conclusion",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "The experiment confirmed that the effectiveness of a plane design depends on the type of paper used, and vice versa. Interaction effects are real and impactful — emphasizing the importance of context when designing experiments."
+  },
+  {
+    "objectID": "receipt-generator-app.html",
+    "href": "receipt-generator-app.html",
+    "title": "Grocery Receipt Generator Application",
+    "section": "",
+    "text": "This Python project implements a GUI-based receipt system for a grocery store. The app reads from two external CSV files (products.csv and request.csv) and generates a detailed receipt, applying taxes, discounts, and even a randomized coupon offer.\n\n\n\nGUI built using tkinter\nSelects and parses product and purchase data from CSV files\nCalculates subtotal, tax, and total\nApplies BOGO 50% discount for a specific item (D083)\nGenerates randomized coupon on checkout\nAdds timestamps and return policy messaging\nShows animated loading bar for user feedback\n\n\n\n\n\nView Python Source Code\nDownload Product Data\nView Purchase Requests"
+  },
+  {
+    "objectID": "receipt-generator-app.html#features",
+    "href": "receipt-generator-app.html#features",
+    "title": "Grocery Receipt Generator Application",
+    "section": "",
+    "text": "GUI built using tkinter\nSelects and parses product and purchase data from CSV files\nCalculates subtotal, tax, and total\nApplies BOGO 50% discount for a specific item (D083)\nGenerates randomized coupon on checkout\nAdds timestamps and return policy messaging\nShows animated loading bar for user feedback"
+  },
+  {
+    "objectID": "receipt-generator-app.html#files",
+    "href": "receipt-generator-app.html#files",
+    "title": "Grocery Receipt Generator Application",
+    "section": "",
+    "text": "products.csv: Product catalog with ID, name, and price\nrequest.csv: Shopping list with product ID and quantity\nreceipts.py: Main Python script with GUI and logic"
+  },
+  {
+    "objectID": "receipt-generator-app.html#preview",
+    "href": "receipt-generator-app.html#preview",
+    "title": "Grocery Receipt Generator Application",
+    "section": "",
+    "text": "This tool is useful for simulating basic retail checkout flows, building early prototypes of inventory/checkout systems, or introducing students to file I/O and UI design with Python."
+  },
+  {
+    "objectID": "projects.html#water-filling-station-quality-control",
+    "href": "projects.html#water-filling-station-quality-control",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study"
+  },
+  {
+    "objectID": "projects.html#pawesome-pet-services-database-redesign",
+    "href": "projects.html#pawesome-pet-services-database-redesign",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up"
+  },
+  {
+    "objectID": "projects.html#grocery-receipt-generator-python-gui",
+    "href": "projects.html#grocery-receipt-generator-python-gui",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up"
+  },
+  {
+    "objectID": "projects.html#paper-airplane-experiment-two-way-anova",
+    "href": "projects.html#paper-airplane-experiment-two-way-anova",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
+  },
+  {
+    "objectID": "projects.html#baseball-data-relationships-ds-250-final",
+    "href": "projects.html#baseball-data-relationships-ds-250-final",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: SQL, Lahman DB, Lets-Plot\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
+  },
+  {
+    "objectID": "projects.html#baseball-data-relationships",
+    "href": "projects.html#baseball-data-relationships",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: SQL, Python, Quarto, Lahman DB, Lets-Plot\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
+  },
+  {
+    "objectID": "baseball-relationships-study.html",
+    "href": "baseball-relationships-study.html",
+    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "section": "",
+    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#project-goals",
+    "href": "baseball-relationships-study.html#project-goals",
+    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "section": "",
+    "text": "Generate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#key-tasks",
+    "href": "baseball-relationships-study.html#key-tasks",
+    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "section": "",
+    "text": "Queried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#tools-technologies",
+    "href": "baseball-relationships-study.html#tools-technologies",
+    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "section": "",
+    "text": "SQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#final-report",
+    "href": "baseball-relationships-study.html#final-report",
+    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "section": "",
+    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
+  },
+  {
+    "objectID": "projects.html#house-price-predictions-coming-soon",
+    "href": "projects.html#house-price-predictions-coming-soon",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: Python, Jupyter, Seaborn, Machine Learning\nGoal: Explored correlations between house prices stats and salaries.\nSee full report"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#sql-scenario-highlights",
+    "href": "pawesome-database-enhancement.html#sql-scenario-highlights",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "As part of the database redesign and validation process, I wrote and executed several SQL queries to test relationships, filtering, and compound logic in the new schema.\n\n\n\nUpcoming Appointments: Queried appointments after a certain date\n\nEmail Filtering: Used IN and NOT IN to find or exclude clients by email\n\nName Pattern Matching: Found pets whose names end in “a” using LIKE\n\nMissing Data Checks: Used IS NULL to find pets with unrecorded weight\n\n\n\n\n\nCross Join: Combined every pet with every client to simulate matching scenarios\n\nInner Join: Pulled appointments with pet and client names\n\nSubquery Join: Listed pets with above-average weight\n\nMulti-table Join: Merged appointments with service and pet info\n\nSelf-Join: Found clients with the same last name\n\n\n\n\n\nUNION: Combined client and pet emails\n\nINTERSECT: Found shared phone numbers between clients and emergency contacts\n\nEXCEPT: Identified pets without appointments\n\nSorted UNION: Merged names from clients and pets, sorted alphabetically\n\nThese exercises confirmed that the schema was functioning correctly and provided practice with real-world query logic."
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html",
+    "href": "ds250_final_baseball_project.html",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nimport sqlite3\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sqlite3.connect(sqlite_file)"
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#question-task-1",
+    "href": "ds250_final_baseball_project.html#question-task-1",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 1",
+    "text": "QUESTION – TASK 1\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\n\n\nShow the code\nquery = '''\nSELECT s.playerID, MAX(sp.schoolID) AS schoolID, MAX(s.salary) AS salary, s.yearID, s.teamID\nFROM CollegePlaying sp\nJOIN Salaries s ON sp.playerID = s.playerID\nWHERE sp.schoolID = 'idbyuid'\nGROUP BY s.playerID, s.yearID, s.teamID\nORDER BY salary DESC;\n'''\ndf_byu = pd.read_sql_query(query, con)\ndf_byu"
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#question-task-2",
+    "href": "ds250_final_baseball_project.html#question-task-2",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 2",
+    "text": "QUESTION – TASK 2\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\n\nAt least 1 at-bat\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 1\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_1ab = pd.read_sql_query(query, con)\ndf_avg_1ab\n\n\n\nAt least 10 at-bats\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 10\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_10ab = pd.read_sql_query(query, con)\ndf_avg_10ab\n\n\n\nCareer batting average (100+ AB total)\n\n\n\nShow the code\nquery = '''\nSELECT playerID, CAST(SUM(H) AS FLOAT)/SUM(AB) AS career_avg\nFROM Batting\nGROUP BY playerID\nHAVING SUM(AB) &gt;= 100\nORDER BY career_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_career = pd.read_sql_query(query, con)\ndf_avg_career"
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#question-task-3",
+    "href": "ds250_final_baseball_project.html#question-task-3",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 3",
+    "text": "QUESTION – TASK 3\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?\n\n\nShow the code\nquery = '''\nSELECT yearID, teamID, SUM(HR) AS total_HR\nFROM Batting\nWHERE teamID IN ('NYA', 'BOS')\nGROUP BY yearID, teamID\nORDER BY yearID, teamID;\n'''\ndf_hr = pd.read_sql_query(query, con)\ndf_hr\n\n\n\n\nShow the code\n# Visualization of Yankees vs. Red Sox Home Runs Over Time\nggplot(df_hr, aes(x='yearID', y='total_HR', color='teamID')) + \\\n    geom_line(size=1.2) + \\\n    ggtitle(\"Yankees vs. Red Sox: Total Home Runs by Year\") + \\\n    labs(x=\"Year\", y=\"Total Home Runs\", color=\"Team\") + \\\n    theme_minimal()\n\n\nBased on the graph, we observe fluctuations in home run totals over time for both teams. In recent years, the Yankees have consistently hit more home runs compared to the Red Sox, especially post-2010. This could indicate a shift in hitting strategy, roster strength, or ballpark influence."
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#stretch-question-task-1",
+    "href": "ds250_final_baseball_project.html#stretch-question-task-1",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "STRETCH QUESTION – TASK 1",
+    "text": "STRETCH QUESTION – TASK 1\nAdvanced Salary Distribution by Position (with Case Statement):\n\n\nShow the code\nquery = '''\nWITH main_pos AS (\n  SELECT playerID, yearID, Pos, COUNT(*) AS games\n  FROM Fielding\n  GROUP BY playerID, yearID, Pos\n),\nmost_played AS (\n  SELECT playerID, yearID, Pos\n  FROM (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY playerID, yearID ORDER BY games DESC) AS rn\n    FROM main_pos\n  )\n  WHERE rn = 1\n)\nSELECT mp.Pos AS position,\n       ROUND(AVG(s.salary), 2) AS average_salary,\n       COUNT(DISTINCT s.playerID) AS total_players,\n       MAX(s.salary) AS highest_salary,\n       CASE\n         WHEN AVG(s.salary) &gt; 3000000 THEN 'High Salary'\n         WHEN AVG(s.salary) BETWEEN 2000000 AND 3000000 THEN 'Medium Salary'\n         ELSE 'Low Salary'\n       END AS salary_category\nFROM most_played mp\nJOIN Salaries s ON mp.playerID = s.playerID AND mp.yearID = s.yearID\nGROUP BY mp.Pos\nORDER BY average_salary DESC;\n'''\ndf_salary_pos = pd.read_sql_query(query, con)\ndf_salary_pos"
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#stretch-question-task-2",
+    "href": "ds250_final_baseball_project.html#stretch-question-task-2",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "STRETCH QUESTION – TASK 2",
+    "text": "STRETCH QUESTION – TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n\n\nShow the code\nquery = '''\nWITH player_years AS (\n  SELECT playerID, MIN(yearID) AS start_year, MAX(yearID) AS end_year, COUNT(DISTINCT yearID) AS career_length\n  FROM Batting\n  GROUP BY playerID\n  HAVING SUM(G) &gt;= 10\n)\nSELECT py.playerID, p.nameFirst, p.nameLast, py.career_length\nFROM player_years py\nJOIN people p ON py.playerID = p.playerID\nORDER BY py.career_length DESC\nLIMIT 10;\n'''\ndf_longevity = pd.read_sql_query(query, con)\ndf_longevity"
+  },
+  {
+    "objectID": "water-filling-case.html#project-materials",
+    "href": "water-filling-case.html#project-materials",
+    "title": "Water Filling Station Case Study",
+    "section": "",
+    "text": "Project Plan (PDF)\nFinal Report (PDF)"
+  },
+  {
+    "objectID": "receipt-generator-app.html#downloads",
+    "href": "receipt-generator-app.html#downloads",
+    "title": "Grocery Receipt Generator Application",
+    "section": "",
+    "text": "View Python Source Code\nDownload Product Data\nView Purchase Requests"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#erd-diagram-1",
+    "href": "pawesome-database-enhancement.html#erd-diagram-1",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "ERD of Enhanced Database"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#related-files",
+    "href": "pawesome-database-enhancement.html#related-files",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "Assignment PDF\nFiltering and Conditions Example\nAdvanced Joins\nSet Operators"
+  },
+  {
+    "objectID": "airplane-anova-study.html#supporting-files",
+    "href": "airplane-anova-study.html#supporting-files",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "Experiment Plan (PDF)\nANOVA Summary (PDF)"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#report-files",
+    "href": "baseball-relationships-study.html#report-files",
+    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "section": "",
+    "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+  },
+  {
+    "objectID": "tb-insights.html#case-study-deck",
+    "href": "tb-insights.html#case-study-deck",
+    "title": "Tuberculosis Insights",
+    "section": "",
+    "text": "Download Slides (PDF)"
+  }
+]

@@ -1,0 +1,48 @@
+---
+title: "Baseball Relationships Analysis – DS 250 Final"
+format:
+  html:
+    toc: true
+---
+# Client Report: Finding Relationships in Baseball
+
+This project explores relationships in the Lahman Baseball Database using **SQL queries** and **Lets-Plot** visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.
+
+## ⚾ Project Goals
+
+- Generate insights using SQL queries alone, without relying on Python for analysis
+- Visualize baseball data relationships with charts created in Lets-Plot
+- Deliver a client-friendly HTML report backed by relational data logic
+
+## 🔍 Key Tasks
+
+### 1. BYU-Idaho Alumni Salaries
+- Queried players from BYU-I and retrieved their salaries, year, and team
+- Sorted by highest salary to lowest
+
+### 2. Batting Average Trends
+- Calculated batting averages for individual years and across entire careers
+- Used filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance
+
+### 3. Team Comparison
+- Compared performance metrics between two selected MLB teams
+- Visualized using Lets-Plot charts
+
+## 📊 Tools & Technologies
+
+- SQL (using Lahman Baseball Database)
+- Lets-Plot (for visualization)
+- Quarto for generating a clean HTML report
+
+## 📄 Final Report
+
+The full HTML report includes all charts, queries, and findings:
+👉 [Download Full Report](ds250_final_baseball_project.html)
+
+This project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.
+
+## 📥 Report Files
+
+- [Download Full Report (HTML)](ds250_final_baseball_project.html)
+- [View Project Documentation (PDF)](Project 2_ Finding Relationships in Baseball – DS 250.pdf)
+- [View Quarto Source File](ds250_final_baseball_project.qmd)

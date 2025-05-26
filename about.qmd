@@ -1,0 +1,13 @@
+---
+title: "About Me"
+---
+
+# 👨‍💻 About Wilkin
+
+I'm passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.
+
+In my free time, I love hiking, gaming, and spending time with my family.
+
+- 🐍 Languages: Python, SQL  
+- 📊 Tools: Pandas, Scikit-learn, Tableau  
+- 🌱 Currently Learning: Machine Learning, Time Series Forecasting

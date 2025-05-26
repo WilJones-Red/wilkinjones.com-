@@ -1,0 +1,40 @@
+---
+title: "Projects"
+---
+
+# 🛠️ My Projects
+
+## 🐶 Pawesome Pet Services Database Redesign
+- **Tools:** MySQL Workbench, ERD modeling  
+- **Goal:** Normalize and restructure the schema to better manage pet services and appointments  
+- [View the full write-up](pawesome-database-enhancement.qmd)
+
+## 🧾 Grocery Receipt Generator (Python GUI)
+- **Tools:** Python, tkinter, CSV I/O  
+- **Goal:** Build an interactive receipt system with discounts and file-driven checkout  
+- [View the full write-up](receipt-generator-app.qmd)
+
+## ⚾ Baseball Data Analysis
+- **Tools**: Python, Jupyter, Seaborn
+- **Goal**: Explored correlations between player stats and salaries.
+- [See full report](https://github.com/yourusername/baseball-analysis)
+
+## 🦠 Tuberculosis Case Study
+- **Tools:** Python, MySQL, Tableau  
+- **Goal:** Identify global TB patterns across demographic segments  
+- [Read the full case study](tb-insights.qmd)
+
+## 💧 Water Filling Station Quality Control
+- **Tools:** Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots  
+- **Goal:** Evaluate filling station accuracy and identify process variation  
+- [Read the full case study](water-filling-case.qmd)
+
+## ✈️ Paper Airplane Experiment (Two-Way ANOVA)
+- **Tools:** Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots  
+- **Goal:** Determine how paper weight and design interact to affect flight performance  
+- [View the full write-up](airplane-anova-study.qmd)
+
+## ⚾ Baseball Data Relationships (DS 250 Final)
+- **Tools:** SQL, Lahman DB, Lets-Plot  
+- **Goal:** Explore batting averages, salaries, and team comparisons using SQL queries and data visualization  
+- [View the full write-up](baseball-relationships-study.qmd)

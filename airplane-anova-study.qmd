@@ -1,0 +1,48 @@
+---
+title: "Paper Airplane ANOVA Study"
+format:
+  html:
+    toc: true
+---
+# Paper Airplane Experiment – Two-Way ANOVA Analysis
+
+This project involved flying paper airplanes with different designs and paper weights to determine how these two factors — individually and together — affect flight distance.
+
+## 🧪 Hypotheses Tested
+
+### 1. Interaction Between Design and Weight
+- **H₀**: No interaction between plane design and paper weight  
+- **Hₐ**: There is interaction between plane design and paper weight
+
+### 2. Factor 1: Plane Design
+- **H₀**: All plane designs have the same mean flight distance  
+- **Hₐ**: At least one plane design differs
+
+### 3. Factor 2: Paper Weight
+- **H₀**: All paper weights yield the same mean flight distance  
+- **Hₐ**: At least one paper weight differs
+
+## 📊 Data Collection
+
+Each of the 6 combinations (3 designs × 2 paper weights) was flown 10 times, with distance recorded. The results were analyzed using a **two-way ANOVA** to check for interaction and main effects.
+
+## 📈 ANOVA Results
+
+- The **p-value for interaction** was **0.005**, which is **less than ɑ = 0.05**
+- ➤ This means there **is a significant interaction** between plane design and paper weight
+- Because interaction was present, main effects were not interpreted independently
+
+## 🛠 Tools Used
+
+- Manual flight testing and randomized trials
+- Data summarized and evaluated in Excel
+- Two-way ANOVA completed and interpreted as part of statistical coursework
+
+## 📌 Conclusion
+
+The experiment confirmed that the effectiveness of a plane design **depends on the type of paper used**, and vice versa. Interaction effects are real and impactful — emphasizing the importance of context when designing experiments.
+
+## 📥 Supporting Files
+
+- [Experiment Plan (PDF)](project 5 plan.pdf)
+- [ANOVA Summary (PDF)](5.pdf)

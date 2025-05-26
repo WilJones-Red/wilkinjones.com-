@@ -8,6 +8,7 @@ I'm passionate about data, analytics, and solving real-world problems. My journe
 
 In my free time, I love hiking, gaming, and spending time with my family.
 
-- 🐍 Languages: Python, SQL  
-- 📊 Tools: Pandas, Scikit-learn, Tableau  
-- 🌱 Currently Learning: Machine Learning, Time Series Forecasting
+**Languages:** Python, SQL  
+**Tools & Libraries:** Pandas, Scikit-learn, Matplotlib, Seaborn, Tableau, Excel, Quarto, Jupyter Notebooks, Git  
+**Currently Learning:** Machine Learning, Time Series Forecasting  
+**Experience with:** SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports

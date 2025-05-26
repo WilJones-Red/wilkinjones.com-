@@ -1,14 +1,39 @@
 ---
 title: "About Me"
+format:
+  html:
+    toc: true
+    toc-location: right
+    css: styles.css
 ---
 
-# 👨‍💻 About Wilkin
+::: {.card style="background-color:#f8f9fa; padding: 1rem; border-left: 5px solid #007acc;"}
+### 👨‍💻 About Wilkin
 
-I'm passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.
+I’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.
 
 In my free time, I love hiking, gaming, and spending time with my family.
+:::
 
-**Languages:** Python, SQL  
-**Tools & Libraries:** Pandas, Scikit-learn, Matplotlib, Seaborn, Tableau, Excel, Quarto, Jupyter Notebooks, Git  
-**Currently Learning:** Machine Learning, Time Series Forecasting  
-**Experience with:** SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports
+::: {.grid}
+::: {.g-col-6}
+**🧑‍💻 Languages**  
+Python, SQL
+
+**🧠 Currently Learning**  
+Machine Learning, Time Series Forecasting
+:::
+
+::: {.g-col-6}
+**🛠️ Tools & Libraries**  
+Pandas, Scikit-learn, Matplotlib, Seaborn  
+Tableau, Excel, Quarto, Jupyter Notebooks, Git
+:::
+:::
+
+**📈 Experience with**  
+SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports
+
+---
+
+*Want to see my work in action? Check out the [Projects](/projects.qmd) page to dive into full write-ups.*

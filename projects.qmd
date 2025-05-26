@@ -14,10 +14,10 @@ title: "Projects"
 - **Goal:** Build an interactive receipt system with discounts and file-driven checkout  
 - [View the full write-up](receipt-generator-app.qmd)
 
-## ⚾ Baseball Data Analysis
+## >> Housing Prices -- Coming Soon
 - **Tools**: Python, Jupyter, Seaborn
-- **Goal**: Explored correlations between player stats and salaries.
-- [See full report](https://github.com/yourusername/baseball-analysis)
+- **Goal**: Explored correlations between housing prices against various features
+- [See full report](www.wilkinjones.com)
 
 ## 🦠 Tuberculosis Case Study
 - **Tools:** Python, MySQL, Tableau  
@@ -34,7 +34,7 @@ title: "Projects"
 - **Goal:** Determine how paper weight and design interact to affect flight performance  
 - [View the full write-up](airplane-anova-study.qmd)
 
-## ⚾ Baseball Data Relationships (DS 250 Final)
+## ⚾ Baseball Data Relationships 
 - **Tools:** SQL, Lahman DB, Lets-Plot  
 - **Goal:** Explore batting averages, salaries, and team comparisons using SQL queries and data visualization  
 - [View the full write-up](baseball-relationships-study.qmd)

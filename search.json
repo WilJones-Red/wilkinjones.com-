@@ -53,7 +53,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Tools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, Jupyter, Seaborn\nGoal: Explored correlations between player stats and salaries.\nSee full report\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
+    "text": "Tools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, Jupyter, Seaborn\nGoal: Explored correlations between housing prices against various features\nSee full report\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
   },
   {
     "objectID": "projects.html#pawesome-pet-services-database-redesign",
@@ -70,11 +70,11 @@
     "text": "Tools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up"
   },
   {
-    "objectID": "projects.html#baseball-data-analysis",
-    "href": "projects.html#baseball-data-analysis",
+    "objectID": "projects.html#housing-prices-coming-soon",
+    "href": "projects.html#housing-prices-coming-soon",
     "title": "Projects",
     "section": "",
-    "text": "Tools: Python, Jupyter, Seaborn\nGoal: Explored correlations between player stats and salaries.\nSee full report"
+    "text": "Tools: Python, Jupyter, Seaborn\nGoal: Explored correlations between housing prices against various features\nSee full report"
   },
   {
     "objectID": "projects.html#tuberculosis-case-study",
@@ -98,8 +98,8 @@
     "text": "Tools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
   },
   {
-    "objectID": "projects.html#baseball-data-relationships-ds-250-final",
-    "href": "projects.html#baseball-data-relationships-ds-250-final",
+    "objectID": "projects.html#baseball-data-relationships",
+    "href": "projects.html#baseball-data-relationships",
     "title": "Projects",
     "section": "",
     "text": "Tools: SQL, Lahman DB, Lets-Plot\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"

@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: "."
 
 website:
   title: "Wilkin Jones"
@@ -21,6 +22,9 @@ format:
     theme: flatly
     css: styles.css
     toc: true
+
+execute:
+  enabled: false
 
 resources:
   - "*.html"

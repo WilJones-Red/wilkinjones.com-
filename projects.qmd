@@ -16,7 +16,7 @@ title: "Projects"
 
 ## >> Housing Prices -- Coming Soon
 - **Tools**: Python, Jupyter, Seaborn
-- **Goal**: Explored correlations between housing prices against various features
+- **Goal**: Explored correlations between housing prices against various features with machine learning
 - [See full report](www.wilkinjones.com)
 
 ## 🦠 Tuberculosis Case Study

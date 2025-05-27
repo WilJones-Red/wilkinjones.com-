@@ -40,4 +40,4 @@ This simple automation could greatly reduce variability and tighten the control 
 ## 📥 Project Materials
 
 - [Project Plan (PDF)](project 2 plan.pdf)
-- [Final Report (PDF)](Project 2  (Completed).docx.pdf)
+- [Final Report (PDF)](Project 2  (Completed).pdf)

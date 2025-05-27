@@ -1,5 +1,5 @@
 ---
-title: "Baseball Relationships Analysis – DS 250 Final"
+title: "Baseball Relationships Analysis"
 format:
   html:
     toc: true
@@ -37,7 +37,7 @@ This project explores relationships in the Lahman Baseball Database using **SQL 
 ## 📄 Final Report
 
 The full HTML report includes all charts, queries, and findings:
-👉 [Download Full Report](ds250_final_baseball_project.html)
+👉 [Download Full Report (PDF)](Client Report - Finding Relationships in Baseball.pdf)
 
 This project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.
 

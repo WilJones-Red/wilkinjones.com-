@@ -114,42 +114,42 @@
   {
     "objectID": "baseball-relationships-study.html",
     "href": "baseball-relationships-study.html",
-    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "title": "Baseball Relationships Analysis",
     "section": "",
-    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
   },
   {
     "objectID": "baseball-relationships-study.html#project-goals",
     "href": "baseball-relationships-study.html#project-goals",
-    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "title": "Baseball Relationships Analysis",
     "section": "",
     "text": "Generate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic"
   },
   {
     "objectID": "baseball-relationships-study.html#key-tasks",
     "href": "baseball-relationships-study.html#key-tasks",
-    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "title": "Baseball Relationships Analysis",
     "section": "",
     "text": "Queried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts"
   },
   {
     "objectID": "baseball-relationships-study.html#tools-technologies",
     "href": "baseball-relationships-study.html#tools-technologies",
-    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "title": "Baseball Relationships Analysis",
     "section": "",
     "text": "SQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report"
   },
   {
     "objectID": "baseball-relationships-study.html#final-report",
     "href": "baseball-relationships-study.html#final-report",
-    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "title": "Baseball Relationships Analysis",
     "section": "",
-    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
+    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
   },
   {
     "objectID": "baseball-relationships-study.html#report-files",
     "href": "baseball-relationships-study.html#report-files",
-    "title": "Baseball Relationships Analysis – DS 250 Final",
+    "title": "Baseball Relationships Analysis",
     "section": "",
     "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
   },
@@ -158,7 +158,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "👨‍💻 About Wilkin\nI’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\nLanguages: Python, SQL\nTools & Libraries: Pandas, Scikit-learn, Matplotlib, Seaborn, Tableau, Excel, Quarto, Jupyter Notebooks, Git\nCurrently Learning: Machine Learning, Time Series Forecasting\nExperience with: SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports"
+    "text": "👨‍💻 About Wilkin\nI’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\n\n\n\n🧑‍💻 Languages\nPython, SQL\n🧠 Currently Learning\nMachine Learning, Time Series Forecasting\n\n\n🛠️ Tools & Libraries\nPandas, Scikit-learn, Matplotlib, Seaborn\nTableau, Excel, Quarto, Jupyter Notebooks, Git\n\n\n📈 Experience with\nSQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports\n\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
   },
   {
     "objectID": "airplane-anova-study.html",

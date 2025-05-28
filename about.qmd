@@ -26,8 +26,26 @@ Machine Learning, Time Series Forecasting
 
 ::: {.g-col-6}
 **🛠️ Tools & Libraries**  
-Pandas, Scikit-learn, Matplotlib, Seaborn  
-Tableau, Excel, Quarto, Jupyter Notebooks, Git
+Python Libraries:
+Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost, Random Forest, Statsmodels 
+
+Machine Learning & Modeling:
+Logistic Regression, Decision Trees, Cross-Validation, Feature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)
+
+Data Tools:
+Tableau, Excel, Quarto, Jupyter Notebooks, Google Colab
+
+Dev & Version Control:
+Git, GitHub, VS Code, Markdown
+
+Databases & Querying:
+SQL (MySQL, SQLite), ERD Design, Data Cleaning & Joins, Set Operators
+
+Web & Reporting:
+HTML/CSS (Quarto website), GitHub Pages, Portfolio Building
+
+Soft & Team Skills:
+Project Management, Communication, Collaboration (especially with team-based capstone/case studies), Leadership (Digital Comm Supervisor)
 :::
 :::
 

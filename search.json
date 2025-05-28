@@ -156,9 +156,37 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About Me",
+    "title": "🙋‍♂️ About Wilkin",
     "section": "",
-    "text": "👨‍💻 About Wilkin\nI’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\n\n\n\n🧑‍💻 Languages\nPython, SQL\n🧠 Currently Learning\nMachine Learning, Time Series Forecasting\n\n\n🛠️ Tools & Libraries\nPython Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost, Random Forest, Statsmodels\nMachine Learning & Modeling: Logistic Regression, Decision Trees, Cross-Validation, Feature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\nData Tools: Tableau, Excel, Quarto, Jupyter Notebooks, Google Colab\nDev & Version Control: Git, GitHub, VS Code, Markdown\nDatabases & Querying: SQL (MySQL, SQLite), ERD Design, Data Cleaning & Joins, Set Operators\nWeb & Reporting: HTML/CSS (Quarto website), GitHub Pages, Portfolio Building\nSoft & Team Skills: Project Management, Communication, Collaboration (especially with team-based capstone/case studies), Leadership (Digital Comm Supervisor)\n\n\n📈 Experience with\nSQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports\n\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
+    "text": "I’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\n\n\n\n\n\n\nPython\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting\n\n\n\n\n\n\n\n\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building\n\n\n\n\n\n\n\nProject Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)\n\n\n\n\n\nSQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
+  },
+  {
+    "objectID": "about.html#skills-overview",
+    "href": "about.html#skills-overview",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Python\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting"
+  },
+  {
+    "objectID": "about.html#tools-libraries",
+    "href": "about.html#tools-libraries",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building"
+  },
+  {
+    "objectID": "about.html#soft-team-skills",
+    "href": "about.html#soft-team-skills",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Project Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)"
+  },
+  {
+    "objectID": "about.html#experience-with",
+    "href": "about.html#experience-with",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
   },
   {
     "objectID": "airplane-anova-study.html",

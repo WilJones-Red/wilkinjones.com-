@@ -124,15 +124,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#data-feature-engineering" id="toc-data-feature-engineering" class="nav-link" data-scroll-target="#data-feature-engineering">Data &amp; Feature Engineering</a></li>
-  <li><a href="#model-approach" id="toc-model-approach" class="nav-link" data-scroll-target="#model-approach">Model Approach</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
-  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">Key Insights</a></li>
-  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
-  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations">Visualizations</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#supplementary-materials" id="toc-supplementary-materials" class="nav-link" data-scroll-target="#supplementary-materials">Supplementary Materials</a></li>
+  <li><a href="#housing-price-prediction" id="toc-housing-price-prediction" class="nav-link active" data-scroll-target="#housing-price-prediction">🏡 Housing Price Prediction</a>
+  <ul class="collapse">
+  <li><a href="#project-summary" id="toc-project-summary" class="nav-link" data-scroll-target="#project-summary">📌 Project Summary</a></li>
+  <li><a href="#tools-technologies" id="toc-tools-technologies" class="nav-link" data-scroll-target="#tools-technologies">🛠️ Tools &amp; Technologies</a></li>
+  <li><a href="#key-techniques-used" id="toc-key-techniques-used" class="nav-link" data-scroll-target="#key-techniques-used">🔄 Key Techniques Used</a></li>
+  <li><a href="#sql-scenario-highlights" id="toc-sql-scenario-highlights" class="nav-link" data-scroll-target="#sql-scenario-highlights">🧪 SQL Scenario Highlights</a></li>
+  <li><a href="#results-summary" id="toc-results-summary" class="nav-link" data-scroll-target="#results-summary">📊 Results Summary</a></li>
+  <li><a href="#visuals" id="toc-visuals" class="nav-link" data-scroll-target="#visuals">📈 Visuals</a></li>
+  <li><a href="#supplementary-materials" id="toc-supplementary-materials" class="nav-link" data-scroll-target="#supplementary-materials">📥 Supplementary Materials</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -170,76 +171,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="objective" class="level1">
-<h1>Objective</h1>
-<p>The goal of this case study was to develop a model that could accurately predict home prices using machine learning techniques. We aimed to explore which features most influence home values and how machine learning could improve prediction performance overall.</p>
+<section id="housing-price-prediction" class="level1 page-columns page-full">
+<h1>🏡 Housing Price Prediction</h1>
+<p>This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation.</p>
+<section id="project-summary" class="level2">
+<h2 class="anchored" data-anchor-id="project-summary">📌 Project Summary</h2>
+<p>This case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy.</p>
+<hr>
 </section>
-<section id="data-feature-engineering" class="level1">
-<h1>Data &amp; Feature Engineering</h1>
-<p>We used a housing dataset containing location coordinates, condition scores, and other physical characteristics. We also engineered additional features to enrich the model’s understanding:</p>
+<section id="tools-technologies" class="level2">
+<h2 class="anchored" data-anchor-id="tools-technologies">🛠️ Tools &amp; Technologies</h2>
 <ul>
-<li><strong>Luxury Score</strong>: Captured quality and size</li>
-<li><strong>Age</strong>: Computed from the build year</li>
-<li><strong>View Score</strong>: Captured aesthetic value</li>
-<li><strong>Latitude and Longitude</strong>: Used as geographic proxies for proximity to amenities</li>
+<li><strong>Python</strong> for scripting and modeling</li>
+<li><strong>Jupyter Notebook</strong> for interactive development</li>
+<li><strong>Pandas &amp; NumPy</strong> for data cleaning and transformation</li>
+<li><strong>Scikit-learn</strong> and <strong>XGBoost</strong> for modeling</li>
+<li><strong>Matplotlib / Seaborn</strong> for visualizations</li>
+<li><strong>Quarto</strong> for documentation and report generation</li>
 </ul>
-<p>These features were designed to bring out hidden patterns in the data.</p>
+<hr>
 </section>
-<section id="model-approach" class="level1">
-<h1>Model Approach</h1>
-<p>We used a <strong>blended ensemble</strong> of two models:</p>
+<section id="key-techniques-used" class="level2">
+<h2 class="anchored" data-anchor-id="key-techniques-used">🔄 Key Techniques Used</h2>
+<p>✅ <strong>Feature Engineering</strong><br>
+Added custom variables like luxury score, age, and view rating to enrich input data</p>
+<p>✅ <strong>Model Blending</strong><br>
+Combined XGBoost and Random Forest regressors to improve stability and accuracy</p>
+<p>✅ <strong>Error Handling</strong><br>
+Applied outlier smoothing and tested multiple metrics (RMSE, R², median error)</p>
+<p>✅ <strong>Location Awareness</strong><br>
+Used latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)</p>
+<hr>
+</section>
+<section id="sql-scenario-highlights" class="level2">
+<h2 class="anchored" data-anchor-id="sql-scenario-highlights">🧪 SQL Scenario Highlights</h2>
+<p>As part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:</p>
 <ul>
-<li><strong>XGBoost Regressor</strong></li>
-<li><strong>Random Forest Regressor</strong></li>
+<li><strong>Range Filtering</strong>: Only properties above/below certain price thresholds</li>
+<li><strong>Missing Data Checks</strong>: Identified records with missing view or year built values</li>
+<li><strong>Aggregation</strong>: Calculated average prices by region or view score</li>
+<li><strong>Join Simulation</strong>: Merged multiple CSV-derived frames for composite analysis</li>
 </ul>
-<p>Each model was tuned to prevent overfitting and ensure stable predictions. The final output was an average of both model predictions, followed by minor adjustments to better handle outliers.</p>
+<hr>
 </section>
-<section id="results" class="level1">
-<h1>Results</h1>
-<p>Our final model achieved:</p>
+<section id="results-summary" class="level2">
+<h2 class="anchored" data-anchor-id="results-summary">📊 Results Summary</h2>
 <ul>
 <li><strong>Median Error</strong>: $33,842.78</li>
-<li><strong>Mean Error</strong>: $58,787.90</li>
-<li><strong>% Median Error</strong>: 7.62%</li>
-<li><strong>Root Mean Squared Error (RMSE)</strong>: $109,329.21</li>
-<li><strong>R² Score</strong>: 0.9108</li>
+<li><strong>RMSE</strong>: $109,329.21</li>
+<li><strong>R² Score</strong>: 0.9108 (91% variance explained)</li>
 </ul>
-<p>These results indicate the model captured over 91% of the variance in housing prices.</p>
+<p>The combination of models and domain-based feature engineering led to strong performance on unseen test data.</p>
+<hr>
 </section>
-<section id="key-insights" class="level1">
-<h1>Key Insights</h1>
-<ul>
-<li><strong>Location matters</strong>: Latitude and longitude proved highly predictive.</li>
-<li><strong>Feature engineering added value</strong>: The luxury score and view variables helped detect price drivers not apparent in raw data.</li>
-<li><strong>Blending models improved accuracy</strong>: Combining XGBoost and Random Forest reduced extreme error cases.</li>
-</ul>
-</section>
-<section id="limitations" class="level1">
-<h1>Limitations</h1>
-<ul>
-<li>The dataset lacked some key external data, such as:
-<ul>
-<li>Local income levels</li>
-<li>School rankings</li>
-</ul></li>
-<li>Rare luxury properties were outliers and more difficult to model</li>
-</ul>
-</section>
-<section id="visualizations" class="level1 page-columns page-full">
-<h1>Visualizations</h1>
+<section id="visuals" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="visuals">📈 Visuals</h2>
 <div class="column-body">
-<p><img src="figures/prediction_scatter.png" class="img-fluid" style="width:80.0%"></p>
-<p><em>Figure 1. Predicted vs Actual Housing Prices</em></p>
-<p><img src="figures/feature_importance.png" class="img-fluid" style="width:80.0%"></p>
-<p><em>Figure 2. Most Influential Features</em></p>
+<p><img src="Assets/residualplot.png" class="img-fluid" style="width:80.0%"> <em>Figure 1. Predicted vs Actual Housing Prices</em></p>
+<p><img src="Assets/TopFeatures.png" class="img-fluid" style="width:80.0%"> <em>Figure 2. Most Influential Features</em></p>
 </div>
+<hr>
 </section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>Our ensemble model predicted home prices with high accuracy and generalizability. Strategic feature engineering and model blending were key to performance. This framework offers a strong foundation for future refinement, especially with the addition of external contextual data.</p>
-</section>
-<section id="supplementary-materials" class="level1">
-<h1>Supplementary Materials</h1>
+<section id="supplementary-materials" class="level2">
+<h2 class="anchored" data-anchor-id="supplementary-materials">📥 Supplementary Materials</h2>
 <ul>
 <li><a href="CSE 450 ExecutiveSummary.pdf">Executive Summary (PDF)</a></li>
 <li><a href="Case Study Introduction.pdf">Case Study Introduction (PDF)</a></li>
@@ -249,10 +243,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 <blockquote class="blockquote">
-<p><strong>View our full Colab Notebook:</strong> <a href="https://colab.research.google.com/drive/1EHN_zcpFBuJI-P756Xa9-eHYACQZSbxG?usp=sharing">Housing Price Prediction Notebook</a></p>
+<p>🔗 <a href="https://colab.research.google.com/drive/1EHN_zcpFBuJI-P756Xa9-eHYACQZSbxG?usp=sharing">View the full Colab Notebook</a> for reproducible code and model walkthrough.</p>
 </blockquote>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

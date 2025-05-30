@@ -10,73 +10,70 @@ format:
     code-fold: true
 ---
 
-# Objective
+# 🏡 Housing Price Prediction
+This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation.
 
-The goal of this case study was to develop a model that could accurately predict home prices using machine learning techniques. We aimed to explore which features most influence home values and how machine learning could improve prediction performance overall.
+## 📌 Project Summary
+This case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy.
 
-# Data & Feature Engineering
+---
 
-We used a housing dataset containing location coordinates, condition scores, and other physical characteristics. We also engineered additional features to enrich the model's understanding:
+## 🛠️ Tools & Technologies
+- **Python** for scripting and modeling
+- **Jupyter Notebook** for interactive development
+- **Pandas & NumPy** for data cleaning and transformation
+- **Scikit-learn** and **XGBoost** for modeling
+- **Matplotlib / Seaborn** for visualizations
+- **Quarto** for documentation and report generation
 
-- **Luxury Score**: Captured quality and size
-- **Age**: Computed from the build year
-- **View Score**: Captured aesthetic value
-- **Latitude and Longitude**: Used as geographic proxies for proximity to amenities
+---
 
-These features were designed to bring out hidden patterns in the data.
+## 🔄 Key Techniques Used
+✅ **Feature Engineering**  
+Added custom variables like luxury score, age, and view rating to enrich input data
 
-# Model Approach
+✅ **Model Blending**  
+Combined XGBoost and Random Forest regressors to improve stability and accuracy
 
-We used a **blended ensemble** of two models:
+✅ **Error Handling**  
+Applied outlier smoothing and tested multiple metrics (RMSE, R², median error)
 
-- **XGBoost Regressor**
-- **Random Forest Regressor**
+✅ **Location Awareness**  
+Used latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)
 
-Each model was tuned to prevent overfitting and ensure stable predictions. The final output was an average of both model predictions, followed by minor adjustments to better handle outliers.
+---
 
-# Results
+## 🧪 SQL Scenario Highlights
+As part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:
 
-Our final model achieved:
+- **Range Filtering**: Only properties above/below certain price thresholds
+- **Missing Data Checks**: Identified records with missing view or year built values
+- **Aggregation**: Calculated average prices by region or view score
+- **Join Simulation**: Merged multiple CSV-derived frames for composite analysis
 
+---
+
+## 📊 Results Summary
 - **Median Error**: $33,842.78
-- **Mean Error**: $58,787.90
-- **% Median Error**: 7.62%
-- **Root Mean Squared Error (RMSE)**: $109,329.21
-- **R² Score**: 0.9108
+- **RMSE**: $109,329.21
+- **R² Score**: 0.9108 (91% variance explained)
 
-These results indicate the model captured over 91% of the variance in housing prices.
+The combination of models and domain-based feature engineering led to strong performance on unseen test data.
 
-# Key Insights
+---
 
-- **Location matters**: Latitude and longitude proved highly predictive.
-- **Feature engineering added value**: The luxury score and view variables helped detect price drivers not apparent in raw data.
-- **Blending models improved accuracy**: Combining XGBoost and Random Forest reduced extreme error cases.
-
-# Limitations
-
-- The dataset lacked some key external data, such as:
-  - Local income levels
-  - School rankings
-- Rare luxury properties were outliers and more difficult to model
-
-# Visualizations
-
+## 📈 Visuals
 ::: {.column-body}
-![](figures/prediction_scatter.png){width=80%}
-
+![](Assets/residualplot.png){width=80%}
 *Figure 1. Predicted vs Actual Housing Prices*
 
-![](figures/feature_importance.png){width=80%}
-
+![](Assets/TopFeatures.png){width=80%}
 *Figure 2. Most Influential Features*
 :::
 
-# Conclusion
+---
 
-Our ensemble model predicted home prices with high accuracy and generalizability. Strategic feature engineering and model blending were key to performance. This framework offers a strong foundation for future refinement, especially with the addition of external contextual data.
-
-# Supplementary Materials
-
+## 📥 Supplementary Materials
 - [Executive Summary (PDF)](CSE%20450%20ExecutiveSummary.pdf)
 - [Case Study Introduction (PDF)](Case%20Study%20Introduction.pdf)
 - [Discussion Questions (PDF)](Case%20Study%20Discussion%20Questions.pdf)
@@ -85,4 +82,4 @@ Our ensemble model predicted home prices with high accuracy and generalizability
 
 ---
 
-> **View our full Colab Notebook:** [Housing Price Prediction Notebook](https://colab.research.google.com/drive/1EHN_zcpFBuJI-P756Xa9-eHYACQZSbxG?usp=sharing)
+> 🔗 [View the full Colab Notebook](https://colab.research.google.com/drive/1EHN_zcpFBuJI-P756Xa9-eHYACQZSbxG?usp=sharing) for reproducible code and model walkthrough.

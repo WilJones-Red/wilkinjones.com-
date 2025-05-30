@@ -284,7 +284,56 @@
     "href": "housing_case_study.html",
     "title": "Housing Price Prediction Case Study",
     "section": "",
-    "text": "Objective\nThe goal of this case study was to develop a model that could accurately predict home prices using machine learning techniques. We aimed to explore which features most influence home values and how machine learning could improve prediction performance overall.\n\n\nData & Feature Engineering\nWe used a housing dataset containing location coordinates, condition scores, and other physical characteristics. We also engineered additional features to enrich the model’s understanding:\n\nLuxury Score: Captured quality and size\nAge: Computed from the build year\nView Score: Captured aesthetic value\nLatitude and Longitude: Used as geographic proxies for proximity to amenities\n\nThese features were designed to bring out hidden patterns in the data.\n\n\nModel Approach\nWe used a blended ensemble of two models:\n\nXGBoost Regressor\nRandom Forest Regressor\n\nEach model was tuned to prevent overfitting and ensure stable predictions. The final output was an average of both model predictions, followed by minor adjustments to better handle outliers.\n\n\nResults\nOur final model achieved:\n\nMedian Error: $33,842.78\nMean Error: $58,787.90\n% Median Error: 7.62%\nRoot Mean Squared Error (RMSE): $109,329.21\nR² Score: 0.9108\n\nThese results indicate the model captured over 91% of the variance in housing prices.\n\n\nKey Insights\n\nLocation matters: Latitude and longitude proved highly predictive.\nFeature engineering added value: The luxury score and view variables helped detect price drivers not apparent in raw data.\nBlending models improved accuracy: Combining XGBoost and Random Forest reduced extreme error cases.\n\n\n\nLimitations\n\nThe dataset lacked some key external data, such as:\n\nLocal income levels\nSchool rankings\n\nRare luxury properties were outliers and more difficult to model\n\n\n\nVisualizations\n\n\nFigure 1. Predicted vs Actual Housing Prices\n\nFigure 2. Most Influential Features\n\n\n\nConclusion\nOur ensemble model predicted home prices with high accuracy and generalizability. Strategic feature engineering and model blending were key to performance. This framework offers a strong foundation for future refinement, especially with the addition of external contextual data.\n\n\nSupplementary Materials\n\nExecutive Summary (PDF)\nCase Study Introduction (PDF)\nDiscussion Questions (PDF)\nRaw Housing Data (CSV)\nModel Predictions (CSV)\n\n\n\nView our full Colab Notebook: Housing Price Prediction Notebook"
+    "text": "This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation.\n\n\nThis case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy.\n\n\n\n\n\nPython for scripting and modeling\nJupyter Notebook for interactive development\nPandas & NumPy for data cleaning and transformation\nScikit-learn and XGBoost for modeling\nMatplotlib / Seaborn for visualizations\nQuarto for documentation and report generation\n\n\n\n\n\n✅ Feature Engineering\nAdded custom variables like luxury score, age, and view rating to enrich input data\n✅ Model Blending\nCombined XGBoost and Random Forest regressors to improve stability and accuracy\n✅ Error Handling\nApplied outlier smoothing and tested multiple metrics (RMSE, R², median error)\n✅ Location Awareness\nUsed latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)\n\n\n\n\nAs part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:\n\nRange Filtering: Only properties above/below certain price thresholds\nMissing Data Checks: Identified records with missing view or year built values\nAggregation: Calculated average prices by region or view score\nJoin Simulation: Merged multiple CSV-derived frames for composite analysis\n\n\n\n\n\n\nMedian Error: $33,842.78\nRMSE: $109,329.21\nR² Score: 0.9108 (91% variance explained)\n\nThe combination of models and domain-based feature engineering led to strong performance on unseen test data.\n\n\n\n\n\n Figure 1. Predicted vs Actual Housing Prices\n Figure 2. Most Influential Features\n\n\n\n\n\n\nExecutive Summary (PDF)\nCase Study Introduction (PDF)\nDiscussion Questions (PDF)\nRaw Housing Data (CSV)\nModel Predictions (CSV)\n\n\n\n🔗 View the full Colab Notebook for reproducible code and model walkthrough."
+  },
+  {
+    "objectID": "housing_case_study.html#project-summary",
+    "href": "housing_case_study.html#project-summary",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "This case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy."
+  },
+  {
+    "objectID": "housing_case_study.html#tools-technologies",
+    "href": "housing_case_study.html#tools-technologies",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Python for scripting and modeling\nJupyter Notebook for interactive development\nPandas & NumPy for data cleaning and transformation\nScikit-learn and XGBoost for modeling\nMatplotlib / Seaborn for visualizations\nQuarto for documentation and report generation"
+  },
+  {
+    "objectID": "housing_case_study.html#key-techniques-used",
+    "href": "housing_case_study.html#key-techniques-used",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "✅ Feature Engineering\nAdded custom variables like luxury score, age, and view rating to enrich input data\n✅ Model Blending\nCombined XGBoost and Random Forest regressors to improve stability and accuracy\n✅ Error Handling\nApplied outlier smoothing and tested multiple metrics (RMSE, R², median error)\n✅ Location Awareness\nUsed latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)"
+  },
+  {
+    "objectID": "housing_case_study.html#sql-scenario-highlights",
+    "href": "housing_case_study.html#sql-scenario-highlights",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "As part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:\n\nRange Filtering: Only properties above/below certain price thresholds\nMissing Data Checks: Identified records with missing view or year built values\nAggregation: Calculated average prices by region or view score\nJoin Simulation: Merged multiple CSV-derived frames for composite analysis"
+  },
+  {
+    "objectID": "housing_case_study.html#results-summary",
+    "href": "housing_case_study.html#results-summary",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Median Error: $33,842.78\nRMSE: $109,329.21\nR² Score: 0.9108 (91% variance explained)\n\nThe combination of models and domain-based feature engineering led to strong performance on unseen test data."
+  },
+  {
+    "objectID": "housing_case_study.html#visuals",
+    "href": "housing_case_study.html#visuals",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Figure 1. Predicted vs Actual Housing Prices\n Figure 2. Most Influential Features"
+  },
+  {
+    "objectID": "housing_case_study.html#supplementary-materials",
+    "href": "housing_case_study.html#supplementary-materials",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Executive Summary (PDF)\nCase Study Introduction (PDF)\nDiscussion Questions (PDF)\nRaw Housing Data (CSV)\nModel Predictions (CSV)\n\n\n\n🔗 View the full Colab Notebook for reproducible code and model walkthrough."
   },
   {
     "objectID": "pawesome-database-enhancement.html",

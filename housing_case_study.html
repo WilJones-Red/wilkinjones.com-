@@ -124,8 +124,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#housing-price-prediction" id="toc-housing-price-prediction" class="nav-link active" data-scroll-target="#housing-price-prediction">🏡 Housing Price Prediction</a>
+  <li><a href="#housing-price-prediction-case-study" id="toc-housing-price-prediction-case-study" class="nav-link active" data-scroll-target="#housing-price-prediction-case-study">Housing Price Prediction Case Study</a>
   <ul class="collapse">
+  <li><a href="#housing-price-prediction" id="toc-housing-price-prediction" class="nav-link" data-scroll-target="#housing-price-prediction">Housing Price Prediction</a></li>
   <li><a href="#project-summary" id="toc-project-summary" class="nav-link" data-scroll-target="#project-summary">📌 Project Summary</a></li>
   <li><a href="#tools-technologies" id="toc-tools-technologies" class="nav-link" data-scroll-target="#tools-technologies">🛠️ Tools &amp; Technologies</a></li>
   <li><a href="#key-techniques-used" id="toc-key-techniques-used" class="nav-link" data-scroll-target="#key-techniques-used">🔄 Key Techniques Used</a></li>
@@ -138,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -171,13 +172,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="housing-price-prediction" class="level1 page-columns page-full">
-<h1>🏡 Housing Price Prediction</h1>
+<section id="housing-price-prediction-case-study" class="level1">
+<h1>Housing Price Prediction Case Study</h1>
+<section id="housing-price-prediction" class="level2">
+<h2 class="anchored" data-anchor-id="housing-price-prediction">Housing Price Prediction</h2>
 <p>This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation.</p>
+</section>
 <section id="project-summary" class="level2">
 <h2 class="anchored" data-anchor-id="project-summary">📌 Project Summary</h2>
 <p>This case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy.</p>
-<hr>
 </section>
 <section id="tools-technologies" class="level2">
 <h2 class="anchored" data-anchor-id="tools-technologies">🛠️ Tools &amp; Technologies</h2>
@@ -189,7 +192,6 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Matplotlib / Seaborn</strong> for visualizations</li>
 <li><strong>Quarto</strong> for documentation and report generation</li>
 </ul>
-<hr>
 </section>
 <section id="key-techniques-used" class="level2">
 <h2 class="anchored" data-anchor-id="key-techniques-used">🔄 Key Techniques Used</h2>
@@ -201,7 +203,6 @@ Combined XGBoost and Random Forest regressors to improve stability and accuracy<
 Applied outlier smoothing and tested multiple metrics (RMSE, R², median error)</p>
 <p>✅ <strong>Location Awareness</strong><br>
 Used latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)</p>
-<hr>
 </section>
 <section id="sql-scenario-highlights" class="level2">
 <h2 class="anchored" data-anchor-id="sql-scenario-highlights">🧪 SQL Scenario Highlights</h2>
@@ -212,7 +213,6 @@ Used latitude and longitude directly to proxy proximity to important amenities (
 <li><strong>Aggregation</strong>: Calculated average prices by region or view score</li>
 <li><strong>Join Simulation</strong>: Merged multiple CSV-derived frames for composite analysis</li>
 </ul>
-<hr>
 </section>
 <section id="results-summary" class="level2">
 <h2 class="anchored" data-anchor-id="results-summary">📊 Results Summary</h2>
@@ -222,15 +222,13 @@ Used latitude and longitude directly to proxy proximity to important amenities (
 <li><strong>R² Score</strong>: 0.9108 (91% variance explained)</li>
 </ul>
 <p>The combination of models and domain-based feature engineering led to strong performance on unseen test data.</p>
-<hr>
 </section>
-<section id="visuals" class="level2 page-columns page-full">
+<section id="visuals" class="level2">
 <h2 class="anchored" data-anchor-id="visuals">📈 Visuals</h2>
-<div class="column-body">
-<p><img src="Assets/residualplot.png" class="img-fluid" style="width:80.0%"> <em>Figure 1. Predicted vs Actual Housing Prices</em></p>
-<p><img src="Assets/TopFeatures.png" class="img-fluid" style="width:80.0%"> <em>Figure 2. Most Influential Features</em></p>
-</div>
-<hr>
+<p><img src="Assets/residualplot.png" class="img-fluid" style="width:80.0%"><br>
+<em>Figure 1. Predicted vs Actual Housing Prices</em></p>
+<p><img src="Assets/TopFeatures.png" class="img-fluid" style="width:80.0%"><br>
+<em>Figure 2. Most Influential Features</em></p>
 </section>
 <section id="supplementary-materials" class="level2">
 <h2 class="anchored" data-anchor-id="supplementary-materials">📥 Supplementary Materials</h2>

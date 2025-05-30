@@ -10,13 +10,13 @@ format:
     code-fold: true
 ---
 
-# 🏡 Housing Price Prediction
+# Housing Price Prediction Case Study
+
+## Housing Price Prediction
 This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation.
 
 ## 📌 Project Summary
 This case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy.
-
----
 
 ## 🛠️ Tools & Technologies
 - **Python** for scripting and modeling
@@ -26,9 +26,8 @@ This case study, conducted for Reddic Housing LLC, explored how location, proper
 - **Matplotlib / Seaborn** for visualizations
 - **Quarto** for documentation and report generation
 
----
-
 ## 🔄 Key Techniques Used
+
 ✅ **Feature Engineering**  
 Added custom variables like luxury score, age, and view rating to enrich input data
 
@@ -41,8 +40,6 @@ Applied outlier smoothing and tested multiple metrics (RMSE, R², median error)
 ✅ **Location Awareness**  
 Used latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)
 
----
-
 ## 🧪 SQL Scenario Highlights
 As part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:
 
@@ -51,8 +48,6 @@ As part of the supporting analysis, we explored CSV data using filtering and log
 - **Aggregation**: Calculated average prices by region or view score
 - **Join Simulation**: Merged multiple CSV-derived frames for composite analysis
 
----
-
 ## 📊 Results Summary
 - **Median Error**: $33,842.78
 - **RMSE**: $109,329.21
@@ -60,18 +55,13 @@ As part of the supporting analysis, we explored CSV data using filtering and log
 
 The combination of models and domain-based feature engineering led to strong performance on unseen test data.
 
----
-
 ## 📈 Visuals
-::: {.column-body}
-![](Assets/residualplot.png){width=80%}
+
+![](Assets/residualplot.png){width=80%}  
 *Figure 1. Predicted vs Actual Housing Prices*
 
-![](Assets/TopFeatures.png){width=80%}
+![](Assets/TopFeatures.png){width=80%}  
 *Figure 2. Most Influential Features*
-:::
-
----
 
 ## 📥 Supplementary Materials
 - [Executive Summary (PDF)](CSE%20450%20ExecutiveSummary.pdf)
@@ -83,3 +73,4 @@ The combination of models and domain-based feature engineering led to strong per
 ---
 
 > 🔗 [View the full Colab Notebook](https://colab.research.google.com/drive/1EHN_zcpFBuJI-P756Xa9-eHYACQZSbxG?usp=sharing) for reproducible code and model walkthrough.
+

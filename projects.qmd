@@ -8,10 +8,10 @@ title: "Projects"
 
 Unlocking the mystery of what makes homes expensive (besides the granite countertops).
 
-- 🔧 **Tools**: Python, Jupyter, Seaborn, XGBoost, Random Forest
-- 🎯 **Goal**: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude
-- 📊 **Outcome**: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance
-- 📄 [Read the full report](housing_case_study.qmd)
+- **Tools**: Python, Jupyter, Seaborn, XGBoost, Random Forest
+- **Goal**: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude
+- **Outcome**: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance
+- [Read the full report](housing_case_study.qmd)
 
 ## 🐶 Pawesome Pet Services Database Redesign
 - **Tools:** MySQL Workbench, ERD modeling  

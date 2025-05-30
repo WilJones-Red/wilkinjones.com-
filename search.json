@@ -56,8 +56,8 @@
     "text": "Unlocking the mystery of what makes homes expensive (besides the granite countertops).\n\n🔧 Tools: Python, Jupyter, Seaborn, XGBoost, Random Forest\n🎯 Goal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\n📊 Outcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\n📄 Read the full report\n\n\n\n\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
   },
   {
-    "objectID": "projects.html#housing-price-prediction-coming-soon",
-    "href": "projects.html#housing-price-prediction-coming-soon",
+    "objectID": "projects.html#housing-price-prediction",
+    "href": "projects.html#housing-price-prediction",
     "title": "Projects",
     "section": "",
     "text": "Unlocking the mystery of what makes homes expensive (besides the granite countertops).\n\n🔧 Tools: Python, Jupyter, Seaborn, XGBoost, Random Forest\n🎯 Goal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\n📊 Outcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\n📄 Read the full report"

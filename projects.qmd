@@ -4,7 +4,7 @@ title: "Projects"
 
 # 🛠️ My Projects
 
-## 🏡 Housing Price Prediction — Coming Soon
+## 🏡 Housing Price Prediction
 
 Unlocking the mystery of what makes homes expensive (besides the granite countertops).
 

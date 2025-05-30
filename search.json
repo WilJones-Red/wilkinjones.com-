@@ -53,7 +53,14 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Tools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, Jupyter, Seaborn\nGoal: Explored correlations between housing prices against various features with machine learning\nSee full report\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
+    "text": "Unlocking the mystery of what makes homes expensive (besides the granite countertops).\n\n🔧 Tools: Python, Jupyter, Seaborn, XGBoost, Random Forest\n🎯 Goal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\n📊 Outcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\n📄 Read the full report\n\n\n\n\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
+  },
+  {
+    "objectID": "projects.html#housing-price-prediction-coming-soon",
+    "href": "projects.html#housing-price-prediction-coming-soon",
+    "title": "Projects",
+    "section": "",
+    "text": "Unlocking the mystery of what makes homes expensive (besides the granite countertops).\n\n🔧 Tools: Python, Jupyter, Seaborn, XGBoost, Random Forest\n🎯 Goal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\n📊 Outcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\n📄 Read the full report"
   },
   {
     "objectID": "projects.html#pawesome-pet-services-database-redesign",
@@ -63,18 +70,18 @@
     "text": "Tools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up"
   },
   {
+    "objectID": "projects.html#baseball-data-relationships",
+    "href": "projects.html#baseball-data-relationships",
+    "title": "Projects",
+    "section": "",
+    "text": "Tools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
+  },
+  {
     "objectID": "projects.html#grocery-receipt-generator-python-gui",
     "href": "projects.html#grocery-receipt-generator-python-gui",
     "title": "Projects",
     "section": "",
     "text": "Tools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up"
-  },
-  {
-    "objectID": "projects.html#housing-prices-coming-soon",
-    "href": "projects.html#housing-prices-coming-soon",
-    "title": "Projects",
-    "section": "",
-    "text": "Tools: Python, Jupyter, Seaborn\nGoal: Explored correlations between housing prices against various features with machine learning\nSee full report"
   },
   {
     "objectID": "projects.html#tuberculosis-case-study",
@@ -98,13 +105,6 @@
     "text": "Tools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
   },
   {
-    "objectID": "projects.html#baseball-data-relationships",
-    "href": "projects.html#baseball-data-relationships",
-    "title": "Projects",
-    "section": "",
-    "text": "Tools: SQL, Lahman DB, Lets-Plot\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome",
@@ -112,81 +112,46 @@
     "text": "“The ultimate measure of a man is not where he stands in moments of convenience and comfort, but where he stands at times of challenge and controversy.” — Martin Luther King, Jr.\n\n\n\n\nHi, I’m Wilkin Jones\nI’m a data science student at BYU–Idaho looking for internship opportunities. I enjoy working with Python, SQL, and building insights from messy data.\n\nLocation: Idaho Falls, ID\n\nEducation: Brigham Young University - Idaho\n\nSeeking internships in: Data Science, Data Visualization, Data Management, or Data Governance"
   },
   {
-    "objectID": "baseball-relationships-study.html",
-    "href": "baseball-relationships-study.html",
-    "title": "Baseball Relationships Analysis",
+    "objectID": "ds250_final_baseball_project.html",
+    "href": "ds250_final_baseball_project.html",
+    "title": "Client Report - Finding Relationships in Baseball",
     "section": "",
-    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nimport sqlite3\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sqlite3.connect(sqlite_file)"
   },
   {
-    "objectID": "baseball-relationships-study.html#project-goals",
-    "href": "baseball-relationships-study.html#project-goals",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "Generate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic"
+    "objectID": "ds250_final_baseball_project.html#question-task-1",
+    "href": "ds250_final_baseball_project.html#question-task-1",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 1",
+    "text": "QUESTION – TASK 1\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\n\n\nShow the code\nquery = '''\nSELECT s.playerID, MAX(sp.schoolID) AS schoolID, MAX(s.salary) AS salary, s.yearID, s.teamID\nFROM CollegePlaying sp\nJOIN Salaries s ON sp.playerID = s.playerID\nWHERE sp.schoolID = 'idbyuid'\nGROUP BY s.playerID, s.yearID, s.teamID\nORDER BY salary DESC;\n'''\ndf_byu = pd.read_sql_query(query, con)\ndf_byu"
   },
   {
-    "objectID": "baseball-relationships-study.html#key-tasks",
-    "href": "baseball-relationships-study.html#key-tasks",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "Queried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts"
+    "objectID": "ds250_final_baseball_project.html#question-task-2",
+    "href": "ds250_final_baseball_project.html#question-task-2",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 2",
+    "text": "QUESTION – TASK 2\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\n\nAt least 1 at-bat\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 1\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_1ab = pd.read_sql_query(query, con)\ndf_avg_1ab\n\n\n\nAt least 10 at-bats\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 10\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_10ab = pd.read_sql_query(query, con)\ndf_avg_10ab\n\n\n\nCareer batting average (100+ AB total)\n\n\n\nShow the code\nquery = '''\nSELECT playerID, CAST(SUM(H) AS FLOAT)/SUM(AB) AS career_avg\nFROM Batting\nGROUP BY playerID\nHAVING SUM(AB) &gt;= 100\nORDER BY career_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_career = pd.read_sql_query(query, con)\ndf_avg_career"
   },
   {
-    "objectID": "baseball-relationships-study.html#tools-technologies",
-    "href": "baseball-relationships-study.html#tools-technologies",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "SQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report"
+    "objectID": "ds250_final_baseball_project.html#question-task-3",
+    "href": "ds250_final_baseball_project.html#question-task-3",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 3",
+    "text": "QUESTION – TASK 3\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?\n\n\nShow the code\nquery = '''\nSELECT yearID, teamID, SUM(HR) AS total_HR\nFROM Batting\nWHERE teamID IN ('NYA', 'BOS')\nGROUP BY yearID, teamID\nORDER BY yearID, teamID;\n'''\ndf_hr = pd.read_sql_query(query, con)\ndf_hr\n\n\n\n\nShow the code\n# Visualization of Yankees vs. Red Sox Home Runs Over Time\nggplot(df_hr, aes(x='yearID', y='total_HR', color='teamID')) + \\\n    geom_line(size=1.2) + \\\n    ggtitle(\"Yankees vs. Red Sox: Total Home Runs by Year\") + \\\n    labs(x=\"Year\", y=\"Total Home Runs\", color=\"Team\") + \\\n    theme_minimal()\n\n\nBased on the graph, we observe fluctuations in home run totals over time for both teams. In recent years, the Yankees have consistently hit more home runs compared to the Red Sox, especially post-2010. This could indicate a shift in hitting strategy, roster strength, or ballpark influence."
   },
   {
-    "objectID": "baseball-relationships-study.html#final-report",
-    "href": "baseball-relationships-study.html#final-report",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
+    "objectID": "ds250_final_baseball_project.html#stretch-question-task-1",
+    "href": "ds250_final_baseball_project.html#stretch-question-task-1",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "STRETCH QUESTION – TASK 1",
+    "text": "STRETCH QUESTION – TASK 1\nAdvanced Salary Distribution by Position (with Case Statement):\n\n\nShow the code\nquery = '''\nWITH main_pos AS (\n  SELECT playerID, yearID, Pos, COUNT(*) AS games\n  FROM Fielding\n  GROUP BY playerID, yearID, Pos\n),\nmost_played AS (\n  SELECT playerID, yearID, Pos\n  FROM (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY playerID, yearID ORDER BY games DESC) AS rn\n    FROM main_pos\n  )\n  WHERE rn = 1\n)\nSELECT mp.Pos AS position,\n       ROUND(AVG(s.salary), 2) AS average_salary,\n       COUNT(DISTINCT s.playerID) AS total_players,\n       MAX(s.salary) AS highest_salary,\n       CASE\n         WHEN AVG(s.salary) &gt; 3000000 THEN 'High Salary'\n         WHEN AVG(s.salary) BETWEEN 2000000 AND 3000000 THEN 'Medium Salary'\n         ELSE 'Low Salary'\n       END AS salary_category\nFROM most_played mp\nJOIN Salaries s ON mp.playerID = s.playerID AND mp.yearID = s.yearID\nGROUP BY mp.Pos\nORDER BY average_salary DESC;\n'''\ndf_salary_pos = pd.read_sql_query(query, con)\ndf_salary_pos"
   },
   {
-    "objectID": "baseball-relationships-study.html#report-files",
-    "href": "baseball-relationships-study.html#report-files",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "🙋‍♂️ About Wilkin",
-    "section": "",
-    "text": "I’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\n\n\n\n\n\n\nPython\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting\n\n\n\n\n\n\n\n\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building\n\n\n\n\n\n\n\nProject Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)\n\n\n\n\n\nSQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
-  },
-  {
-    "objectID": "about.html#skills-overview",
-    "href": "about.html#skills-overview",
-    "title": "🙋‍♂️ About Wilkin",
-    "section": "",
-    "text": "Python\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting"
-  },
-  {
-    "objectID": "about.html#tools-libraries",
-    "href": "about.html#tools-libraries",
-    "title": "🙋‍♂️ About Wilkin",
-    "section": "",
-    "text": "Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building"
-  },
-  {
-    "objectID": "about.html#soft-team-skills",
-    "href": "about.html#soft-team-skills",
-    "title": "🙋‍♂️ About Wilkin",
-    "section": "",
-    "text": "Project Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)"
-  },
-  {
-    "objectID": "about.html#experience-with",
-    "href": "about.html#experience-with",
-    "title": "🙋‍♂️ About Wilkin",
-    "section": "",
-    "text": "SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
+    "objectID": "ds250_final_baseball_project.html#stretch-question-task-2",
+    "href": "ds250_final_baseball_project.html#stretch-question-task-2",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "STRETCH QUESTION – TASK 2",
+    "text": "STRETCH QUESTION – TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n\n\nShow the code\nquery = '''\nWITH player_years AS (\n  SELECT playerID, MIN(yearID) AS start_year, MAX(yearID) AS end_year, COUNT(DISTINCT yearID) AS career_length\n  FROM Batting\n  GROUP BY playerID\n  HAVING SUM(G) &gt;= 10\n)\nSELECT py.playerID, p.nameFirst, p.nameLast, py.career_length\nFROM player_years py\nJOIN people p ON py.playerID = p.playerID\nORDER BY py.career_length DESC\nLIMIT 10;\n'''\ndf_longevity = pd.read_sql_query(query, con)\ndf_longevity"
   },
   {
     "objectID": "airplane-anova-study.html",
@@ -238,46 +203,88 @@
     "text": "Experiment Plan (PDF)\nANOVA Summary (PDF)"
   },
   {
-    "objectID": "ds250_final_baseball_project.html",
-    "href": "ds250_final_baseball_project.html",
-    "title": "Client Report - Finding Relationships in Baseball",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "🙋‍♂️ About Wilkin",
     "section": "",
-    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nimport sqlite3\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sqlite3.connect(sqlite_file)"
+    "text": "I’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\n\n\n\n\n\n\nPython\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting\n\n\n\n\n\n\n\n\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building\n\n\n\n\n\n\n\nProject Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)\n\n\n\n\n\nSQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
   },
   {
-    "objectID": "ds250_final_baseball_project.html#question-task-1",
-    "href": "ds250_final_baseball_project.html#question-task-1",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "QUESTION – TASK 1",
-    "text": "QUESTION – TASK 1\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\n\n\nShow the code\nquery = '''\nSELECT s.playerID, MAX(sp.schoolID) AS schoolID, MAX(s.salary) AS salary, s.yearID, s.teamID\nFROM CollegePlaying sp\nJOIN Salaries s ON sp.playerID = s.playerID\nWHERE sp.schoolID = 'idbyuid'\nGROUP BY s.playerID, s.yearID, s.teamID\nORDER BY salary DESC;\n'''\ndf_byu = pd.read_sql_query(query, con)\ndf_byu"
+    "objectID": "about.html#skills-overview",
+    "href": "about.html#skills-overview",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Python\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting"
   },
   {
-    "objectID": "ds250_final_baseball_project.html#question-task-2",
-    "href": "ds250_final_baseball_project.html#question-task-2",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "QUESTION – TASK 2",
-    "text": "QUESTION – TASK 2\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\n\nAt least 1 at-bat\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 1\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_1ab = pd.read_sql_query(query, con)\ndf_avg_1ab\n\n\n\nAt least 10 at-bats\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 10\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_10ab = pd.read_sql_query(query, con)\ndf_avg_10ab\n\n\n\nCareer batting average (100+ AB total)\n\n\n\nShow the code\nquery = '''\nSELECT playerID, CAST(SUM(H) AS FLOAT)/SUM(AB) AS career_avg\nFROM Batting\nGROUP BY playerID\nHAVING SUM(AB) &gt;= 100\nORDER BY career_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_career = pd.read_sql_query(query, con)\ndf_avg_career"
+    "objectID": "about.html#tools-libraries",
+    "href": "about.html#tools-libraries",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building"
   },
   {
-    "objectID": "ds250_final_baseball_project.html#question-task-3",
-    "href": "ds250_final_baseball_project.html#question-task-3",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "QUESTION – TASK 3",
-    "text": "QUESTION – TASK 3\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?\n\n\nShow the code\nquery = '''\nSELECT yearID, teamID, SUM(HR) AS total_HR\nFROM Batting\nWHERE teamID IN ('NYA', 'BOS')\nGROUP BY yearID, teamID\nORDER BY yearID, teamID;\n'''\ndf_hr = pd.read_sql_query(query, con)\ndf_hr\n\n\n\n\nShow the code\n# Visualization of Yankees vs. Red Sox Home Runs Over Time\nggplot(df_hr, aes(x='yearID', y='total_HR', color='teamID')) + \\\n    geom_line(size=1.2) + \\\n    ggtitle(\"Yankees vs. Red Sox: Total Home Runs by Year\") + \\\n    labs(x=\"Year\", y=\"Total Home Runs\", color=\"Team\") + \\\n    theme_minimal()\n\n\nBased on the graph, we observe fluctuations in home run totals over time for both teams. In recent years, the Yankees have consistently hit more home runs compared to the Red Sox, especially post-2010. This could indicate a shift in hitting strategy, roster strength, or ballpark influence."
+    "objectID": "about.html#soft-team-skills",
+    "href": "about.html#soft-team-skills",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Project Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)"
   },
   {
-    "objectID": "ds250_final_baseball_project.html#stretch-question-task-1",
-    "href": "ds250_final_baseball_project.html#stretch-question-task-1",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "STRETCH QUESTION – TASK 1",
-    "text": "STRETCH QUESTION – TASK 1\nAdvanced Salary Distribution by Position (with Case Statement):\n\n\nShow the code\nquery = '''\nWITH main_pos AS (\n  SELECT playerID, yearID, Pos, COUNT(*) AS games\n  FROM Fielding\n  GROUP BY playerID, yearID, Pos\n),\nmost_played AS (\n  SELECT playerID, yearID, Pos\n  FROM (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY playerID, yearID ORDER BY games DESC) AS rn\n    FROM main_pos\n  )\n  WHERE rn = 1\n)\nSELECT mp.Pos AS position,\n       ROUND(AVG(s.salary), 2) AS average_salary,\n       COUNT(DISTINCT s.playerID) AS total_players,\n       MAX(s.salary) AS highest_salary,\n       CASE\n         WHEN AVG(s.salary) &gt; 3000000 THEN 'High Salary'\n         WHEN AVG(s.salary) BETWEEN 2000000 AND 3000000 THEN 'Medium Salary'\n         ELSE 'Low Salary'\n       END AS salary_category\nFROM most_played mp\nJOIN Salaries s ON mp.playerID = s.playerID AND mp.yearID = s.yearID\nGROUP BY mp.Pos\nORDER BY average_salary DESC;\n'''\ndf_salary_pos = pd.read_sql_query(query, con)\ndf_salary_pos"
+    "objectID": "about.html#experience-with",
+    "href": "about.html#experience-with",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
   },
   {
-    "objectID": "ds250_final_baseball_project.html#stretch-question-task-2",
-    "href": "ds250_final_baseball_project.html#stretch-question-task-2",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "STRETCH QUESTION – TASK 2",
-    "text": "STRETCH QUESTION – TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n\n\nShow the code\nquery = '''\nWITH player_years AS (\n  SELECT playerID, MIN(yearID) AS start_year, MAX(yearID) AS end_year, COUNT(DISTINCT yearID) AS career_length\n  FROM Batting\n  GROUP BY playerID\n  HAVING SUM(G) &gt;= 10\n)\nSELECT py.playerID, p.nameFirst, p.nameLast, py.career_length\nFROM player_years py\nJOIN people p ON py.playerID = p.playerID\nORDER BY py.career_length DESC\nLIMIT 10;\n'''\ndf_longevity = pd.read_sql_query(query, con)\ndf_longevity"
+    "objectID": "baseball-relationships-study.html",
+    "href": "baseball-relationships-study.html",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#project-goals",
+    "href": "baseball-relationships-study.html#project-goals",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Generate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#key-tasks",
+    "href": "baseball-relationships-study.html#key-tasks",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Queried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#tools-technologies",
+    "href": "baseball-relationships-study.html#tools-technologies",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "SQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#final-report",
+    "href": "baseball-relationships-study.html#final-report",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
+  },
+  {
+    "objectID": "baseball-relationships-study.html#report-files",
+    "href": "baseball-relationships-study.html#report-files",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+  },
+  {
+    "objectID": "housing_case_study.html",
+    "href": "housing_case_study.html",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Objective\nThe goal of this case study was to develop a model that could accurately predict home prices using machine learning techniques. We aimed to explore which features most influence home values and how machine learning could improve prediction performance overall.\n\n\nData & Feature Engineering\nWe used a housing dataset containing location coordinates, condition scores, and other physical characteristics. We also engineered additional features to enrich the model’s understanding:\n\nLuxury Score: Captured quality and size\nAge: Computed from the build year\nView Score: Captured aesthetic value\nLatitude and Longitude: Used as geographic proxies for proximity to amenities\n\nThese features were designed to bring out hidden patterns in the data.\n\n\nModel Approach\nWe used a blended ensemble of two models:\n\nXGBoost Regressor\nRandom Forest Regressor\n\nEach model was tuned to prevent overfitting and ensure stable predictions. The final output was an average of both model predictions, followed by minor adjustments to better handle outliers.\n\n\nResults\nOur final model achieved:\n\nMedian Error: $33,842.78\nMean Error: $58,787.90\n% Median Error: 7.62%\nRoot Mean Squared Error (RMSE): $109,329.21\nR² Score: 0.9108\n\nThese results indicate the model captured over 91% of the variance in housing prices.\n\n\nKey Insights\n\nLocation matters: Latitude and longitude proved highly predictive.\nFeature engineering added value: The luxury score and view variables helped detect price drivers not apparent in raw data.\nBlending models improved accuracy: Combining XGBoost and Random Forest reduced extreme error cases.\n\n\n\nLimitations\n\nThe dataset lacked some key external data, such as:\n\nLocal income levels\nSchool rankings\n\nRare luxury properties were outliers and more difficult to model\n\n\n\nVisualizations\n\n\nFigure 1. Predicted vs Actual Housing Prices\n\nFigure 2. Most Influential Features\n\n\n\nConclusion\nOur ensemble model predicted home prices with high accuracy and generalizability. Strategic feature engineering and model blending were key to performance. This framework offers a strong foundation for future refinement, especially with the addition of external contextual data.\n\n\nSupplementary Materials\n\nExecutive Summary (PDF)\nCase Study Introduction (PDF)\nDiscussion Questions (PDF)\nRaw Housing Data (CSV)\nModel Predictions (CSV)\n\n\n\nView our full Colab Notebook: Housing Price Prediction Notebook"
   },
   {
     "objectID": "pawesome-database-enhancement.html",

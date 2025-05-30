@@ -4,20 +4,29 @@ title: "Projects"
 
 # 🛠️ My Projects
 
+## 🏡 Housing Price Prediction — Coming Soon
+
+Unlocking the mystery of what makes homes expensive (besides the granite countertops).
+
+- 🔧 **Tools**: Python, Jupyter, Seaborn, XGBoost, Random Forest
+- 🎯 **Goal**: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude
+- 📊 **Outcome**: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance
+- 📄 [Read the full report](housing_case_study.qmd)
+
 ## 🐶 Pawesome Pet Services Database Redesign
 - **Tools:** MySQL Workbench, ERD modeling  
 - **Goal:** Normalize and restructure the schema to better manage pet services and appointments  
 - [View the full write-up](pawesome-database-enhancement.qmd)
 
+## ⚾ Baseball Data Relationships 
+- **Tools:** SQL, Lahman DB, Lets-Plot, Quarto, Python  
+- **Goal:** Explore batting averages, salaries, and team comparisons using SQL queries and data visualization  
+- [View the full write-up](baseball-relationships-study.qmd)
+
 ## 🧾 Grocery Receipt Generator (Python GUI)
 - **Tools:** Python, tkinter, CSV I/O  
 - **Goal:** Build an interactive receipt system with discounts and file-driven checkout  
 - [View the full write-up](receipt-generator-app.qmd)
-
-## >> Housing Prices -- Coming Soon
-- **Tools**: Python, Jupyter, Seaborn
-- **Goal**: Explored correlations between housing prices against various features with machine learning
-- [See full report](www.wilkinjones.com)
 
 ## 🦠 Tuberculosis Case Study
 - **Tools:** Python, MySQL, Tableau  
@@ -34,7 +43,3 @@ title: "Projects"
 - **Goal:** Determine how paper weight and design interact to affect flight performance  
 - [View the full write-up](airplane-anova-study.qmd)
 
-## ⚾ Baseball Data Relationships 
-- **Tools:** SQL, Lahman DB, Lets-Plot  
-- **Goal:** Explore batting averages, salaries, and team comparisons using SQL queries and data visualization  
-- [View the full write-up](baseball-relationships-study.qmd)

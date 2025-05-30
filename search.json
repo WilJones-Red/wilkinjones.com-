@@ -417,7 +417,7 @@
     "href": "tb-insights.html",
     "title": "Tuberculosis Insights",
     "section": "",
-    "text": "This Tableau dashboard explores trends in tuberculosis (TB) cases globally using World Health Organization data. I analyzed key dimensions like country, age group, and gender to identify at-risk populations.\n\n\n\nIndia and China account for the majority of TB cases worldwide\nThe 25–34 age group consistently had the highest number of cases\nMales reported significantly more cases than females across all years\n\n\n\n\n\nPython (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards\n\n\n\n\n👉 Click to view the Tableau dashboard\n\n\n\n\nPresentation Slides (PDF)\n\n\n\n\n\nDownload Slides (PDF)"
+    "text": "This Tableau dashboard explores trends in tuberculosis (TB) cases globally using World Health Organization data. I analyzed key dimensions like country, age group, and gender to identify at-risk populations.\n\n\n\nIndia and China account for the majority of TB cases worldwide\nThe 25–34 age group consistently had the highest number of cases\nMales reported significantly more cases than females across all years\n\n\n\n\n\nPython (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards\n\n\n\n\n\nPresentation Slides (PDF)\n\n\n\n\n\nDownload Slides (PDF)"
   },
   {
     "objectID": "tb-insights.html#key-findings",
@@ -432,13 +432,6 @@
     "title": "Tuberculosis Insights",
     "section": "",
     "text": "Python (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards"
-  },
-  {
-    "objectID": "tb-insights.html#interactive-dashboard",
-    "href": "tb-insights.html#interactive-dashboard",
-    "title": "Tuberculosis Insights",
-    "section": "",
-    "text": "👉 Click to view the Tableau dashboard"
   },
   {
     "objectID": "tb-insights.html#downloadables",

@@ -39,5 +39,5 @@ This simple automation could greatly reduce variability and tighten the control 
 
 ## 📥 Project Materials
 
-- [Project Plan (PDF)](project 2 plan.pdf)
-- [Final Report (PDF)](Project 2  (Completed).pdf)
+- [Project Plan (PDF)](Assets/project 2 plan.pdf)
+- [Final Report (PDF)](Assets/Project 2  (Completed).pdf)

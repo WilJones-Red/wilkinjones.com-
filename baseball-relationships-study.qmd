@@ -43,6 +43,6 @@ This project showcases the power of structured queries and visualization in deli
 
 ## 📥 Report Files
 
-- [Download Full Report (HTML)](ds250_final_baseball_project.html)
-- [View Project Documentation (PDF)](Project 2_ Finding Relationships in Baseball – DS 250.pdf)
+- [Download Full Report (HTML)](Assets/ds250_final_baseball_project.html)
+- [View Project Documentation (PDF)](Assets/Project 2_ Finding Relationships in Baseball – DS 250.pdf)
 - [View Quarto Source File](ds250_final_baseball_project.qmd)

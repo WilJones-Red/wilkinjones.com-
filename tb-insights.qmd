@@ -20,13 +20,9 @@ This Tableau dashboard explores trends in tuberculosis (TB) cases globally using
 - **MySQL** – for structuring and storing cleaned data
 - **Tableau** – for building interactive dashboards
 
-## 🌐 Interactive Dashboard
-
-👉 [Click to view the Tableau dashboard](https://public.tableau.com/app/profile/YOUR_USERNAME/viz/TB_Dashboard)
-
 ## 📥 Downloadables
 
-- [Presentation Slides (PDF)](tb-insights.pdf)
+- [Presentation Slides (PDF)](Assets/tb-insights.pdf)
 
 ## 📥 Case Study Deck
 

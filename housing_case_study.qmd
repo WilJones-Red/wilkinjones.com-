@@ -4,10 +4,7 @@ author: "Wil Jones, Savanna Whittaker, Mahonri Reynolds, Teghearnan Stevens, Kal
 date: "2025-05-30"
 format:
   html:
-    theme: cosmo
     toc: true
-    toc-depth: 2
-    code-fold: true
 ---
 
 # Housing Price Prediction Case Study
@@ -64,11 +61,11 @@ The combination of models and domain-based feature engineering led to strong per
 *Figure 2. Most Influential Features*
 
 ## 📥 Supplementary Materials
-- [Executive Summary (PDF)](CSE%20450%20ExecutiveSummary.pdf)
-- [Case Study Introduction (PDF)](Case%20Study%20Introduction.pdf)
-- [Discussion Questions (PDF)](Case%20Study%20Discussion%20Questions.pdf)
-- [Raw Housing Data (CSV)](housing.csv)
-- [Model Predictions (CSV)](team1-module3-predictions.csv)
+- [Executive Summary (PDF)](Assets/CSE%20450%20ExecutiveSummary.pdf)
+- [Case Study Introduction (PDF)](Assets/Case%20Study%20Introduction.pdf)
+- [Discussion Questions (PDF)](Assets/Case%20Study%20Discussion%20Questions.pdf)
+- [Raw Housing Data (CSV)](Assets/housing.csv)
+- [Model Predictions (CSV)](Assets/team1-module3-predictions.csv)
 
 ---
 

@@ -44,5 +44,5 @@ The experiment confirmed that the effectiveness of a plane design **depends on t
 
 ## 📥 Supporting Files
 
-- [Experiment Plan (PDF)](project 5 plan.pdf)
-- [ANOVA Summary (PDF)](5.pdf)
+- [Experiment Plan (PDF)](Assets/project 5 plan.pdf)
+- [ANOVA Summary (PDF)](Assets/5.pdf)

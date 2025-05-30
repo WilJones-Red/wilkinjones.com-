@@ -72,7 +72,7 @@ These exercises confirmed that the schema was functioning correctly and provided
 
 ## 📥 Related Files
 
-- [Assignment PDF](Week 2 Assignment_ Enhancing the Pawesome Pet Services Database.pdf)
-- [Filtering and Conditions Example](Week 3 Assignment Filtering Result Sets in SQL (1).sql)
-- [Advanced Joins](Week4Joins (1).sql)
-- [Set Operators](Week5 (1).sql)
+- [Assignment PDF](Assets/Week 2 Assignment_ Enhancing the Pawesome Pet Services Database.pdf)
+- [Filtering and Conditions Example](Assets/Week 3 Assignment Filtering Result Sets in SQL (1).sql)
+- [Advanced Joins](Assets/Week4Joins (1).sql)
+- [Set Operators](Assets/Week5 (1).sql)

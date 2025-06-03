@@ -64,5 +64,5 @@ The model shows strong predictive power and generalization, particularly post-CO
 
 ---
 
-- 🔗 Final model and predictions are saved as `bike_model_covid_j4.keras` and `bike_scaler_covid_j4.pkl`.
+- 🔗 Final model and predictions are saved as `bike_model_covid.keras` and `bike_scaler_covid.pkl`.
 - 📓 You can run the model through my notebook here - [Notebook (Google Colab)](https://colab.research.google.com/drive/10LpgoD5ORn2l2Zi1SVgz57Wam8JxsV35?usp=sharing)

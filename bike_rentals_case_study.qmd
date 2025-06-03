@@ -43,14 +43,17 @@ The model shows strong predictive power and generalization, particularly post-CO
 
 ## 📈 Visuals
 
+![](bike_case_study_bundle/Loss_History.png){width=100%}  
+*Figure 1. Training and Validation Loss Over A Period Of 1000 Epochs (1 Epoch = 100 Iterations), No Signs of Overfitting*
+
 ![](bike_case_study_bundle/Actual%20vs%20Predicted%20Over%20Time.png){width=100%}  
-*Figure 1. Actual vs Predicted Rentals Over Time*
+*Figure 2. Actual vs Predicted Rentals Over Time*
 
 ![](bike_case_study_bundle/Prediction%20Error%20Over%20Time.png){width=100%}  
-*Figure 2. Absolute Prediction Error Over Time*
+*Figure 3. Absolute Prediction Error Over Time*
 
 ![](bike_case_study_bundle/Residual%20Renting%20Predictions.png){width=80%}  
-*Figure 3. Predicted vs Actual Rentals (Residual Plot)*
+*Figure 4. Predicted vs Actual Rentals (Residual Plot)*
 
 ## 📥 Supplementary Materials
 - [Case Study Introduction (PDF)](bike_case_study_bundle/Case%20Study%20Introduction.pdf)

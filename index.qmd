@@ -1,23 +1,24 @@
----
-title: "Welcome"
+# Welcome
+
+> “The ultimate measure of a man is not where he stands in moments of convenience and comfort, but where he stands at times of challenge and controversy.”  
+> — *Martin Luther King, Jr.*
+
 ---
 
-<div class="quote-block">
-  “The ultimate measure of a man is not where he stands in moments of convenience and comfort, 
-  but where he stands at times of challenge and controversy.”<br> — Martin Luther King, Jr.
+<div class="profile-card" style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 12px; display: flex; align-items: center; gap: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+
+<img src="Assets/profile.png" class="profile-img" alt="Wilkin Jones" width="130" height="130">
+
+<div>
+  <h3 style="margin-top: 0;">Hi, I’m Wilkin Jones</h3>
+  <p>I’m a data science student at BYU–Idaho looking for internship opportunities.  
+  I enjoy working with Python, SQL, and building insights from messy data.</p>
+
+  <ul>
+    <li><strong>Location:</strong> Idaho Falls, ID</li>
+    <li><strong>Education:</strong> Brigham Young University - Idaho</li>
+    <li><strong>Seeking internships in:</strong> Data Science, Data Visualization, Data Management, or Data Governance</li>
+  </ul>
 </div>
 
-<div class="profile-container">
-  <img src="Assets/profile.png" alt="Wilkin Jones profile picture">
-  <div class="profile-text">
-
-### Hi, I’m Wilkin Jones
-
-I’m a data science student at BYU–Idaho looking for internship opportunities. I enjoy working with Python, SQL, and building insights from messy data.
-
-- **Location:** Idaho Falls, ID  
-- **Education:** Brigham Young University - Idaho  
-- **Seeking internships in:** Data Science, Data Visualization, Data Management, or Data Governance
-
-  </div>
 </div>

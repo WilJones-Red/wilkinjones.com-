@@ -10,7 +10,7 @@ format:
 # Bike Rentals Prediction Case Study
 
 ## 🚲 Project Summary
-This project aimed to predict hourly bike rental demand using deep learning. We engineered temporal and contextual features, such as COVID-era flags and holiday indicators, to capture patterns in bike usage from 2011 through 2024.
+This project aimed to predict hourly bike rental demand using deep learning. I engineered temporal and contextual features, such as COVID-era flags and holiday indicators, to capture patterns in bike usage from 2011 through 2024.
 
 ## 🛠️ Tools & Technologies
 - **Python** for scripting and modeling
@@ -39,7 +39,7 @@ Included dropout layers and used training history to assess stability between tr
 - **MSE**: 7010.54
 - **R² Score**: 0.94 (94% variance explained)
 
-The model shows strong predictive power and generalization, particularly post-COVID where user demand rebounded.
+My model predicted bike rentals with high accuracy, correctly capturing 94% of the trends in the data. On average, its predictions were within about 55 rentals of the actual number. It performed especially well in the period after COVID, when demand patterns began to stabilize and rise again.
 
 ## 📈 Visuals
 

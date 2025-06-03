@@ -1,7 +1,9 @@
 # Welcome
 
-> “The ultimate measure of a man is not where he stands in moments of convenience and comfort, but where he stands at times of challenge and controversy.”  
-> — *Martin Luther King, Jr.*
+<div class="fancy-quote">
+  “The ultimate measure of a man is not where he stands in moments of convenience and comfort, but where he stands at times of challenge and controversy.”
+  <cite>— Martin Luther King, Jr.</cite>
+</div>
 
 ---
 

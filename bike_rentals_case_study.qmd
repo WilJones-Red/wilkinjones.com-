@@ -1,0 +1,65 @@
+---
+title: "Bike Rentals Prediction Case Study"
+author: "Wil Jones"
+date: "2025-06-03"
+format:
+  html:
+    toc: true
+---
+
+# Bike Rentals Prediction Case Study
+
+## 🚲 Project Summary
+This project aimed to predict hourly bike rental demand using deep learning. We engineered temporal and contextual features, such as COVID-era flags and holiday indicators, to capture patterns in bike usage from 2011 through 2024.
+
+## 🛠️ Tools & Technologies
+- **Python** for scripting and modeling
+- **TensorFlow / Keras** for building deep learning models
+- **Pandas & NumPy** for data cleaning and transformation
+- **Scikit-learn** for data preprocessing and evaluation metrics
+- **Matplotlib** for plotting results
+- **Quarto** for documentation
+
+## 🧪 Key Techniques Used
+
+✅ **Feature Engineering**  
+Created contextual features such as COVID-phase indicators, time-based encodings (year, month, day of year), and workday splits.
+
+✅ **Neural Network Training**  
+Built and trained a 3-layer deep neural network to learn rental behavior patterns.
+
+✅ **Model Evaluation**  
+Used metrics like MAE, MSE, and R² to evaluate performance. Validated visually with residual and error plots.
+
+✅ **Overfitting Mitigation**  
+Included dropout layers and used training history to assess stability between training and validation loss.
+
+## 📊 Results Summary
+- **MAE**: 63.58
+- **MSE**: 8237.71
+- **R² Score**: 0.94 (94% variance explained)
+
+The model shows strong predictive power and generalization, particularly post-COVID where user demand rebounded.
+
+## 📈 Visuals
+
+![](bike_case_study_bundle/Actual%20vs%20Predicted%20Over%20Time.png){width=100%}  
+*Figure 1. Actual vs Predicted Rentals Over Time*
+
+![](bike_case_study_bundle/Prediction%20Error%20Over%20Time.png){width=100%}  
+*Figure 2. Absolute Prediction Error Over Time*
+
+![](bike_case_study_bundle/Residual%20Renting%20Predictions.png){width=80%}  
+*Figure 3. Predicted vs Actual Rentals (Residual Plot)*
+
+## 📥 Supplementary Materials
+- [Case Study Introduction (PDF)](bike_case_study_bundle/Case%20Study%20Introduction.pdf)
+- [Stakeholder Discussion (PDF)](bike_case_study_bundle/Stakeholder%20Discussion%20Summary.docx)
+- [Project Requirements (PDF)](bike_case_study_bundle/Project%20Requirements.pdf)
+- [Training Dataset (CSV)](bike_case_study_bundle/bikes.csv)
+- [Holdout Data (CSV)](bike_case_study_bundle/bikes_december.csv)
+
+---
+
+> 🔗 Final model and predictions are saved as `bike_model_covid_j4.keras` and `bike_scaler_covid_j4.pkl`.
+> 📓 You can run the model through my notebook here - [Notebook (Google Colab)](https://colab.research.google.com/drive/10LpgoD5ORn2l2Zi1SVgz57Wam8JxsV35?usp=sharing)

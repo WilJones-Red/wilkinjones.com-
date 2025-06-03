@@ -53,7 +53,14 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Unlocking the mystery of what makes homes expensive (besides the granite countertops).\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\nOutcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\nRead the full report\n\n\n\n\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
+    "text": "Forecasting pedal power with deep learning and pandemic-aware features.\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals using time-based and COVID-era features\nOutcome: Achieved 94% R² accuracy with a dropout-regularized neural net - Read the full report\n\n\n\nUnlocking the mystery of what makes homes expensive (besides the granite countertops).\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\nOutcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\nRead the full report\n\n\n\n\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
+  },
+  {
+    "objectID": "projects.html#bike-rentals-prediction",
+    "href": "projects.html#bike-rentals-prediction",
+    "title": "Projects",
+    "section": "",
+    "text": "Forecasting pedal power with deep learning and pandemic-aware features.\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals using time-based and COVID-era features\nOutcome: Achieved 94% R² accuracy with a dropout-regularized neural net - Read the full report"
   },
   {
     "objectID": "projects.html#housing-price-prediction",
@@ -154,6 +161,83 @@
     "text": "STRETCH QUESTION – TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n\n\nShow the code\nquery = '''\nWITH player_years AS (\n  SELECT playerID, MIN(yearID) AS start_year, MAX(yearID) AS end_year, COUNT(DISTINCT yearID) AS career_length\n  FROM Batting\n  GROUP BY playerID\n  HAVING SUM(G) &gt;= 10\n)\nSELECT py.playerID, p.nameFirst, p.nameLast, py.career_length\nFROM player_years py\nJOIN people p ON py.playerID = p.playerID\nORDER BY py.career_length DESC\nLIMIT 10;\n'''\ndf_longevity = pd.read_sql_query(query, con)\ndf_longevity"
   },
   {
+    "objectID": "baseball-relationships-study.html",
+    "href": "baseball-relationships-study.html",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#project-goals",
+    "href": "baseball-relationships-study.html#project-goals",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Generate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#key-tasks",
+    "href": "baseball-relationships-study.html#key-tasks",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Queried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#tools-technologies",
+    "href": "baseball-relationships-study.html#tools-technologies",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "SQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#final-report",
+    "href": "baseball-relationships-study.html#final-report",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
+  },
+  {
+    "objectID": "baseball-relationships-study.html#report-files",
+    "href": "baseball-relationships-study.html#report-files",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "I’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\n\n\n\n\n\n\nPython\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting\n\n\n\n\n\n\n\n\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building\n\n\n\n\n\n\n\nProject Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)\n\n\n\n\n\nSQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
+  },
+  {
+    "objectID": "about.html#skills-overview",
+    "href": "about.html#skills-overview",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Python\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting"
+  },
+  {
+    "objectID": "about.html#tools-libraries",
+    "href": "about.html#tools-libraries",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building"
+  },
+  {
+    "objectID": "about.html#soft-team-skills",
+    "href": "about.html#soft-team-skills",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "Project Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)"
+  },
+  {
+    "objectID": "about.html#experience-with",
+    "href": "about.html#experience-with",
+    "title": "🙋‍♂️ About Wilkin",
+    "section": "",
+    "text": "SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
+  },
+  {
     "objectID": "airplane-anova-study.html",
     "href": "airplane-anova-study.html",
     "title": "Paper Airplane ANOVA Study",
@@ -203,81 +287,53 @@
     "text": "Experiment Plan (PDF)\nANOVA Summary (PDF)"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "🙋‍♂️ About Wilkin",
+    "objectID": "bike_rentals_case_study.html",
+    "href": "bike_rentals_case_study.html",
+    "title": "Bike Rentals Prediction Case Study",
     "section": "",
-    "text": "I’m passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.\nIn my free time, I love hiking, gaming, and spending time with my family.\n\n\n\n\n\n\nPython\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting\n\n\n\n\n\n\n\n\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building\n\n\n\n\n\n\n\nProject Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)\n\n\n\n\n\nSQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
+    "text": "This project aimed to predict hourly bike rental demand using deep learning. We engineered temporal and contextual features, such as COVID-era flags and holiday indicators, to capture patterns in bike usage from 2011 through 2024.\n\n\n\n\nPython for scripting and modeling\nTensorFlow / Keras for building deep learning models\nPandas & NumPy for data cleaning and transformation\nScikit-learn for data preprocessing and evaluation metrics\nMatplotlib for plotting results\nQuarto for documentation\n\n\n\n\n✅ Feature Engineering\nCreated contextual features such as COVID-phase indicators, time-based encodings (year, month, day of year), and workday splits.\n✅ Neural Network Training\nBuilt and trained a 3-layer deep neural network to learn rental behavior patterns.\n✅ Model Evaluation\nUsed metrics like MAE, MSE, and R² to evaluate performance. Validated visually with residual and error plots.\n✅ Overfitting Mitigation\nIncluded dropout layers and used training history to assess stability between training and validation loss.\n\n\n\n\nMAE: 63.58\nMSE: 8237.71\nR² Score: 0.94 (94% variance explained)\n\nThe model shows strong predictive power and generalization, particularly post-COVID where user demand rebounded.\n\n\n\n\nFigure 1. Actual vs Predicted Rentals Over Time\n\nFigure 2. Absolute Prediction Error Over Time\n\nFigure 3. Predicted vs Actual Rentals (Residual Plot)\n\n\n\n\nCase Study Introduction (PDF)\nStakeholder Discussion (PDF)\nProject Requirements (PDF)\nTraining Dataset (CSV)\nHoldout Data (CSV)\n\n\n\n🔗 Final model and predictions are saved as bike_model_covid_j4.keras and bike_scaler_covid_j4.pkl. 📓 You can run the model through my notebook here - Notebook (Google Colab)"
   },
   {
-    "objectID": "about.html#skills-overview",
-    "href": "about.html#skills-overview",
-    "title": "🙋‍♂️ About Wilkin",
+    "objectID": "bike_rentals_case_study.html#project-summary",
+    "href": "bike_rentals_case_study.html#project-summary",
+    "title": "Bike Rentals Prediction Case Study",
     "section": "",
-    "text": "Python\n\nSQL\n\n\n\n\n\nMachine Learning\n\nTime Series Forecasting"
+    "text": "This project aimed to predict hourly bike rental demand using deep learning. We engineered temporal and contextual features, such as COVID-era flags and holiday indicators, to capture patterns in bike usage from 2011 through 2024."
   },
   {
-    "objectID": "about.html#tools-libraries",
-    "href": "about.html#tools-libraries",
-    "title": "🙋‍♂️ About Wilkin",
+    "objectID": "bike_rentals_case_study.html#tools-technologies",
+    "href": "bike_rentals_case_study.html#tools-technologies",
+    "title": "Bike Rentals Prediction Case Study",
     "section": "",
-    "text": "Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\n\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\n\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\n\n\nGit, GitHub, VS Code, Markdown\n\n\n\n\n\nMySQL, SQLite\n\nERD Design, Data Cleaning & Joins, Set Operators\n\n\n\n\n\nHTML/CSS (Quarto websites)\n\nGitHub Pages, Portfolio Building"
+    "text": "Python for scripting and modeling\nTensorFlow / Keras for building deep learning models\nPandas & NumPy for data cleaning and transformation\nScikit-learn for data preprocessing and evaluation metrics\nMatplotlib for plotting results\nQuarto for documentation"
   },
   {
-    "objectID": "about.html#soft-team-skills",
-    "href": "about.html#soft-team-skills",
-    "title": "🙋‍♂️ About Wilkin",
+    "objectID": "bike_rentals_case_study.html#key-techniques-used",
+    "href": "bike_rentals_case_study.html#key-techniques-used",
+    "title": "Bike Rentals Prediction Case Study",
     "section": "",
-    "text": "Project Management, Collaboration\n\nCommunication (especially on team-based capstone projects)\n\nLeadership (Digital Communications Supervisor at BYU–Idaho)"
+    "text": "✅ Feature Engineering\nCreated contextual features such as COVID-phase indicators, time-based encodings (year, month, day of year), and workday splits.\n✅ Neural Network Training\nBuilt and trained a 3-layer deep neural network to learn rental behavior patterns.\n✅ Model Evaluation\nUsed metrics like MAE, MSE, and R² to evaluate performance. Validated visually with residual and error plots.\n✅ Overfitting Mitigation\nIncluded dropout layers and used training history to assess stability between training and validation loss."
   },
   {
-    "objectID": "about.html#experience-with",
-    "href": "about.html#experience-with",
-    "title": "🙋‍♂️ About Wilkin",
+    "objectID": "bike_rentals_case_study.html#results-summary",
+    "href": "bike_rentals_case_study.html#results-summary",
+    "title": "Bike Rentals Prediction Case Study",
     "section": "",
-    "text": "SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.\nWant to see my work in action? Check out the Projects page to dive into full write-ups."
+    "text": "MAE: 63.58\nMSE: 8237.71\nR² Score: 0.94 (94% variance explained)\n\nThe model shows strong predictive power and generalization, particularly post-COVID where user demand rebounded."
   },
   {
-    "objectID": "baseball-relationships-study.html",
-    "href": "baseball-relationships-study.html",
-    "title": "Baseball Relationships Analysis",
+    "objectID": "bike_rentals_case_study.html#visuals",
+    "href": "bike_rentals_case_study.html#visuals",
+    "title": "Bike Rentals Prediction Case Study",
     "section": "",
-    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+    "text": "Figure 1. Actual vs Predicted Rentals Over Time\n\nFigure 2. Absolute Prediction Error Over Time\n\nFigure 3. Predicted vs Actual Rentals (Residual Plot)"
   },
   {
-    "objectID": "baseball-relationships-study.html#project-goals",
-    "href": "baseball-relationships-study.html#project-goals",
-    "title": "Baseball Relationships Analysis",
+    "objectID": "bike_rentals_case_study.html#supplementary-materials",
+    "href": "bike_rentals_case_study.html#supplementary-materials",
+    "title": "Bike Rentals Prediction Case Study",
     "section": "",
-    "text": "Generate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic"
-  },
-  {
-    "objectID": "baseball-relationships-study.html#key-tasks",
-    "href": "baseball-relationships-study.html#key-tasks",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "Queried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts"
-  },
-  {
-    "objectID": "baseball-relationships-study.html#tools-technologies",
-    "href": "baseball-relationships-study.html#tools-technologies",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "SQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report"
-  },
-  {
-    "objectID": "baseball-relationships-study.html#final-report",
-    "href": "baseball-relationships-study.html#final-report",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
-  },
-  {
-    "objectID": "baseball-relationships-study.html#report-files",
-    "href": "baseball-relationships-study.html#report-files",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+    "text": "Case Study Introduction (PDF)\nStakeholder Discussion (PDF)\nProject Requirements (PDF)\nTraining Dataset (CSV)\nHoldout Data (CSV)\n\n\n\n🔗 Final model and predictions are saved as bike_model_covid_j4.keras and bike_scaler_covid_j4.pkl. 📓 You can run the model through my notebook here - Notebook (Google Colab)"
   },
   {
     "objectID": "housing_case_study.html",

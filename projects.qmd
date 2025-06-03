@@ -4,6 +4,18 @@ title: "Projects"
 
 # 🛠️ My Projects
 
+## 🚲 Bike Rentals Prediction
+
+Forecasting pedal power with deep learning and pandemic-aware features.
+
+**Tools:** Python, Keras, Scikit-learn, Pandas, Matplotlib
+
+**Goal:** Predict hourly bike rentals using time-based and COVID-era features
+
+**Outcome:** Achieved 94% R² accuracy with a dropout-regularized neural net
+- [Read the full report](bike_rentals_case_study.qmd)
+
+
 ## 🏡 Housing Price Prediction
 
 Unlocking the mystery of what makes homes expensive (besides the granite countertops).

@@ -8,11 +8,9 @@ title: "Projects"
 
 Forecasting pedal power with deep learning and pandemic-aware features.
 
-**Tools:** Python, Keras, Scikit-learn, Pandas, Matplotlib
-
-**Goal:** Predict hourly bike rentals using time-based and COVID-era features
-
-**Outcome:** Achieved 94% R² accuracy with a dropout-regularized neural net
+- **Tools:** Python, Keras, Scikit-learn, Pandas, Matplotlib
+- **Goal:** Predict hourly bike rentals using time-based and COVID-era features
+- **Outcome:** Achieved 94% R² accuracy with a dropout-regularized neural net
 - [Read the full report](bike_rentals_case_study.qmd)
 
 

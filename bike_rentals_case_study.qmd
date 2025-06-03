@@ -35,8 +35,8 @@ Used metrics like MAE, MSE, and R² to evaluate performance. Validated visually 
 Included dropout layers and used training history to assess stability between training and validation loss.
 
 ## 📊 Results Summary
-- **MAE**: 63.58
-- **MSE**: 8237.71
+- **MAE**: 54.97
+- **MSE**: 7010.54
 - **R² Score**: 0.94 (94% variance explained)
 
 The model shows strong predictive power and generalization, particularly post-COVID where user demand rebounded.

@@ -5,8 +5,6 @@ format:
     theme: flatly
     css: styles.css
     toc: false
-execute:
-  enabled: false
 ---
 <div class="fancy-quote">
   “The ultimate measure of a man is not where he stands in moments of convenience and comfort, but where he stands at times of challenge and controversy.”

@@ -85,7 +85,7 @@ The model achieved a strong balance between generalization and accuracy, particu
 ## Visual Results
 
 ![](bike_case_study_bundle/Line Graph.png){width=100%}  
-*Figure 4. Actual vs. Predicted — Holdout Set*
+*Figure 4. Actual vs. Predicted — Holdout Set (November-December 2023)*
 
 ![](bike_case_study_bundle/Residual.png){width=100%}  
 *Figure 5. Residual Plot — Colored by Error Band*

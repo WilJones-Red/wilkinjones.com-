@@ -10,7 +10,7 @@ format:
 # Bike Rentals Prediction Case Study
 
 ## Project Summary
-This project aimed to predict hourly bike rental demand using deep learning techniques applied to time-series data spanning 2011 through 2024. Key objectives included capturing behavioral and seasonal patterns, leveraging cyclical feature transformations, and testing generalization via a forward-chaining holdout strategy. The true holdout period for testing was the final two months of the dataset: **November and December of 2023**.
+This project aimed to predict hourly bike rental demand using deep learning techniques applied to time-series data spanning 2011 through 2023. Key objectives included capturing behavioral and seasonal patterns, leveraging cyclical feature transformations, and testing generalization via a forward-chaining holdout strategy. The true holdout period for testing was the final two months of the dataset: **November and December of 2023**.
 
 ## Tools & Technologies
 - **Python** for scripting and modeling  

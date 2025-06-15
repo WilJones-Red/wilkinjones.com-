@@ -9,94 +9,104 @@ format:
 
 # Bike Rentals Prediction Case Study
 
-## 🚲 Project Summary
-This project aimed to predict hourly bike rental demand using deep learning. I engineered temporal and contextual features, such as COVID-era flags and holiday indicators, to capture patterns in bike usage from 2011 through 2024.
+## Project Summary
+This project aimed to predict hourly bike rental demand using deep learning techniques applied to time-series data spanning 2011 through 2024. Key objectives included capturing behavioral and seasonal patterns, leveraging cyclical feature transformations, and testing generalization via a forward-chaining holdout strategy. The true holdout period for testing was the final two months of the dataset: **November and December of 2023**.
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 - **Python** for scripting and modeling  
-- **TensorFlow / Keras** for building deep learning models  
-- **Pandas & NumPy** for data cleaning and transformation  
-- **Scikit-learn** for data preprocessing and evaluation metrics  
-- **Matplotlib** for plotting results  
-- **Quarto** for documentation  
+- **TensorFlow / Keras** for deep learning model architecture and training  
+- **Pandas & NumPy** for data wrangling and numerical operations  
+- **Scikit-learn** for preprocessing pipelines and regression metrics  
+- **Matplotlib** for exploratory data visualizations  
+- **Quarto** for documentation and web rendering
 
-## 🧪 Key Techniques Used
+## Key Techniques Used
 
-✅ **Feature Engineering**  
-Created contextual features such as COVID-phase indicators, time-based encodings (year, month, day of year), and workday splits.
+### Feature Engineering
+- Created contextual and temporal encodings, including `covid_phase`, `holiday`, `is_weekend`, and cyclical encodings of `hour`, `month`, and `day_of_year` using sine and cosine transforms.
+- Dropped redundant variables to reduce multicollinearity and simplify the model's feature space.
 
-✅ **Neural Network Training**  
-Built and trained a 3-layer deep neural network to learn rental behavior patterns.
+### Neural Network Design & Training
+- Implemented a 3-layer feedforward neural network (Dense 128 → 64 → 16) with ReLU activations.
+- Incorporated dropout layers (0.1, 0.4, 0.4) and batch normalization to improve generalization and prevent overfitting.
+- Used ExponentialDecay for learning rate adjustment, along with early stopping and model checkpointing.
 
-✅ **Model Evaluation**  
-Used metrics like MAE, MSE, and R² to evaluate performance. Validated visually with residual and error plots.
+### Evaluation Protocol
+- Assessed performance using MAE, RMSE, Median AE, and R².
+- Stratified evaluation by pre-/post-December 20th periods to observe predictive drift near holiday anomalies.
+- Supplemented quantitative metrics with residual plots and error band visualizations.
 
-✅ **Overfitting Mitigation**  
-Included dropout layers and used training history to assess stability between training and validation loss.
+### Data Split Strategy
+- Training included all observations prior to October 31.
+- **November and December of 2023** were strictly withheld as a realistic holdout set.
+- This forward validation strategy simulates production deployment in time-sensitive forecasting scenarios.
 
-## 🔍 Key Insights
+## Key Insights
 
-### Redundant Feature Removal
+### Redundant Feature Elimination
 
 ![](bike_case_study_bundle/Correlation heatmap.png){width=100%}  
-*Figure X. Correlation Heatmap Showing Perfect Correlation Between `temp_c` and `feels_like_c`*
+*Figure 1. Correlation Heatmap — Dropping `feels_like_c` due to perfect correlation with `temp_c`*
 
-Upon analyzing the correlation heatmap, I noticed that `temp_feel` (feels-like temperature) was **perfectly correlated** with `temperature`. Not only were they statistically redundant, but they also had nearly identical effects on bike rental volume. To reduce noise and simplify the feature space, I chose to remove `temp_feel` entirely from the model.
+A heatmap of Pearson correlations revealed that `feels_like_c` provided no additional signal beyond `temp_c`, exhibiting a coefficient of 1.00. The variable was removed to streamline the model and mitigate overfitting risk from redundant predictors.
 
-### Cyclical Encoding Was Crucial
+### Importance of Cyclical Encoding
+Time-based features exhibit clear periodicity (e.g., hourly rush patterns, seasonal transitions). Using sine and cosine encodings allowed the model to preserve cyclical continuity (e.g., 23:00 to 00:00) and improved its ability to generalize temporal transitions.
 
-Bike rentals follow strong daily and seasonal cycles — rush hours, weekdays vs. weekends, and summer vs. winter all affect usage. I used **sine and cosine encodings** for hour, month, and day-of-year to help the model recognize these patterns without being confused by time boundaries (like midnight or end of year).
+### Architecture Optimization
+The best-performing model consisted of three dense layers using ReLU activation. Dropout and batch normalization layers were added progressively to optimize the trade-off between learning capacity and regularization. The architecture was refined through a combination of manual tuning and validation loss tracking.
 
-### Model Architecture Tuning
+### Strategic Holdout Period
+Holdout data from **November and December 2023** allowed for rigorous post-training evaluation. Notably, prediction accuracy declined slightly after December 20 due to holiday-related behavior shifts not captured during training. This reinforces the need for adaptive retraining when encountering high-season anomalies.
 
-The final model used three dense layers (128 → 64 → 16) with **ReLU activations**, **batch normalization**, and **dropout** rates of 0.1, 0.4, and 0.4 respectively. This design helped prevent overfitting while capturing nonlinear patterns in time and weather-driven behavior.
-
-### Training Cutoff Strategy
-
-Only data before **October 31st** was used for training, with November–December left as a **true holdout set**. This mimics real-world forecasting and tests how well the model generalizes into unseen future demand.
-
-### Operational Opportunity: Cleaning Downtime
-
-An operational insight surfaced when analyzing post-COVID usage patterns by hour and day. As seen below, **bike rental activity is at its lowest between 2:00 AM and 5:00 AM**, especially on **Mondays**, which consistently show the lowest demand of the week.
-
-This suggests a practical opportunity for **bike maintenance or cleaning crews** to service bikes during this window with minimal disruption to riders.
+### Operational Insight: Maintenance Window
 
 ![](bike_case_study_bundle/Post%20Covid_Hourly.png){width=100%}  
-*Figure 5. Hourly Rentals Post-COVID: Ideal Cleaning Times (2–5AM)*
+*Figure 2. Post-COVID Hourly Rentals — Optimal Maintenance Hours Between 2:00–5:00 AM*
 
 ![](bike_case_study_bundle/Post-Covid.png){width=100%}  
-*Figure 6. Weekday Demand (Monday is consistently lowest)*
+*Figure 3. Weekday Demand Breakdown — Mondays Exhibit Consistently Lowest Usage*
 
-## 📊 Results Summary
+Behavioral trend analysis post-COVID highlighted minimal rider activity between 2:00 AM and 5:00 AM. This window, especially on Mondays, presents a valuable operational opportunity for off-peak maintenance and fleet rotation without interrupting user demand.
+
+## Results Summary
 - **RMSE:** 141.30  
 - **MAE:** 97.10  
-- **Median Absolute Error:** 64.59  
+- **Median AE:** 64.59  
 - **R² (Full):** 0.859  
-- **R² Before 21st:** 0.894  
-- **R² After 20th:** 0.780  
+- **R² Pre-21st:** 0.894  
+- **R² Post-20th:** 0.780  
 - **Predictions within 5%:** 10.38%  
 - **Predictions within 10%:** 21.09%  
 - **Predictions within 20%:** 42.25%  
 
-The model captured temporal trends and seasonal fluctuations with high accuracy. On average, predictions were within about 97 rentals of actual values. It was particularly strong before the holiday period, but showed some underestimation during late December peaks. It performed especially well in the period after COVID, when demand patterns began to stabilize and rise again.
+The model achieved a strong balance between generalization and accuracy, particularly on stable demand periods. Although accuracy dipped during holiday weeks, its core temporal structure allowed for reliable planning and infrastructure forecasting under normal conditions.
 
-## 📈 Visuals
+## Visual Results
 
 ![](bike_case_study_bundle/Line Graph.png){width=100%}  
-*Figure 7. Actual vs Predicted Rentals Over Full Timeline (Holdout)*
+*Figure 4. Actual vs. Predicted — Holdout Set*
 
 ![](bike_case_study_bundle/Residual.png){width=100%}  
-*Figure 8. Prediction Error Distribution (Colored by Error Band)*
+*Figure 5. Residual Plot — Colored by Error Band*
 
-
-## 📅 Supplementary Materials
+## Supplementary Materials
 - [Case Study Introduction (PDF)](bike_case_study_bundle/Case%20Study%20Introduction.pdf)  
 - [Stakeholder Discussion (PDF)](bike_case_study_bundle/Stakeholder%20Discussion%20Summary.docx)  
 - [Project Requirements (PDF)](bike_case_study_bundle/Project%20Requirements.pdf)  
 - [Training Dataset (CSV)](bike_case_study_bundle/bikes.csv)  
 - [Holdout Data (CSV)](bike_case_study_bundle/bikes_december.csv)
 
----
+## Final Assets
+- Final model saved as: `bike_model_covid.keras`  
+- Scaler object saved as: `bike_scaler_covid.pkl`  
+- Notebook for full training/prediction pipeline: [Google Colab Link](https://colab.research.google.com/drive/1nP5BzoPG5T4EJP9XnmZjrn6oA13lef9k#scrollTo=TrUZoRxbgu2I)
 
-- 🔗 Final model and predictions are saved as `bike_model_covid.keras` and `bike_scaler_covid.pkl`  
-- 📓 You can run the model through my notebook here – [Notebook (Google Colab)](https://colab.research.google.com/drive/1nP5BzoPG5T4EJP9XnmZjrn6oA13lef9k#scrollTo=TrUZoRxbgu2I)
+## Next Steps
+Future improvements could include:
+- Incorporating external data (e.g., public events and bike station availability)
+- Testing LSTM or Transformer architectures for sequential temporal modeling
+- Automating retraining pipelines for weekly data ingestion and redeployment
+- Improving prediction confidence intervals for stakeholder-facing dashboards
+
+---

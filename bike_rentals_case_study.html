@@ -126,20 +126,28 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#bike-rentals-prediction-case-study" id="toc-bike-rentals-prediction-case-study" class="nav-link active" data-scroll-target="#bike-rentals-prediction-case-study">Bike Rentals Prediction Case Study</a>
   <ul class="collapse">
-  <li><a href="#project-summary" id="toc-project-summary" class="nav-link" data-scroll-target="#project-summary">🚲 Project Summary</a></li>
-  <li><a href="#tools-technologies" id="toc-tools-technologies" class="nav-link" data-scroll-target="#tools-technologies">🛠️ Tools &amp; Technologies</a></li>
-  <li><a href="#key-techniques-used" id="toc-key-techniques-used" class="nav-link" data-scroll-target="#key-techniques-used">🧪 Key Techniques Used</a></li>
-  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">🔍 Key Insights</a>
+  <li><a href="#project-summary" id="toc-project-summary" class="nav-link" data-scroll-target="#project-summary">Project Summary</a></li>
+  <li><a href="#tools-technologies" id="toc-tools-technologies" class="nav-link" data-scroll-target="#tools-technologies">Tools &amp; Technologies</a></li>
+  <li><a href="#key-techniques-used" id="toc-key-techniques-used" class="nav-link" data-scroll-target="#key-techniques-used">Key Techniques Used</a>
   <ul class="collapse">
-  <li><a href="#redundant-feature-removal" id="toc-redundant-feature-removal" class="nav-link" data-scroll-target="#redundant-feature-removal">Redundant Feature Removal</a></li>
-  <li><a href="#cyclical-encoding-was-crucial" id="toc-cyclical-encoding-was-crucial" class="nav-link" data-scroll-target="#cyclical-encoding-was-crucial">Cyclical Encoding Was Crucial</a></li>
-  <li><a href="#model-architecture-tuning" id="toc-model-architecture-tuning" class="nav-link" data-scroll-target="#model-architecture-tuning">Model Architecture Tuning</a></li>
-  <li><a href="#training-cutoff-strategy" id="toc-training-cutoff-strategy" class="nav-link" data-scroll-target="#training-cutoff-strategy">Training Cutoff Strategy</a></li>
-  <li><a href="#operational-opportunity-cleaning-downtime" id="toc-operational-opportunity-cleaning-downtime" class="nav-link" data-scroll-target="#operational-opportunity-cleaning-downtime">Operational Opportunity: Cleaning Downtime</a></li>
+  <li><a href="#feature-engineering" id="toc-feature-engineering" class="nav-link" data-scroll-target="#feature-engineering">Feature Engineering</a></li>
+  <li><a href="#neural-network-design-training" id="toc-neural-network-design-training" class="nav-link" data-scroll-target="#neural-network-design-training">Neural Network Design &amp; Training</a></li>
+  <li><a href="#evaluation-protocol" id="toc-evaluation-protocol" class="nav-link" data-scroll-target="#evaluation-protocol">Evaluation Protocol</a></li>
+  <li><a href="#data-split-strategy" id="toc-data-split-strategy" class="nav-link" data-scroll-target="#data-split-strategy">Data Split Strategy</a></li>
   </ul></li>
-  <li><a href="#results-summary" id="toc-results-summary" class="nav-link" data-scroll-target="#results-summary">📊 Results Summary</a></li>
-  <li><a href="#visuals" id="toc-visuals" class="nav-link" data-scroll-target="#visuals">📈 Visuals</a></li>
-  <li><a href="#supplementary-materials" id="toc-supplementary-materials" class="nav-link" data-scroll-target="#supplementary-materials">📅 Supplementary Materials</a></li>
+  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">Key Insights</a>
+  <ul class="collapse">
+  <li><a href="#redundant-feature-elimination" id="toc-redundant-feature-elimination" class="nav-link" data-scroll-target="#redundant-feature-elimination">Redundant Feature Elimination</a></li>
+  <li><a href="#importance-of-cyclical-encoding" id="toc-importance-of-cyclical-encoding" class="nav-link" data-scroll-target="#importance-of-cyclical-encoding">Importance of Cyclical Encoding</a></li>
+  <li><a href="#architecture-optimization" id="toc-architecture-optimization" class="nav-link" data-scroll-target="#architecture-optimization">Architecture Optimization</a></li>
+  <li><a href="#strategic-holdout-period" id="toc-strategic-holdout-period" class="nav-link" data-scroll-target="#strategic-holdout-period">Strategic Holdout Period</a></li>
+  <li><a href="#operational-insight-maintenance-window" id="toc-operational-insight-maintenance-window" class="nav-link" data-scroll-target="#operational-insight-maintenance-window">Operational Insight: Maintenance Window</a></li>
+  </ul></li>
+  <li><a href="#results-summary" id="toc-results-summary" class="nav-link" data-scroll-target="#results-summary">Results Summary</a></li>
+  <li><a href="#visual-results" id="toc-visual-results" class="nav-link" data-scroll-target="#visual-results">Visual Results</a></li>
+  <li><a href="#supplementary-materials" id="toc-supplementary-materials" class="nav-link" data-scroll-target="#supplementary-materials">Supplementary Materials</a></li>
+  <li><a href="#final-assets" id="toc-final-assets" class="nav-link" data-scroll-target="#final-assets">Final Assets</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -181,80 +189,102 @@ ul.task-list li input[type="checkbox"] {
 <section id="bike-rentals-prediction-case-study" class="level1">
 <h1>Bike Rentals Prediction Case Study</h1>
 <section id="project-summary" class="level2">
-<h2 class="anchored" data-anchor-id="project-summary">🚲 Project Summary</h2>
-<p>This project aimed to predict hourly bike rental demand using deep learning. I engineered temporal and contextual features, such as COVID-era flags and holiday indicators, to capture patterns in bike usage from 2011 through 2024.</p>
+<h2 class="anchored" data-anchor-id="project-summary">Project Summary</h2>
+<p>This project aimed to predict hourly bike rental demand using deep learning techniques applied to time-series data spanning 2011 through 2024. Key objectives included capturing behavioral and seasonal patterns, leveraging cyclical feature transformations, and testing generalization via a forward-chaining holdout strategy. The true holdout period for testing was the final two months of the dataset: <strong>November and December of 2023</strong>.</p>
 </section>
 <section id="tools-technologies" class="level2">
-<h2 class="anchored" data-anchor-id="tools-technologies">🛠️ Tools &amp; Technologies</h2>
+<h2 class="anchored" data-anchor-id="tools-technologies">Tools &amp; Technologies</h2>
 <ul>
 <li><strong>Python</strong> for scripting and modeling<br>
 </li>
-<li><strong>TensorFlow / Keras</strong> for building deep learning models<br>
+<li><strong>TensorFlow / Keras</strong> for deep learning model architecture and training<br>
 </li>
-<li><strong>Pandas &amp; NumPy</strong> for data cleaning and transformation<br>
+<li><strong>Pandas &amp; NumPy</strong> for data wrangling and numerical operations<br>
 </li>
-<li><strong>Scikit-learn</strong> for data preprocessing and evaluation metrics<br>
+<li><strong>Scikit-learn</strong> for preprocessing pipelines and regression metrics<br>
 </li>
-<li><strong>Matplotlib</strong> for plotting results<br>
+<li><strong>Matplotlib</strong> for exploratory data visualizations<br>
 </li>
-<li><strong>Quarto</strong> for documentation</li>
+<li><strong>Quarto</strong> for documentation and web rendering</li>
 </ul>
 </section>
 <section id="key-techniques-used" class="level2">
-<h2 class="anchored" data-anchor-id="key-techniques-used">🧪 Key Techniques Used</h2>
-<p>✅ <strong>Feature Engineering</strong><br>
-Created contextual features such as COVID-phase indicators, time-based encodings (year, month, day of year), and workday splits.</p>
-<p>✅ <strong>Neural Network Training</strong><br>
-Built and trained a 3-layer deep neural network to learn rental behavior patterns.</p>
-<p>✅ <strong>Model Evaluation</strong><br>
-Used metrics like MAE, MSE, and R² to evaluate performance. Validated visually with residual and error plots.</p>
-<p>✅ <strong>Overfitting Mitigation</strong><br>
-Included dropout layers and used training history to assess stability between training and validation loss.</p>
+<h2 class="anchored" data-anchor-id="key-techniques-used">Key Techniques Used</h2>
+<section id="feature-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="feature-engineering">Feature Engineering</h3>
+<ul>
+<li>Created contextual and temporal encodings, including <code>covid_phase</code>, <code>holiday</code>, <code>is_weekend</code>, and cyclical encodings of <code>hour</code>, <code>month</code>, and <code>day_of_year</code> using sine and cosine transforms.</li>
+<li>Dropped redundant variables to reduce multicollinearity and simplify the model’s feature space.</li>
+</ul>
+</section>
+<section id="neural-network-design-training" class="level3">
+<h3 class="anchored" data-anchor-id="neural-network-design-training">Neural Network Design &amp; Training</h3>
+<ul>
+<li>Implemented a 3-layer feedforward neural network (Dense 128 → 64 → 16) with ReLU activations.</li>
+<li>Incorporated dropout layers (0.1, 0.4, 0.4) and batch normalization to improve generalization and prevent overfitting.</li>
+<li>Used ExponentialDecay for learning rate adjustment, along with early stopping and model checkpointing.</li>
+</ul>
+</section>
+<section id="evaluation-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-protocol">Evaluation Protocol</h3>
+<ul>
+<li>Assessed performance using MAE, RMSE, Median AE, and R².</li>
+<li>Stratified evaluation by pre-/post-December 20th periods to observe predictive drift near holiday anomalies.</li>
+<li>Supplemented quantitative metrics with residual plots and error band visualizations.</li>
+</ul>
+</section>
+<section id="data-split-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="data-split-strategy">Data Split Strategy</h3>
+<ul>
+<li>Training included all observations prior to October 31.</li>
+<li><strong>November and December of 2023</strong> were strictly withheld as a realistic holdout set.</li>
+<li>This forward validation strategy simulates production deployment in time-sensitive forecasting scenarios.</li>
+</ul>
+</section>
 </section>
 <section id="key-insights" class="level2">
-<h2 class="anchored" data-anchor-id="key-insights">🔍 Key Insights</h2>
-<section id="redundant-feature-removal" class="level3">
-<h3 class="anchored" data-anchor-id="redundant-feature-removal">Redundant Feature Removal</h3>
+<h2 class="anchored" data-anchor-id="key-insights">Key Insights</h2>
+<section id="redundant-feature-elimination" class="level3">
+<h3 class="anchored" data-anchor-id="redundant-feature-elimination">Redundant Feature Elimination</h3>
 <p><img src="bike_case_study_bundle/Correlation heatmap.png" class="img-fluid" style="width:100.0%"><br>
-<em>Figure X. Correlation Heatmap Showing Perfect Correlation Between <code>temp_c</code> and <code>feels_like_c</code></em></p>
-<p>Upon analyzing the correlation heatmap, I noticed that <code>temp_feel</code> (feels-like temperature) was <strong>perfectly correlated</strong> with <code>temperature</code>. Not only were they statistically redundant, but they also had nearly identical effects on bike rental volume. To reduce noise and simplify the feature space, I chose to remove <code>temp_feel</code> entirely from the model.</p>
+<em>Figure 1. Correlation Heatmap — Dropping <code>feels_like_c</code> due to perfect correlation with <code>temp_c</code></em></p>
+<p>A heatmap of Pearson correlations revealed that <code>feels_like_c</code> provided no additional signal beyond <code>temp_c</code>, exhibiting a coefficient of 1.00. The variable was removed to streamline the model and mitigate overfitting risk from redundant predictors.</p>
 </section>
-<section id="cyclical-encoding-was-crucial" class="level3">
-<h3 class="anchored" data-anchor-id="cyclical-encoding-was-crucial">Cyclical Encoding Was Crucial</h3>
-<p>Bike rentals follow strong daily and seasonal cycles — rush hours, weekdays vs.&nbsp;weekends, and summer vs.&nbsp;winter all affect usage. I used <strong>sine and cosine encodings</strong> for hour, month, and day-of-year to help the model recognize these patterns without being confused by time boundaries (like midnight or end of year).</p>
+<section id="importance-of-cyclical-encoding" class="level3">
+<h3 class="anchored" data-anchor-id="importance-of-cyclical-encoding">Importance of Cyclical Encoding</h3>
+<p>Time-based features exhibit clear periodicity (e.g., hourly rush patterns, seasonal transitions). Using sine and cosine encodings allowed the model to preserve cyclical continuity (e.g., 23:00 to 00:00) and improved its ability to generalize temporal transitions.</p>
 </section>
-<section id="model-architecture-tuning" class="level3">
-<h3 class="anchored" data-anchor-id="model-architecture-tuning">Model Architecture Tuning</h3>
-<p>The final model used three dense layers (128 → 64 → 16) with <strong>ReLU activations</strong>, <strong>batch normalization</strong>, and <strong>dropout</strong> rates of 0.1, 0.4, and 0.4 respectively. This design helped prevent overfitting while capturing nonlinear patterns in time and weather-driven behavior.</p>
+<section id="architecture-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="architecture-optimization">Architecture Optimization</h3>
+<p>The best-performing model consisted of three dense layers using ReLU activation. Dropout and batch normalization layers were added progressively to optimize the trade-off between learning capacity and regularization. The architecture was refined through a combination of manual tuning and validation loss tracking.</p>
 </section>
-<section id="training-cutoff-strategy" class="level3">
-<h3 class="anchored" data-anchor-id="training-cutoff-strategy">Training Cutoff Strategy</h3>
-<p>Only data before <strong>October 31st</strong> was used for training, with November–December left as a <strong>true holdout set</strong>. This mimics real-world forecasting and tests how well the model generalizes into unseen future demand.</p>
+<section id="strategic-holdout-period" class="level3">
+<h3 class="anchored" data-anchor-id="strategic-holdout-period">Strategic Holdout Period</h3>
+<p>Holdout data from <strong>November and December 2023</strong> allowed for rigorous post-training evaluation. Notably, prediction accuracy declined slightly after December 20 due to holiday-related behavior shifts not captured during training. This reinforces the need for adaptive retraining when encountering high-season anomalies.</p>
 </section>
-<section id="operational-opportunity-cleaning-downtime" class="level3">
-<h3 class="anchored" data-anchor-id="operational-opportunity-cleaning-downtime">Operational Opportunity: Cleaning Downtime</h3>
-<p>An operational insight surfaced when analyzing post-COVID usage patterns by hour and day. As seen below, <strong>bike rental activity is at its lowest between 2:00 AM and 5:00 AM</strong>, especially on <strong>Mondays</strong>, which consistently show the lowest demand of the week.</p>
-<p>This suggests a practical opportunity for <strong>bike maintenance or cleaning crews</strong> to service bikes during this window with minimal disruption to riders.</p>
+<section id="operational-insight-maintenance-window" class="level3">
+<h3 class="anchored" data-anchor-id="operational-insight-maintenance-window">Operational Insight: Maintenance Window</h3>
 <p><img src="bike_case_study_bundle/Post Covid_Hourly.png" class="img-fluid" style="width:100.0%"><br>
-<em>Figure 5. Hourly Rentals Post-COVID: Ideal Cleaning Times (2–5AM)</em></p>
+<em>Figure 2. Post-COVID Hourly Rentals — Optimal Maintenance Hours Between 2:00–5:00 AM</em></p>
 <p><img src="bike_case_study_bundle/Post-Covid.png" class="img-fluid" style="width:100.0%"><br>
-<em>Figure 6. Weekday Demand (Monday is consistently lowest)</em></p>
+<em>Figure 3. Weekday Demand Breakdown — Mondays Exhibit Consistently Lowest Usage</em></p>
+<p>Behavioral trend analysis post-COVID highlighted minimal rider activity between 2:00 AM and 5:00 AM. This window, especially on Mondays, presents a valuable operational opportunity for off-peak maintenance and fleet rotation without interrupting user demand.</p>
 </section>
 </section>
 <section id="results-summary" class="level2">
-<h2 class="anchored" data-anchor-id="results-summary">📊 Results Summary</h2>
+<h2 class="anchored" data-anchor-id="results-summary">Results Summary</h2>
 <ul>
 <li><strong>RMSE:</strong> 141.30<br>
 </li>
 <li><strong>MAE:</strong> 97.10<br>
 </li>
-<li><strong>Median Absolute Error:</strong> 64.59<br>
+<li><strong>Median AE:</strong> 64.59<br>
 </li>
 <li><strong>R² (Full):</strong> 0.859<br>
 </li>
-<li><strong>R² Before 21st:</strong> 0.894<br>
+<li><strong>R² Pre-21st:</strong> 0.894<br>
 </li>
-<li><strong>R² After 20th:</strong> 0.780<br>
+<li><strong>R² Post-20th:</strong> 0.780<br>
 </li>
 <li><strong>Predictions within 5%:</strong> 10.38%<br>
 </li>
@@ -262,17 +292,17 @@ Included dropout layers and used training history to assess stability between tr
 </li>
 <li><strong>Predictions within 20%:</strong> 42.25%</li>
 </ul>
-<p>The model captured temporal trends and seasonal fluctuations with high accuracy. On average, predictions were within about 97 rentals of actual values. It was particularly strong before the holiday period, but showed some underestimation during late December peaks. It performed especially well in the period after COVID, when demand patterns began to stabilize and rise again.</p>
+<p>The model achieved a strong balance between generalization and accuracy, particularly on stable demand periods. Although accuracy dipped during holiday weeks, its core temporal structure allowed for reliable planning and infrastructure forecasting under normal conditions.</p>
 </section>
-<section id="visuals" class="level2">
-<h2 class="anchored" data-anchor-id="visuals">📈 Visuals</h2>
+<section id="visual-results" class="level2">
+<h2 class="anchored" data-anchor-id="visual-results">Visual Results</h2>
 <p><img src="bike_case_study_bundle/Line Graph.png" class="img-fluid" style="width:100.0%"><br>
-<em>Figure 7. Actual vs Predicted Rentals Over Full Timeline (Holdout)</em></p>
+<em>Figure 4. Actual vs.&nbsp;Predicted — Holdout Set</em></p>
 <p><img src="bike_case_study_bundle/Residual.png" class="img-fluid" style="width:100.0%"><br>
-<em>Figure 8. Prediction Error Distribution (Colored by Error Band)</em></p>
+<em>Figure 5. Residual Plot — Colored by Error Band</em></p>
 </section>
 <section id="supplementary-materials" class="level2">
-<h2 class="anchored" data-anchor-id="supplementary-materials">📅 Supplementary Materials</h2>
+<h2 class="anchored" data-anchor-id="supplementary-materials">Supplementary Materials</h2>
 <ul>
 <li><a href="bike_case_study_bundle/Case Study Introduction.pdf">Case Study Introduction (PDF)</a><br>
 </li>
@@ -284,12 +314,21 @@ Included dropout layers and used training history to assess stability between tr
 </li>
 <li><a href="bike_case_study_bundle/bikes_december.csv">Holdout Data (CSV)</a></li>
 </ul>
-<hr>
+</section>
+<section id="final-assets" class="level2">
+<h2 class="anchored" data-anchor-id="final-assets">Final Assets</h2>
 <ul>
-<li>🔗 Final model and predictions are saved as <code>bike_model_covid.keras</code> and <code>bike_scaler_covid.pkl</code><br>
+<li>Final model saved as: <code>bike_model_covid.keras</code><br>
 </li>
-<li>📓 You can run the model through my notebook here – <a href="https://colab.research.google.com/drive/1nP5BzoPG5T4EJP9XnmZjrn6oA13lef9k#scrollTo=TrUZoRxbgu2I">Notebook (Google Colab)</a></li>
+<li>Scaler object saved as: <code>bike_scaler_covid.pkl</code><br>
+</li>
+<li>Notebook for full training/prediction pipeline: <a href="https://colab.research.google.com/drive/1nP5BzoPG5T4EJP9XnmZjrn6oA13lef9k#scrollTo=TrUZoRxbgu2I">Google Colab Link</a></li>
 </ul>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<p>Future improvements could include: - Incorporating external data (e.g., public events and bike station availability) - Testing LSTM or Transformer architectures for sequential temporal modeling - Automating retraining pipelines for weekly data ingestion and redeployment - Improving prediction confidence intervals for stakeholder-facing dashboards</p>
+<hr>
 
 
 </section>

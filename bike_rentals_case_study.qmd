@@ -35,8 +35,8 @@ Used metrics like MAE, MSE, and R² to evaluate performance. Validated visually 
 Included dropout layers and used training history to assess stability between training and validation loss.
 
 ## 📊 Results Summary
-- **MAE**: 54.97
-- **MSE**: 7010.54
+- **MAE**: 54.97  
+- **MSE**: 7010.54  
 - **R² Score**: 0.94 (94% variance explained)
 
 My model predicted bike rentals with high accuracy, correctly capturing 94% of the trends in the data. On average, its predictions were within about 55 rentals of the actual number. It performed especially well in the period after COVID, when demand patterns began to stabilize and rise again.
@@ -55,7 +55,7 @@ My model predicted bike rentals with high accuracy, correctly capturing 94% of t
 ![](bike_case_study_bundle/Residual%20Renting%20Predictions.png){width=80%}  
 *Figure 4. Predicted vs Actual Rentals (Residual Plot)*
 
-## 📥 Supplementary Materials
+## 📅 Supplementary Materials
 - [Case Study Introduction (PDF)](bike_case_study_bundle/Case%20Study%20Introduction.pdf)
 - [Stakeholder Discussion (PDF)](bike_case_study_bundle/Stakeholder%20Discussion%20Summary.docx)
 - [Project Requirements (PDF)](bike_case_study_bundle/Project%20Requirements.pdf)
@@ -65,4 +65,5 @@ My model predicted bike rentals with high accuracy, correctly capturing 94% of t
 ---
 
 - 🔗 Final model and predictions are saved as `bike_model_covid.keras` and `bike_scaler_covid.pkl`.
-- 📓 You can run the model through my notebook here - [Notebook (Google Colab)](https://colab.research.google.com/drive/10LpgoD5ORn2l2Zi1SVgz57Wam8JxsV35?usp=sharing)
+- 📓 You can run the model through my notebook here - [Notebook (Google Colab)](https://colab.research.google.com/drive/1nP5BzoPG5T4EJP9XnmZjrn6oA13lef9k#scrollTo=TrUZoRxbgu2I)
+

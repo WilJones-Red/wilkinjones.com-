@@ -89,7 +89,7 @@ The model captured temporal trends and seasonal fluctuations with high accuracy.
 *Figure 8. Prediction Error Distribution (Colored by Error Band)*
 
 ![](bike_case_study_bundle/Loss_History.png){width=100%}  
-*Figure 1. Training and Validation Loss Over A Period Of 1000 Epochs (No Overfitting Detected)*
+*Figure 1. Training and Validation Loss Over A Period Of 1000 Epochs (Which shows original model Overfitting, no oscillations made it obvious )*
 
 ![](bike_case_study_bundle/Actual%20vs%20Predicted%20Over%20Time.png){width=100%}  
 *Figure 2. Actual vs Predicted Rentals Over Time*

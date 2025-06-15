@@ -1,7 +1,7 @@
 ---
 title: "Bike Rentals Prediction Case Study"
 author: "Wil Jones"
-date: "2025-06-03"
+date: "2025-06-14"
 format:
   html:
     toc: true
@@ -88,17 +88,6 @@ The model captured temporal trends and seasonal fluctuations with high accuracy.
 ![](bike_case_study_bundle/Residual.png){width=100%}  
 *Figure 8. Prediction Error Distribution (Colored by Error Band)*
 
-![](bike_case_study_bundle/Loss_History.png){width=100%}  
-*Figure 1. Training and Validation Loss Over A Period Of 1000 Epochs (Which shows original model Overfitting, no oscillations made it obvious )*
-
-![](bike_case_study_bundle/Actual%20vs%20Predicted%20Over%20Time.png){width=100%}  
-*Figure 2. Actual vs Predicted Rentals Over Time*
-
-![](bike_case_study_bundle/Prediction%20Error%20Over%20Time.png){width=100%}  
-*Figure 3. Absolute Prediction Error Over Time*
-
-![](bike_case_study_bundle/Residual%20Renting%20Predictions.png){width=80%}  
-*Figure 4. Predicted vs Actual Rentals (Residual Plot)*
 
 ## 📅 Supplementary Materials
 - [Case Study Introduction (PDF)](bike_case_study_bundle/Case%20Study%20Introduction.pdf)  

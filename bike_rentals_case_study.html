@@ -129,6 +129,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#project-summary" id="toc-project-summary" class="nav-link" data-scroll-target="#project-summary">🚲 Project Summary</a></li>
   <li><a href="#tools-technologies" id="toc-tools-technologies" class="nav-link" data-scroll-target="#tools-technologies">🛠️ Tools &amp; Technologies</a></li>
   <li><a href="#key-techniques-used" id="toc-key-techniques-used" class="nav-link" data-scroll-target="#key-techniques-used">🧪 Key Techniques Used</a></li>
+  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">🔍 Key Insights</a>
+  <ul class="collapse">
+  <li><a href="#redundant-feature-removal" id="toc-redundant-feature-removal" class="nav-link" data-scroll-target="#redundant-feature-removal">Redundant Feature Removal</a></li>
+  <li><a href="#cyclical-encoding-was-crucial" id="toc-cyclical-encoding-was-crucial" class="nav-link" data-scroll-target="#cyclical-encoding-was-crucial">Cyclical Encoding Was Crucial</a></li>
+  <li><a href="#model-architecture-tuning" id="toc-model-architecture-tuning" class="nav-link" data-scroll-target="#model-architecture-tuning">Model Architecture Tuning</a></li>
+  <li><a href="#training-cutoff-strategy" id="toc-training-cutoff-strategy" class="nav-link" data-scroll-target="#training-cutoff-strategy">Training Cutoff Strategy</a></li>
+  <li><a href="#operational-opportunity-cleaning-downtime" id="toc-operational-opportunity-cleaning-downtime" class="nav-link" data-scroll-target="#operational-opportunity-cleaning-downtime">Operational Opportunity: Cleaning Downtime</a></li>
+  </ul></li>
   <li><a href="#results-summary" id="toc-results-summary" class="nav-link" data-scroll-target="#results-summary">📊 Results Summary</a></li>
   <li><a href="#visuals" id="toc-visuals" class="nav-link" data-scroll-target="#visuals">📈 Visuals</a></li>
   <li><a href="#supplementary-materials" id="toc-supplementary-materials" class="nav-link" data-scroll-target="#supplementary-materials">📅 Supplementary Materials</a></li>
@@ -179,11 +187,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="tools-technologies" class="level2">
 <h2 class="anchored" data-anchor-id="tools-technologies">🛠️ Tools &amp; Technologies</h2>
 <ul>
-<li><strong>Python</strong> for scripting and modeling</li>
-<li><strong>TensorFlow / Keras</strong> for building deep learning models</li>
-<li><strong>Pandas &amp; NumPy</strong> for data cleaning and transformation</li>
-<li><strong>Scikit-learn</strong> for data preprocessing and evaluation metrics</li>
-<li><strong>Matplotlib</strong> for plotting results</li>
+<li><strong>Python</strong> for scripting and modeling<br>
+</li>
+<li><strong>TensorFlow / Keras</strong> for building deep learning models<br>
+</li>
+<li><strong>Pandas &amp; NumPy</strong> for data cleaning and transformation<br>
+</li>
+<li><strong>Scikit-learn</strong> for data preprocessing and evaluation metrics<br>
+</li>
+<li><strong>Matplotlib</strong> for plotting results<br>
+</li>
 <li><strong>Quarto</strong> for documentation</li>
 </ul>
 </section>
@@ -198,21 +211,67 @@ Used metrics like MAE, MSE, and R² to evaluate performance. Validated visually 
 <p>✅ <strong>Overfitting Mitigation</strong><br>
 Included dropout layers and used training history to assess stability between training and validation loss.</p>
 </section>
+<section id="key-insights" class="level2">
+<h2 class="anchored" data-anchor-id="key-insights">🔍 Key Insights</h2>
+<section id="redundant-feature-removal" class="level3">
+<h3 class="anchored" data-anchor-id="redundant-feature-removal">Redundant Feature Removal</h3>
+<p><img src="bike_case_study_bundle/Correlation heatmap.png" class="img-fluid" style="width:100.0%"><br>
+<em>Figure X. Correlation Heatmap Showing Perfect Correlation Between <code>temp_c</code> and <code>feels_like_c</code></em></p>
+<p>Upon analyzing the correlation heatmap, I noticed that <code>temp_feel</code> (feels-like temperature) was <strong>perfectly correlated</strong> with <code>temperature</code>. Not only were they statistically redundant, but they also had nearly identical effects on bike rental volume. To reduce noise and simplify the feature space, I chose to remove <code>temp_feel</code> entirely from the model.</p>
+</section>
+<section id="cyclical-encoding-was-crucial" class="level3">
+<h3 class="anchored" data-anchor-id="cyclical-encoding-was-crucial">Cyclical Encoding Was Crucial</h3>
+<p>Bike rentals follow strong daily and seasonal cycles — rush hours, weekdays vs.&nbsp;weekends, and summer vs.&nbsp;winter all affect usage. I used <strong>sine and cosine encodings</strong> for hour, month, and day-of-year to help the model recognize these patterns without being confused by time boundaries (like midnight or end of year).</p>
+</section>
+<section id="model-architecture-tuning" class="level3">
+<h3 class="anchored" data-anchor-id="model-architecture-tuning">Model Architecture Tuning</h3>
+<p>The final model used three dense layers (128 → 64 → 16) with <strong>ReLU activations</strong>, <strong>batch normalization</strong>, and <strong>dropout</strong> rates of 0.1, 0.4, and 0.4 respectively. This design helped prevent overfitting while capturing nonlinear patterns in time and weather-driven behavior.</p>
+</section>
+<section id="training-cutoff-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="training-cutoff-strategy">Training Cutoff Strategy</h3>
+<p>Only data before <strong>October 31st</strong> was used for training, with November–December left as a <strong>true holdout set</strong>. This mimics real-world forecasting and tests how well the model generalizes into unseen future demand.</p>
+</section>
+<section id="operational-opportunity-cleaning-downtime" class="level3">
+<h3 class="anchored" data-anchor-id="operational-opportunity-cleaning-downtime">Operational Opportunity: Cleaning Downtime</h3>
+<p>An operational insight surfaced when analyzing post-COVID usage patterns by hour and day. As seen below, <strong>bike rental activity is at its lowest between 2:00 AM and 5:00 AM</strong>, especially on <strong>Mondays</strong>, which consistently show the lowest demand of the week.</p>
+<p>This suggests a practical opportunity for <strong>bike maintenance or cleaning crews</strong> to service bikes during this window with minimal disruption to riders.</p>
+<p><img src="bike_case_study_bundle/Post Covid_Hourly.png" class="img-fluid" style="width:100.0%"><br>
+<em>Figure 5. Hourly Rentals Post-COVID: Ideal Cleaning Times (2–5AM)</em></p>
+<p><img src="bike_case_study_bundle/Post-Covid.png" class="img-fluid" style="width:100.0%"><br>
+<em>Figure 6. Weekday Demand (Monday is consistently lowest)</em></p>
+</section>
+</section>
 <section id="results-summary" class="level2">
 <h2 class="anchored" data-anchor-id="results-summary">📊 Results Summary</h2>
 <ul>
-<li><strong>MAE</strong>: 54.97<br>
+<li><strong>RMSE:</strong> 141.30<br>
 </li>
-<li><strong>MSE</strong>: 7010.54<br>
+<li><strong>MAE:</strong> 97.10<br>
 </li>
-<li><strong>R² Score</strong>: 0.94 (94% variance explained)</li>
+<li><strong>Median Absolute Error:</strong> 64.59<br>
+</li>
+<li><strong>R² (Full):</strong> 0.859<br>
+</li>
+<li><strong>R² Before 21st:</strong> 0.894<br>
+</li>
+<li><strong>R² After 20th:</strong> 0.780<br>
+</li>
+<li><strong>Predictions within 5%:</strong> 10.38%<br>
+</li>
+<li><strong>Predictions within 10%:</strong> 21.09%<br>
+</li>
+<li><strong>Predictions within 20%:</strong> 42.25%</li>
 </ul>
-<p>My model predicted bike rentals with high accuracy, correctly capturing 94% of the trends in the data. On average, its predictions were within about 55 rentals of the actual number. It performed especially well in the period after COVID, when demand patterns began to stabilize and rise again.</p>
+<p>The model captured temporal trends and seasonal fluctuations with high accuracy. On average, predictions were within about 97 rentals of actual values. It was particularly strong before the holiday period, but showed some underestimation during late December peaks. It performed especially well in the period after COVID, when demand patterns began to stabilize and rise again.</p>
 </section>
 <section id="visuals" class="level2">
 <h2 class="anchored" data-anchor-id="visuals">📈 Visuals</h2>
+<p><img src="bike_case_study_bundle/Line Graph.png" class="img-fluid" style="width:100.0%"><br>
+<em>Figure 7. Actual vs Predicted Rentals Over Full Timeline (Holdout)</em></p>
+<p><img src="bike_case_study_bundle/Residual.png" class="img-fluid" style="width:100.0%"><br>
+<em>Figure 8. Prediction Error Distribution (Colored by Error Band)</em></p>
 <p><img src="bike_case_study_bundle/Loss_History.png" class="img-fluid" style="width:100.0%"><br>
-<em>Figure 1. Training and Validation Loss Over A Period Of 1000 Epochs (1 Epoch = 100 Iterations), No Signs of Overfitting</em></p>
+<em>Figure 1. Training and Validation Loss Over A Period Of 1000 Epochs (No Overfitting Detected)</em></p>
 <p><img src="bike_case_study_bundle/Actual vs Predicted Over Time.png" class="img-fluid" style="width:100.0%"><br>
 <em>Figure 2. Actual vs Predicted Rentals Over Time</em></p>
 <p><img src="bike_case_study_bundle/Prediction Error Over Time.png" class="img-fluid" style="width:100.0%"><br>
@@ -223,16 +282,21 @@ Included dropout layers and used training history to assess stability between tr
 <section id="supplementary-materials" class="level2">
 <h2 class="anchored" data-anchor-id="supplementary-materials">📅 Supplementary Materials</h2>
 <ul>
-<li><a href="bike_case_study_bundle/Case Study Introduction.pdf">Case Study Introduction (PDF)</a></li>
-<li><a href="bike_case_study_bundle/Stakeholder Discussion Summary.docx">Stakeholder Discussion (PDF)</a></li>
-<li><a href="bike_case_study_bundle/Project Requirements.pdf">Project Requirements (PDF)</a></li>
-<li><a href="bike_case_study_bundle/bikes.csv">Training Dataset (CSV)</a></li>
+<li><a href="bike_case_study_bundle/Case Study Introduction.pdf">Case Study Introduction (PDF)</a><br>
+</li>
+<li><a href="bike_case_study_bundle/Stakeholder Discussion Summary.docx">Stakeholder Discussion (PDF)</a><br>
+</li>
+<li><a href="bike_case_study_bundle/Project Requirements.pdf">Project Requirements (PDF)</a><br>
+</li>
+<li><a href="bike_case_study_bundle/bikes.csv">Training Dataset (CSV)</a><br>
+</li>
 <li><a href="bike_case_study_bundle/bikes_december.csv">Holdout Data (CSV)</a></li>
 </ul>
 <hr>
 <ul>
-<li>🔗 Final model and predictions are saved as <code>bike_model_covid.keras</code> and <code>bike_scaler_covid.pkl</code>.</li>
-<li>📓 You can run the model through my notebook here - <a href="https://colab.research.google.com/drive/1nP5BzoPG5T4EJP9XnmZjrn6oA13lef9k#scrollTo=TrUZoRxbgu2I">Notebook (Google Colab)</a></li>
+<li>🔗 Final model and predictions are saved as <code>bike_model_covid.keras</code> and <code>bike_scaler_covid.pkl</code><br>
+</li>
+<li>📓 You can run the model through my notebook here – <a href="https://colab.research.google.com/drive/1nP5BzoPG5T4EJP9XnmZjrn6oA13lef9k#scrollTo=TrUZoRxbgu2I">Notebook (Google Colab)</a></li>
 </ul>
 
 

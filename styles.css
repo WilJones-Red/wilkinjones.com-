@@ -94,9 +94,11 @@
   opacity: 0;
   transform: translateY(20px);
   transition-property: opacity, transform;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 [data-aos].aos-animate {
   opacity: 1;
   transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }

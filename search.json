@@ -221,7 +221,7 @@
     "href": "about.html#tools-and-technologies",
     "title": "About Me",
     "section": "Tools and Technologies",
-    "text": "Tools and Technologies\n\nPython Libraries\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\nModeling and Machine Learning\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\nData Analysis and Visualization\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\nDevelopment and Version Control\n\nGit, GitHub, VS Code, Markdown\n\n\n\nDatabases and SQL\n\nMySQL, SQLite\n\nERD Design, Data Cleaning, Joins, Set Operations\n\n\n\nWeb and Reporting\n\nHTML/CSS (via Quarto)\n\nGitHub Pages, Portfolio Development"
+    "text": "Tools and Technologies\n\nPython Libraries\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels, PySpark, PyTorch\n\n\n\nModeling and Machine Learning\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nNeural Networks (NN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN)\n\nFeature Engineering, Model Evaluation (RMSE, R², MAE, MSE, Confusion Matrix)\n\n\n\nData Analysis and Visualization\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\nDevelopment and Version Control\n\nGit, GitHub, VS Code, Markdown\n\n\n\nDatabases and SQL\n\nMySQL, SQLite, PostgreSQL\n\nERD Design, Data Cleaning, Joins, Set Operations\n\n\n\nWeb and Reporting\n\nHTML/CSS (via Quarto)\n\nGitHub Pages, Portfolio Development"
   },
   {
     "objectID": "about.html#collaboration-and-leadership",

@@ -1,59 +1,87 @@
-# 🙋‍♂️ About Wilkin
-
-I'm passionate about data, analytics, and solving real-world problems. My journey started with curiosity and has grown into full-on geekery over Python scripts, SQL joins, and clean visualizations.
-
-In my free time, I love hiking, gaming, and spending time with my family.
-
+---
+title: "About Wilkin"
+format:
+  html:
+    css: styles.css
+    includes:
+      in-header: includes/aos-header.html
+    toc: false
+    page-layout: full
+    title-block-banner: true
 ---
 
-## 🧠 Skills Overview
+<div class="section-box" data-aos="fade-up">
 
-### 👨‍💻 Languages  
+## About Me
+
+I'm a data enthusiast focused on turning complex information into clear, actionable insights.  
+What started as curiosity has evolved into hands-on experience building Python scripts, writing SQL queries, and creating clean, effective visualizations.  
+I enjoy solving real-world problems with data and helping others make informed decisions.
+
+Outside of work, I enjoy hiking, gaming, and spending time with my family.
+
+</div>
+
+<div class="section-box" data-aos="fade-up">
+
+## Skills Overview
+
+### Programming Languages
 - Python  
 - SQL  
 
-### 🔮 Currently Learning  
+### Currently Learning
 - Machine Learning  
 - Time Series Forecasting  
 
----
+</div>
 
-## 🧰 Tools & Libraries
+<div class="section-box" data-aos="fade-up">
 
-### 📦 Python Libraries  
+## Tools and Technologies
+
+### Python Libraries  
 - Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
 - XGBoost, Random Forest, Statsmodels  
 
-### 🧠 Machine Learning & Modeling  
+### Modeling and Machine Learning  
 - Logistic Regression, Decision Trees, Cross-Validation  
 - Feature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)  
 
-### 📊 Data Tools  
+### Data Analysis and Visualization  
 - Tableau, Excel, Quarto  
 - Jupyter Notebooks, Google Colab  
 
-### 🛠️ Dev & Version Control  
+### Development and Version Control  
 - Git, GitHub, VS Code, Markdown  
 
-### 🗄️ Databases & Querying  
+### Databases and SQL  
 - MySQL, SQLite  
-- ERD Design, Data Cleaning & Joins, Set Operators  
+- ERD Design, Data Cleaning, Joins, Set Operations  
 
-### 🌐 Web & Reporting  
-- HTML/CSS (Quarto websites)  
-- GitHub Pages, Portfolio Building  
+### Web and Reporting  
+- HTML/CSS (via Quarto)  
+- GitHub Pages, Portfolio Development  
 
----
+</div>
 
-## 🧩 Soft & Team Skills  
-- Project Management, Collaboration  
-- Communication (especially on team-based capstone projects)  
-- Leadership (Digital Communications Supervisor at BYU–Idaho)  
+<div class="section-box" data-aos="fade-up">
 
----
+## Collaboration and Leadership
 
-## 📝 Experience With  
-SQL normalization, data visualization, exploratory data analysis, and creating clean, web-ready reports.
+- Project Management  
+- Communication and Team Collaboration  
+- Leadership Experience (Digital Communications Supervisor at BYU–Idaho)
 
+</div>
 
-*Want to see my work in action? Check out the [Projects](/projects.qmd) page to dive into full write-ups.*
+<div class="section-box" data-aos="fade-up">
+
+## Practical Experience
+
+Hands-on with SQL normalization, exploratory data analysis, feature engineering, and producing clean, web-ready reports using tools like Quarto and Jupyter Notebooks.
+
+**Want to see examples?**  
+Visit the [Projects](/projects.qmd) page for detailed case studies and write-ups.
+
+</div>

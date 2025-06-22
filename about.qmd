@@ -56,28 +56,29 @@ Outside of work, I enjoy hiking, gaming, and spending time with my family.
 
 ## Tools and Technologies
 
-### Python Libraries  
+#### Python Libraries  
 - Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
-- XGBoost, Random Forest, Statsmodels  
+- XGBoost, Random Forest, Statsmodels, PySpark, PyTorch
 
-### Modeling and Machine Learning  
+#### Modeling and Machine Learning  
 - Logistic Regression, Decision Trees, Cross-Validation  
-- Feature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)  
+- Neural Networks (NN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN)  
+- Feature Engineering, Model Evaluation (RMSE, R², MAE, MSE, Confusion Matrix)
 
-### Data Analysis and Visualization  
+#### Data Analysis and Visualization  
 - Tableau, Excel, Quarto  
-- Jupyter Notebooks, Google Colab  
+- Jupyter Notebooks, Google Colab
 
-### Development and Version Control  
-- Git, GitHub, VS Code, Markdown  
+#### Development and Version Control  
+- Git, GitHub, VS Code, Markdown
 
-### Databases and SQL  
-- MySQL, SQLite  
-- ERD Design, Data Cleaning, Joins, Set Operations  
+#### Databases and SQL  
+- MySQL, SQLite, PostgreSQL  
+- ERD Design, Data Cleaning, Joins, Set Operations
 
-### Web and Reporting  
+#### Web and Reporting  
 - HTML/CSS (via Quarto)  
-- GitHub Pages, Portfolio Development  
+- GitHub Pages, Portfolio Development
 
 </div>
 

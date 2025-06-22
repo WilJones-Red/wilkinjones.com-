@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About Wilkin – Wilkin Jones</title>
+<title>about – Wilkin Jones</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -114,40 +114,78 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">About Wilkin</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a>
+  <ul class="collapse">
+  <li><a href="#skills-overview" id="toc-skills-overview" class="nav-link" data-scroll-target="#skills-overview">Skills Overview</a>
+  <ul class="collapse">
+  <li><a href="#programming-languages" id="toc-programming-languages" class="nav-link" data-scroll-target="#programming-languages">Programming Languages</a></li>
+  <li><a href="#currently-learning" id="toc-currently-learning" class="nav-link" data-scroll-target="#currently-learning">Currently Learning</a></li>
+  </ul></li>
+  <li><a href="#tools-and-technologies" id="toc-tools-and-technologies" class="nav-link" data-scroll-target="#tools-and-technologies">Tools and Technologies</a>
+  <ul class="collapse">
+  <li><a href="#python-libraries" id="toc-python-libraries" class="nav-link" data-scroll-target="#python-libraries">Python Libraries</a></li>
+  <li><a href="#modeling-and-machine-learning" id="toc-modeling-and-machine-learning" class="nav-link" data-scroll-target="#modeling-and-machine-learning">Modeling and Machine Learning</a></li>
+  <li><a href="#data-analysis-and-visualization" id="toc-data-analysis-and-visualization" class="nav-link" data-scroll-target="#data-analysis-and-visualization">Data Analysis and Visualization</a></li>
+  <li><a href="#development-and-version-control" id="toc-development-and-version-control" class="nav-link" data-scroll-target="#development-and-version-control">Development and Version Control</a></li>
+  <li><a href="#databases-and-sql" id="toc-databases-and-sql" class="nav-link" data-scroll-target="#databases-and-sql">Databases and SQL</a></li>
+  <li><a href="#web-and-reporting" id="toc-web-and-reporting" class="nav-link" data-scroll-target="#web-and-reporting">Web and Reporting</a></li>
+  </ul></li>
+  <li><a href="#collaboration-and-leadership" id="toc-collaboration-and-leadership" class="nav-link" data-scroll-target="#collaboration-and-leadership">Collaboration and Leadership</a></li>
+  <li><a href="#practical-experience" id="toc-practical-experience" class="nav-link" data-scroll-target="#practical-experience">Practical Experience</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<!-- ✅ Load AOS Animation Styles + Script -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- ✅ Initialize AOS and enable fade-out on scroll -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof AOS !== "undefined") {
+      AOS.init({ once: false }); // Allow elements to animate more than once
 
-<section id="about-me" class="level2 section-box" data-aos="fade-up">
-<h2 class="anchored" data-anchor-id="about-me">About Me</h2>
+      // Remove 'aos-animate' when the element leaves the viewport
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            entry.target.classList.remove("aos-animate");
+          }
+        });
+      });
+
+      document.querySelectorAll('[data-aos]').forEach(el => {
+        observer.observe(el);
+      });
+
+      console.log("✅ AOS with fade-out enabled");
+    } else {
+      console.warn("❌ AOS failed to load.");
+    }
+  });
+</script>
+<section id="about-me" class="level1">
+<h1>About Me</h1>
+<div class="section-box" data-aos="fade-up">
 <p>I’m a data enthusiast focused on turning complex information into clear, actionable insights.<br>
 What started as curiosity has evolved into hands-on experience building Python scripts, writing SQL queries, and creating clean, effective visualizations.<br>
 I enjoy solving real-world problems with data and helping others make informed decisions.</p>
 <p>Outside of work, I enjoy hiking, gaming, and spending time with my family.</p>
-</section>
+</div>
 <section id="skills-overview" class="level2 section-box" data-aos="fade-up">
 <h2 class="anchored" data-anchor-id="skills-overview">Skills Overview</h2>
 <section id="programming-languages" class="level3">
@@ -234,6 +272,7 @@ Visit the <a href="./projects.html">Projects</a> page for detailed case studies 
 </section>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

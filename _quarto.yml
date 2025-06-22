@@ -23,6 +23,8 @@ format:
     theme: flatly
     css: styles.css
     toc: true
+    includes:
+      in-header: includes/aos-header.html
 
 execute:
   enabled: false

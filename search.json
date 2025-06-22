@@ -210,44 +210,30 @@
     "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Wilkin",
-    "section": "",
-    "text": "I’m a data enthusiast focused on turning complex information into clear, actionable insights.\nWhat started as curiosity has evolved into hands-on experience building Python scripts, writing SQL queries, and creating clean, effective visualizations.\nI enjoy solving real-world problems with data and helping others make informed decisions.\nOutside of work, I enjoy hiking, gaming, and spending time with my family."
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "About Wilkin",
-    "section": "",
-    "text": "I’m a data enthusiast focused on turning complex information into clear, actionable insights.\nWhat started as curiosity has evolved into hands-on experience building Python scripts, writing SQL queries, and creating clean, effective visualizations.\nI enjoy solving real-world problems with data and helping others make informed decisions.\nOutside of work, I enjoy hiking, gaming, and spending time with my family."
-  },
-  {
     "objectID": "about.html#skills-overview",
     "href": "about.html#skills-overview",
-    "title": "About Wilkin",
+    "title": "About Me",
     "section": "Skills Overview",
     "text": "Skills Overview\n\nProgramming Languages\n\nPython\n\nSQL\n\n\n\nCurrently Learning\n\nMachine Learning\n\nTime Series Forecasting"
   },
   {
     "objectID": "about.html#tools-and-technologies",
     "href": "about.html#tools-and-technologies",
-    "title": "About Wilkin",
+    "title": "About Me",
     "section": "Tools and Technologies",
     "text": "Tools and Technologies\n\nPython Libraries\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels\n\n\n\nModeling and Machine Learning\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nFeature Engineering, Model Evaluation (RMSE, R², Confusion Matrix)\n\n\n\nData Analysis and Visualization\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\nDevelopment and Version Control\n\nGit, GitHub, VS Code, Markdown\n\n\n\nDatabases and SQL\n\nMySQL, SQLite\n\nERD Design, Data Cleaning, Joins, Set Operations\n\n\n\nWeb and Reporting\n\nHTML/CSS (via Quarto)\n\nGitHub Pages, Portfolio Development"
   },
   {
     "objectID": "about.html#collaboration-and-leadership",
     "href": "about.html#collaboration-and-leadership",
-    "title": "About Wilkin",
+    "title": "About Me",
     "section": "Collaboration and Leadership",
     "text": "Collaboration and Leadership\n\nProject Management\n\nCommunication and Team Collaboration\n\nLeadership Experience (Digital Communications Supervisor at BYU–Idaho)"
   },
   {
     "objectID": "about.html#practical-experience",
     "href": "about.html#practical-experience",
-    "title": "About Wilkin",
+    "title": "About Me",
     "section": "Practical Experience",
     "text": "Practical Experience\nHands-on with SQL normalization, exploratory data analysis, feature engineering, and producing clean, web-ready reports using tools like Quarto and Jupyter Notebooks.\nWant to see examples?\nVisit the Projects page for detailed case studies and write-ups."
   },

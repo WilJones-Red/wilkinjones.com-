@@ -30,7 +30,7 @@ The original target column `num`, which encoded heart disease severity (0–4), 
 
 To begin, we load the cleaned dataset and inspect the first few rows:
 
-![Sample of DataFrame](Assets/heart/df_head_preview.png)
+![Sample of DataFrame](/assets/Heart/df_head_preview.png)
 
 ## Dataset Preview - Exploration
 ### Target Distribution
@@ -42,12 +42,12 @@ Before binarizing the target, we explored the distribution of the original `num`
 
 The following plot shows the class distribution before binarization:
 
-![Distribution of Severity from the Entire Dataset](Assets/heart/target_class.png)
+![Distribution of Severity from the Entire Dataset](/assets/Heart/target_class.png)
 
 ### Feature Insights
 
 #### Correlation Analysis
-![Correlation of Every Feature](Assets/heart/correlation_heatmap.png)
+![Correlation of Every Feature](/assets/Heart/correlation_heatmap.png)
 
 After reviewing the distribution of heart disease cases in the dataset, I analyzed the relationships between features using a correlation matrix. This allowed me to identify which variables had the strongest associations with heart disease and to uncover any redundancy or multicollinearity that might affect model performance.
 
@@ -63,7 +63,7 @@ This step guided the **prioritization of features** for engineering and provided
 
 #### Numerical Feature Distributions
 
-![The Distributions of Several Features](Assets/Heart/numerical_feature_distribution.png)
+![The Distributions of Several Features](/assets/Heart/numerical_feature_distribution.png)
 
 To better understand the range and shape of the dataset’s continuous variables, I visualized the distributions of several key numeric features: `age`, `trestbps (resting blood pressure)`, `chol (serum cholesterol)`, `thalach (maximum heart rate achieved)`, and `oldpeak (ST depression induced by exercise)`.
 
@@ -85,7 +85,7 @@ This distribution analysis highlighted potential **scaling or transformation nee
 
 To deepen our understanding of the interactions between key numerical features and the target variable (`num`), we created a pairwise comparison plot. This visualization displays the relationships between `age`, `chol`, `thalach`, and `oldpeak`, color-coded by the presence and severity of heart disease.
 
-![Pairwise Plot of Age, Chol, Thalach, and Oldpeak by Heart Disease Level](assets/heart/pairplot_features.png)
+![Pairwise Plot of Age, Chol, Thalach, and Oldpeak by Heart Disease Level](assets/Heart/pairplot_features.png)
 
 Several observations emerged from this visualization:
 
@@ -100,7 +100,7 @@ This plot helped guide feature selection and engineering efforts by identifying 
 # Feature Engineering
 
 :::{.center}
-![Distribution of Engineered Features](Assets/Heart/distribution.png)
+![Distribution of Engineered Features](assets/Heart/distribution.png)
 
 :::
 
@@ -148,7 +148,7 @@ Using an `XGBoost` classifier, I explored several `learning_rate` values ranging
 
 This resulted in the following 3D surface plot, which visualizes how different learning rate and threshold combinations affect the F1 score:
 
-![F1 Score Surface Plot](assets/heart/f1_surface.png)
+![F1 Score Surface Plot](/assets/Heart/f1_surface.png)
 
 From this visualization, I was able to identify regions where the model performed optimally. A lower learning rate consistently produced better results, with the F1 score peaking around a moderate threshold.
 
@@ -158,7 +158,7 @@ The best configuration identified was:
 - `Threshold`: `0.55`  
 - `Validation F1 Score`: `0.8636`
 
-![Best Configuration Summary](assets/heart/best_config.png)
+![Best Configuration Summary](/assets/Heart/best_config.png)
 
 This process helped tune the model for better generalization on the holdout set. By optimizing the threshold, I ensured the classifier maintained a better balance between false positives and false negatives—especially important in a medical context where both errors carry significant consequences.
 
@@ -204,12 +204,12 @@ This evaluation provided confidence that the model performs robustly while also 
 
 All project resources are available below for reproducibility and deeper inspection:
 
-- [1_data_cleaning.ipynb](assets/heart/1_data_cleaning.ipynb): Covers how the dataset was loaded, cleaned, and preprocessed.
-- [2_data_exploration_EDA.ipynb](assets/heart/2_data_exploration_EDA.ipynb): Provides visual insights into class balance and feature distributions.
-- [3_feature_engineering_visuals.ipynb](assets/heart/3_feature_engineering_visuals.ipynb): Showcases engineered features, transformations, and buckets.
-- [4_model_tuning.ipynb](assets/heart/4_model_tuning.ipynb): Displays threshold tuning, learning rate exploration, and validation performance.
-- [5_final_model.ipynb](assets/heart/5_final_model.ipynb): Contains final model training, holdout testing, and evaluation interpretation.
-- [processed_cleveland_clean.csv](assets/heart/processed_cleveland_clean.csv): Cleaned dataset used throughout the project.
+- [1_data_cleaning.html](assets/Heart/1_data_cleaning.html): Covers how the dataset was loaded, cleaned, and preprocessed.
+- [2_data_exploration_EDA.html](assets/Heart/2_data_exploration_EDA.html): Provides visual insights into class balance and feature distributions.
+- [3_feature_engineering_visuals.html](assets/Heart/3_feature_engineering_visuals.html): Showcases engineered features, transformations, and buckets.
+- [4_model_tuning.html](assets/Heart/4_model_tuning.html): Displays threshold tuning, learning rate exploration, and validation performance.
+- [5_final_model.html](assets/Heart/5_final_model.html): Contains final model training, holdout testing, and evaluation interpretation.
+- [processed_cleveland_clean.csv](assets/Heart/processed_cleveland_clean.csv): Cleaned dataset used throughout the project.
 
 These supporting documents reflect a structured approach to building a robust binary classification pipeline.
 

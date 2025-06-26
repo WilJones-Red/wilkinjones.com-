@@ -221,8 +221,11 @@ This indicates that the model is not only accurate but also reliable in its clas
 After finalizing the model, performance was tested on a completely untouched holdout set:
 
 **Accuracy**: 0.8000  
-**Precision**: 0.9000  
+
+**Precision**: 0.9000
+
 **Recall**: 0.6429  
+
 **F1 Score**: 0.7500  
 
 Key observations from the holdout classification report:
@@ -240,8 +243,11 @@ This evaluation provided confidence that the model performs robustly while also 
 After finalizing the model, performance was tested on a completely untouched holdout set completely seperate from the Cleveland dataset.
 
 **Accuracy**: 0.7687  
+
 **Precision**: 0.6338
+
 **Recall**: 0.8491
+
 **F1 Score**: 0.7258 
 
 Key observations from the holdout classification report:

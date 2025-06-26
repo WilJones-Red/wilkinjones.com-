@@ -204,12 +204,14 @@ This evaluation provided confidence that the model performs robustly while also 
 
 All project resources are available below for reproducibility and deeper inspection:
 
-- [1_data_cleaning.html](assets/heart/1_data_cleaning.html): Covers how the dataset was loaded, cleaned, and preprocessed.
-- [2_data_exploration_EDA.html](assets/heart/2_data_exploration_EDA.html): Provides visual insights into class balance and feature distributions.
-- [3_feature_engineering_visuals.html](assets/heart/3_feature_engineering_visuals.html): Showcases engineered features, transformations, and buckets.
-- [4_model_tuning.html](assets/heart/4_model_tuning.html): Displays threshold tuning, learning rate exploration, and validation performance.
-- [5_final_model.html](assets/heart/5_final_model.html): Contains final model training, holdout testing, and evaluation interpretation.
+- [1_data_cleaning.ipynb](assets/heart/1_data_cleaning.ipynb): Covers how the dataset was loaded, cleaned, and preprocessed.
+- [2_data_exploration_EDA.ipynb](assets/heart/2_data_exploration_EDA.ipynb): Provides visual insights into class balance and feature distributions.
+- [3_feature_engineering_visuals.ipynb](assets/heart/3_feature_engineering_visuals.ipynb): Showcases engineered features, transformations, and buckets.
+- [4_model_tuning.ipynb](assets/heart/4_model_tuning.ipynb): Displays threshold tuning, learning rate exploration, and validation performance.
+- [5_final_model.ipynb](assets/heart/5_final_model.ipynb): Contains final model training, holdout testing, and evaluation interpretation.
 - [processed_cleveland_clean.csv](assets/heart/processed_cleveland_clean.csv): Cleaned dataset used throughout the project.
 
 These supporting documents reflect a structured approach to building a robust binary classification pipeline.
+
+
 

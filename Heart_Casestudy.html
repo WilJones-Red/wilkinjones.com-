@@ -153,6 +153,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#validation-evaluation" id="toc-validation-evaluation" class="nav-link" data-scroll-target="#validation-evaluation">Validation Evaluation</a></li>
   <li><a href="#holdout-evaluation" id="toc-holdout-evaluation" class="nav-link" data-scroll-target="#holdout-evaluation">Holdout Evaluation</a></li>
+  <li><a href="#hungarian-holdout-evaluation" id="toc-hungarian-holdout-evaluation" class="nav-link" data-scroll-target="#hungarian-holdout-evaluation">Hungarian Holdout Evaluation</a></li>
   </ul></li>
   <li><a href="#supporting-documents" id="toc-supporting-documents" class="nav-link" data-scroll-target="#supporting-documents">Supporting Documents</a></li>
   </ul>
@@ -570,6 +571,27 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Assets/Heart/Confusion_Matrix.png" class="img-fluid figure-img"></p>
+<figcaption>Final Results: Confusion Matrix</figcaption>
+</figure>
+</div>
+</section>
+<section id="hungarian-holdout-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="hungarian-holdout-evaluation">Hungarian Holdout Evaluation</h2>
+<p>After finalizing the model, performance was tested on a completely untouched holdout set completely seperate from the Cleveland dataset.</p>
+<p><strong>Accuracy</strong>: 0.7585<br>
+<strong>Precision</strong>: 0.6296 <strong>Recall</strong>: 0.8019 <strong>F1 Score</strong>: 0.7054</p>
+<p>Key observations from the holdout classification report:</p>
+<ul>
+<li>The model achieved <strong>very high recall (0.80)</strong> on predicting heart disease (class 1), meaning when it predicted disease, it was usually correct.<br>
+</li>
+<li>However, the <strong>accuracy dropped to 0.75</strong>, indicating that some true cases of heart disease were missed.<br>
+</li>
+<li>Overall performance remains solid with a <strong>macro F1 score of 0.70</strong>, suggesting that the model still generalizes well to unseen data.</li>
+</ul>
+<p>This evaluation provided confidence that the model performs robustly while also identifying opportunities for improvement, such as potentially boosting the overall <strong>F1-Score</strong> for heart disease cases.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/Heart/hungarian.png" class="img-fluid figure-img"></p>
 <figcaption>Final Results: Confusion Matrix</figcaption>
 </figure>
 </div>

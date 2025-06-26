@@ -235,6 +235,25 @@ This evaluation provided confidence that the model performs robustly while also 
 
 ![Final Results: Confusion Matrix](Assets/Heart/Confusion_Matrix.png)
 
+## Hungarian Holdout Evaluation
+
+After finalizing the model, performance was tested on a completely untouched holdout set completely seperate from the Cleveland dataset.
+
+**Accuracy**: 0.7585  
+**Precision**: 0.6296
+**Recall**: 0.8019
+**F1 Score**: 0.7054 
+
+Key observations from the holdout classification report:
+
+- The model achieved **very high recall (0.80)** on predicting heart disease (class 1), meaning when it predicted disease, it was usually correct.  
+- However, the **accuracy dropped to 0.75**, indicating that some true cases of heart disease were missed.  
+- Overall performance remains solid with a **macro F1 score of 0.70**, suggesting that the model still generalizes well to unseen data.  
+
+This evaluation provided confidence that the model performs robustly while also identifying opportunities for improvement, such as potentially boosting the overall **F1-Score** for heart disease cases.
+
+![Final Results: Confusion Matrix](Assets/Heart/hungarian.png)
+
 
 # Supporting Documents
 

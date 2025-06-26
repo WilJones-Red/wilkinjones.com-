@@ -1,8 +1,6 @@
 ---
-title: "Projects"
+title: "🛠️ My Projects"
 ---
-
-# 🛠️ My Projects
 
 ## ❤️ Heart Disease Classification
 

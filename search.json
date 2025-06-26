@@ -51,72 +51,72 @@
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "Projects",
+    "title": "🛠️ My Projects",
     "section": "",
-    "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report\n\n\n\n\nForecasting pedal power with deep learning and pandemic-aware features.\n\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals using time-based and COVID-era features\nOutcome: Achieved 89% R² accuracy with a dropout-regularized neural net\nRead the full report\n\n\n\n\nUnlocking the mystery of what makes homes expensive (besides the granite countertops).\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\nOutcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\nRead the full report\n\n\n\n\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up\n\n\n\n\n\nTools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up\n\n\n\n\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up\n\n\n\n\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study\n\n\n\n\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study\n\n\n\n\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
+    "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report"
   },
   {
     "objectID": "projects.html#heart-disease-classification",
     "href": "projects.html#heart-disease-classification",
-    "title": "Projects",
+    "title": "🛠️ My Projects",
     "section": "",
     "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report"
   },
   {
     "objectID": "projects.html#bike-rentals-prediction",
     "href": "projects.html#bike-rentals-prediction",
-    "title": "Projects",
-    "section": "",
-    "text": "Forecasting pedal power with deep learning and pandemic-aware features.\n\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals using time-based and COVID-era features\nOutcome: Achieved 89% R² accuracy with a dropout-regularized neural net\nRead the full report"
+    "title": "🛠️ My Projects",
+    "section": "🚲 Bike Rentals Prediction",
+    "text": "🚲 Bike Rentals Prediction\nForecasting pedal power with deep learning and pandemic-aware features.\n\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals using time-based and COVID-era features\nOutcome: Achieved 89% R² accuracy with a dropout-regularized neural net\nRead the full report"
   },
   {
     "objectID": "projects.html#housing-price-prediction",
     "href": "projects.html#housing-price-prediction",
-    "title": "Projects",
-    "section": "",
-    "text": "Unlocking the mystery of what makes homes expensive (besides the granite countertops).\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\nOutcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\nRead the full report"
+    "title": "🛠️ My Projects",
+    "section": "🏡 Housing Price Prediction",
+    "text": "🏡 Housing Price Prediction\nUnlocking the mystery of what makes homes expensive (besides the granite countertops).\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\nOutcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\nRead the full report"
   },
   {
     "objectID": "projects.html#pawesome-pet-services-database-redesign",
     "href": "projects.html#pawesome-pet-services-database-redesign",
-    "title": "Projects",
-    "section": "",
-    "text": "Tools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up"
+    "title": "🛠️ My Projects",
+    "section": "🐶 Pawesome Pet Services Database Redesign",
+    "text": "🐶 Pawesome Pet Services Database Redesign\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up"
   },
   {
     "objectID": "projects.html#baseball-data-relationships",
     "href": "projects.html#baseball-data-relationships",
-    "title": "Projects",
-    "section": "",
-    "text": "Tools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
+    "title": "🛠️ My Projects",
+    "section": "⚾ Baseball Data Relationships",
+    "text": "⚾ Baseball Data Relationships\n\nTools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
   },
   {
     "objectID": "projects.html#grocery-receipt-generator-python-gui",
     "href": "projects.html#grocery-receipt-generator-python-gui",
-    "title": "Projects",
-    "section": "",
-    "text": "Tools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up"
+    "title": "🛠️ My Projects",
+    "section": "🧾 Grocery Receipt Generator (Python GUI)",
+    "text": "🧾 Grocery Receipt Generator (Python GUI)\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up"
   },
   {
     "objectID": "projects.html#tuberculosis-case-study",
     "href": "projects.html#tuberculosis-case-study",
-    "title": "Projects",
-    "section": "",
-    "text": "Tools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study"
+    "title": "🛠️ My Projects",
+    "section": "🦠 Tuberculosis Case Study",
+    "text": "🦠 Tuberculosis Case Study\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study"
   },
   {
     "objectID": "projects.html#water-filling-station-quality-control",
     "href": "projects.html#water-filling-station-quality-control",
-    "title": "Projects",
-    "section": "",
-    "text": "Tools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study"
+    "title": "🛠️ My Projects",
+    "section": "💧 Water Filling Station Quality Control",
+    "text": "💧 Water Filling Station Quality Control\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study"
   },
   {
     "objectID": "projects.html#paper-airplane-experiment-two-way-anova",
     "href": "projects.html#paper-airplane-experiment-two-way-anova",
-    "title": "Projects",
-    "section": "",
-    "text": "Tools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
+    "title": "🛠️ My Projects",
+    "section": "✈️ Paper Airplane Experiment (Two-Way ANOVA)",
+    "text": "✈️ Paper Airplane Experiment (Two-Way ANOVA)\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
   },
   {
     "objectID": "index.html",

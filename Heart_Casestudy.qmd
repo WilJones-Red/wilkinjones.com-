@@ -20,6 +20,40 @@ The original dataset included a severity scale in the `num` column, but for this
 
 This binary framing was chosen for clarity, consistency, and greater practical relevance in real-world screening contexts. Rather than attempting to assess disease severity, the model's goal is to flag whether or not the presence of heart disease is likely, enabling early detection and follow-up care.
 
+# Data Dictionary
+
+## Original Clinical Variables
+
+| Variable     | Role    | Type        | Description                                                        | Units    | Missing Values |
+|--------------|---------|-------------|--------------------------------------------------------------------|----------|----------------|
+| `age`        | Feature | Integer     | Age of the patient                                                 | Years    | No             |
+| `sex`        | Feature | Categorical | Biological sex (1 = male, 0 = female)                              | -        | No             |
+| `cp`         | Feature | Categorical | Chest pain type (0–3)                                              | -        | No             |
+| `trestbps`   | Feature | Integer     | Resting blood pressure at admission                                | mm Hg    | No             |
+| `chol`       | Feature | Integer     | Serum cholesterol level                                            | mg/dL    | No             |
+| `fbs`        | Feature | Categorical | Fasting blood sugar > 120 mg/dL (1 = true; 0 = false)              | -        | No             |
+| `restecg`    | Feature | Categorical | Resting electrocardiographic results                               | -        | No             |
+| `thalach`    | Feature | Integer     | Maximum heart rate achieved                                        | bpm      | No             |
+| `exang`      | Feature | Categorical | Exercise-induced angina (1 = yes; 0 = no)                          | -        | No             |
+| `oldpeak`    | Feature | Float       | ST depression from exercise relative to rest                       | -        | No             |
+| `slope`      | Feature | Categorical | Slope of peak exercise ST segment                                  | -        | No             |
+| `ca`         | Feature | Integer     | Number of major vessels (0–3) colored by fluoroscopy               | Count    | Yes            |
+| `thal`       | Feature | Categorical | Thalassemia result (normal, fixed, or reversible defect)           | -        | Yes            |
+
+---
+
+### Engineered Features
+
+To improve model performance, several features were engineered from the original dataset:
+
+| Feature Name     | Description                                                                                      |
+|------------------|--------------------------------------------------------------------------------------------------|
+| `chol_per_age`   | Ratio of cholesterol to age to normalize across age groups                                       |
+| `stress_index`   | Relative stress response: `thalach / (oldpeak + 1)`                                              |
+| `bp_dev`         | Deviation from ideal resting BP: `trestbps - 120`                                                |
+| `age_bucket`     | Binned `age` into ordinal groups, then one-hot encoded                                           |
+
+These engineered features helped the model capture nonlinear relationships, normalize age-related measurements, and better interpret cardiovascular risk factors.
 
 # Pre-Model Architecture
 

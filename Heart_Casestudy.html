@@ -125,6 +125,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data Dictionary</a>
+  <ul class="collapse">
+  <li><a href="#original-clinical-variables" id="toc-original-clinical-variables" class="nav-link" data-scroll-target="#original-clinical-variables">Original Clinical Variables</a>
+  <ul class="collapse">
+  <li><a href="#engineered-features" id="toc-engineered-features" class="nav-link" data-scroll-target="#engineered-features">Engineered Features</a></li>
+  </ul></li>
+  </ul></li>
   <li><a href="#pre-model-architecture" id="toc-pre-model-architecture" class="nav-link" data-scroll-target="#pre-model-architecture">Pre-Model Architecture</a>
   <ul class="collapse">
   <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link" data-scroll-target="#data-cleaning">Data Cleaning</a></li>
@@ -196,6 +203,174 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>1</strong> → Heart disease present</li>
 </ul>
 <p>This binary framing was chosen for clarity, consistency, and greater practical relevance in real-world screening contexts. Rather than attempting to assess disease severity, the model’s goal is to flag whether or not the presence of heart disease is likely, enabling early detection and follow-up care.</p>
+</section>
+<section id="data-dictionary" class="level1">
+<h1>Data Dictionary</h1>
+<section id="original-clinical-variables" class="level2">
+<h2 class="anchored" data-anchor-id="original-clinical-variables">Original Clinical Variables</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 6%">
+<col style="width: 10%">
+<col style="width: 52%">
+<col style="width: 7%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Role</th>
+<th>Type</th>
+<th>Description</th>
+<th>Units</th>
+<th>Missing Values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>age</code></td>
+<td>Feature</td>
+<td>Integer</td>
+<td>Age of the patient</td>
+<td>Years</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td><code>sex</code></td>
+<td>Feature</td>
+<td>Categorical</td>
+<td>Biological sex (1 = male, 0 = female)</td>
+<td>-</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td><code>cp</code></td>
+<td>Feature</td>
+<td>Categorical</td>
+<td>Chest pain type (0–3)</td>
+<td>-</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td><code>trestbps</code></td>
+<td>Feature</td>
+<td>Integer</td>
+<td>Resting blood pressure at admission</td>
+<td>mm Hg</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td><code>chol</code></td>
+<td>Feature</td>
+<td>Integer</td>
+<td>Serum cholesterol level</td>
+<td>mg/dL</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td><code>fbs</code></td>
+<td>Feature</td>
+<td>Categorical</td>
+<td>Fasting blood sugar &gt; 120 mg/dL (1 = true; 0 = false)</td>
+<td>-</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td><code>restecg</code></td>
+<td>Feature</td>
+<td>Categorical</td>
+<td>Resting electrocardiographic results</td>
+<td>-</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td><code>thalach</code></td>
+<td>Feature</td>
+<td>Integer</td>
+<td>Maximum heart rate achieved</td>
+<td>bpm</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td><code>exang</code></td>
+<td>Feature</td>
+<td>Categorical</td>
+<td>Exercise-induced angina (1 = yes; 0 = no)</td>
+<td>-</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td><code>oldpeak</code></td>
+<td>Feature</td>
+<td>Float</td>
+<td>ST depression from exercise relative to rest</td>
+<td>-</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td><code>slope</code></td>
+<td>Feature</td>
+<td>Categorical</td>
+<td>Slope of peak exercise ST segment</td>
+<td>-</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td><code>ca</code></td>
+<td>Feature</td>
+<td>Integer</td>
+<td>Number of major vessels (0–3) colored by fluoroscopy</td>
+<td>Count</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><code>thal</code></td>
+<td>Feature</td>
+<td>Categorical</td>
+<td>Thalassemia result (normal, fixed, or reversible defect)</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<section id="engineered-features" class="level3">
+<h3 class="anchored" data-anchor-id="engineered-features">Engineered Features</h3>
+<p>To improve model performance, several features were engineered from the original dataset:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 84%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>chol_per_age</code></td>
+<td>Ratio of cholesterol to age to normalize across age groups</td>
+</tr>
+<tr class="even">
+<td><code>stress_index</code></td>
+<td>Relative stress response: <code>thalach / (oldpeak + 1)</code></td>
+</tr>
+<tr class="odd">
+<td><code>bp_dev</code></td>
+<td>Deviation from ideal resting BP: <code>trestbps - 120</code></td>
+</tr>
+<tr class="even">
+<td><code>age_bucket</code></td>
+<td>Binned <code>age</code> into ordinal groups, then one-hot encoded</td>
+</tr>
+</tbody>
+</table>
+<p>These engineered features helped the model capture nonlinear relationships, normalize age-related measurements, and better interpret cardiovascular risk factors.</p>
+</section>
+</section>
 </section>
 <section id="pre-model-architecture" class="level1">
 <h1>Pre-Model Architecture</h1>

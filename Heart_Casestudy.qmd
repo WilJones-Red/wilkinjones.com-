@@ -199,6 +199,8 @@ Key observations from the holdout classification report:
 
 This evaluation provided confidence that the model performs robustly while also identifying opportunities for improvement, such as potentially boosting recall for heart disease cases.
 
+![Final Results: Confusion Matrix](Assets/Heart/Confusion_Matrix.png)
+
 
 # Supporting Documents
 

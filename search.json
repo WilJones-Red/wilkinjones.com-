@@ -137,7 +137,7 @@
     "href": "Heart_Casestudy.html",
     "title": "Heart Disease Prediction Case Study",
     "section": "",
-    "text": "The objective of this project is to build a machine learning model that predicts whether or not a patient has heart disease, using clinical data from the Cleveland Heart Disease dataset.\nThe original dataset included a severity scale in the num column, but for this project, we simplified the task to a binary classification problem:\n\n0 → No heart disease\n\n1 → Heart disease present\n\nThis binary framing was chosen for clarity, consistency, and greater practical relevance in real-world screening contexts. Rather than attempting to assess disease severity, the model’s goal is to flag whether or not the presence of heart disease is likely, enabling early detection and follow-up care."
+    "text": "The objective of this project is to build a machine learning model that predicts whether or not a patient has heart disease, using clinical data from the Cleveland Heart Disease dataset.\n\n\n\nThe Original Dataset Source\n\n\nThe original dataset included a severity scale in the num column, but for this project, we simplified the task to a binary classification problem:\n\n0 → No heart disease\n\n1 → Heart disease present\n\nThis binary framing was chosen for clarity, consistency, and greater practical relevance in real-world screening contexts. Rather than attempting to assess disease severity, the model’s goal is to flag whether or not the presence of heart disease is likely, enabling early detection and follow-up care."
   },
   {
     "objectID": "Heart_Casestudy.html#data-cleaning",

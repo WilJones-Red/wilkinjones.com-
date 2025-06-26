@@ -26,7 +26,7 @@ This project involved restructuring and expanding the **Pawesome Pet Services** 
 
 ## 🗂️ ERD Diagram
 
-![ERD of Enhanced Database](assets/EDR%20Diagram.png)
+![ERD of Enhanced Database](assets/EDR_Diagram.png)
 
 ## 📌 Outcome
 

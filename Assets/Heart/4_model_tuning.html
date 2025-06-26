@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Wilkin Jones</title>
+<title>4. Model Tuning &amp; Threshold Optimization – Wilkin Jones</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Wilkin Jones</span>
     </a>
   </div>
@@ -91,19 +126,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
 </ul>
@@ -122,18 +157,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#my-projects" id="toc-my-projects" class="nav-link active" data-scroll-target="#my-projects">🛠️ My Projects</a>
-  <ul class="collapse">
-  <li><a href="#heart-disease-classification" id="toc-heart-disease-classification" class="nav-link" data-scroll-target="#heart-disease-classification">❤️ Heart Disease Classification</a></li>
-  <li><a href="#bike-rentals-prediction" id="toc-bike-rentals-prediction" class="nav-link" data-scroll-target="#bike-rentals-prediction">🚲 Bike Rentals Prediction</a></li>
-  <li><a href="#housing-price-prediction" id="toc-housing-price-prediction" class="nav-link" data-scroll-target="#housing-price-prediction">🏡 Housing Price Prediction</a></li>
-  <li><a href="#pawesome-pet-services-database-redesign" id="toc-pawesome-pet-services-database-redesign" class="nav-link" data-scroll-target="#pawesome-pet-services-database-redesign">🐶 Pawesome Pet Services Database Redesign</a></li>
-  <li><a href="#baseball-data-relationships" id="toc-baseball-data-relationships" class="nav-link" data-scroll-target="#baseball-data-relationships">⚾ Baseball Data Relationships</a></li>
-  <li><a href="#grocery-receipt-generator-python-gui" id="toc-grocery-receipt-generator-python-gui" class="nav-link" data-scroll-target="#grocery-receipt-generator-python-gui">🧾 Grocery Receipt Generator (Python GUI)</a></li>
-  <li><a href="#tuberculosis-case-study" id="toc-tuberculosis-case-study" class="nav-link" data-scroll-target="#tuberculosis-case-study">🦠 Tuberculosis Case Study</a></li>
-  <li><a href="#water-filling-station-quality-control" id="toc-water-filling-station-quality-control" class="nav-link" data-scroll-target="#water-filling-station-quality-control">💧 Water Filling Station Quality Control</a></li>
-  <li><a href="#paper-airplane-experiment-two-way-anova" id="toc-paper-airplane-experiment-two-way-anova" class="nav-link" data-scroll-target="#paper-airplane-experiment-two-way-anova">✈️ Paper Airplane Experiment (Two-Way ANOVA)</a></li>
-  </ul></li>
+  <li><a href="#load-data-and-split" id="toc-load-data-and-split" class="nav-link active" data-scroll-target="#load-data-and-split">Load data and split</a></li>
+  <li><a href="#grid-search-over-learning-rates-and-thresholds" id="toc-grid-search-over-learning-rates-and-thresholds" class="nav-link" data-scroll-target="#grid-search-over-learning-rates-and-thresholds">Grid search over learning rates and thresholds</a></li>
+  <li><a href="#d-plot-of-f1-scores" id="toc-d-plot-of-f1-scores" class="nav-link" data-scroll-target="#d-plot-of-f1-scores">3D plot of F1 scores</a></li>
+  <li><a href="#report-best-configuration" id="toc-report-best-configuration" class="nav-link" data-scroll-target="#report-best-configuration">Report best configuration</a></li>
   </ul>
 </nav>
     </div>
@@ -142,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">4. Model Tuning &amp; Threshold Optimization</h1>
 </div>
 
 
@@ -159,100 +186,82 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="my-projects" class="level1">
-<h1>🛠️ My Projects</h1>
-<section id="heart-disease-classification" class="level2">
-<h2 class="anchored" data-anchor-id="heart-disease-classification">❤️ Heart Disease Classification</h2>
-<p>Using machine learning to predict the presence of heart disease from patient data.</p>
-<ul>
-<li><strong>Tools:</strong> Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn</li>
-<li><strong>Goal:</strong> Classify whether a patient has heart disease based on clinical measurements</li>
-<li><strong>Outcome:</strong> Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set</li>
-<li><a href="./Heart_Casestudy.html">Read the full report</a></li>
-</ul>
+<div id="dc77e9d7" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> xgboost <span class="im">as</span> xgb</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> f1_score</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.utils.class_weight <span class="im">import</span> compute_sample_weight</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="load-data-and-split" class="level2">
+<h2 class="anchored" data-anchor-id="load-data-and-split">Load data and split</h2>
+<div id="884cf0d7" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"engineered_heart_data.csv"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop(<span class="st">"target"</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">"target"</span>]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>X_train, X_val, y_train, y_val <span class="op">=</span> train_test_split(X, y, stratify<span class="op">=</span>y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>sample_weights <span class="op">=</span> compute_sample_weight(class_weight<span class="op">=</span><span class="st">"balanced"</span>, y<span class="op">=</span>y_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="bike-rentals-prediction" class="level2">
-<h2 class="anchored" data-anchor-id="bike-rentals-prediction">🚲 Bike Rentals Prediction</h2>
-<p>Forecasting pedal power with deep learning and pandemic-aware features.</p>
-<ul>
-<li><strong>Tools:</strong> Python, Keras, Scikit-learn, Pandas, Matplotlib</li>
-<li><strong>Goal:</strong> Predict hourly bike rentals using time-based and COVID-era features</li>
-<li><strong>Outcome:</strong> Achieved 89% R² accuracy with a dropout-regularized neural net</li>
-<li><a href="./bike_rentals_case_study.html">Read the full report</a></li>
-</ul>
+<section id="grid-search-over-learning-rates-and-thresholds" class="level2">
+<h2 class="anchored" data-anchor-id="grid-search-over-learning-rates-and-thresholds">Grid search over learning rates and thresholds</h2>
+<div id="1d1f030f" class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_toolkits.mplot3d <span class="im">import</span> Axes3D</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>learning_rates <span class="op">=</span> [<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.2</span>]</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>thresholds <span class="op">=</span> np.arange(<span class="fl">0.3</span>, <span class="fl">0.71</span>, <span class="fl">0.05</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>f1_matrix <span class="op">=</span> np.zeros((<span class="bu">len</span>(learning_rates), <span class="bu">len</span>(thresholds)))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, lr <span class="kw">in</span> <span class="bu">enumerate</span>(learning_rates):</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> xgb.XGBClassifier(</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        use_label_encoder<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        eval_metric<span class="op">=</span><span class="st">"logloss"</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        objective<span class="op">=</span><span class="st">"binary:logistic"</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        learning_rate<span class="op">=</span>lr,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        n_estimators<span class="op">=</span><span class="dv">50</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        random_state<span class="op">=</span><span class="dv">42</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    model.fit(X_train, y_train, sample_weight<span class="op">=</span>sample_weights)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    probs <span class="op">=</span> model.predict_proba(X_val)[:, <span class="dv">1</span>]</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j, t <span class="kw">in</span> <span class="bu">enumerate</span>(thresholds):</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        preds <span class="op">=</span> (probs <span class="op">&gt;=</span> t).astype(<span class="bu">int</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        f1_matrix[i, j] <span class="op">=</span> f1_score(y_val, preds)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="housing-price-prediction" class="level2">
-<h2 class="anchored" data-anchor-id="housing-price-prediction">🏡 Housing Price Prediction</h2>
-<p>Unlocking the mystery of what makes homes expensive (besides the granite countertops).</p>
-<ul>
-<li><strong>Tools</strong>: Python, Jupyter, Seaborn, XGBoost, Random Forest</li>
-<li><strong>Goal</strong>: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude</li>
-<li><strong>Outcome</strong>: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance</li>
-<li><a href="./housing_case_study.html">Read the full report</a></li>
-</ul>
+<section id="d-plot-of-f1-scores" class="level2">
+<h2 class="anchored" data-anchor-id="d-plot-of-f1-scores">3D plot of F1 scores</h2>
+<div id="63d3f765" class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>T, LR <span class="op">=</span> np.meshgrid(thresholds, learning_rates)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(<span class="dv">111</span>, projection<span class="op">=</span><span class="st">'3d'</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>surf <span class="op">=</span> ax.plot_surface(LR, T, f1_matrix, cmap<span class="op">=</span><span class="st">'viridis'</span>, edgecolor<span class="op">=</span><span class="st">'k'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Learning Rate"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Threshold"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>ax.set_zlabel(<span class="st">"F1 Score"</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"F1 Score by Learning Rate and Threshold"</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="pawesome-pet-services-database-redesign" class="level2">
-<h2 class="anchored" data-anchor-id="pawesome-pet-services-database-redesign">🐶 Pawesome Pet Services Database Redesign</h2>
-<ul>
-<li><strong>Tools:</strong> MySQL Workbench, ERD modeling<br>
-</li>
-<li><strong>Goal:</strong> Normalize and restructure the schema to better manage pet services and appointments<br>
-</li>
-<li><a href="./pawesome-database-enhancement.html">View the full write-up</a></li>
-</ul>
-</section>
-<section id="baseball-data-relationships" class="level2">
-<h2 class="anchored" data-anchor-id="baseball-data-relationships">⚾ Baseball Data Relationships</h2>
-<ul>
-<li><strong>Tools:</strong> SQL, Lahman DB, Lets-Plot, Quarto, Python<br>
-</li>
-<li><strong>Goal:</strong> Explore batting averages, salaries, and team comparisons using SQL queries and data visualization<br>
-</li>
-<li><a href="./baseball-relationships-study.html">View the full write-up</a></li>
-</ul>
-</section>
-<section id="grocery-receipt-generator-python-gui" class="level2">
-<h2 class="anchored" data-anchor-id="grocery-receipt-generator-python-gui">🧾 Grocery Receipt Generator (Python GUI)</h2>
-<ul>
-<li><strong>Tools:</strong> Python, tkinter, CSV I/O<br>
-</li>
-<li><strong>Goal:</strong> Build an interactive receipt system with discounts and file-driven checkout<br>
-</li>
-<li><a href="./receipt-generator-app.html">View the full write-up</a></li>
-</ul>
-</section>
-<section id="tuberculosis-case-study" class="level2">
-<h2 class="anchored" data-anchor-id="tuberculosis-case-study">🦠 Tuberculosis Case Study</h2>
-<ul>
-<li><strong>Tools:</strong> Python, MySQL, Tableau<br>
-</li>
-<li><strong>Goal:</strong> Identify global TB patterns across demographic segments<br>
-</li>
-<li><a href="./tb-insights.html">Read the full case study</a></li>
-</ul>
-</section>
-<section id="water-filling-station-quality-control" class="level2">
-<h2 class="anchored" data-anchor-id="water-filling-station-quality-control">💧 Water Filling Station Quality Control</h2>
-<ul>
-<li><strong>Tools:</strong> Excel, X-Bar &amp; R Charts, Wolfram Mathematica, Matplots<br>
-</li>
-<li><strong>Goal:</strong> Evaluate filling station accuracy and identify process variation<br>
-</li>
-<li><a href="./water-filling-case.html">Read the full case study</a></li>
-</ul>
-</section>
-<section id="paper-airplane-experiment-two-way-anova" class="level2">
-<h2 class="anchored" data-anchor-id="paper-airplane-experiment-two-way-anova">✈️ Paper Airplane Experiment (Two-Way ANOVA)</h2>
-<ul>
-<li><strong>Tools:</strong> Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots<br>
-</li>
-<li><strong>Goal:</strong> Determine how paper weight and design interact to affect flight performance<br>
-</li>
-<li><a href="./airplane-anova-study.html">View the full write-up</a></li>
-</ul>
+<section id="report-best-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="report-best-configuration">Report best configuration</h2>
+<div id="e8c45569" class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>best_idx <span class="op">=</span> np.unravel_index(np.argmax(f1_matrix, axis<span class="op">=</span><span class="va">None</span>), f1_matrix.shape)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>best_lr <span class="op">=</span> learning_rates[best_idx[<span class="dv">0</span>]]</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>best_threshold <span class="op">=</span> thresholds[best_idx[<span class="dv">1</span>]]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>best_f1 <span class="op">=</span> f1_matrix[best_idx]</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"🔥 Best Configuration Found:"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Learning Rate: </span><span class="sc">{</span>best_lr<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Threshold    : </span><span class="sc">{</span>best_threshold<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"F1 Score     : </span><span class="sc">{</span>best_f1<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

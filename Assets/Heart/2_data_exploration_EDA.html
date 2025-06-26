@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Wilkin Jones</title>
+<title>2. Exploratory Data Analysis (EDA) – Wilkin Jones</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Wilkin Jones</span>
     </a>
   </div>
@@ -91,19 +126,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
 </ul>
@@ -122,18 +157,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#my-projects" id="toc-my-projects" class="nav-link active" data-scroll-target="#my-projects">🛠️ My Projects</a>
-  <ul class="collapse">
-  <li><a href="#heart-disease-classification" id="toc-heart-disease-classification" class="nav-link" data-scroll-target="#heart-disease-classification">❤️ Heart Disease Classification</a></li>
-  <li><a href="#bike-rentals-prediction" id="toc-bike-rentals-prediction" class="nav-link" data-scroll-target="#bike-rentals-prediction">🚲 Bike Rentals Prediction</a></li>
-  <li><a href="#housing-price-prediction" id="toc-housing-price-prediction" class="nav-link" data-scroll-target="#housing-price-prediction">🏡 Housing Price Prediction</a></li>
-  <li><a href="#pawesome-pet-services-database-redesign" id="toc-pawesome-pet-services-database-redesign" class="nav-link" data-scroll-target="#pawesome-pet-services-database-redesign">🐶 Pawesome Pet Services Database Redesign</a></li>
-  <li><a href="#baseball-data-relationships" id="toc-baseball-data-relationships" class="nav-link" data-scroll-target="#baseball-data-relationships">⚾ Baseball Data Relationships</a></li>
-  <li><a href="#grocery-receipt-generator-python-gui" id="toc-grocery-receipt-generator-python-gui" class="nav-link" data-scroll-target="#grocery-receipt-generator-python-gui">🧾 Grocery Receipt Generator (Python GUI)</a></li>
-  <li><a href="#tuberculosis-case-study" id="toc-tuberculosis-case-study" class="nav-link" data-scroll-target="#tuberculosis-case-study">🦠 Tuberculosis Case Study</a></li>
-  <li><a href="#water-filling-station-quality-control" id="toc-water-filling-station-quality-control" class="nav-link" data-scroll-target="#water-filling-station-quality-control">💧 Water Filling Station Quality Control</a></li>
-  <li><a href="#paper-airplane-experiment-two-way-anova" id="toc-paper-airplane-experiment-two-way-anova" class="nav-link" data-scroll-target="#paper-airplane-experiment-two-way-anova">✈️ Paper Airplane Experiment (Two-Way ANOVA)</a></li>
-  </ul></li>
+  <li><a href="#target-distribution" id="toc-target-distribution" class="nav-link active" data-scroll-target="#target-distribution">Target Distribution</a></li>
+  <li><a href="#correlation-heatmap" id="toc-correlation-heatmap" class="nav-link" data-scroll-target="#correlation-heatmap">Correlation Heatmap</a></li>
+  <li><a href="#numerical-feature-distributions" id="toc-numerical-feature-distributions" class="nav-link" data-scroll-target="#numerical-feature-distributions">Numerical Feature Distributions</a></li>
+  <li><a href="#pair-plot-by-target" id="toc-pair-plot-by-target" class="nav-link" data-scroll-target="#pair-plot-by-target">Pair Plot by Target</a></li>
   </ul>
 </nav>
     </div>
@@ -142,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">2. Exploratory Data Analysis (EDA)</h1>
 </div>
 
 
@@ -159,100 +186,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="my-projects" class="level1">
-<h1>🛠️ My Projects</h1>
-<section id="heart-disease-classification" class="level2">
-<h2 class="anchored" data-anchor-id="heart-disease-classification">❤️ Heart Disease Classification</h2>
-<p>Using machine learning to predict the presence of heart disease from patient data.</p>
-<ul>
-<li><strong>Tools:</strong> Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn</li>
-<li><strong>Goal:</strong> Classify whether a patient has heart disease based on clinical measurements</li>
-<li><strong>Outcome:</strong> Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set</li>
-<li><a href="./Heart_Casestudy.html">Read the full report</a></li>
-</ul>
+<div id="2c6f398a" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load cleaned data</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"cleaned_heart_data.csv"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="target-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="target-distribution">Target Distribution</h2>
+<div id="2f615e5f" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span><span class="st">'target'</span>, data<span class="op">=</span>df)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Target Class Distribution"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Heart Disease (0 = No, 1 = Yes)"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Count"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="bike-rentals-prediction" class="level2">
-<h2 class="anchored" data-anchor-id="bike-rentals-prediction">🚲 Bike Rentals Prediction</h2>
-<p>Forecasting pedal power with deep learning and pandemic-aware features.</p>
-<ul>
-<li><strong>Tools:</strong> Python, Keras, Scikit-learn, Pandas, Matplotlib</li>
-<li><strong>Goal:</strong> Predict hourly bike rentals using time-based and COVID-era features</li>
-<li><strong>Outcome:</strong> Achieved 89% R² accuracy with a dropout-regularized neural net</li>
-<li><a href="./bike_rentals_case_study.html">Read the full report</a></li>
-</ul>
+<section id="correlation-heatmap" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-heatmap">Correlation Heatmap</h2>
+<div id="742e81ea" class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">10</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>sns.heatmap(df.corr(), annot<span class="op">=</span><span class="va">True</span>, fmt<span class="op">=</span><span class="st">".2f"</span>, cmap<span class="op">=</span><span class="st">"coolwarm"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Correlation Heatmap"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="housing-price-prediction" class="level2">
-<h2 class="anchored" data-anchor-id="housing-price-prediction">🏡 Housing Price Prediction</h2>
-<p>Unlocking the mystery of what makes homes expensive (besides the granite countertops).</p>
-<ul>
-<li><strong>Tools</strong>: Python, Jupyter, Seaborn, XGBoost, Random Forest</li>
-<li><strong>Goal</strong>: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude</li>
-<li><strong>Outcome</strong>: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance</li>
-<li><a href="./housing_case_study.html">Read the full report</a></li>
-</ul>
+<section id="numerical-feature-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="numerical-feature-distributions">Numerical Feature Distributions</h2>
+<div id="5fc1ab0d" class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>num_cols <span class="op">=</span> [<span class="st">'age'</span>, <span class="st">'trestbps'</span>, <span class="st">'chol'</span>, <span class="st">'thalach'</span>, <span class="st">'oldpeak'</span>]</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df[num_cols].hist(bins<span class="op">=</span><span class="dv">20</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">10</span>))</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="pawesome-pet-services-database-redesign" class="level2">
-<h2 class="anchored" data-anchor-id="pawesome-pet-services-database-redesign">🐶 Pawesome Pet Services Database Redesign</h2>
-<ul>
-<li><strong>Tools:</strong> MySQL Workbench, ERD modeling<br>
-</li>
-<li><strong>Goal:</strong> Normalize and restructure the schema to better manage pet services and appointments<br>
-</li>
-<li><a href="./pawesome-database-enhancement.html">View the full write-up</a></li>
-</ul>
-</section>
-<section id="baseball-data-relationships" class="level2">
-<h2 class="anchored" data-anchor-id="baseball-data-relationships">⚾ Baseball Data Relationships</h2>
-<ul>
-<li><strong>Tools:</strong> SQL, Lahman DB, Lets-Plot, Quarto, Python<br>
-</li>
-<li><strong>Goal:</strong> Explore batting averages, salaries, and team comparisons using SQL queries and data visualization<br>
-</li>
-<li><a href="./baseball-relationships-study.html">View the full write-up</a></li>
-</ul>
-</section>
-<section id="grocery-receipt-generator-python-gui" class="level2">
-<h2 class="anchored" data-anchor-id="grocery-receipt-generator-python-gui">🧾 Grocery Receipt Generator (Python GUI)</h2>
-<ul>
-<li><strong>Tools:</strong> Python, tkinter, CSV I/O<br>
-</li>
-<li><strong>Goal:</strong> Build an interactive receipt system with discounts and file-driven checkout<br>
-</li>
-<li><a href="./receipt-generator-app.html">View the full write-up</a></li>
-</ul>
-</section>
-<section id="tuberculosis-case-study" class="level2">
-<h2 class="anchored" data-anchor-id="tuberculosis-case-study">🦠 Tuberculosis Case Study</h2>
-<ul>
-<li><strong>Tools:</strong> Python, MySQL, Tableau<br>
-</li>
-<li><strong>Goal:</strong> Identify global TB patterns across demographic segments<br>
-</li>
-<li><a href="./tb-insights.html">Read the full case study</a></li>
-</ul>
-</section>
-<section id="water-filling-station-quality-control" class="level2">
-<h2 class="anchored" data-anchor-id="water-filling-station-quality-control">💧 Water Filling Station Quality Control</h2>
-<ul>
-<li><strong>Tools:</strong> Excel, X-Bar &amp; R Charts, Wolfram Mathematica, Matplots<br>
-</li>
-<li><strong>Goal:</strong> Evaluate filling station accuracy and identify process variation<br>
-</li>
-<li><a href="./water-filling-case.html">Read the full case study</a></li>
-</ul>
-</section>
-<section id="paper-airplane-experiment-two-way-anova" class="level2">
-<h2 class="anchored" data-anchor-id="paper-airplane-experiment-two-way-anova">✈️ Paper Airplane Experiment (Two-Way ANOVA)</h2>
-<ul>
-<li><strong>Tools:</strong> Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots<br>
-</li>
-<li><strong>Goal:</strong> Determine how paper weight and design interact to affect flight performance<br>
-</li>
-<li><a href="./airplane-anova-study.html">View the full write-up</a></li>
-</ul>
+<section id="pair-plot-by-target" class="level2">
+<h2 class="anchored" data-anchor-id="pair-plot-by-target">Pair Plot by Target</h2>
+<div id="5768250d" class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sns.pairplot(df[[<span class="st">'age'</span>, <span class="st">'chol'</span>, <span class="st">'thalach'</span>, <span class="st">'oldpeak'</span>, <span class="st">'target'</span>]], hue<span class="op">=</span><span class="st">'target'</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Wil Jones">
+<meta name="dcterms.date" content="2025-06-25">
+
+<title>Heart Disease Prediction Case Study – Wilkin Jones</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Wilkin Jones</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#pre-model-architecture" id="toc-pre-model-architecture" class="nav-link" data-scroll-target="#pre-model-architecture">Pre-Model Architecture</a>
+  <ul class="collapse">
+  <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link" data-scroll-target="#data-cleaning">Data Cleaning</a></li>
+  <li><a href="#dataset-preview---exploration" id="toc-dataset-preview---exploration" class="nav-link" data-scroll-target="#dataset-preview---exploration">Dataset Preview - Exploration</a>
+  <ul class="collapse">
+  <li><a href="#target-distribution" id="toc-target-distribution" class="nav-link" data-scroll-target="#target-distribution">Target Distribution</a></li>
+  <li><a href="#feature-insights" id="toc-feature-insights" class="nav-link" data-scroll-target="#feature-insights">Feature Insights</a></li>
+  </ul></li>
+  <li><a href="#pairwise-feature-relationships" id="toc-pairwise-feature-relationships" class="nav-link" data-scroll-target="#pairwise-feature-relationships">Pairwise Feature Relationships</a></li>
+  </ul></li>
+  <li><a href="#feature-engineering" id="toc-feature-engineering" class="nav-link" data-scroll-target="#feature-engineering">Feature Engineering</a></li>
+  <li><a href="#model-training-and-tuning" id="toc-model-training-and-tuning" class="nav-link" data-scroll-target="#model-training-and-tuning">Model Training and Tuning</a>
+  <ul class="collapse">
+  <li><a href="#data-splitting" id="toc-data-splitting" class="nav-link" data-scroll-target="#data-splitting">Data Splitting</a></li>
+  <li><a href="#model-selection" id="toc-model-selection" class="nav-link" data-scroll-target="#model-selection">Model Selection</a></li>
+  <li><a href="#learning-rate-and-threshold-optimization" id="toc-learning-rate-and-threshold-optimization" class="nav-link" data-scroll-target="#learning-rate-and-threshold-optimization">Learning Rate and Threshold Optimization</a></li>
+  </ul></li>
+  <li><a href="#final-evaluation" id="toc-final-evaluation" class="nav-link" data-scroll-target="#final-evaluation">Final Evaluation</a>
+  <ul class="collapse">
+  <li><a href="#validation-evaluation" id="toc-validation-evaluation" class="nav-link" data-scroll-target="#validation-evaluation">Validation Evaluation</a></li>
+  <li><a href="#holdout-evaluation" id="toc-holdout-evaluation" class="nav-link" data-scroll-target="#holdout-evaluation">Holdout Evaluation</a></li>
+  </ul></li>
+  <li><a href="#supporting-documents" id="toc-supporting-documents" class="nav-link" data-scroll-target="#supporting-documents">Supporting Documents</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Heart Disease Prediction Case Study</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Wil Jones </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 25, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="objective" class="level1">
+<h1>Objective</h1>
+<p>The objective of this project is to build a machine learning model that predicts whether or not a patient has heart disease, using clinical data from the Cleveland Heart Disease dataset.</p>
+<p>The original dataset included a severity scale in the <code>num</code> column, but for this project, we simplified the task to a binary classification problem:</p>
+<ul>
+<li><strong>0</strong> → No heart disease<br>
+</li>
+<li><strong>1</strong> → Heart disease present</li>
+</ul>
+<p>This binary framing was chosen for clarity, consistency, and greater practical relevance in real-world screening contexts. Rather than attempting to assess disease severity, the model’s goal is to flag whether or not the presence of heart disease is likely, enabling early detection and follow-up care.</p>
+</section>
+<section id="pre-model-architecture" class="level1">
+<h1>Pre-Model Architecture</h1>
+<section id="data-cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h2>
+<p>The dataset used in this project is a preprocessed version of the Cleveland Heart Disease dataset, named <code>processed_cleveland_clean.csv</code>. This file contains cleaned clinical records, with missing or invalid values already removed to ensure consistent training input.</p>
+<p>The original target column <code>num</code>, which encoded heart disease severity (0–4), was converted into a binary label (<code>target</code>) prior to this stage. Only patients with confirmed heart disease are marked as <code>1</code>; those without are labeled <code>0</code>.</p>
+<p>To begin, we load the cleaned dataset and inspect the first few rows:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/heart/df_head_preview.png" class="img-fluid figure-img"></p>
+<figcaption>Sample of DataFrame</figcaption>
+</figure>
+</div>
+</section>
+<section id="dataset-preview---exploration" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-preview---exploration">Dataset Preview - Exploration</h2>
+<section id="target-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="target-distribution">Target Distribution</h3>
+<p>Before binarizing the target, we explored the distribution of the original <code>num</code> column, which indicates the presence or severity of heart disease. For this project, we later transformed this column into a binary label where:</p>
+<ul>
+<li><code>0</code> → No heart disease<br>
+</li>
+<li><code>1</code> → Heart disease present (any level of severity)</li>
+</ul>
+<p>The following plot shows the class distribution before binarization:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/heart/target_class.png" class="img-fluid figure-img"></p>
+<figcaption>Distribution of Severity from the Entire Dataset</figcaption>
+</figure>
+</div>
+</section>
+<section id="feature-insights" class="level3">
+<h3 class="anchored" data-anchor-id="feature-insights">Feature Insights</h3>
+<section id="correlation-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="correlation-analysis">Correlation Analysis</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/heart/correlation_heatmap.png" class="img-fluid figure-img"></p>
+<figcaption>Correlation of Every Feature</figcaption>
+</figure>
+</div>
+<p>After reviewing the distribution of heart disease cases in the dataset, I analyzed the relationships between features using a correlation matrix. This allowed me to identify which variables had the strongest associations with heart disease and to uncover any redundancy or multicollinearity that might affect model performance.</p>
+</section>
+<section id="key-observations" class="level4">
+<h4 class="anchored" data-anchor-id="key-observations">Key observations:</h4>
+<p>The correlation heatmap provided valuable early insights into which variables were most associated with heart disease.</p>
+<ul>
+<li><code>ca</code> (<em>number of major vessels visualized</em>) and <code>thal</code> (<em>thalassemia result</em>) showed the <strong>strongest positive correlations</strong> with the target. These features are likely to be strong predictors in the final model.</li>
+<li><code>oldpeak</code> (<em>ST depression induced by exercise</em>) and <code>cp</code> (<em>chest pain type</em>) also demonstrated <strong>notable relationships</strong> with the target variable.</li>
+<li><code>thalach</code> (<em>maximum heart rate achieved</em>) was <strong>negatively correlated</strong> with heart disease, which aligns with clinical expectations—lower max heart rate is often associated with reduced cardiovascular function.</li>
+</ul>
+<p>This step guided the <strong>prioritization of features</strong> for engineering and provided direction on which variables held the most predictive value for our classification task.</p>
+</section>
+<section id="numerical-feature-distributions" class="level4">
+<h4 class="anchored" data-anchor-id="numerical-feature-distributions">Numerical Feature Distributions</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/Heart/numerical_feature_distribution.png" class="img-fluid figure-img"></p>
+<figcaption>The Distributions of Several Features</figcaption>
+</figure>
+</div>
+<p>To better understand the range and shape of the dataset’s continuous variables, I visualized the distributions of several key numeric features: <code>age</code>, <code>trestbps (resting blood pressure)</code>, <code>chol (serum cholesterol)</code>, <code>thalach (maximum heart rate achieved)</code>, and <code>oldpeak (ST depression induced by exercise)</code>.</p>
+<p>From the histograms, I observed:</p>
+<ul>
+<li><p><code>age</code>: Fairly symmetric distribution centered around the <strong>mid-to-late 50s</strong>, suggesting a balanced representation of <strong>middle-aged patients</strong>.</p></li>
+<li><p><code>trestbps</code> (Resting Blood Pressure): Displays a slight <strong>right skew</strong>, with many patients clustered between <strong>120–140 mmHg</strong>.</p></li>
+<li><p><code>chol</code> (Serum Cholesterol): Also <strong>right-skewed</strong>, with a strong concentration around <strong>200–250 mg/dL</strong>, though some <strong>outliers</strong> reach significantly higher values.</p></li>
+<li><p><code>thalach</code> (Maximum Heart Rate): Approximately <strong>normally distributed</strong>, centered around <strong>150–170 bpm</strong>, consistent with expected <strong>stress test performance</strong>.</p></li>
+<li><p><code>oldpeak</code>: Strong <strong>right-skew</strong>, with most patients exhibiting <strong>minimal ST depression</strong>, indicating many <strong>normal or near-normal results</strong>.</p></li>
+</ul>
+<p>This distribution analysis highlighted potential <strong>scaling or transformation needs</strong> (e.g., for <code>oldpeak</code>) and drew attention to the presence of <strong>outliers</strong> that may influence model performance.</p>
+</section>
+</section>
+</section>
+<section id="pairwise-feature-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="pairwise-feature-relationships">Pairwise Feature Relationships</h2>
+<p>To deepen our understanding of the interactions between key numerical features and the target variable (<code>num</code>), we created a pairwise comparison plot. This visualization displays the relationships between <code>age</code>, <code>chol</code>, <code>thalach</code>, and <code>oldpeak</code>, color-coded by the presence and severity of heart disease.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/heart/pairplot_features.png" class="img-fluid figure-img"></p>
+<figcaption>Pairwise Plot of Age, Chol, Thalach, and Oldpeak by Heart Disease Level</figcaption>
+</figure>
+</div>
+<p>Several observations emerged from this visualization:</p>
+<ul>
+<li><strong><code>age</code></strong>: There is a slight upward shift in age as heart disease severity increases, though distributions for different levels still overlap.</li>
+<li><strong><code>chol</code></strong>: Cholesterol values appear widely distributed across all severity levels, with no clear separation—suggesting it may not be a strong standalone predictor.</li>
+<li><strong><code>thalach</code></strong>: An inverse trend is evident; individuals with more severe heart disease often have lower maximum heart rates.</li>
+<li><strong><code>oldpeak</code></strong>: As the <code>num</code> value increases, so does the ST depression, indicating its potential importance in identifying more serious conditions.</li>
+</ul>
+<p>This plot helped guide feature selection and engineering efforts by identifying patterns, correlations, and limitations within the raw data.</p>
+</section>
+</section>
+<section id="feature-engineering" class="level1">
+<h1>Feature Engineering</h1>
+<div class="center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/Heart/distribution.png" class="img-fluid figure-img"></p>
+<figcaption>Distribution of Engineered Features</figcaption>
+</figure>
+</div>
+</div>
+<p>To improve the predictive power of our model, I engineered several new features based on domain logic and feature interactions:</p>
+<ul>
+<li><p><code>chol_per_age</code>: A ratio between cholesterol and age. This normalizes cholesterol levels across different age groups, helping control for the natural increase of cholesterol with age.</p></li>
+<li><p><code>stress_index</code>: Created by dividing <code>thalach</code> (maximum heart rate achieved) by <code>oldpeak + 1</code>. This index gives a relative measure of cardiac stress, especially useful for differentiating between similar heart rates with varying ST depressions.</p></li>
+<li><p><code>bp_dev</code>: Measures deviation from the typical resting systolic blood pressure (120 mmHg). Positive values indicate elevated blood pressure.</p></li>
+<li><p><code>age_bucket</code>: Binned the <code>age</code> feature into ordinal ranges (e.g., 30–40, 41–55, etc.), then one-hot encoded them (dropping the first to avoid multicollinearity). This allows the model to better learn nonlinear age effects without assuming continuity.</p></li>
+</ul>
+<p>These engineered features were designed to extract more meaningful signal from the original data, especially in cases where raw values may obscure important relationships.</p>
+</section>
+<section id="model-training-and-tuning" class="level1">
+<h1>Model Training and Tuning</h1>
+<section id="data-splitting" class="level2">
+<h2 class="anchored" data-anchor-id="data-splitting">Data Splitting</h2>
+<p>To ensure robust model evaluation and avoid overfitting, the dataset was split into three distinct sets:</p>
+<ul>
+<li><strong>Training Set (60%)</strong>: Used to train the initial model and fit parameters.</li>
+<li><strong>Validation Set (20%)</strong>: Used during model development for tuning hyperparameters, feature selection, and threshold adjustment. This helped guide decisions without touching the final evaluation data.</li>
+<li><strong>Holdout Set (20%)</strong>: Kept completely separate and untouched until the end. This set served as the final test to evaluate the generalization performance of the selected model pipeline.</li>
+</ul>
+<p>This three-way split allowed for a more realistic estimate of model performance on truly unseen data and helped ensure that model improvements weren’t the result of overfitting to the validation set.</p>
+</section>
+<section id="model-selection" class="level2">
+<h2 class="anchored" data-anchor-id="model-selection">Model Selection</h2>
+<p>Given the structured and tabular nature of the dataset, we opted to use a <strong>gradient boosting classifier</strong> — specifically, the <code>XGBoost</code> algorithm. This choice was driven by several factors:</p>
+<ul>
+<li><strong>Performance</strong>: XGBoost is known for its strong performance on classification tasks, particularly when working with mixed feature types and moderate-sized datasets.</li>
+<li><strong>Robustness</strong>: It handles missing values, outliers, and non-linear relationships effectively without the need for extensive preprocessing.</li>
+<li><strong>Interpretability</strong>: Despite being a powerful ensemble method, XGBoost still allows us to inspect feature importance and understand decision boundaries.</li>
+</ul>
+<p>While simpler models (e.g., logistic regression) were considered, preliminary testing revealed that XGBoost consistently delivered higher accuracy and F1 scores across validation splits. Its ability to <strong>optimize directly for metrics like AUC or F1</strong> made it especially well-suited for our imbalanced classification problem.</p>
+<p>Additionally, XGBoost provided flexibility for <strong>threshold tuning</strong>, <strong>sample weighting</strong>, and integration with feature engineering steps—making it the ideal backbone for our final model pipeline.</p>
+</section>
+<section id="learning-rate-and-threshold-optimization" class="level2">
+<h2 class="anchored" data-anchor-id="learning-rate-and-threshold-optimization">Learning Rate and Threshold Optimization</h2>
+<p>To improve classification performance, particularly given the class imbalance, I performed a grid search over combinations of <code>learning_rate</code> and classification <code>threshold</code>. These hyperparameters influence how aggressively the model learns and how it balances precision and recall in its final predictions.</p>
+<p>Using an <code>XGBoost</code> classifier, I explored several <code>learning_rate</code> values ranging from <code>0.0025</code> to <code>0.2</code>, and classification thresholds from <code>0.30</code> to <code>0.70</code>. For each pair, the model was trained and evaluated on the validation set using the <code>F1 score</code> as the performance metric.</p>
+<p>This resulted in the following 3D surface plot, which visualizes how different learning rate and threshold combinations affect the F1 score:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/heart/f1_surface.png" class="img-fluid figure-img"></p>
+<figcaption>F1 Score Surface Plot</figcaption>
+</figure>
+</div>
+<p>From this visualization, I was able to identify regions where the model performed optimally. A lower learning rate consistently produced better results, with the F1 score peaking around a moderate threshold.</p>
+<p>The best configuration identified was:</p>
+<ul>
+<li><code>Learning Rate</code>: <code>0.005</code><br>
+</li>
+<li><code>Threshold</code>: <code>0.55</code><br>
+</li>
+<li><code>Validation F1 Score</code>: <code>0.8636</code></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/heart/best_config.png" class="img-fluid figure-img"></p>
+<figcaption>Best Configuration Summary</figcaption>
+</figure>
+</div>
+<p>This process helped tune the model for better generalization on the holdout set. By optimizing the threshold, I ensured the classifier maintained a better balance between false positives and false negatives—especially important in a medical context where both errors carry significant consequences.</p>
+</section>
+</section>
+<section id="final-evaluation" class="level1">
+<h1>Final Evaluation</h1>
+<section id="validation-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="validation-evaluation">Validation Evaluation</h2>
+<p>The model was first validated using a dedicated validation set to fine-tune parameters and gauge generalization:</p>
+<p><strong>Accuracy</strong>: 0.8542<br>
+<strong>Precision</strong>: 0.8571<br>
+<strong>Recall</strong>: 0.8182<br>
+<strong>F1 Score</strong>: 0.8372</p>
+<p>The classification report confirms a balanced performance across classes:</p>
+<p>Class 0 and 1 both show strong precision and recall.</p>
+<p>The macro and weighted averages for F1 score are consistent at 0.85.</p>
+<p>This indicates that the model is not only accurate but also reliable in its classification decisions across categories.</p>
+</section>
+<section id="holdout-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="holdout-evaluation">Holdout Evaluation</h2>
+<p>After finalizing the model, performance was tested on a completely untouched holdout set:</p>
+<p><strong>Accuracy</strong>: 0.8000<br>
+<strong>Precision</strong>: 0.9000<br>
+<strong>Recall</strong>: 0.6429<br>
+<strong>F1 Score</strong>: 0.7500</p>
+<p>Key observations from the holdout classification report:</p>
+<ul>
+<li>The model achieved <strong>very high precision (0.90)</strong> on predicting heart disease (class 1), meaning when it predicted disease, it was usually correct.<br>
+</li>
+<li>However, the <strong>recall dropped to 0.64</strong>, indicating that some true cases of heart disease were missed.<br>
+</li>
+<li>Overall performance remains solid with a <strong>macro F1 score of 0.79</strong>, suggesting that the model still generalizes well to unseen data.</li>
+</ul>
+<p>This evaluation provided confidence that the model performs robustly while also identifying opportunities for improvement, such as potentially boosting recall for heart disease cases.</p>
+</section>
+</section>
+<section id="supporting-documents" class="level1">
+<h1>Supporting Documents</h1>
+<p>All project resources are available below for reproducibility and deeper inspection:</p>
+<ul>
+<li><a href="assets/heart/1_data_cleaning.html">1_data_cleaning.html</a>: Covers how the dataset was loaded, cleaned, and preprocessed.</li>
+<li><a href="assets/heart/2_data_exploration_EDA.html">2_data_exploration_EDA.html</a>: Provides visual insights into class balance and feature distributions.</li>
+<li><a href="assets/heart/3_feature_engineering_visuals.html">3_feature_engineering_visuals.html</a>: Showcases engineered features, transformations, and buckets.</li>
+<li><a href="assets/heart/4_model_tuning.html">4_model_tuning.html</a>: Displays threshold tuning, learning rate exploration, and validation performance.</li>
+<li><a href="assets/heart/5_final_model.html">5_final_model.html</a>: Contains final model training, holdout testing, and evaluation interpretation.</li>
+<li><a href="assets/heart/processed_cleveland_clean.csv">processed_cleveland_clean.csv</a>: Cleaned dataset used throughout the project.</li>
+</ul>
+<p>These supporting documents reflect a structured approach to building a robust binary classification pipeline.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 Wilkin Jones</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -13,7 +13,7 @@ The objective of this project is to build a machine learning model that predicts
 
 <a href="https://archive.ics.uci.edu/dataset/45/heart+disease" target="_blank">The Original Dataset Source</a>
 
-The original dataset included a severity scale in the `num` column, but for this project, we simplified the task to a binary classification problem:
+The original dataset included a severity scale in the `num` column, but for this project, I simplified the task to a binary classification problem:
 
 - **0** → No heart disease  
 - **1** → Heart disease present
@@ -83,7 +83,7 @@ This distribution analysis highlighted potential **scaling or transformation nee
 
 ## Pairwise Feature Relationships
 
-To deepen our understanding of the interactions between key numerical features and the target variable (`num`), we created a pairwise comparison plot. This visualization displays the relationships between `age`, `chol`, `thalach`, and `oldpeak`, color-coded by the presence and severity of heart disease.
+To deepen our understanding of the interactions between key numerical features and the target variable (`num`), I created a pairwise comparison plot. This visualization displays the relationships between `age`, `chol`, `thalach`, and `oldpeak`, color-coded by the presence and severity of heart disease.
 
 ![Pairwise Plot of Age, Chol, Thalach, and Oldpeak by Heart Disease Level](Assets/Heart/pairplot_features.png)
 

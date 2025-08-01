@@ -12,25 +12,25 @@ format:
 </div>
 
 ::: {.raw}
+::: {.raw}
 <div class="profile-card" style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 12px; display: flex; align-items: center; gap: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); max-width: 800px; margin: 2rem auto;">
-
-  <img src="Assets/profile.png" class="profile-img" alt="Wilkin Jones">
-
-## Hi, I’m Wilkin Jones
-
-I'm a data analyst based in **Idaho Falls, ID**. I specialize in transforming messy, unstructured data into clear, actionable insights that help businesses grow.
-
-My background includes strong experience in **Python**, **SQL**, **machine learning**, and **AI-powered analytics**. I enjoy building custom dashboards, predictive models, and automation tools that simplify decision-making and drive measurable results.
-
-**Location:** Idaho Falls, ID  
-**Education:** B.S. in **Data Science**, Brigham Young University–Idaho  
-**Focus Areas:**
-- **Business analytics** and data visualization  
-- **Machine learning** and predictive modeling  
-- **AI-driven insights** and automation  
-- Data cleaning and operational reporting
-
+  <img src="Assets/profile.png" class="profile-img" alt="Wilkin Jones" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+  <div>
+    <h2 style="margin-top: 0; color: #333; font-size: 2rem;">Hi, I'm Wilkin Jones</h2>
+    <p style="color: #666; font-size: 1.1rem; line-height: 1.6; margin-bottom: 1rem;">I'm a data analyst based in <strong>Idaho Falls, ID</strong>. I specialize in transforming messy, unstructured data into clear, actionable insights that help businesses grow.</p>
+    <p style="color: #666; font-size: 1.1rem; line-height: 1.6; margin-bottom: 1rem;">My background includes strong experience in <strong>Python</strong>, <strong>SQL</strong>, <strong>machine learning</strong>, and <strong>AI-powered analytics</strong>. I enjoy building custom dashboards, predictive models, and automation tools that simplify decision-making and drive measurable results.</p>
+    <p style="color: #666; font-size: 1rem; margin-bottom: 0.5rem;"><strong>Location:</strong> Idaho Falls, ID</p>
+    <p style="color: #666; font-size: 1rem; margin-bottom: 0.5rem;"><strong>Education:</strong> B.S. in <strong>Data Science</strong>, Brigham Young University–Idaho</p>
+    <p style="color: #666; font-size: 1rem; margin-bottom: 0.5rem;"><strong>Focus Areas:</strong></p>
+    <ul style="color: #666; font-size: 1rem; margin-left: 1rem;">
+      <li><strong>Business analytics</strong> and data visualization</li>
+      <li><strong>Machine learning</strong> and predictive modeling</li>
+      <li><strong>AI-driven insights</strong> and automation</li>
+      <li>Data cleaning and operational reporting</li>
+    </ul>
+  </div>
 </div>
+:::
 :::
 
 ## Data Services for Local Businesses

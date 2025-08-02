@@ -37,47 +37,7 @@ My background includes strong experience in **Python**, **SQL**, **machine learn
 
 Let's turn your messy data into actionable insights
 
-::: {.raw}
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
 
-  <div style="background: linear-gradient(135deg, #4CAF50, #45a049); color: white; padding: 2rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-
-### Starter Insights
-
-**$200 one-time**
-
-One-time data cleanup or sales report
-
-<button onclick="window.location.href='mailto:official@wilkinjones.com?subject=Starter Insights Package&body=Hi Wilkin,%0A%0AI\'m interested in the Starter Insights package for $200. Please provide more details about what\'s included and next steps.%0A%0AThanks!'" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.3s;">GET STARTED</button>
-
-  </div>
-
-  <div style="background: linear-gradient(135deg, #2196F3, #1976D2); color: white; padding: 2rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-
-### Growth Dashboard
-
-**$450 one-time**
-
-Monthly automated dashboard & reporting
-
-<button onclick="window.location.href='mailto:official@wilkinjones.com?subject=Growth Dashboard Package&body=Hi Wilkin,%0A%0AI\'m interested in the Growth Dashboard package for $450/month. Please provide more details about what\'s included and next steps.%0A%0AThanks!'" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.3s;">GET STARTED</button>
-
-  </div>
-
-  <div style="background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: white; padding: 2rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-
-### Partner Plan
-
-**$850/mo**
-
-Full support, strategy, and ongoing analysis
-
-<button onclick="window.location.href='mailto:official@wilkinjones.com?subject=Partner Plan Package&body=Hi Wilkin,%0A%0AI\'m interested in the Partner Plan package for $850/month. Please provide more details about what\'s included and next steps.%0A%0AThanks!'" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 0.75rem 1.5rem; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.3s;">BOOK A CALL</button>
-
-  </div>
-
-</div>
-:::
 
 ## Get a Free Data Audit & Consultation
 

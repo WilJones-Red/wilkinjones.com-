@@ -33,15 +33,11 @@ My background includes strong experience in **Python**, **SQL**, **machine learn
 </div>
 :::
 
-## Data Services for Local Businesses
-
-Let's turn your messy data into actionable insights
-
 
 
 ## Get a Free Data Audit & Consultation
 
-Before we dive into any paid services, let's have a conversation about your data challenges and goals.
+Let's turn your messy data into actionable insights. Before we dive into any paid services, let's have a conversation about your data challenges and goals.
 
 ::: {.raw}
 <div style="background: linear-gradient(135deg, #FF6B35, #F7931E); color: white; padding: 3rem 2rem; border-radius: 12px; text-align: center; margin: 2rem 0; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">

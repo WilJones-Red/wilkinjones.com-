@@ -84,41 +84,6 @@
     "text": "Pawesome Pet Services Database Redesign\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up"
   },
   {
-    "objectID": "projects.html#baseball-data-relationships",
-    "href": "projects.html#baseball-data-relationships",
-    "title": "My Projects",
-    "section": "Baseball Data Relationships",
-    "text": "Baseball Data Relationships\n\nTools: SQL, Lahman DB, Lets-Plot, Quarto, Python\n\nGoal: Explore batting averages, salaries, and team comparisons using SQL queries and data visualization\n\nView the full write-up"
-  },
-  {
-    "objectID": "projects.html#grocery-receipt-generator-python-gui",
-    "href": "projects.html#grocery-receipt-generator-python-gui",
-    "title": "My Projects",
-    "section": "Grocery Receipt Generator (Python GUI)",
-    "text": "Grocery Receipt Generator (Python GUI)\n\nTools: Python, tkinter, CSV I/O\n\nGoal: Build an interactive receipt system with discounts and file-driven checkout\n\nView the full write-up"
-  },
-  {
-    "objectID": "projects.html#tuberculosis-case-study",
-    "href": "projects.html#tuberculosis-case-study",
-    "title": "My Projects",
-    "section": "Tuberculosis Case Study",
-    "text": "Tuberculosis Case Study\n\nTools: Python, MySQL, Tableau\n\nGoal: Identify global TB patterns across demographic segments\n\nRead the full case study"
-  },
-  {
-    "objectID": "projects.html#water-filling-station-quality-control",
-    "href": "projects.html#water-filling-station-quality-control",
-    "title": "My Projects",
-    "section": "Water Filling Station Quality Control",
-    "text": "Water Filling Station Quality Control\n\nTools: Excel, X-Bar & R Charts, Wolfram Mathematica, Matplots\n\nGoal: Evaluate filling station accuracy and identify process variation\n\nRead the full case study"
-  },
-  {
-    "objectID": "projects.html#paper-airplane-experiment-two-way-anova",
-    "href": "projects.html#paper-airplane-experiment-two-way-anova",
-    "title": "My Projects",
-    "section": "Paper Airplane Experiment (Two-Way ANOVA)",
-    "text": "Paper Airplane Experiment (Two-Way ANOVA)\n\nTools: Experimental design, Excel, ANOVA, Wolfram Mathematica, Matplots\n\nGoal: Determine how paper weight and design interact to affect flight performance\n\nView the full write-up"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome",

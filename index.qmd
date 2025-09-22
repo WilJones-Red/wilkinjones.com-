@@ -28,7 +28,7 @@ My background includes strong experience in **Python**, **SQL**, **machine learn
 - **Business analytics** and data visualization  
 - **Machine learning** and predictive modeling  
 - **AI-driven insights** and automation  
-- Data cleaning and operational reporting
+- **Data cleaning** and operational reporting
 
 </div>
 :::

@@ -33,20 +33,6 @@ My background includes strong experience in **Python**, **SQL**, **machine learn
 </div>
 :::
 
-
-
-## Get a Free Data Audit & Consultation
-
-Let's turn your messy data into actionable insights. Before we dive into any paid services, let's have a conversation about your data challenges and goals.
-
-::: {.raw}
-<div style="background: linear-gradient(135deg, #FF6B35, #F7931E); color: white; padding: 3rem 2rem; border-radius: 12px; text-align: center; margin: 2rem 0; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
-  <h3 style="margin-top: 0; font-size: 2rem; margin-bottom: 1rem;">Ready to Transform Your Data?</h3>
-  <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95;">Book a free 30-minute consultation to discuss your data needs and see how I can help your business grow.</p>
-  <a href="https://calendly.com/official-wilkinjones" target="_blank" style="display: inline-block; background: white; color: #FF6B35; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">📅 Schedule Your Free Consultation</a>
-</div>
-:::
-
 **Have questions?** Email me at **official@wilkinjones.com** or call **(913)954-8237**
 
 

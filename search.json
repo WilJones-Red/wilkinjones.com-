@@ -726,5 +726,12 @@
     "title": "My Projects",
     "section": "Big Data – Church Attendance: (Full Write-up) Coming Soon 10/10/2025",
     "text": "Big Data – Church Attendance: (Full Write-up) Coming Soon 10/10/2025\n\nTools: Polars, Marimo, Plotly\nGoal: Normalize, clean, and pull data from parquet files to pull insights about church attendance\nView the temporary write-up"
+  },
+  {
+    "objectID": "projects.html#big-data-church-attendance-analysis-full-write-up-coming-10102025",
+    "href": "projects.html#big-data-church-attendance-analysis-full-write-up-coming-10102025",
+    "title": "My Projects",
+    "section": "Big Data — Church Attendance Analysis (Full write-up coming 10/10/2025)",
+    "text": "Big Data — Church Attendance Analysis (Full write-up coming 10/10/2025)\n\nTools: Polars, Marimo, Plotly\nGoal: Clean, normalize, and analyze large parquet datasets to uncover patterns in church attendance across LDS and other denominations.\nOutcome: Produced interactive visual dashboards (device usage, hourly attendance trends, and brand co-visitation) enabling clear comparison between LDS and non-LDS locations.\nView the temporary write-up"
   }
 ]

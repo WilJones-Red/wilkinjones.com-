@@ -719,5 +719,12 @@
     "title": "Tuberculosis Insights",
     "section": "",
     "text": "Download Slides (PDF)"
+  },
+  {
+    "objectID": "projects.html#big-data-church-attendance-full-write-up-coming-soon-10102025",
+    "href": "projects.html#big-data-church-attendance-full-write-up-coming-soon-10102025",
+    "title": "My Projects",
+    "section": "Big Data – Church Attendance: (Full Write-up) Coming Soon 10/10/2025",
+    "text": "Big Data – Church Attendance: (Full Write-up) Coming Soon 10/10/2025\n\nTools: Polars, Marimo, Plotly\nGoal: Normalize, clean, and pull data from parquet files to pull insights about church attendance\nView the temporary write-up"
   }
 ]

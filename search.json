@@ -42,67 +42,543 @@
     "text": "Project Plan (PDF)\nFinal Report (PDF)"
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
+    "objectID": "tb-insights.html",
+    "href": "tb-insights.html",
+    "title": "Tuberculosis Insights",
     "section": "",
-    "text": "📄 Resume\nDownload My Resume (PDF)\nOr view it embedded below:"
+    "text": "This Tableau dashboard explores trends in tuberculosis (TB) cases globally using World Health Organization data. I analyzed key dimensions like country, age group, and gender to identify at-risk populations.\n\n\n\nIndia and China account for the majority of TB cases worldwide\nThe 25–34 age group consistently had the highest number of cases\nMales reported significantly more cases than females across all years\n\n\n\n\n\nPython (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards\n\n\n\n\n\nPresentation Slides (PDF)\n\n\n\n\n\nDownload Slides (PDF)"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "My Projects",
+    "objectID": "tb-insights.html#key-findings",
+    "href": "tb-insights.html#key-findings",
+    "title": "Tuberculosis Insights",
     "section": "",
-    "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report"
+    "text": "India and China account for the majority of TB cases worldwide\nThe 25–34 age group consistently had the highest number of cases\nMales reported significantly more cases than females across all years"
   },
   {
-    "objectID": "projects.html#heart-disease-classification",
-    "href": "projects.html#heart-disease-classification",
-    "title": "My Projects",
+    "objectID": "tb-insights.html#tools-used",
+    "href": "tb-insights.html#tools-used",
+    "title": "Tuberculosis Insights",
     "section": "",
-    "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report"
+    "text": "Python (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards"
   },
   {
-    "objectID": "projects.html#bike-rentals-prediction",
-    "href": "projects.html#bike-rentals-prediction",
-    "title": "My Projects",
-    "section": "Bike Rentals Prediction",
-    "text": "Bike Rentals Prediction\nForecasting pedal power with deep learning and pandemic-aware features.\n\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals using time-based and COVID-era features\nOutcome: Achieved 89% R² accuracy with a dropout-regularized neural net\nRead the full report"
-  },
-  {
-    "objectID": "projects.html#housing-price-prediction",
-    "href": "projects.html#housing-price-prediction",
-    "title": "My Projects",
-    "section": "Housing Price Prediction",
-    "text": "Housing Price Prediction\nUnlocking the mystery of what makes homes expensive (besides the granite countertops).\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\nOutcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\nRead the full report"
-  },
-  {
-    "objectID": "projects.html#pawesome-pet-services-database-redesign",
-    "href": "projects.html#pawesome-pet-services-database-redesign",
-    "title": "My Projects",
-    "section": "Pawesome Pet Services Database Redesign",
-    "text": "Pawesome Pet Services Database Redesign\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
+    "objectID": "tb-insights.html#downloadables",
+    "href": "tb-insights.html#downloadables",
+    "title": "Tuberculosis Insights",
     "section": "",
-    "text": "“The ultimate measure of a man is not where he stands in moments of convenience and comfort, but where he stands at times of challenge and controversy.” — Martin Luther King, Jr.\nHave questions? Email me at official@wilkinjones.com or call (913)954-8237"
+    "text": "Presentation Slides (PDF)"
   },
   {
-    "objectID": "index.html#hi-im-wilkin-jones",
-    "href": "index.html#hi-im-wilkin-jones",
-    "title": "Welcome",
-    "section": "Hi, I’m Wilkin Jones",
-    "text": "Hi, I’m Wilkin Jones\nI’m a data analyst based in Idaho Falls, ID. I specialize in transforming messy, unstructured data into clear, actionable insights that help businesses grow.\nMy background includes strong experience in Python, SQL, machine learning, and AI-powered analytics. I enjoy building custom dashboards, predictive models, and automation tools that simplify decision-making and drive measurable results.\nLocation: Idaho Falls, ID\nEducation: B.S. in Data Science, Brigham Young University–Idaho\nFocus Areas: - Business analytics and data visualization\n- Machine learning and predictive modeling\n- AI-driven insights and automation\n- Data cleaning and operational reporting"
+    "objectID": "tb-insights.html#case-study-deck",
+    "href": "tb-insights.html#case-study-deck",
+    "title": "Tuberculosis Insights",
+    "section": "",
+    "text": "Download Slides (PDF)"
   },
   {
-    "objectID": "index.html#get-a-free-data-audit-consultation",
-    "href": "index.html#get-a-free-data-audit-consultation",
-    "title": "Welcome",
-    "section": "Get a Free Data Audit & Consultation",
-    "text": "Get a Free Data Audit & Consultation\nLet’s turn your messy data into actionable insights. Before we dive into any paid services, let’s have a conversation about your data challenges and goals.\n\n\n\nReady to Transform Your Data?\n\n\nBook a free 30-minute consultation to discuss your data needs and see how I can help your business grow.\n\n📅 Schedule Your Free Consultation\n\n\nHave questions? Email me at official@wilkinjones.com or call (913)954-8237"
+    "objectID": "receipt-generator-app.html",
+    "href": "receipt-generator-app.html",
+    "title": "Grocery Receipt Generator Application",
+    "section": "",
+    "text": "This Python project implements a GUI-based receipt system for a grocery store. The app reads from two external CSV files (products.csv and request.csv) and generates a detailed receipt, applying taxes, discounts, and even a randomized coupon offer.\n\n\n\nGUI built using tkinter\nSelects and parses product and purchase data from CSV files\nCalculates subtotal, tax, and total\nApplies BOGO 50% discount for a specific item (D083)\nGenerates randomized coupon on checkout\nAdds timestamps and return policy messaging\nShows animated loading bar for user feedback\n\n\n\n\n\nView Python Source Code\nDownload Product Data\nView Purchase Requests"
+  },
+  {
+    "objectID": "receipt-generator-app.html#features",
+    "href": "receipt-generator-app.html#features",
+    "title": "Grocery Receipt Generator Application",
+    "section": "",
+    "text": "GUI built using tkinter\nSelects and parses product and purchase data from CSV files\nCalculates subtotal, tax, and total\nApplies BOGO 50% discount for a specific item (D083)\nGenerates randomized coupon on checkout\nAdds timestamps and return policy messaging\nShows animated loading bar for user feedback"
+  },
+  {
+    "objectID": "receipt-generator-app.html#downloads",
+    "href": "receipt-generator-app.html#downloads",
+    "title": "Grocery Receipt Generator Application",
+    "section": "",
+    "text": "View Python Source Code\nDownload Product Data\nView Purchase Requests"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html",
+    "href": "pawesome-database-enhancement.html",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "This project involved restructuring and expanding the Pawesome Pet Services database to better meet the needs of a growing business. The redesign improves the management of services, appointments, and pet information by creating more scalable and normalized relationships.\n\n\n\n\n\nRemoved service from the Appointments table\nRemoved breed and species from the Pets table\n\n\n\n\n\nservices: Tracks available services and their descriptions\nbreeds: Stores pet breed and species info\nappointmentservices: Join table for many-to-many relationship between appointments and services\n\n\n\n\n\nOne-to-many: Pets ➝ Breeds\nMany-to-many: Appointments ⬌ Services\n\n\n\n\n\n\n\n\nERD of Enhanced Database\n\n\n\n\n\nThe updated schema supports: - Accurate service tracking per appointment - Organized breed/species classification - Cleaner queries through normalization\n\n\n\n\nMySQL Workbench for modeling and DDL execution\nERD Diagram for schema visualization\n\n\n\n\n\n\n\nAs part of the database redesign and validation process, I wrote and executed several SQL queries to test relationships, filtering, and compound logic in the new schema.\n\n\n\nUpcoming Appointments: Queried appointments after a certain date\n\nEmail Filtering: Used IN and NOT IN to find or exclude clients by email\n\nName Pattern Matching: Found pets whose names end in “a” using LIKE\n\nMissing Data Checks: Used IS NULL to find pets with unrecorded weight\n\n\n\n\n\nCross Join: Combined every pet with every client to simulate matching scenarios\n\nInner Join: Pulled appointments with pet and client names\n\nSubquery Join: Listed pets with above-average weight\n\nMulti-table Join: Merged appointments with service and pet info\n\nSelf-Join: Found clients with the same last name\n\n\n\n\n\nUNION: Combined client and pet emails\n\nINTERSECT: Found shared phone numbers between clients and emergency contacts\n\nEXCEPT: Identified pets without appointments\n\nSorted UNION: Merged names from clients and pets, sorted alphabetically\n\nThese exercises confirmed that the schema was functioning correctly and provided practice with real-world query logic.\n\n\n\n\n\nAssignment PDF\nFiltering and Conditions Example\nAdvanced Joins\nSet Operators"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#key-changes",
+    "href": "pawesome-database-enhancement.html#key-changes",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "Removed service from the Appointments table\nRemoved breed and species from the Pets table\n\n\n\n\n\nservices: Tracks available services and their descriptions\nbreeds: Stores pet breed and species info\nappointmentservices: Join table for many-to-many relationship between appointments and services\n\n\n\n\n\nOne-to-many: Pets ➝ Breeds\nMany-to-many: Appointments ⬌ Services"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#erd-diagram",
+    "href": "pawesome-database-enhancement.html#erd-diagram",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "ERD of Enhanced Database"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#outcome",
+    "href": "pawesome-database-enhancement.html#outcome",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "The updated schema supports: - Accurate service tracking per appointment - Organized breed/species classification - Cleaner queries through normalization"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#tools-used",
+    "href": "pawesome-database-enhancement.html#tools-used",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "MySQL Workbench for modeling and DDL execution\nERD Diagram for schema visualization"
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#sql-scenario-highlights",
+    "href": "pawesome-database-enhancement.html#sql-scenario-highlights",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "As part of the database redesign and validation process, I wrote and executed several SQL queries to test relationships, filtering, and compound logic in the new schema.\n\n\n\nUpcoming Appointments: Queried appointments after a certain date\n\nEmail Filtering: Used IN and NOT IN to find or exclude clients by email\n\nName Pattern Matching: Found pets whose names end in “a” using LIKE\n\nMissing Data Checks: Used IS NULL to find pets with unrecorded weight\n\n\n\n\n\nCross Join: Combined every pet with every client to simulate matching scenarios\n\nInner Join: Pulled appointments with pet and client names\n\nSubquery Join: Listed pets with above-average weight\n\nMulti-table Join: Merged appointments with service and pet info\n\nSelf-Join: Found clients with the same last name\n\n\n\n\n\nUNION: Combined client and pet emails\n\nINTERSECT: Found shared phone numbers between clients and emergency contacts\n\nEXCEPT: Identified pets without appointments\n\nSorted UNION: Merged names from clients and pets, sorted alphabetically\n\nThese exercises confirmed that the schema was functioning correctly and provided practice with real-world query logic."
+  },
+  {
+    "objectID": "pawesome-database-enhancement.html#related-files",
+    "href": "pawesome-database-enhancement.html#related-files",
+    "title": "Pawesome Pet Services Database Enhancement",
+    "section": "",
+    "text": "Assignment PDF\nFiltering and Conditions Example\nAdvanced Joins\nSet Operators"
+  },
+  {
+    "objectID": "housing_case_study.html",
+    "href": "housing_case_study.html",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation.\n\n\n\nThis case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy.\n\n\n\n\nPython for scripting and modeling\nJupyter Notebook for interactive development\nPandas & NumPy for data cleaning and transformation\nScikit-learn and XGBoost for modeling\nMatplotlib / Seaborn for visualizations\nQuarto for documentation and report generation\n\n\n\n\n✅ Feature Engineering\nAdded custom variables like luxury score, age, and view rating to enrich input data\n✅ Model Blending\nCombined XGBoost and Random Forest regressors to improve stability and accuracy\n✅ Error Handling\nApplied outlier smoothing and tested multiple metrics (RMSE, R², median error)\n✅ Location Awareness\nUsed latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)\n\n\n\nAs part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:\n\nRange Filtering: Only properties above/below certain price thresholds\nMissing Data Checks: Identified records with missing view or year built values\nAggregation: Calculated average prices by region or view score\nJoin Simulation: Merged multiple CSV-derived frames for composite analysis\n\n\n\n\n\nMedian Error: $33,842.78\nRMSE: $109,329.21\nR² Score: 0.9108 (91% variance explained)\n\nThe combination of models and domain-based feature engineering led to strong performance on unseen test data.\n\n\n\n\nFigure 1. Predicted vs Actual Housing Prices\n\nFigure 2. Most Influential Features\n\n\n\n\nExecutive Summary (PDF)\nCase Study Introduction (PDF)\nDiscussion Questions (PDF)\nRaw Housing Data (CSV)\nModel Predictions (CSV)\n\n\n\n🔗 View the full Colab Notebook for reproducible code and model walkthrough."
+  },
+  {
+    "objectID": "housing_case_study.html#housing-price-prediction",
+    "href": "housing_case_study.html#housing-price-prediction",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation."
+  },
+  {
+    "objectID": "housing_case_study.html#project-summary",
+    "href": "housing_case_study.html#project-summary",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "This case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy."
+  },
+  {
+    "objectID": "housing_case_study.html#tools-technologies",
+    "href": "housing_case_study.html#tools-technologies",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Python for scripting and modeling\nJupyter Notebook for interactive development\nPandas & NumPy for data cleaning and transformation\nScikit-learn and XGBoost for modeling\nMatplotlib / Seaborn for visualizations\nQuarto for documentation and report generation"
+  },
+  {
+    "objectID": "housing_case_study.html#key-techniques-used",
+    "href": "housing_case_study.html#key-techniques-used",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "✅ Feature Engineering\nAdded custom variables like luxury score, age, and view rating to enrich input data\n✅ Model Blending\nCombined XGBoost and Random Forest regressors to improve stability and accuracy\n✅ Error Handling\nApplied outlier smoothing and tested multiple metrics (RMSE, R², median error)\n✅ Location Awareness\nUsed latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)"
+  },
+  {
+    "objectID": "housing_case_study.html#sql-scenario-highlights",
+    "href": "housing_case_study.html#sql-scenario-highlights",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "As part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:\n\nRange Filtering: Only properties above/below certain price thresholds\nMissing Data Checks: Identified records with missing view or year built values\nAggregation: Calculated average prices by region or view score\nJoin Simulation: Merged multiple CSV-derived frames for composite analysis"
+  },
+  {
+    "objectID": "housing_case_study.html#results-summary",
+    "href": "housing_case_study.html#results-summary",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Median Error: $33,842.78\nRMSE: $109,329.21\nR² Score: 0.9108 (91% variance explained)\n\nThe combination of models and domain-based feature engineering led to strong performance on unseen test data."
+  },
+  {
+    "objectID": "housing_case_study.html#visuals",
+    "href": "housing_case_study.html#visuals",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Figure 1. Predicted vs Actual Housing Prices\n\nFigure 2. Most Influential Features"
+  },
+  {
+    "objectID": "housing_case_study.html#supplementary-materials",
+    "href": "housing_case_study.html#supplementary-materials",
+    "title": "Housing Price Prediction Case Study",
+    "section": "",
+    "text": "Executive Summary (PDF)\nCase Study Introduction (PDF)\nDiscussion Questions (PDF)\nRaw Housing Data (CSV)\nModel Predictions (CSV)\n\n\n\n🔗 View the full Colab Notebook for reproducible code and model walkthrough."
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html",
+    "href": "ds250_final_baseball_project.html",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "",
+    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nimport sqlite3\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sqlite3.connect(sqlite_file)"
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#question-task-1",
+    "href": "ds250_final_baseball_project.html#question-task-1",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 1",
+    "text": "QUESTION – TASK 1\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\n\n\nShow the code\nquery = '''\nSELECT s.playerID, MAX(sp.schoolID) AS schoolID, MAX(s.salary) AS salary, s.yearID, s.teamID\nFROM CollegePlaying sp\nJOIN Salaries s ON sp.playerID = s.playerID\nWHERE sp.schoolID = 'idbyuid'\nGROUP BY s.playerID, s.yearID, s.teamID\nORDER BY salary DESC;\n'''\ndf_byu = pd.read_sql_query(query, con)\ndf_byu"
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#question-task-2",
+    "href": "ds250_final_baseball_project.html#question-task-2",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 2",
+    "text": "QUESTION – TASK 2\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\n\nAt least 1 at-bat\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 1\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_1ab = pd.read_sql_query(query, con)\ndf_avg_1ab\n\n\n\nAt least 10 at-bats\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 10\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_10ab = pd.read_sql_query(query, con)\ndf_avg_10ab\n\n\n\nCareer batting average (100+ AB total)\n\n\n\nShow the code\nquery = '''\nSELECT playerID, CAST(SUM(H) AS FLOAT)/SUM(AB) AS career_avg\nFROM Batting\nGROUP BY playerID\nHAVING SUM(AB) &gt;= 100\nORDER BY career_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_career = pd.read_sql_query(query, con)\ndf_avg_career"
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#question-task-3",
+    "href": "ds250_final_baseball_project.html#question-task-3",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "QUESTION – TASK 3",
+    "text": "QUESTION – TASK 3\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?\n\n\nShow the code\nquery = '''\nSELECT yearID, teamID, SUM(HR) AS total_HR\nFROM Batting\nWHERE teamID IN ('NYA', 'BOS')\nGROUP BY yearID, teamID\nORDER BY yearID, teamID;\n'''\ndf_hr = pd.read_sql_query(query, con)\ndf_hr\n\n\n\n\nShow the code\n# Visualization of Yankees vs. Red Sox Home Runs Over Time\nggplot(df_hr, aes(x='yearID', y='total_HR', color='teamID')) + \\\n    geom_line(size=1.2) + \\\n    ggtitle(\"Yankees vs. Red Sox: Total Home Runs by Year\") + \\\n    labs(x=\"Year\", y=\"Total Home Runs\", color=\"Team\") + \\\n    theme_minimal()\n\n\nBased on the graph, we observe fluctuations in home run totals over time for both teams. In recent years, the Yankees have consistently hit more home runs compared to the Red Sox, especially post-2010. This could indicate a shift in hitting strategy, roster strength, or ballpark influence."
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#stretch-question-task-1",
+    "href": "ds250_final_baseball_project.html#stretch-question-task-1",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "STRETCH QUESTION – TASK 1",
+    "text": "STRETCH QUESTION – TASK 1\nAdvanced Salary Distribution by Position (with Case Statement):\n\n\nShow the code\nquery = '''\nWITH main_pos AS (\n  SELECT playerID, yearID, Pos, COUNT(*) AS games\n  FROM Fielding\n  GROUP BY playerID, yearID, Pos\n),\nmost_played AS (\n  SELECT playerID, yearID, Pos\n  FROM (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY playerID, yearID ORDER BY games DESC) AS rn\n    FROM main_pos\n  )\n  WHERE rn = 1\n)\nSELECT mp.Pos AS position,\n       ROUND(AVG(s.salary), 2) AS average_salary,\n       COUNT(DISTINCT s.playerID) AS total_players,\n       MAX(s.salary) AS highest_salary,\n       CASE\n         WHEN AVG(s.salary) &gt; 3000000 THEN 'High Salary'\n         WHEN AVG(s.salary) BETWEEN 2000000 AND 3000000 THEN 'Medium Salary'\n         ELSE 'Low Salary'\n       END AS salary_category\nFROM most_played mp\nJOIN Salaries s ON mp.playerID = s.playerID AND mp.yearID = s.yearID\nGROUP BY mp.Pos\nORDER BY average_salary DESC;\n'''\ndf_salary_pos = pd.read_sql_query(query, con)\ndf_salary_pos"
+  },
+  {
+    "objectID": "ds250_final_baseball_project.html#stretch-question-task-2",
+    "href": "ds250_final_baseball_project.html#stretch-question-task-2",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "STRETCH QUESTION – TASK 2",
+    "text": "STRETCH QUESTION – TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n\n\nShow the code\nquery = '''\nWITH player_years AS (\n  SELECT playerID, MIN(yearID) AS start_year, MAX(yearID) AS end_year, COUNT(DISTINCT yearID) AS career_length\n  FROM Batting\n  GROUP BY playerID\n  HAVING SUM(G) &gt;= 10\n)\nSELECT py.playerID, p.nameFirst, p.nameLast, py.career_length\nFROM player_years py\nJOIN people p ON py.playerID = p.playerID\nORDER BY py.career_length DESC\nLIMIT 10;\n'''\ndf_longevity = pd.read_sql_query(query, con)\ndf_longevity"
+  },
+  {
+    "objectID": "baseball-relationships-study.html",
+    "href": "baseball-relationships-study.html",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#project-goals",
+    "href": "baseball-relationships-study.html#project-goals",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Generate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#key-tasks",
+    "href": "baseball-relationships-study.html#key-tasks",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Queried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#tools-technologies",
+    "href": "baseball-relationships-study.html#tools-technologies",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "SQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report"
+  },
+  {
+    "objectID": "baseball-relationships-study.html#final-report",
+    "href": "baseball-relationships-study.html#final-report",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
+  },
+  {
+    "objectID": "baseball-relationships-study.html#report-files",
+    "href": "baseball-relationships-study.html#report-files",
+    "title": "Baseball Relationships Analysis",
+    "section": "",
+    "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
+  },
+  {
+    "objectID": "Assets/Heart/4_model_tuning.html",
+    "href": "Assets/Heart/4_model_tuning.html",
+    "title": "4. Model Tuning & Threshold Optimization",
+    "section": "",
+    "text": "import pandas as pd\nimport numpy as np\nimport xgboost as xgb\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import f1_score\nfrom sklearn.utils.class_weight import compute_sample_weight"
+  },
+  {
+    "objectID": "Assets/Heart/4_model_tuning.html#load-data-and-split",
+    "href": "Assets/Heart/4_model_tuning.html#load-data-and-split",
+    "title": "4. Model Tuning & Threshold Optimization",
+    "section": "Load data and split",
+    "text": "Load data and split\n\ndf = pd.read_csv(\"engineered_heart_data.csv\")\n\nX = df.drop(\"target\", axis=1)\ny = df[\"target\"]\n\nX_train, X_val, y_train, y_val = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)\nsample_weights = compute_sample_weight(class_weight=\"balanced\", y=y_train)"
+  },
+  {
+    "objectID": "Assets/Heart/4_model_tuning.html#grid-search-over-learning-rates-and-thresholds",
+    "href": "Assets/Heart/4_model_tuning.html#grid-search-over-learning-rates-and-thresholds",
+    "title": "4. Model Tuning & Threshold Optimization",
+    "section": "Grid search over learning rates and thresholds",
+    "text": "Grid search over learning rates and thresholds\n\nimport matplotlib.pyplot as plt\nfrom mpl_toolkits.mplot3d import Axes3D\n\nlearning_rates = [0.01, 0.05, 0.1, 0.2]\nthresholds = np.arange(0.3, 0.71, 0.05)\nf1_matrix = np.zeros((len(learning_rates), len(thresholds)))\n\nfor i, lr in enumerate(learning_rates):\n    model = xgb.XGBClassifier(\n        use_label_encoder=False,\n        eval_metric=\"logloss\",\n        objective=\"binary:logistic\",\n        learning_rate=lr,\n        n_estimators=50,\n        random_state=42\n    )\n    model.fit(X_train, y_train, sample_weight=sample_weights)\n    probs = model.predict_proba(X_val)[:, 1]\n    for j, t in enumerate(thresholds):\n        preds = (probs &gt;= t).astype(int)\n        f1_matrix[i, j] = f1_score(y_val, preds)"
+  },
+  {
+    "objectID": "Assets/Heart/4_model_tuning.html#d-plot-of-f1-scores",
+    "href": "Assets/Heart/4_model_tuning.html#d-plot-of-f1-scores",
+    "title": "4. Model Tuning & Threshold Optimization",
+    "section": "3D plot of F1 scores",
+    "text": "3D plot of F1 scores\n\nT, LR = np.meshgrid(thresholds, learning_rates)\nfig = plt.figure(figsize=(10, 6))\nax = fig.add_subplot(111, projection='3d')\nsurf = ax.plot_surface(LR, T, f1_matrix, cmap='viridis', edgecolor='k')\nax.set_xlabel(\"Learning Rate\")\nax.set_ylabel(\"Threshold\")\nax.set_zlabel(\"F1 Score\")\nax.set_title(\"F1 Score by Learning Rate and Threshold\")\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "Assets/Heart/4_model_tuning.html#report-best-configuration",
+    "href": "Assets/Heart/4_model_tuning.html#report-best-configuration",
+    "title": "4. Model Tuning & Threshold Optimization",
+    "section": "Report best configuration",
+    "text": "Report best configuration\n\nbest_idx = np.unravel_index(np.argmax(f1_matrix, axis=None), f1_matrix.shape)\nbest_lr = learning_rates[best_idx[0]]\nbest_threshold = thresholds[best_idx[1]]\nbest_f1 = f1_matrix[best_idx]\n\nprint(\"🔥 Best Configuration Found:\")\nprint(f\"Learning Rate: {best_lr}\")\nprint(f\"Threshold    : {best_threshold}\")\nprint(f\"F1 Score     : {best_f1:.4f}\")"
+  },
+  {
+    "objectID": "Assets/Heart/2_data_exploration_EDA.html",
+    "href": "Assets/Heart/2_data_exploration_EDA.html",
+    "title": "2. Exploratory Data Analysis (EDA)",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\n# Load cleaned data\ndf = pd.read_csv(\"cleaned_heart_data.csv\")\ndf.head()"
+  },
+  {
+    "objectID": "Assets/Heart/2_data_exploration_EDA.html#target-distribution",
+    "href": "Assets/Heart/2_data_exploration_EDA.html#target-distribution",
+    "title": "2. Exploratory Data Analysis (EDA)",
+    "section": "Target Distribution",
+    "text": "Target Distribution\n\nsns.countplot(x='target', data=df)\nplt.title(\"Target Class Distribution\")\nplt.xlabel(\"Heart Disease (0 = No, 1 = Yes)\")\nplt.ylabel(\"Count\")\nplt.show()"
+  },
+  {
+    "objectID": "Assets/Heart/2_data_exploration_EDA.html#correlation-heatmap",
+    "href": "Assets/Heart/2_data_exploration_EDA.html#correlation-heatmap",
+    "title": "2. Exploratory Data Analysis (EDA)",
+    "section": "Correlation Heatmap",
+    "text": "Correlation Heatmap\n\nplt.figure(figsize=(12, 10))\nsns.heatmap(df.corr(), annot=True, fmt=\".2f\", cmap=\"coolwarm\")\nplt.title(\"Correlation Heatmap\")\nplt.show()"
+  },
+  {
+    "objectID": "Assets/Heart/2_data_exploration_EDA.html#numerical-feature-distributions",
+    "href": "Assets/Heart/2_data_exploration_EDA.html#numerical-feature-distributions",
+    "title": "2. Exploratory Data Analysis (EDA)",
+    "section": "Numerical Feature Distributions",
+    "text": "Numerical Feature Distributions\n\nnum_cols = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']\ndf[num_cols].hist(bins=20, figsize=(14, 10))\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "Assets/Heart/2_data_exploration_EDA.html#pair-plot-by-target",
+    "href": "Assets/Heart/2_data_exploration_EDA.html#pair-plot-by-target",
+    "title": "2. Exploratory Data Analysis (EDA)",
+    "section": "Pair Plot by Target",
+    "text": "Pair Plot by Target\n\nsns.pairplot(df[['age', 'chol', 'thalach', 'oldpeak', 'target']], hue='target')\nplt.show()"
+  },
+  {
+    "objectID": "airplane-anova-study.html",
+    "href": "airplane-anova-study.html",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "This project involved flying paper airplanes with different designs and paper weights to determine how these two factors — individually and together — affect flight distance.\n\n\n\n\n\nH₀: No interaction between plane design and paper weight\n\nHₐ: There is interaction between plane design and paper weight\n\n\n\n\n\nH₀: All plane designs have the same mean flight distance\n\nHₐ: At least one plane design differs\n\n\n\n\n\nH₀: All paper weights yield the same mean flight distance\n\nHₐ: At least one paper weight differs\n\n\n\n\n\nEach of the 6 combinations (3 designs × 2 paper weights) was flown 10 times, with distance recorded. The results were analyzed using a two-way ANOVA to check for interaction and main effects.\n\n\n\n\nThe p-value for interaction was 0.005, which is less than ɑ = 0.05\n➤ This means there is a significant interaction between plane design and paper weight\nBecause interaction was present, main effects were not interpreted independently\n\n\n\n\n\nManual flight testing and randomized trials\nData summarized and evaluated in Excel\nTwo-way ANOVA completed and interpreted as part of statistical coursework\n\n\n\n\nThe experiment confirmed that the effectiveness of a plane design depends on the type of paper used, and vice versa. Interaction effects are real and impactful — emphasizing the importance of context when designing experiments.\n\n\n\n\nExperiment Plan (PDF)\nANOVA Summary (PDF)"
+  },
+  {
+    "objectID": "airplane-anova-study.html#hypotheses-tested",
+    "href": "airplane-anova-study.html#hypotheses-tested",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "H₀: No interaction between plane design and paper weight\n\nHₐ: There is interaction between plane design and paper weight\n\n\n\n\n\nH₀: All plane designs have the same mean flight distance\n\nHₐ: At least one plane design differs\n\n\n\n\n\nH₀: All paper weights yield the same mean flight distance\n\nHₐ: At least one paper weight differs"
+  },
+  {
+    "objectID": "airplane-anova-study.html#data-collection",
+    "href": "airplane-anova-study.html#data-collection",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "Each of the 6 combinations (3 designs × 2 paper weights) was flown 10 times, with distance recorded. The results were analyzed using a two-way ANOVA to check for interaction and main effects."
+  },
+  {
+    "objectID": "airplane-anova-study.html#anova-results",
+    "href": "airplane-anova-study.html#anova-results",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "The p-value for interaction was 0.005, which is less than ɑ = 0.05\n➤ This means there is a significant interaction between plane design and paper weight\nBecause interaction was present, main effects were not interpreted independently"
+  },
+  {
+    "objectID": "airplane-anova-study.html#tools-used",
+    "href": "airplane-anova-study.html#tools-used",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "Manual flight testing and randomized trials\nData summarized and evaluated in Excel\nTwo-way ANOVA completed and interpreted as part of statistical coursework"
+  },
+  {
+    "objectID": "airplane-anova-study.html#conclusion",
+    "href": "airplane-anova-study.html#conclusion",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "The experiment confirmed that the effectiveness of a plane design depends on the type of paper used, and vice versa. Interaction effects are real and impactful — emphasizing the importance of context when designing experiments."
+  },
+  {
+    "objectID": "airplane-anova-study.html#supporting-files",
+    "href": "airplane-anova-study.html#supporting-files",
+    "title": "Paper Airplane ANOVA Study",
+    "section": "",
+    "text": "Experiment Plan (PDF)\nANOVA Summary (PDF)"
+  },
+  {
+    "objectID": "about.html#skills-overview",
+    "href": "about.html#skills-overview",
+    "title": "About Me",
+    "section": "Skills Overview",
+    "text": "Skills Overview\n\nProgramming Languages\n\nPython\n\nSQL\n\n\n\nCurrently Learning\n\nMachine Learning\n\nTime Series Forecasting"
+  },
+  {
+    "objectID": "about.html#tools-and-technologies",
+    "href": "about.html#tools-and-technologies",
+    "title": "About Me",
+    "section": "Tools and Technologies",
+    "text": "Tools and Technologies\n\nPython Libraries\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels, PySpark, PyTorch\n\n\n\nModeling and Machine Learning\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nNeural Networks (NN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN)\n\nFeature Engineering, Model Evaluation (RMSE, R², MAE, MSE, Confusion Matrix)\n\n\n\nData Analysis and Visualization\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\nDevelopment and Version Control\n\nGit, GitHub, VS Code, Markdown\n\n\n\nDatabases and SQL\n\nMySQL, SQLite, PostgreSQL\n\nERD Design, Data Cleaning, Joins, Set Operations\n\n\n\nWeb and Reporting\n\nHTML/CSS (via Quarto)\n\nGitHub Pages, Portfolio Development"
+  },
+  {
+    "objectID": "about.html#collaboration-and-leadership",
+    "href": "about.html#collaboration-and-leadership",
+    "title": "About Me",
+    "section": "Collaboration and Leadership",
+    "text": "Collaboration and Leadership\n\nProject Management\n\nCommunication and Team Collaboration\n\nLeadership Experience (Digital Communications Supervisor at BYU–Idaho)"
+  },
+  {
+    "objectID": "about.html#practical-experience",
+    "href": "about.html#practical-experience",
+    "title": "About Me",
+    "section": "Practical Experience",
+    "text": "Practical Experience\nHands-on with SQL normalization, exploratory data analysis, feature engineering, and producing clean, web-ready reports using tools like Quarto and Jupyter Notebooks.\nWant to see examples?\nVisit the Projects page for detailed case studies and write-ups."
+  },
+  {
+    "objectID": "Assets/Heart/1_data_cleaning.html",
+    "href": "Assets/Heart/1_data_cleaning.html",
+    "title": "1. Data Cleaning",
+    "section": "",
+    "text": "This notebook loads and cleans the heart disease dataset.\nimport pandas as pd\n\n# Load the dataset\ndf = pd.read_csv(\"processed_cleveland_clean.csv\")\ndf.head()"
+  },
+  {
+    "objectID": "Assets/Heart/1_data_cleaning.html#drop-rows-with-missing-values",
+    "href": "Assets/Heart/1_data_cleaning.html#drop-rows-with-missing-values",
+    "title": "1. Data Cleaning",
+    "section": "Drop rows with missing values",
+    "text": "Drop rows with missing values\n\n# Drop rows with any missing values\ndf = df.dropna()\nprint(f\"Remaining rows after dropping NA: {len(df)}\")"
+  },
+  {
+    "objectID": "Assets/Heart/1_data_cleaning.html#convert-num-to-binary-target-target",
+    "href": "Assets/Heart/1_data_cleaning.html#convert-num-to-binary-target-target",
+    "title": "1. Data Cleaning",
+    "section": "Convert num to binary target target",
+    "text": "Convert num to binary target target\n\n# If 'num' is still present, use it to create a binary target\nif 'num' in df.columns:\n    df['target'] = df['num'].apply(lambda x: 1 if x &gt; 0 else 0)\n    df.drop('num', axis=1, inplace=True)\n\ndf['target'].value_counts()"
+  },
+  {
+    "objectID": "Assets/Heart/1_data_cleaning.html#save-cleaned-dataset",
+    "href": "Assets/Heart/1_data_cleaning.html#save-cleaned-dataset",
+    "title": "1. Data Cleaning",
+    "section": "Save cleaned dataset",
+    "text": "Save cleaned dataset\n\ndf.to_csv(\"cleaned_heart_data.csv\", index=False)\nprint(\"✅ Cleaned data saved as 'cleaned_heart_data.csv'\")"
+  },
+  {
+    "objectID": "Assets/Heart/3_feature_engineering_visuals.html",
+    "href": "Assets/Heart/3_feature_engineering_visuals.html",
+    "title": "3. Feature Engineering (with Visuals)",
+    "section": "",
+    "text": "This notebook adds and visualizes new features.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sklearn.preprocessing import StandardScaler\n\n# Load cleaned data\ndf = pd.read_csv(\"processed_cleveland_clean.csv\")\n\n##Initial Distributions of Key Features\n\nnum_cols = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']\ndf[num_cols].hist(bins=20, figsize=(14, 8))\nplt.suptitle(\"Initial Numerical Feature Distributions\", y=1.02)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n##Add Engineered Features\n\ndf[\"chol_per_age\"] = df[\"chol\"] / df[\"age\"]\ndf[\"stress_index\"] = df[\"thalach\"] / (df[\"oldpeak\"] + 1)\ndf[\"bp_dev\"] = df[\"trestbps\"] - 120\ndf[\"age_bucket\"] = pd.cut(df[\"age\"], bins=[29, 40, 55, 70, 100], labels=[0, 1, 2, 3])\ndf = pd.get_dummies(df, columns=[\"age_bucket\"], drop_first=True)\ndf.head()\n\n\n    \n\n\n\n\n\n\nage\nsex\ncp\ntrestbps\nchol\nfbs\nrestecg\nthalach\nexang\noldpeak\nslope\nca\nthal\nnum\nchol_per_age\nstress_index\nbp_dev\nage_bucket_1\nage_bucket_2\nage_bucket_3\n\n\n\n\n0\n63.0\n1.0\n1.0\n145.0\n233.0\n1.0\n2.0\n150.0\n0.0\n2.3\n3.0\n0.0\n6.0\n0\n3.698413\n45.454545\n25.0\nFalse\nTrue\nFalse\n\n\n1\n67.0\n1.0\n4.0\n160.0\n286.0\n0.0\n2.0\n108.0\n1.0\n1.5\n2.0\n3.0\n3.0\n2\n4.268657\n43.200000\n40.0\nFalse\nTrue\nFalse\n\n\n2\n67.0\n1.0\n4.0\n120.0\n229.0\n0.0\n2.0\n129.0\n1.0\n2.6\n2.0\n2.0\n7.0\n1\n3.417910\n35.833333\n0.0\nFalse\nTrue\nFalse\n\n\n3\n37.0\n1.0\n3.0\n130.0\n250.0\n0.0\n0.0\n187.0\n0.0\n3.5\n3.0\n0.0\n3.0\n0\n6.756757\n41.555556\n10.0\nFalse\nFalse\nFalse\n\n\n4\n41.0\n0.0\n2.0\n130.0\n204.0\n0.0\n2.0\n172.0\n0.0\n1.4\n1.0\n0.0\n3.0\n0\n4.975610\n71.666667\n10.0\nTrue\nFalse\nFalse\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n    \n      \n\n\n    \n        \n    \n\n      \n\n\n\n      \n    \n\n    \n  \n\n\n##Distributions of Engineered Features\n\nimport matplotlib.pyplot as plt\n\neng_cols = {\n    \"chol_per_age\": \"Cholesterol Per Age\",\n    \"stress_index\": \"Stress Index\",\n    \"bp_dev\": \"BP Deviation\"\n}\n\n# Create custom subplots with proper titles\nfig, axes = plt.subplots(1, 3, figsize=(18, 5))\n\nfor ax, (col, label) in zip(axes, eng_cols.items()):\n    ax.hist(df[col], bins=20, color=\"skyblue\", edgecolor=\"black\")\n    ax.set_title(label)\n    ax.set_xlabel(label)\n    ax.set_ylabel(\"Frequency\")\n\nplt.suptitle(\"Engineered Feature Distributions\", fontsize=16, y=1.05)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n##Boxplots by Target\n\nfig, axes = plt.subplots(1, 3, figsize=(18, 5))\nfor i, col in enumerate(eng_cols):\n    sns.boxplot(data=df, x='num', y=col, ax=axes[i])\n    axes[i].set_title(f\"{col} by Target\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n##Scale Numerical Features\n\nscale_cols = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak',\n              'chol_per_age', 'stress_index', 'bp_dev']\nscaler = StandardScaler()\ndf[scale_cols] = scaler.fit_transform(df[scale_cols])\ndf.head()\n\n\n    \n\n\n\n\n\n\nage\nsex\ncp\ntrestbps\nchol\nfbs\nrestecg\nthalach\nexang\noldpeak\nslope\nca\nthal\nnum\nchol_per_age\nstress_index\nbp_dev\nage_bucket_1\nage_bucket_2\nage_bucket_3\n\n\n\n\n0\n0.948726\n1.0\n1.0\n0.757525\n-0.264900\n1.0\n2.0\n0.017197\n0.0\n1.087338\n3.0\n0.0\n6.0\n0\n-0.846084\n-1.016799\n0.757525\nFalse\nTrue\nFalse\n\n\n1\n1.392002\n1.0\n4.0\n1.611220\n0.760415\n0.0\n2.0\n-1.821905\n1.0\n0.397182\n2.0\n3.0\n3.0\n2\n-0.329103\n-1.059948\n1.611220\nFalse\nTrue\nFalse\n\n\n2\n1.392002\n1.0\n4.0\n-0.665300\n-0.342283\n0.0\n2.0\n-0.902354\n1.0\n1.346147\n2.0\n2.0\n7.0\n1\n-1.100386\n-1.200934\n-0.665300\nFalse\nTrue\nFalse\n\n\n3\n-1.932564\n1.0\n3.0\n-0.096170\n0.063974\n0.0\n0.0\n1.637359\n0.0\n2.122573\n3.0\n0.0\n3.0\n0\n1.926599\n-1.091420\n-0.096170\nFalse\nFalse\nFalse\n\n\n4\n-1.489288\n0.0\n2.0\n-0.096170\n-0.825922\n0.0\n2.0\n0.980537\n0.0\n0.310912\n1.0\n0.0\n3.0\n0\n0.311818\n-0.515143\n-0.096170\nTrue\nFalse\nFalse\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n    \n      \n\n\n    \n        \n    \n\n      \n\n\n\n      \n    \n\n    \n  \n\n\n##Save Feature-Engineered Dataset\n\ndf.to_csv(\"engineered_heart_data.csv\", index=False)\nprint(\"✅ Feature engineered data saved as 'engineered_heart_data.csv'\")"
+  },
+  {
+    "objectID": "Assets/Heart/5_final_model.html",
+    "href": "Assets/Heart/5_final_model.html",
+    "title": "5. Final Model Training and Holdout Evaluation",
+    "section": "",
+    "text": "import pandas as pd\nimport numpy as np\nimport xgboost as xgb\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report\nfrom sklearn.utils.class_weight import compute_sample_weight"
+  },
+  {
+    "objectID": "Assets/Heart/5_final_model.html#load-engineered-data",
+    "href": "Assets/Heart/5_final_model.html#load-engineered-data",
+    "title": "5. Final Model Training and Holdout Evaluation",
+    "section": "Load engineered data",
+    "text": "Load engineered data\n\ndf = pd.read_csv(\"engineered_heart_data.csv\")\n\nX = df.drop(\"target\", axis=1)\ny = df[\"target\"]\n\nX_trainval, X_holdout, y_trainval, y_holdout = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)\nweights_full = compute_sample_weight(class_weight=\"balanced\", y=y_trainval)"
+  },
+  {
+    "objectID": "Assets/Heart/5_final_model.html#final-training-with-best-hyperparameters-insert-values",
+    "href": "Assets/Heart/5_final_model.html#final-training-with-best-hyperparameters-insert-values",
+    "title": "5. Final Model Training and Holdout Evaluation",
+    "section": "Final training with best hyperparameters (insert values)",
+    "text": "Final training with best hyperparameters (insert values)\n\n# Use best hyperparameters from tuning notebook\nBEST_LEARNING_RATE = 0.05   # Replace with tuned value\nBEST_THRESHOLD = 0.45       # Replace with tuned threshold\n\nfinal_model = xgb.XGBClassifier(\n    use_label_encoder=False,\n    eval_metric=\"logloss\",\n    objective=\"binary:logistic\",\n    learning_rate=BEST_LEARNING_RATE,\n    n_estimators=50,\n    random_state=42\n)\nfinal_model.fit(X_trainval, y_trainval, sample_weight=weights_full)"
+  },
+  {
+    "objectID": "Assets/Heart/5_final_model.html#evaluate-on-holdout-set",
+    "href": "Assets/Heart/5_final_model.html#evaluate-on-holdout-set",
+    "title": "5. Final Model Training and Holdout Evaluation",
+    "section": "Evaluate on holdout set",
+    "text": "Evaluate on holdout set\n\ndef evaluate(name, y_true, y_pred):\n    print(f\"\\n{name} Evaluation:\")\n    print(\"Accuracy :\", accuracy_score(y_true, y_pred))\n    print(\"Precision:\", precision_score(y_true, y_pred))\n    print(\"Recall   :\", recall_score(y_true, y_pred))\n    print(\"F1 Score :\", f1_score(y_true, y_pred))\n    print(\"\\nClassification Report:\\n\", classification_report(y_true, y_pred))\n\n\n# Predict with threshold\nprobs = final_model.predict_proba(X_holdout)[:, 1]\npreds = (probs &gt;= BEST_THRESHOLD).astype(int)\n\nevaluate(\"Holdout Set\", y_holdout, preds)"
+  },
+  {
+    "objectID": "Assets/Heart/5_final_model.html#save-predictions",
+    "href": "Assets/Heart/5_final_model.html#save-predictions",
+    "title": "5. Final Model Training and Holdout Evaluation",
+    "section": "Save predictions",
+    "text": "Save predictions\n\noutput = X_holdout.copy()\noutput[\"actual\"] = y_holdout\noutput[\"predicted\"] = preds\noutput.to_csv(\"final_holdout_predictions.csv\", index=False)\nprint(\"✅ Saved final predictions to 'final_holdout_predictions.csv'\")"
+  },
+  {
+    "objectID": "bike_rentals_case_study.html",
+    "href": "bike_rentals_case_study.html",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "This project aimed to predict hourly bike rental demand using deep learning techniques applied to time-series data spanning 2011 through 2023. Key objectives included capturing behavioral and seasonal patterns, leveraging cyclical feature transformations, and testing generalization via a forward-chaining holdout strategy. The true holdout period for testing was the final two months of the dataset: November and December of 2023.\n\n\n\n\nPython for scripting and modeling\n\nTensorFlow / Keras for deep learning model architecture and training\n\nPandas & NumPy for data wrangling and numerical operations\n\nScikit-learn for preprocessing pipelines and regression metrics\n\nMatplotlib for exploratory data visualizations\n\nQuarto for documentation and web rendering\n\n\n\n\n\n\n\nCreated contextual and temporal encodings, including covid_phase, holiday, is_weekend, and cyclical encodings of hour, month, and day_of_year using sine and cosine transforms.\nDropped redundant variables to reduce multicollinearity and simplify the model’s feature space.\n\n\n\n\n\nImplemented a 3-layer feedforward neural network (Dense 128 → 64 → 16) with ReLU activations.\nIncorporated dropout layers (0.1, 0.4, 0.4) and batch normalization to improve generalization and prevent overfitting.\nUsed ExponentialDecay for learning rate adjustment, along with early stopping and model checkpointing.\n\n\n\n\n\nAssessed performance using MAE, RMSE, Median AE, and R².\nStratified evaluation by pre-/post-December 20th periods to observe predictive drift near holiday anomalies.\nSupplemented quantitative metrics with residual plots and error band visualizations.\n\n\n\n\n\nTraining included all observations prior to October 31.\nNovember and December of 2023 were strictly withheld as a realistic holdout set.\nThis forward validation strategy simulates production deployment in time-sensitive forecasting scenarios.\n\n\n\n\n\n\n\n\nFigure 1. Correlation Heatmap — Dropping feels_like_c due to perfect correlation with temp_c\nA heatmap of Pearson correlations revealed that feels_like_c provided no additional signal beyond temp_c, exhibiting a coefficient of 1.00. The variable was removed to streamline the model and mitigate overfitting risk from redundant predictors.\n\n\n\nTime-based features exhibit clear periodicity (e.g., hourly rush patterns, seasonal transitions). Using sine and cosine encodings allowed the model to preserve cyclical continuity (e.g., 23:00 to 00:00) and improved its ability to generalize temporal transitions.\n\n\n\nThe best-performing model consisted of three dense layers using ReLU activation. Dropout and batch normalization layers were added progressively to optimize the trade-off between learning capacity and regularization. The architecture was refined through a combination of manual tuning and validation loss tracking.\n\n\n\nHoldout data from November and December 2023 allowed for rigorous post-training evaluation. Notably, prediction accuracy declined slightly after December 20 due to holiday-related behavior shifts not captured during training. This reinforces the need for adaptive retraining when encountering high-season anomalies.\n\n\n\n\nFigure 2. Post-COVID Hourly Rentals — Optimal Maintenance Hours Between 2:00–5:00 AM\n\nFigure 3. Weekday Demand Breakdown — Mondays Exhibit Consistently Lowest Usage\nBehavioral trend analysis post-COVID highlighted minimal rider activity between 2:00 AM and 5:00 AM. This window, especially on Mondays, presents a valuable operational opportunity for off-peak maintenance and fleet rotation without interrupting user demand.\n\n\n\n\n\nRMSE: 141.30\n\nMAE: 97.10\n\nMedian AE: 64.59\n\nR² (Full): 0.859\n\nR² Pre-21st: 0.894\n\nR² Post-20th: 0.780\n\nPredictions within 5%: 10.38%\n\nPredictions within 10%: 21.09%\n\nPredictions within 20%: 42.25%\n\nThe model achieved a strong balance between generalization and accuracy, particularly on stable demand periods. Although accuracy dipped during holiday weeks, its core temporal structure allowed for reliable planning and infrastructure forecasting under normal conditions.\n\n\n\n\nFigure 4. Actual vs. Predicted — Holdout Set (November-December 2023)\n\nFigure 5. Residual Plot — Colored by Error Band\n\n\n\n\nCase Study Introduction (PDF)\n\nStakeholder Discussion (PDF)\n\nProject Requirements (PDF)\n\nTraining Dataset (CSV)\n\nHoldout Data (CSV)\n\n\n\n\n\nFinal model saved as: bike_model_covid.keras\n\nScaler object saved as: bike_scaler_covid.pkl\n\nNotebook for full training/prediction pipeline: Google Colab Link\n\n\n\n\nFuture improvements could include: - Incorporating external data (e.g., public events and bike station availability) - Testing LSTM or Transformer architectures for sequential temporal modeling - Automating retraining pipelines for weekly data ingestion and redeployment - Improving prediction confidence intervals for stakeholder-facing dashboards"
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#project-summary",
+    "href": "bike_rentals_case_study.html#project-summary",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "This project aimed to predict hourly bike rental demand using deep learning techniques applied to time-series data spanning 2011 through 2023. Key objectives included capturing behavioral and seasonal patterns, leveraging cyclical feature transformations, and testing generalization via a forward-chaining holdout strategy. The true holdout period for testing was the final two months of the dataset: November and December of 2023."
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#tools-technologies",
+    "href": "bike_rentals_case_study.html#tools-technologies",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "Python for scripting and modeling\n\nTensorFlow / Keras for deep learning model architecture and training\n\nPandas & NumPy for data wrangling and numerical operations\n\nScikit-learn for preprocessing pipelines and regression metrics\n\nMatplotlib for exploratory data visualizations\n\nQuarto for documentation and web rendering"
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#key-techniques-used",
+    "href": "bike_rentals_case_study.html#key-techniques-used",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "Created contextual and temporal encodings, including covid_phase, holiday, is_weekend, and cyclical encodings of hour, month, and day_of_year using sine and cosine transforms.\nDropped redundant variables to reduce multicollinearity and simplify the model’s feature space.\n\n\n\n\n\nImplemented a 3-layer feedforward neural network (Dense 128 → 64 → 16) with ReLU activations.\nIncorporated dropout layers (0.1, 0.4, 0.4) and batch normalization to improve generalization and prevent overfitting.\nUsed ExponentialDecay for learning rate adjustment, along with early stopping and model checkpointing.\n\n\n\n\n\nAssessed performance using MAE, RMSE, Median AE, and R².\nStratified evaluation by pre-/post-December 20th periods to observe predictive drift near holiday anomalies.\nSupplemented quantitative metrics with residual plots and error band visualizations.\n\n\n\n\n\nTraining included all observations prior to October 31.\nNovember and December of 2023 were strictly withheld as a realistic holdout set.\nThis forward validation strategy simulates production deployment in time-sensitive forecasting scenarios."
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#key-insights",
+    "href": "bike_rentals_case_study.html#key-insights",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "Figure 1. Correlation Heatmap — Dropping feels_like_c due to perfect correlation with temp_c\nA heatmap of Pearson correlations revealed that feels_like_c provided no additional signal beyond temp_c, exhibiting a coefficient of 1.00. The variable was removed to streamline the model and mitigate overfitting risk from redundant predictors.\n\n\n\nTime-based features exhibit clear periodicity (e.g., hourly rush patterns, seasonal transitions). Using sine and cosine encodings allowed the model to preserve cyclical continuity (e.g., 23:00 to 00:00) and improved its ability to generalize temporal transitions.\n\n\n\nThe best-performing model consisted of three dense layers using ReLU activation. Dropout and batch normalization layers were added progressively to optimize the trade-off between learning capacity and regularization. The architecture was refined through a combination of manual tuning and validation loss tracking.\n\n\n\nHoldout data from November and December 2023 allowed for rigorous post-training evaluation. Notably, prediction accuracy declined slightly after December 20 due to holiday-related behavior shifts not captured during training. This reinforces the need for adaptive retraining when encountering high-season anomalies.\n\n\n\n\nFigure 2. Post-COVID Hourly Rentals — Optimal Maintenance Hours Between 2:00–5:00 AM\n\nFigure 3. Weekday Demand Breakdown — Mondays Exhibit Consistently Lowest Usage\nBehavioral trend analysis post-COVID highlighted minimal rider activity between 2:00 AM and 5:00 AM. This window, especially on Mondays, presents a valuable operational opportunity for off-peak maintenance and fleet rotation without interrupting user demand."
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#results-summary",
+    "href": "bike_rentals_case_study.html#results-summary",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "RMSE: 141.30\n\nMAE: 97.10\n\nMedian AE: 64.59\n\nR² (Full): 0.859\n\nR² Pre-21st: 0.894\n\nR² Post-20th: 0.780\n\nPredictions within 5%: 10.38%\n\nPredictions within 10%: 21.09%\n\nPredictions within 20%: 42.25%\n\nThe model achieved a strong balance between generalization and accuracy, particularly on stable demand periods. Although accuracy dipped during holiday weeks, its core temporal structure allowed for reliable planning and infrastructure forecasting under normal conditions."
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#visual-results",
+    "href": "bike_rentals_case_study.html#visual-results",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "Figure 4. Actual vs. Predicted — Holdout Set (November-December 2023)\n\nFigure 5. Residual Plot — Colored by Error Band"
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#supplementary-materials",
+    "href": "bike_rentals_case_study.html#supplementary-materials",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "Case Study Introduction (PDF)\n\nStakeholder Discussion (PDF)\n\nProject Requirements (PDF)\n\nTraining Dataset (CSV)\n\nHoldout Data (CSV)"
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#final-assets",
+    "href": "bike_rentals_case_study.html#final-assets",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "Final model saved as: bike_model_covid.keras\n\nScaler object saved as: bike_scaler_covid.pkl\n\nNotebook for full training/prediction pipeline: Google Colab Link"
+  },
+  {
+    "objectID": "bike_rentals_case_study.html#next-steps",
+    "href": "bike_rentals_case_study.html#next-steps",
+    "title": "Bike Rentals Prediction Case Study",
+    "section": "",
+    "text": "Future improvements could include: - Incorporating external data (e.g., public events and bike station availability) - Testing LSTM or Transformer architectures for sequential temporal modeling - Automating retraining pipelines for weekly data ingestion and redeployment - Improving prediction confidence intervals for stakeholder-facing dashboards"
   },
   {
     "objectID": "Heart_Casestudy.html",
@@ -182,557 +658,46 @@
     "text": "Hungarian Holdout Evaluation\nAfter finalizing the model, performance was tested on a completely untouched holdout set completely seperate from the Cleveland dataset.\nAccuracy: 0.7687\nPrecision: 0.6338\nRecall: 0.8491\nF1 Score: 0.7258\nKey observations from the holdout classification report:\n\nThe model achieved very high recall (0.85) on predicting heart disease (class 1), meaning when it predicted disease, it was usually correct.\n\nHowever, the accuracy dropped to 0.77, indicating that some true cases of heart disease were missed.\n\nOverall performance remains solid with a macro F1 score of 0.73, suggesting that the model still generalizes well to unseen data.\n\nThis evaluation provided confidence that the model performs robustly while also identifying opportunities for improvement, such as potentially boosting the overall F1-Score for heart disease cases.\n\n\n\nFinal Results: Confusion Matrix"
   },
   {
-    "objectID": "bike_rentals_case_study.html",
-    "href": "bike_rentals_case_study.html",
-    "title": "Bike Rentals Prediction Case Study",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
     "section": "",
-    "text": "This project aimed to predict hourly bike rental demand using deep learning techniques applied to time-series data spanning 2011 through 2023. Key objectives included capturing behavioral and seasonal patterns, leveraging cyclical feature transformations, and testing generalization via a forward-chaining holdout strategy. The true holdout period for testing was the final two months of the dataset: November and December of 2023.\n\n\n\n\nPython for scripting and modeling\n\nTensorFlow / Keras for deep learning model architecture and training\n\nPandas & NumPy for data wrangling and numerical operations\n\nScikit-learn for preprocessing pipelines and regression metrics\n\nMatplotlib for exploratory data visualizations\n\nQuarto for documentation and web rendering\n\n\n\n\n\n\n\nCreated contextual and temporal encodings, including covid_phase, holiday, is_weekend, and cyclical encodings of hour, month, and day_of_year using sine and cosine transforms.\nDropped redundant variables to reduce multicollinearity and simplify the model’s feature space.\n\n\n\n\n\nImplemented a 3-layer feedforward neural network (Dense 128 → 64 → 16) with ReLU activations.\nIncorporated dropout layers (0.1, 0.4, 0.4) and batch normalization to improve generalization and prevent overfitting.\nUsed ExponentialDecay for learning rate adjustment, along with early stopping and model checkpointing.\n\n\n\n\n\nAssessed performance using MAE, RMSE, Median AE, and R².\nStratified evaluation by pre-/post-December 20th periods to observe predictive drift near holiday anomalies.\nSupplemented quantitative metrics with residual plots and error band visualizations.\n\n\n\n\n\nTraining included all observations prior to October 31.\nNovember and December of 2023 were strictly withheld as a realistic holdout set.\nThis forward validation strategy simulates production deployment in time-sensitive forecasting scenarios.\n\n\n\n\n\n\n\n\nFigure 1. Correlation Heatmap — Dropping feels_like_c due to perfect correlation with temp_c\nA heatmap of Pearson correlations revealed that feels_like_c provided no additional signal beyond temp_c, exhibiting a coefficient of 1.00. The variable was removed to streamline the model and mitigate overfitting risk from redundant predictors.\n\n\n\nTime-based features exhibit clear periodicity (e.g., hourly rush patterns, seasonal transitions). Using sine and cosine encodings allowed the model to preserve cyclical continuity (e.g., 23:00 to 00:00) and improved its ability to generalize temporal transitions.\n\n\n\nThe best-performing model consisted of three dense layers using ReLU activation. Dropout and batch normalization layers were added progressively to optimize the trade-off between learning capacity and regularization. The architecture was refined through a combination of manual tuning and validation loss tracking.\n\n\n\nHoldout data from November and December 2023 allowed for rigorous post-training evaluation. Notably, prediction accuracy declined slightly after December 20 due to holiday-related behavior shifts not captured during training. This reinforces the need for adaptive retraining when encountering high-season anomalies.\n\n\n\n\nFigure 2. Post-COVID Hourly Rentals — Optimal Maintenance Hours Between 2:00–5:00 AM\n\nFigure 3. Weekday Demand Breakdown — Mondays Exhibit Consistently Lowest Usage\nBehavioral trend analysis post-COVID highlighted minimal rider activity between 2:00 AM and 5:00 AM. This window, especially on Mondays, presents a valuable operational opportunity for off-peak maintenance and fleet rotation without interrupting user demand.\n\n\n\n\n\nRMSE: 141.30\n\nMAE: 97.10\n\nMedian AE: 64.59\n\nR² (Full): 0.859\n\nR² Pre-21st: 0.894\n\nR² Post-20th: 0.780\n\nPredictions within 5%: 10.38%\n\nPredictions within 10%: 21.09%\n\nPredictions within 20%: 42.25%\n\nThe model achieved a strong balance between generalization and accuracy, particularly on stable demand periods. Although accuracy dipped during holiday weeks, its core temporal structure allowed for reliable planning and infrastructure forecasting under normal conditions.\n\n\n\n\nFigure 4. Actual vs. Predicted — Holdout Set (November-December 2023)\n\nFigure 5. Residual Plot — Colored by Error Band\n\n\n\n\nCase Study Introduction (PDF)\n\nStakeholder Discussion (PDF)\n\nProject Requirements (PDF)\n\nTraining Dataset (CSV)\n\nHoldout Data (CSV)\n\n\n\n\n\nFinal model saved as: bike_model_covid.keras\n\nScaler object saved as: bike_scaler_covid.pkl\n\nNotebook for full training/prediction pipeline: Google Colab Link\n\n\n\n\nFuture improvements could include: - Incorporating external data (e.g., public events and bike station availability) - Testing LSTM or Transformer architectures for sequential temporal modeling - Automating retraining pipelines for weekly data ingestion and redeployment - Improving prediction confidence intervals for stakeholder-facing dashboards"
+    "text": "“The ultimate measure of a man is not where he stands in moments of convenience and comfort, but where he stands at times of challenge and controversy.” — Martin Luther King, Jr.\nHave questions? Email me at official@wilkinjones.com or call (913)954-8237"
   },
   {
-    "objectID": "bike_rentals_case_study.html#project-summary",
-    "href": "bike_rentals_case_study.html#project-summary",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "This project aimed to predict hourly bike rental demand using deep learning techniques applied to time-series data spanning 2011 through 2023. Key objectives included capturing behavioral and seasonal patterns, leveraging cyclical feature transformations, and testing generalization via a forward-chaining holdout strategy. The true holdout period for testing was the final two months of the dataset: November and December of 2023."
+    "objectID": "index.html#hi-im-wilkin-jones",
+    "href": "index.html#hi-im-wilkin-jones",
+    "title": "Welcome",
+    "section": "Hi, I’m Wilkin Jones",
+    "text": "Hi, I’m Wilkin Jones\nI’m a data analyst based in Idaho Falls, ID. I specialize in transforming messy, unstructured data into clear, actionable insights that help businesses grow.\nMy background includes strong experience in Python, SQL, machine learning, and AI-powered analytics. I enjoy building custom dashboards, predictive models, and automation tools that simplify decision-making and drive measurable results.\nLocation: Idaho Falls, ID\nEducation: B.S. in Data Science, Brigham Young University–Idaho\nFocus Areas: - Business analytics and data visualization\n- Machine learning and predictive modeling\n- AI-driven insights and automation\n- Data cleaning and operational reporting"
   },
   {
-    "objectID": "bike_rentals_case_study.html#tools-technologies",
-    "href": "bike_rentals_case_study.html#tools-technologies",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "Python for scripting and modeling\n\nTensorFlow / Keras for deep learning model architecture and training\n\nPandas & NumPy for data wrangling and numerical operations\n\nScikit-learn for preprocessing pipelines and regression metrics\n\nMatplotlib for exploratory data visualizations\n\nQuarto for documentation and web rendering"
-  },
-  {
-    "objectID": "bike_rentals_case_study.html#key-techniques-used",
-    "href": "bike_rentals_case_study.html#key-techniques-used",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "Created contextual and temporal encodings, including covid_phase, holiday, is_weekend, and cyclical encodings of hour, month, and day_of_year using sine and cosine transforms.\nDropped redundant variables to reduce multicollinearity and simplify the model’s feature space.\n\n\n\n\n\nImplemented a 3-layer feedforward neural network (Dense 128 → 64 → 16) with ReLU activations.\nIncorporated dropout layers (0.1, 0.4, 0.4) and batch normalization to improve generalization and prevent overfitting.\nUsed ExponentialDecay for learning rate adjustment, along with early stopping and model checkpointing.\n\n\n\n\n\nAssessed performance using MAE, RMSE, Median AE, and R².\nStratified evaluation by pre-/post-December 20th periods to observe predictive drift near holiday anomalies.\nSupplemented quantitative metrics with residual plots and error band visualizations.\n\n\n\n\n\nTraining included all observations prior to October 31.\nNovember and December of 2023 were strictly withheld as a realistic holdout set.\nThis forward validation strategy simulates production deployment in time-sensitive forecasting scenarios."
-  },
-  {
-    "objectID": "bike_rentals_case_study.html#key-insights",
-    "href": "bike_rentals_case_study.html#key-insights",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "Figure 1. Correlation Heatmap — Dropping feels_like_c due to perfect correlation with temp_c\nA heatmap of Pearson correlations revealed that feels_like_c provided no additional signal beyond temp_c, exhibiting a coefficient of 1.00. The variable was removed to streamline the model and mitigate overfitting risk from redundant predictors.\n\n\n\nTime-based features exhibit clear periodicity (e.g., hourly rush patterns, seasonal transitions). Using sine and cosine encodings allowed the model to preserve cyclical continuity (e.g., 23:00 to 00:00) and improved its ability to generalize temporal transitions.\n\n\n\nThe best-performing model consisted of three dense layers using ReLU activation. Dropout and batch normalization layers were added progressively to optimize the trade-off between learning capacity and regularization. The architecture was refined through a combination of manual tuning and validation loss tracking.\n\n\n\nHoldout data from November and December 2023 allowed for rigorous post-training evaluation. Notably, prediction accuracy declined slightly after December 20 due to holiday-related behavior shifts not captured during training. This reinforces the need for adaptive retraining when encountering high-season anomalies.\n\n\n\n\nFigure 2. Post-COVID Hourly Rentals — Optimal Maintenance Hours Between 2:00–5:00 AM\n\nFigure 3. Weekday Demand Breakdown — Mondays Exhibit Consistently Lowest Usage\nBehavioral trend analysis post-COVID highlighted minimal rider activity between 2:00 AM and 5:00 AM. This window, especially on Mondays, presents a valuable operational opportunity for off-peak maintenance and fleet rotation without interrupting user demand."
-  },
-  {
-    "objectID": "bike_rentals_case_study.html#results-summary",
-    "href": "bike_rentals_case_study.html#results-summary",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "RMSE: 141.30\n\nMAE: 97.10\n\nMedian AE: 64.59\n\nR² (Full): 0.859\n\nR² Pre-21st: 0.894\n\nR² Post-20th: 0.780\n\nPredictions within 5%: 10.38%\n\nPredictions within 10%: 21.09%\n\nPredictions within 20%: 42.25%\n\nThe model achieved a strong balance between generalization and accuracy, particularly on stable demand periods. Although accuracy dipped during holiday weeks, its core temporal structure allowed for reliable planning and infrastructure forecasting under normal conditions."
-  },
-  {
-    "objectID": "bike_rentals_case_study.html#visual-results",
-    "href": "bike_rentals_case_study.html#visual-results",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "Figure 4. Actual vs. Predicted — Holdout Set (November-December 2023)\n\nFigure 5. Residual Plot — Colored by Error Band"
-  },
-  {
-    "objectID": "bike_rentals_case_study.html#supplementary-materials",
-    "href": "bike_rentals_case_study.html#supplementary-materials",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "Case Study Introduction (PDF)\n\nStakeholder Discussion (PDF)\n\nProject Requirements (PDF)\n\nTraining Dataset (CSV)\n\nHoldout Data (CSV)"
-  },
-  {
-    "objectID": "bike_rentals_case_study.html#final-assets",
-    "href": "bike_rentals_case_study.html#final-assets",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "Final model saved as: bike_model_covid.keras\n\nScaler object saved as: bike_scaler_covid.pkl\n\nNotebook for full training/prediction pipeline: Google Colab Link"
-  },
-  {
-    "objectID": "bike_rentals_case_study.html#next-steps",
-    "href": "bike_rentals_case_study.html#next-steps",
-    "title": "Bike Rentals Prediction Case Study",
-    "section": "",
-    "text": "Future improvements could include: - Incorporating external data (e.g., public events and bike station availability) - Testing LSTM or Transformer architectures for sequential temporal modeling - Automating retraining pipelines for weekly data ingestion and redeployment - Improving prediction confidence intervals for stakeholder-facing dashboards"
-  },
-  {
-    "objectID": "Assets/Heart/5_final_model.html",
-    "href": "Assets/Heart/5_final_model.html",
-    "title": "5. Final Model Training and Holdout Evaluation",
-    "section": "",
-    "text": "import pandas as pd\nimport numpy as np\nimport xgboost as xgb\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report\nfrom sklearn.utils.class_weight import compute_sample_weight"
-  },
-  {
-    "objectID": "Assets/Heart/5_final_model.html#load-engineered-data",
-    "href": "Assets/Heart/5_final_model.html#load-engineered-data",
-    "title": "5. Final Model Training and Holdout Evaluation",
-    "section": "Load engineered data",
-    "text": "Load engineered data\n\ndf = pd.read_csv(\"engineered_heart_data.csv\")\n\nX = df.drop(\"target\", axis=1)\ny = df[\"target\"]\n\nX_trainval, X_holdout, y_trainval, y_holdout = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)\nweights_full = compute_sample_weight(class_weight=\"balanced\", y=y_trainval)"
-  },
-  {
-    "objectID": "Assets/Heart/5_final_model.html#final-training-with-best-hyperparameters-insert-values",
-    "href": "Assets/Heart/5_final_model.html#final-training-with-best-hyperparameters-insert-values",
-    "title": "5. Final Model Training and Holdout Evaluation",
-    "section": "Final training with best hyperparameters (insert values)",
-    "text": "Final training with best hyperparameters (insert values)\n\n# Use best hyperparameters from tuning notebook\nBEST_LEARNING_RATE = 0.05   # Replace with tuned value\nBEST_THRESHOLD = 0.45       # Replace with tuned threshold\n\nfinal_model = xgb.XGBClassifier(\n    use_label_encoder=False,\n    eval_metric=\"logloss\",\n    objective=\"binary:logistic\",\n    learning_rate=BEST_LEARNING_RATE,\n    n_estimators=50,\n    random_state=42\n)\nfinal_model.fit(X_trainval, y_trainval, sample_weight=weights_full)"
-  },
-  {
-    "objectID": "Assets/Heart/5_final_model.html#evaluate-on-holdout-set",
-    "href": "Assets/Heart/5_final_model.html#evaluate-on-holdout-set",
-    "title": "5. Final Model Training and Holdout Evaluation",
-    "section": "Evaluate on holdout set",
-    "text": "Evaluate on holdout set\n\ndef evaluate(name, y_true, y_pred):\n    print(f\"\\n{name} Evaluation:\")\n    print(\"Accuracy :\", accuracy_score(y_true, y_pred))\n    print(\"Precision:\", precision_score(y_true, y_pred))\n    print(\"Recall   :\", recall_score(y_true, y_pred))\n    print(\"F1 Score :\", f1_score(y_true, y_pred))\n    print(\"\\nClassification Report:\\n\", classification_report(y_true, y_pred))\n\n\n# Predict with threshold\nprobs = final_model.predict_proba(X_holdout)[:, 1]\npreds = (probs &gt;= BEST_THRESHOLD).astype(int)\n\nevaluate(\"Holdout Set\", y_holdout, preds)"
-  },
-  {
-    "objectID": "Assets/Heart/5_final_model.html#save-predictions",
-    "href": "Assets/Heart/5_final_model.html#save-predictions",
-    "title": "5. Final Model Training and Holdout Evaluation",
-    "section": "Save predictions",
-    "text": "Save predictions\n\noutput = X_holdout.copy()\noutput[\"actual\"] = y_holdout\noutput[\"predicted\"] = preds\noutput.to_csv(\"final_holdout_predictions.csv\", index=False)\nprint(\"✅ Saved final predictions to 'final_holdout_predictions.csv'\")"
-  },
-  {
-    "objectID": "Assets/Heart/3_feature_engineering_visuals.html",
-    "href": "Assets/Heart/3_feature_engineering_visuals.html",
-    "title": "3. Feature Engineering (with Visuals)",
-    "section": "",
-    "text": "This notebook adds and visualizes new features.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sklearn.preprocessing import StandardScaler\n\n# Load cleaned data\ndf = pd.read_csv(\"processed_cleveland_clean.csv\")\n\n##Initial Distributions of Key Features\n\nnum_cols = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']\ndf[num_cols].hist(bins=20, figsize=(14, 8))\nplt.suptitle(\"Initial Numerical Feature Distributions\", y=1.02)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n##Add Engineered Features\n\ndf[\"chol_per_age\"] = df[\"chol\"] / df[\"age\"]\ndf[\"stress_index\"] = df[\"thalach\"] / (df[\"oldpeak\"] + 1)\ndf[\"bp_dev\"] = df[\"trestbps\"] - 120\ndf[\"age_bucket\"] = pd.cut(df[\"age\"], bins=[29, 40, 55, 70, 100], labels=[0, 1, 2, 3])\ndf = pd.get_dummies(df, columns=[\"age_bucket\"], drop_first=True)\ndf.head()\n\n\n    \n\n\n\n\n\n\nage\nsex\ncp\ntrestbps\nchol\nfbs\nrestecg\nthalach\nexang\noldpeak\nslope\nca\nthal\nnum\nchol_per_age\nstress_index\nbp_dev\nage_bucket_1\nage_bucket_2\nage_bucket_3\n\n\n\n\n0\n63.0\n1.0\n1.0\n145.0\n233.0\n1.0\n2.0\n150.0\n0.0\n2.3\n3.0\n0.0\n6.0\n0\n3.698413\n45.454545\n25.0\nFalse\nTrue\nFalse\n\n\n1\n67.0\n1.0\n4.0\n160.0\n286.0\n0.0\n2.0\n108.0\n1.0\n1.5\n2.0\n3.0\n3.0\n2\n4.268657\n43.200000\n40.0\nFalse\nTrue\nFalse\n\n\n2\n67.0\n1.0\n4.0\n120.0\n229.0\n0.0\n2.0\n129.0\n1.0\n2.6\n2.0\n2.0\n7.0\n1\n3.417910\n35.833333\n0.0\nFalse\nTrue\nFalse\n\n\n3\n37.0\n1.0\n3.0\n130.0\n250.0\n0.0\n0.0\n187.0\n0.0\n3.5\n3.0\n0.0\n3.0\n0\n6.756757\n41.555556\n10.0\nFalse\nFalse\nFalse\n\n\n4\n41.0\n0.0\n2.0\n130.0\n204.0\n0.0\n2.0\n172.0\n0.0\n1.4\n1.0\n0.0\n3.0\n0\n4.975610\n71.666667\n10.0\nTrue\nFalse\nFalse\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n    \n      \n\n\n    \n        \n    \n\n      \n\n\n\n      \n    \n\n    \n  \n\n\n##Distributions of Engineered Features\n\nimport matplotlib.pyplot as plt\n\neng_cols = {\n    \"chol_per_age\": \"Cholesterol Per Age\",\n    \"stress_index\": \"Stress Index\",\n    \"bp_dev\": \"BP Deviation\"\n}\n\n# Create custom subplots with proper titles\nfig, axes = plt.subplots(1, 3, figsize=(18, 5))\n\nfor ax, (col, label) in zip(axes, eng_cols.items()):\n    ax.hist(df[col], bins=20, color=\"skyblue\", edgecolor=\"black\")\n    ax.set_title(label)\n    ax.set_xlabel(label)\n    ax.set_ylabel(\"Frequency\")\n\nplt.suptitle(\"Engineered Feature Distributions\", fontsize=16, y=1.05)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n##Boxplots by Target\n\nfig, axes = plt.subplots(1, 3, figsize=(18, 5))\nfor i, col in enumerate(eng_cols):\n    sns.boxplot(data=df, x='num', y=col, ax=axes[i])\n    axes[i].set_title(f\"{col} by Target\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n##Scale Numerical Features\n\nscale_cols = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak',\n              'chol_per_age', 'stress_index', 'bp_dev']\nscaler = StandardScaler()\ndf[scale_cols] = scaler.fit_transform(df[scale_cols])\ndf.head()\n\n\n    \n\n\n\n\n\n\nage\nsex\ncp\ntrestbps\nchol\nfbs\nrestecg\nthalach\nexang\noldpeak\nslope\nca\nthal\nnum\nchol_per_age\nstress_index\nbp_dev\nage_bucket_1\nage_bucket_2\nage_bucket_3\n\n\n\n\n0\n0.948726\n1.0\n1.0\n0.757525\n-0.264900\n1.0\n2.0\n0.017197\n0.0\n1.087338\n3.0\n0.0\n6.0\n0\n-0.846084\n-1.016799\n0.757525\nFalse\nTrue\nFalse\n\n\n1\n1.392002\n1.0\n4.0\n1.611220\n0.760415\n0.0\n2.0\n-1.821905\n1.0\n0.397182\n2.0\n3.0\n3.0\n2\n-0.329103\n-1.059948\n1.611220\nFalse\nTrue\nFalse\n\n\n2\n1.392002\n1.0\n4.0\n-0.665300\n-0.342283\n0.0\n2.0\n-0.902354\n1.0\n1.346147\n2.0\n2.0\n7.0\n1\n-1.100386\n-1.200934\n-0.665300\nFalse\nTrue\nFalse\n\n\n3\n-1.932564\n1.0\n3.0\n-0.096170\n0.063974\n0.0\n0.0\n1.637359\n0.0\n2.122573\n3.0\n0.0\n3.0\n0\n1.926599\n-1.091420\n-0.096170\nFalse\nFalse\nFalse\n\n\n4\n-1.489288\n0.0\n2.0\n-0.096170\n-0.825922\n0.0\n2.0\n0.980537\n0.0\n0.310912\n1.0\n0.0\n3.0\n0\n0.311818\n-0.515143\n-0.096170\nTrue\nFalse\nFalse\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n    \n      \n\n\n    \n        \n    \n\n      \n\n\n\n      \n    \n\n    \n  \n\n\n##Save Feature-Engineered Dataset\n\ndf.to_csv(\"engineered_heart_data.csv\", index=False)\nprint(\"✅ Feature engineered data saved as 'engineered_heart_data.csv'\")"
-  },
-  {
-    "objectID": "Assets/Heart/1_data_cleaning.html",
-    "href": "Assets/Heart/1_data_cleaning.html",
-    "title": "1. Data Cleaning",
-    "section": "",
-    "text": "This notebook loads and cleans the heart disease dataset.\nimport pandas as pd\n\n# Load the dataset\ndf = pd.read_csv(\"processed_cleveland_clean.csv\")\ndf.head()"
-  },
-  {
-    "objectID": "Assets/Heart/1_data_cleaning.html#drop-rows-with-missing-values",
-    "href": "Assets/Heart/1_data_cleaning.html#drop-rows-with-missing-values",
-    "title": "1. Data Cleaning",
-    "section": "Drop rows with missing values",
-    "text": "Drop rows with missing values\n\n# Drop rows with any missing values\ndf = df.dropna()\nprint(f\"Remaining rows after dropping NA: {len(df)}\")"
-  },
-  {
-    "objectID": "Assets/Heart/1_data_cleaning.html#convert-num-to-binary-target-target",
-    "href": "Assets/Heart/1_data_cleaning.html#convert-num-to-binary-target-target",
-    "title": "1. Data Cleaning",
-    "section": "Convert num to binary target target",
-    "text": "Convert num to binary target target\n\n# If 'num' is still present, use it to create a binary target\nif 'num' in df.columns:\n    df['target'] = df['num'].apply(lambda x: 1 if x &gt; 0 else 0)\n    df.drop('num', axis=1, inplace=True)\n\ndf['target'].value_counts()"
-  },
-  {
-    "objectID": "Assets/Heart/1_data_cleaning.html#save-cleaned-dataset",
-    "href": "Assets/Heart/1_data_cleaning.html#save-cleaned-dataset",
-    "title": "1. Data Cleaning",
-    "section": "Save cleaned dataset",
-    "text": "Save cleaned dataset\n\ndf.to_csv(\"cleaned_heart_data.csv\", index=False)\nprint(\"✅ Cleaned data saved as 'cleaned_heart_data.csv'\")"
-  },
-  {
-    "objectID": "about.html#skills-overview",
-    "href": "about.html#skills-overview",
-    "title": "About Me",
-    "section": "Skills Overview",
-    "text": "Skills Overview\n\nProgramming Languages\n\nPython\n\nSQL\n\n\n\nCurrently Learning\n\nMachine Learning\n\nTime Series Forecasting"
-  },
-  {
-    "objectID": "about.html#tools-and-technologies",
-    "href": "about.html#tools-and-technologies",
-    "title": "About Me",
-    "section": "Tools and Technologies",
-    "text": "Tools and Technologies\n\nPython Libraries\n\nPandas, NumPy, Scikit-learn, Matplotlib, Seaborn\n\nXGBoost, Random Forest, Statsmodels, PySpark, PyTorch\n\n\n\nModeling and Machine Learning\n\nLogistic Regression, Decision Trees, Cross-Validation\n\nNeural Networks (NN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN)\n\nFeature Engineering, Model Evaluation (RMSE, R², MAE, MSE, Confusion Matrix)\n\n\n\nData Analysis and Visualization\n\nTableau, Excel, Quarto\n\nJupyter Notebooks, Google Colab\n\n\n\nDevelopment and Version Control\n\nGit, GitHub, VS Code, Markdown\n\n\n\nDatabases and SQL\n\nMySQL, SQLite, PostgreSQL\n\nERD Design, Data Cleaning, Joins, Set Operations\n\n\n\nWeb and Reporting\n\nHTML/CSS (via Quarto)\n\nGitHub Pages, Portfolio Development"
-  },
-  {
-    "objectID": "about.html#collaboration-and-leadership",
-    "href": "about.html#collaboration-and-leadership",
-    "title": "About Me",
-    "section": "Collaboration and Leadership",
-    "text": "Collaboration and Leadership\n\nProject Management\n\nCommunication and Team Collaboration\n\nLeadership Experience (Digital Communications Supervisor at BYU–Idaho)"
-  },
-  {
-    "objectID": "about.html#practical-experience",
-    "href": "about.html#practical-experience",
-    "title": "About Me",
-    "section": "Practical Experience",
-    "text": "Practical Experience\nHands-on with SQL normalization, exploratory data analysis, feature engineering, and producing clean, web-ready reports using tools like Quarto and Jupyter Notebooks.\nWant to see examples?\nVisit the Projects page for detailed case studies and write-ups."
-  },
-  {
-    "objectID": "airplane-anova-study.html",
-    "href": "airplane-anova-study.html",
-    "title": "Paper Airplane ANOVA Study",
-    "section": "",
-    "text": "This project involved flying paper airplanes with different designs and paper weights to determine how these two factors — individually and together — affect flight distance.\n\n\n\n\n\nH₀: No interaction between plane design and paper weight\n\nHₐ: There is interaction between plane design and paper weight\n\n\n\n\n\nH₀: All plane designs have the same mean flight distance\n\nHₐ: At least one plane design differs\n\n\n\n\n\nH₀: All paper weights yield the same mean flight distance\n\nHₐ: At least one paper weight differs\n\n\n\n\n\nEach of the 6 combinations (3 designs × 2 paper weights) was flown 10 times, with distance recorded. The results were analyzed using a two-way ANOVA to check for interaction and main effects.\n\n\n\n\nThe p-value for interaction was 0.005, which is less than ɑ = 0.05\n➤ This means there is a significant interaction between plane design and paper weight\nBecause interaction was present, main effects were not interpreted independently\n\n\n\n\n\nManual flight testing and randomized trials\nData summarized and evaluated in Excel\nTwo-way ANOVA completed and interpreted as part of statistical coursework\n\n\n\n\nThe experiment confirmed that the effectiveness of a plane design depends on the type of paper used, and vice versa. Interaction effects are real and impactful — emphasizing the importance of context when designing experiments.\n\n\n\n\nExperiment Plan (PDF)\nANOVA Summary (PDF)"
-  },
-  {
-    "objectID": "airplane-anova-study.html#hypotheses-tested",
-    "href": "airplane-anova-study.html#hypotheses-tested",
-    "title": "Paper Airplane ANOVA Study",
-    "section": "",
-    "text": "H₀: No interaction between plane design and paper weight\n\nHₐ: There is interaction between plane design and paper weight\n\n\n\n\n\nH₀: All plane designs have the same mean flight distance\n\nHₐ: At least one plane design differs\n\n\n\n\n\nH₀: All paper weights yield the same mean flight distance\n\nHₐ: At least one paper weight differs"
-  },
-  {
-    "objectID": "airplane-anova-study.html#data-collection",
-    "href": "airplane-anova-study.html#data-collection",
-    "title": "Paper Airplane ANOVA Study",
-    "section": "",
-    "text": "Each of the 6 combinations (3 designs × 2 paper weights) was flown 10 times, with distance recorded. The results were analyzed using a two-way ANOVA to check for interaction and main effects."
-  },
-  {
-    "objectID": "airplane-anova-study.html#anova-results",
-    "href": "airplane-anova-study.html#anova-results",
-    "title": "Paper Airplane ANOVA Study",
-    "section": "",
-    "text": "The p-value for interaction was 0.005, which is less than ɑ = 0.05\n➤ This means there is a significant interaction between plane design and paper weight\nBecause interaction was present, main effects were not interpreted independently"
-  },
-  {
-    "objectID": "airplane-anova-study.html#tools-used",
-    "href": "airplane-anova-study.html#tools-used",
-    "title": "Paper Airplane ANOVA Study",
-    "section": "",
-    "text": "Manual flight testing and randomized trials\nData summarized and evaluated in Excel\nTwo-way ANOVA completed and interpreted as part of statistical coursework"
-  },
-  {
-    "objectID": "airplane-anova-study.html#conclusion",
-    "href": "airplane-anova-study.html#conclusion",
-    "title": "Paper Airplane ANOVA Study",
-    "section": "",
-    "text": "The experiment confirmed that the effectiveness of a plane design depends on the type of paper used, and vice versa. Interaction effects are real and impactful — emphasizing the importance of context when designing experiments."
-  },
-  {
-    "objectID": "airplane-anova-study.html#supporting-files",
-    "href": "airplane-anova-study.html#supporting-files",
-    "title": "Paper Airplane ANOVA Study",
-    "section": "",
-    "text": "Experiment Plan (PDF)\nANOVA Summary (PDF)"
-  },
-  {
-    "objectID": "Assets/Heart/2_data_exploration_EDA.html",
-    "href": "Assets/Heart/2_data_exploration_EDA.html",
-    "title": "2. Exploratory Data Analysis (EDA)",
-    "section": "",
-    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\n# Load cleaned data\ndf = pd.read_csv(\"cleaned_heart_data.csv\")\ndf.head()"
-  },
-  {
-    "objectID": "Assets/Heart/2_data_exploration_EDA.html#target-distribution",
-    "href": "Assets/Heart/2_data_exploration_EDA.html#target-distribution",
-    "title": "2. Exploratory Data Analysis (EDA)",
-    "section": "Target Distribution",
-    "text": "Target Distribution\n\nsns.countplot(x='target', data=df)\nplt.title(\"Target Class Distribution\")\nplt.xlabel(\"Heart Disease (0 = No, 1 = Yes)\")\nplt.ylabel(\"Count\")\nplt.show()"
-  },
-  {
-    "objectID": "Assets/Heart/2_data_exploration_EDA.html#correlation-heatmap",
-    "href": "Assets/Heart/2_data_exploration_EDA.html#correlation-heatmap",
-    "title": "2. Exploratory Data Analysis (EDA)",
-    "section": "Correlation Heatmap",
-    "text": "Correlation Heatmap\n\nplt.figure(figsize=(12, 10))\nsns.heatmap(df.corr(), annot=True, fmt=\".2f\", cmap=\"coolwarm\")\nplt.title(\"Correlation Heatmap\")\nplt.show()"
-  },
-  {
-    "objectID": "Assets/Heart/2_data_exploration_EDA.html#numerical-feature-distributions",
-    "href": "Assets/Heart/2_data_exploration_EDA.html#numerical-feature-distributions",
-    "title": "2. Exploratory Data Analysis (EDA)",
-    "section": "Numerical Feature Distributions",
-    "text": "Numerical Feature Distributions\n\nnum_cols = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']\ndf[num_cols].hist(bins=20, figsize=(14, 10))\nplt.tight_layout()\nplt.show()"
-  },
-  {
-    "objectID": "Assets/Heart/2_data_exploration_EDA.html#pair-plot-by-target",
-    "href": "Assets/Heart/2_data_exploration_EDA.html#pair-plot-by-target",
-    "title": "2. Exploratory Data Analysis (EDA)",
-    "section": "Pair Plot by Target",
-    "text": "Pair Plot by Target\n\nsns.pairplot(df[['age', 'chol', 'thalach', 'oldpeak', 'target']], hue='target')\nplt.show()"
-  },
-  {
-    "objectID": "Assets/Heart/4_model_tuning.html",
-    "href": "Assets/Heart/4_model_tuning.html",
-    "title": "4. Model Tuning & Threshold Optimization",
-    "section": "",
-    "text": "import pandas as pd\nimport numpy as np\nimport xgboost as xgb\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import f1_score\nfrom sklearn.utils.class_weight import compute_sample_weight"
-  },
-  {
-    "objectID": "Assets/Heart/4_model_tuning.html#load-data-and-split",
-    "href": "Assets/Heart/4_model_tuning.html#load-data-and-split",
-    "title": "4. Model Tuning & Threshold Optimization",
-    "section": "Load data and split",
-    "text": "Load data and split\n\ndf = pd.read_csv(\"engineered_heart_data.csv\")\n\nX = df.drop(\"target\", axis=1)\ny = df[\"target\"]\n\nX_train, X_val, y_train, y_val = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)\nsample_weights = compute_sample_weight(class_weight=\"balanced\", y=y_train)"
-  },
-  {
-    "objectID": "Assets/Heart/4_model_tuning.html#grid-search-over-learning-rates-and-thresholds",
-    "href": "Assets/Heart/4_model_tuning.html#grid-search-over-learning-rates-and-thresholds",
-    "title": "4. Model Tuning & Threshold Optimization",
-    "section": "Grid search over learning rates and thresholds",
-    "text": "Grid search over learning rates and thresholds\n\nimport matplotlib.pyplot as plt\nfrom mpl_toolkits.mplot3d import Axes3D\n\nlearning_rates = [0.01, 0.05, 0.1, 0.2]\nthresholds = np.arange(0.3, 0.71, 0.05)\nf1_matrix = np.zeros((len(learning_rates), len(thresholds)))\n\nfor i, lr in enumerate(learning_rates):\n    model = xgb.XGBClassifier(\n        use_label_encoder=False,\n        eval_metric=\"logloss\",\n        objective=\"binary:logistic\",\n        learning_rate=lr,\n        n_estimators=50,\n        random_state=42\n    )\n    model.fit(X_train, y_train, sample_weight=sample_weights)\n    probs = model.predict_proba(X_val)[:, 1]\n    for j, t in enumerate(thresholds):\n        preds = (probs &gt;= t).astype(int)\n        f1_matrix[i, j] = f1_score(y_val, preds)"
-  },
-  {
-    "objectID": "Assets/Heart/4_model_tuning.html#d-plot-of-f1-scores",
-    "href": "Assets/Heart/4_model_tuning.html#d-plot-of-f1-scores",
-    "title": "4. Model Tuning & Threshold Optimization",
-    "section": "3D plot of F1 scores",
-    "text": "3D plot of F1 scores\n\nT, LR = np.meshgrid(thresholds, learning_rates)\nfig = plt.figure(figsize=(10, 6))\nax = fig.add_subplot(111, projection='3d')\nsurf = ax.plot_surface(LR, T, f1_matrix, cmap='viridis', edgecolor='k')\nax.set_xlabel(\"Learning Rate\")\nax.set_ylabel(\"Threshold\")\nax.set_zlabel(\"F1 Score\")\nax.set_title(\"F1 Score by Learning Rate and Threshold\")\nplt.tight_layout()\nplt.show()"
-  },
-  {
-    "objectID": "Assets/Heart/4_model_tuning.html#report-best-configuration",
-    "href": "Assets/Heart/4_model_tuning.html#report-best-configuration",
-    "title": "4. Model Tuning & Threshold Optimization",
-    "section": "Report best configuration",
-    "text": "Report best configuration\n\nbest_idx = np.unravel_index(np.argmax(f1_matrix, axis=None), f1_matrix.shape)\nbest_lr = learning_rates[best_idx[0]]\nbest_threshold = thresholds[best_idx[1]]\nbest_f1 = f1_matrix[best_idx]\n\nprint(\"🔥 Best Configuration Found:\")\nprint(f\"Learning Rate: {best_lr}\")\nprint(f\"Threshold    : {best_threshold}\")\nprint(f\"F1 Score     : {best_f1:.4f}\")"
-  },
-  {
-    "objectID": "baseball-relationships-study.html",
-    "href": "baseball-relationships-study.html",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "This project explores relationships in the Lahman Baseball Database using SQL queries and Lets-Plot visualizations. The analysis was completed as a final project for the DS 250 course at BYU–Idaho.\n\n\n\nGenerate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic\n\n\n\n\n\n\n\nQueried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts\n\n\n\n\n\n\nSQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report\n\n\n\n\nThe full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets.\n\n\n\n\nDownload Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
-  },
-  {
-    "objectID": "baseball-relationships-study.html#project-goals",
-    "href": "baseball-relationships-study.html#project-goals",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "Generate insights using SQL queries alone, without relying on Python for analysis\nVisualize baseball data relationships with charts created in Lets-Plot\nDeliver a client-friendly HTML report backed by relational data logic"
-  },
-  {
-    "objectID": "baseball-relationships-study.html#key-tasks",
-    "href": "baseball-relationships-study.html#key-tasks",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "Queried players from BYU-I and retrieved their salaries, year, and team\nSorted by highest salary to lowest\n\n\n\n\n\nCalculated batting averages for individual years and across entire careers\nUsed filters: minimum 1 at-bat, 10 at-bats, and 100 at-bats for long-term performance\n\n\n\n\n\nCompared performance metrics between two selected MLB teams\nVisualized using Lets-Plot charts"
-  },
-  {
-    "objectID": "baseball-relationships-study.html#tools-technologies",
-    "href": "baseball-relationships-study.html#tools-technologies",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "SQL (using Lahman Baseball Database)\nLets-Plot (for visualization)\nQuarto for generating a clean HTML report"
-  },
-  {
-    "objectID": "baseball-relationships-study.html#final-report",
-    "href": "baseball-relationships-study.html#final-report",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "The full HTML report includes all charts, queries, and findings: 👉 Download Full Report (PDF)\nThis project showcases the power of structured queries and visualization in delivering client-ready insights from large datasets."
-  },
-  {
-    "objectID": "baseball-relationships-study.html#report-files",
-    "href": "baseball-relationships-study.html#report-files",
-    "title": "Baseball Relationships Analysis",
-    "section": "",
-    "text": "Download Full Report (HTML)\nView Project Documentation (PDF)\nView Quarto Source File"
-  },
-  {
-    "objectID": "ds250_final_baseball_project.html",
-    "href": "ds250_final_baseball_project.html",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "",
-    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nimport sqlite3\nfrom lets_plot import *\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sqlite3.connect(sqlite_file)"
-  },
-  {
-    "objectID": "ds250_final_baseball_project.html#question-task-1",
-    "href": "ds250_final_baseball_project.html#question-task-1",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "QUESTION – TASK 1",
-    "text": "QUESTION – TASK 1\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\n\n\nShow the code\nquery = '''\nSELECT s.playerID, MAX(sp.schoolID) AS schoolID, MAX(s.salary) AS salary, s.yearID, s.teamID\nFROM CollegePlaying sp\nJOIN Salaries s ON sp.playerID = s.playerID\nWHERE sp.schoolID = 'idbyuid'\nGROUP BY s.playerID, s.yearID, s.teamID\nORDER BY salary DESC;\n'''\ndf_byu = pd.read_sql_query(query, con)\ndf_byu"
-  },
-  {
-    "objectID": "ds250_final_baseball_project.html#question-task-2",
-    "href": "ds250_final_baseball_project.html#question-task-2",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "QUESTION – TASK 2",
-    "text": "QUESTION – TASK 2\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\n\nAt least 1 at-bat\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 1\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_1ab = pd.read_sql_query(query, con)\ndf_avg_1ab\n\n\n\nAt least 10 at-bats\n\n\n\nShow the code\nquery = '''\nSELECT playerID, yearID, CAST(H AS FLOAT)/AB AS batting_avg\nFROM Batting\nWHERE AB &gt;= 10\nORDER BY batting_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_10ab = pd.read_sql_query(query, con)\ndf_avg_10ab\n\n\n\nCareer batting average (100+ AB total)\n\n\n\nShow the code\nquery = '''\nSELECT playerID, CAST(SUM(H) AS FLOAT)/SUM(AB) AS career_avg\nFROM Batting\nGROUP BY playerID\nHAVING SUM(AB) &gt;= 100\nORDER BY career_avg DESC, playerID\nLIMIT 5;\n'''\ndf_avg_career = pd.read_sql_query(query, con)\ndf_avg_career"
-  },
-  {
-    "objectID": "ds250_final_baseball_project.html#question-task-3",
-    "href": "ds250_final_baseball_project.html#question-task-3",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "QUESTION – TASK 3",
-    "text": "QUESTION – TASK 3\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Lets-Plot to visualize the comparison. What do you learn?\n\n\nShow the code\nquery = '''\nSELECT yearID, teamID, SUM(HR) AS total_HR\nFROM Batting\nWHERE teamID IN ('NYA', 'BOS')\nGROUP BY yearID, teamID\nORDER BY yearID, teamID;\n'''\ndf_hr = pd.read_sql_query(query, con)\ndf_hr\n\n\n\n\nShow the code\n# Visualization of Yankees vs. Red Sox Home Runs Over Time\nggplot(df_hr, aes(x='yearID', y='total_HR', color='teamID')) + \\\n    geom_line(size=1.2) + \\\n    ggtitle(\"Yankees vs. Red Sox: Total Home Runs by Year\") + \\\n    labs(x=\"Year\", y=\"Total Home Runs\", color=\"Team\") + \\\n    theme_minimal()\n\n\nBased on the graph, we observe fluctuations in home run totals over time for both teams. In recent years, the Yankees have consistently hit more home runs compared to the Red Sox, especially post-2010. This could indicate a shift in hitting strategy, roster strength, or ballpark influence."
-  },
-  {
-    "objectID": "ds250_final_baseball_project.html#stretch-question-task-1",
-    "href": "ds250_final_baseball_project.html#stretch-question-task-1",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "STRETCH QUESTION – TASK 1",
-    "text": "STRETCH QUESTION – TASK 1\nAdvanced Salary Distribution by Position (with Case Statement):\n\n\nShow the code\nquery = '''\nWITH main_pos AS (\n  SELECT playerID, yearID, Pos, COUNT(*) AS games\n  FROM Fielding\n  GROUP BY playerID, yearID, Pos\n),\nmost_played AS (\n  SELECT playerID, yearID, Pos\n  FROM (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY playerID, yearID ORDER BY games DESC) AS rn\n    FROM main_pos\n  )\n  WHERE rn = 1\n)\nSELECT mp.Pos AS position,\n       ROUND(AVG(s.salary), 2) AS average_salary,\n       COUNT(DISTINCT s.playerID) AS total_players,\n       MAX(s.salary) AS highest_salary,\n       CASE\n         WHEN AVG(s.salary) &gt; 3000000 THEN 'High Salary'\n         WHEN AVG(s.salary) BETWEEN 2000000 AND 3000000 THEN 'Medium Salary'\n         ELSE 'Low Salary'\n       END AS salary_category\nFROM most_played mp\nJOIN Salaries s ON mp.playerID = s.playerID AND mp.yearID = s.yearID\nGROUP BY mp.Pos\nORDER BY average_salary DESC;\n'''\ndf_salary_pos = pd.read_sql_query(query, con)\ndf_salary_pos"
-  },
-  {
-    "objectID": "ds250_final_baseball_project.html#stretch-question-task-2",
-    "href": "ds250_final_baseball_project.html#stretch-question-task-2",
-    "title": "Client Report - Finding Relationships in Baseball",
-    "section": "STRETCH QUESTION – TASK 2",
-    "text": "STRETCH QUESTION – TASK 2\nAdvanced Career Longevity and Performance (with Subqueries):\n\n\nShow the code\nquery = '''\nWITH player_years AS (\n  SELECT playerID, MIN(yearID) AS start_year, MAX(yearID) AS end_year, COUNT(DISTINCT yearID) AS career_length\n  FROM Batting\n  GROUP BY playerID\n  HAVING SUM(G) &gt;= 10\n)\nSELECT py.playerID, p.nameFirst, p.nameLast, py.career_length\nFROM player_years py\nJOIN people p ON py.playerID = p.playerID\nORDER BY py.career_length DESC\nLIMIT 10;\n'''\ndf_longevity = pd.read_sql_query(query, con)\ndf_longevity"
-  },
-  {
-    "objectID": "housing_case_study.html",
-    "href": "housing_case_study.html",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation.\n\n\n\nThis case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy.\n\n\n\n\nPython for scripting and modeling\nJupyter Notebook for interactive development\nPandas & NumPy for data cleaning and transformation\nScikit-learn and XGBoost for modeling\nMatplotlib / Seaborn for visualizations\nQuarto for documentation and report generation\n\n\n\n\n✅ Feature Engineering\nAdded custom variables like luxury score, age, and view rating to enrich input data\n✅ Model Blending\nCombined XGBoost and Random Forest regressors to improve stability and accuracy\n✅ Error Handling\nApplied outlier smoothing and tested multiple metrics (RMSE, R², median error)\n✅ Location Awareness\nUsed latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)\n\n\n\nAs part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:\n\nRange Filtering: Only properties above/below certain price thresholds\nMissing Data Checks: Identified records with missing view or year built values\nAggregation: Calculated average prices by region or view score\nJoin Simulation: Merged multiple CSV-derived frames for composite analysis\n\n\n\n\n\nMedian Error: $33,842.78\nRMSE: $109,329.21\nR² Score: 0.9108 (91% variance explained)\n\nThe combination of models and domain-based feature engineering led to strong performance on unseen test data.\n\n\n\n\nFigure 1. Predicted vs Actual Housing Prices\n\nFigure 2. Most Influential Features\n\n\n\n\nExecutive Summary (PDF)\nCase Study Introduction (PDF)\nDiscussion Questions (PDF)\nRaw Housing Data (CSV)\nModel Predictions (CSV)\n\n\n\n🔗 View the full Colab Notebook for reproducible code and model walkthrough."
-  },
-  {
-    "objectID": "housing_case_study.html#housing-price-prediction",
-    "href": "housing_case_study.html#housing-price-prediction",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation."
-  },
-  {
-    "objectID": "housing_case_study.html#project-summary",
-    "href": "housing_case_study.html#project-summary",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "This case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy."
-  },
-  {
-    "objectID": "housing_case_study.html#tools-technologies",
-    "href": "housing_case_study.html#tools-technologies",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "Python for scripting and modeling\nJupyter Notebook for interactive development\nPandas & NumPy for data cleaning and transformation\nScikit-learn and XGBoost for modeling\nMatplotlib / Seaborn for visualizations\nQuarto for documentation and report generation"
-  },
-  {
-    "objectID": "housing_case_study.html#key-techniques-used",
-    "href": "housing_case_study.html#key-techniques-used",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "✅ Feature Engineering\nAdded custom variables like luxury score, age, and view rating to enrich input data\n✅ Model Blending\nCombined XGBoost and Random Forest regressors to improve stability and accuracy\n✅ Error Handling\nApplied outlier smoothing and tested multiple metrics (RMSE, R², median error)\n✅ Location Awareness\nUsed latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)"
-  },
-  {
-    "objectID": "housing_case_study.html#sql-scenario-highlights",
-    "href": "housing_case_study.html#sql-scenario-highlights",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "As part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:\n\nRange Filtering: Only properties above/below certain price thresholds\nMissing Data Checks: Identified records with missing view or year built values\nAggregation: Calculated average prices by region or view score\nJoin Simulation: Merged multiple CSV-derived frames for composite analysis"
-  },
-  {
-    "objectID": "housing_case_study.html#results-summary",
-    "href": "housing_case_study.html#results-summary",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "Median Error: $33,842.78\nRMSE: $109,329.21\nR² Score: 0.9108 (91% variance explained)\n\nThe combination of models and domain-based feature engineering led to strong performance on unseen test data."
-  },
-  {
-    "objectID": "housing_case_study.html#visuals",
-    "href": "housing_case_study.html#visuals",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "Figure 1. Predicted vs Actual Housing Prices\n\nFigure 2. Most Influential Features"
-  },
-  {
-    "objectID": "housing_case_study.html#supplementary-materials",
-    "href": "housing_case_study.html#supplementary-materials",
-    "title": "Housing Price Prediction Case Study",
-    "section": "",
-    "text": "Executive Summary (PDF)\nCase Study Introduction (PDF)\nDiscussion Questions (PDF)\nRaw Housing Data (CSV)\nModel Predictions (CSV)\n\n\n\n🔗 View the full Colab Notebook for reproducible code and model walkthrough."
-  },
-  {
-    "objectID": "pawesome-database-enhancement.html",
-    "href": "pawesome-database-enhancement.html",
-    "title": "Pawesome Pet Services Database Enhancement",
-    "section": "",
-    "text": "This project involved restructuring and expanding the Pawesome Pet Services database to better meet the needs of a growing business. The redesign improves the management of services, appointments, and pet information by creating more scalable and normalized relationships.\n\n\n\n\n\nRemoved service from the Appointments table\nRemoved breed and species from the Pets table\n\n\n\n\n\nservices: Tracks available services and their descriptions\nbreeds: Stores pet breed and species info\nappointmentservices: Join table for many-to-many relationship between appointments and services\n\n\n\n\n\nOne-to-many: Pets ➝ Breeds\nMany-to-many: Appointments ⬌ Services\n\n\n\n\n\n\n\n\nERD of Enhanced Database\n\n\n\n\n\nThe updated schema supports: - Accurate service tracking per appointment - Organized breed/species classification - Cleaner queries through normalization\n\n\n\n\nMySQL Workbench for modeling and DDL execution\nERD Diagram for schema visualization\n\n\n\n\n\n\n\nAs part of the database redesign and validation process, I wrote and executed several SQL queries to test relationships, filtering, and compound logic in the new schema.\n\n\n\nUpcoming Appointments: Queried appointments after a certain date\n\nEmail Filtering: Used IN and NOT IN to find or exclude clients by email\n\nName Pattern Matching: Found pets whose names end in “a” using LIKE\n\nMissing Data Checks: Used IS NULL to find pets with unrecorded weight\n\n\n\n\n\nCross Join: Combined every pet with every client to simulate matching scenarios\n\nInner Join: Pulled appointments with pet and client names\n\nSubquery Join: Listed pets with above-average weight\n\nMulti-table Join: Merged appointments with service and pet info\n\nSelf-Join: Found clients with the same last name\n\n\n\n\n\nUNION: Combined client and pet emails\n\nINTERSECT: Found shared phone numbers between clients and emergency contacts\n\nEXCEPT: Identified pets without appointments\n\nSorted UNION: Merged names from clients and pets, sorted alphabetically\n\nThese exercises confirmed that the schema was functioning correctly and provided practice with real-world query logic.\n\n\n\n\n\nAssignment PDF\nFiltering and Conditions Example\nAdvanced Joins\nSet Operators"
-  },
-  {
-    "objectID": "pawesome-database-enhancement.html#key-changes",
-    "href": "pawesome-database-enhancement.html#key-changes",
-    "title": "Pawesome Pet Services Database Enhancement",
-    "section": "",
-    "text": "Removed service from the Appointments table\nRemoved breed and species from the Pets table\n\n\n\n\n\nservices: Tracks available services and their descriptions\nbreeds: Stores pet breed and species info\nappointmentservices: Join table for many-to-many relationship between appointments and services\n\n\n\n\n\nOne-to-many: Pets ➝ Breeds\nMany-to-many: Appointments ⬌ Services"
-  },
-  {
-    "objectID": "pawesome-database-enhancement.html#erd-diagram",
-    "href": "pawesome-database-enhancement.html#erd-diagram",
-    "title": "Pawesome Pet Services Database Enhancement",
-    "section": "",
-    "text": "ERD of Enhanced Database"
-  },
-  {
-    "objectID": "pawesome-database-enhancement.html#outcome",
-    "href": "pawesome-database-enhancement.html#outcome",
-    "title": "Pawesome Pet Services Database Enhancement",
-    "section": "",
-    "text": "The updated schema supports: - Accurate service tracking per appointment - Organized breed/species classification - Cleaner queries through normalization"
-  },
-  {
-    "objectID": "pawesome-database-enhancement.html#tools-used",
-    "href": "pawesome-database-enhancement.html#tools-used",
-    "title": "Pawesome Pet Services Database Enhancement",
-    "section": "",
-    "text": "MySQL Workbench for modeling and DDL execution\nERD Diagram for schema visualization"
-  },
-  {
-    "objectID": "pawesome-database-enhancement.html#sql-scenario-highlights",
-    "href": "pawesome-database-enhancement.html#sql-scenario-highlights",
-    "title": "Pawesome Pet Services Database Enhancement",
-    "section": "",
-    "text": "As part of the database redesign and validation process, I wrote and executed several SQL queries to test relationships, filtering, and compound logic in the new schema.\n\n\n\nUpcoming Appointments: Queried appointments after a certain date\n\nEmail Filtering: Used IN and NOT IN to find or exclude clients by email\n\nName Pattern Matching: Found pets whose names end in “a” using LIKE\n\nMissing Data Checks: Used IS NULL to find pets with unrecorded weight\n\n\n\n\n\nCross Join: Combined every pet with every client to simulate matching scenarios\n\nInner Join: Pulled appointments with pet and client names\n\nSubquery Join: Listed pets with above-average weight\n\nMulti-table Join: Merged appointments with service and pet info\n\nSelf-Join: Found clients with the same last name\n\n\n\n\n\nUNION: Combined client and pet emails\n\nINTERSECT: Found shared phone numbers between clients and emergency contacts\n\nEXCEPT: Identified pets without appointments\n\nSorted UNION: Merged names from clients and pets, sorted alphabetically\n\nThese exercises confirmed that the schema was functioning correctly and provided practice with real-world query logic."
-  },
-  {
-    "objectID": "pawesome-database-enhancement.html#related-files",
-    "href": "pawesome-database-enhancement.html#related-files",
-    "title": "Pawesome Pet Services Database Enhancement",
-    "section": "",
-    "text": "Assignment PDF\nFiltering and Conditions Example\nAdvanced Joins\nSet Operators"
-  },
-  {
-    "objectID": "receipt-generator-app.html",
-    "href": "receipt-generator-app.html",
-    "title": "Grocery Receipt Generator Application",
-    "section": "",
-    "text": "This Python project implements a GUI-based receipt system for a grocery store. The app reads from two external CSV files (products.csv and request.csv) and generates a detailed receipt, applying taxes, discounts, and even a randomized coupon offer.\n\n\n\nGUI built using tkinter\nSelects and parses product and purchase data from CSV files\nCalculates subtotal, tax, and total\nApplies BOGO 50% discount for a specific item (D083)\nGenerates randomized coupon on checkout\nAdds timestamps and return policy messaging\nShows animated loading bar for user feedback\n\n\n\n\n\nView Python Source Code\nDownload Product Data\nView Purchase Requests"
-  },
-  {
-    "objectID": "receipt-generator-app.html#features",
-    "href": "receipt-generator-app.html#features",
-    "title": "Grocery Receipt Generator Application",
-    "section": "",
-    "text": "GUI built using tkinter\nSelects and parses product and purchase data from CSV files\nCalculates subtotal, tax, and total\nApplies BOGO 50% discount for a specific item (D083)\nGenerates randomized coupon on checkout\nAdds timestamps and return policy messaging\nShows animated loading bar for user feedback"
-  },
-  {
-    "objectID": "receipt-generator-app.html#downloads",
-    "href": "receipt-generator-app.html#downloads",
-    "title": "Grocery Receipt Generator Application",
-    "section": "",
-    "text": "View Python Source Code\nDownload Product Data\nView Purchase Requests"
-  },
-  {
-    "objectID": "tb-insights.html",
-    "href": "tb-insights.html",
-    "title": "Tuberculosis Insights",
-    "section": "",
-    "text": "This Tableau dashboard explores trends in tuberculosis (TB) cases globally using World Health Organization data. I analyzed key dimensions like country, age group, and gender to identify at-risk populations.\n\n\n\nIndia and China account for the majority of TB cases worldwide\nThe 25–34 age group consistently had the highest number of cases\nMales reported significantly more cases than females across all years\n\n\n\n\n\nPython (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards\n\n\n\n\n\nPresentation Slides (PDF)\n\n\n\n\n\nDownload Slides (PDF)"
-  },
-  {
-    "objectID": "tb-insights.html#key-findings",
-    "href": "tb-insights.html#key-findings",
-    "title": "Tuberculosis Insights",
-    "section": "",
-    "text": "India and China account for the majority of TB cases worldwide\nThe 25–34 age group consistently had the highest number of cases\nMales reported significantly more cases than females across all years"
-  },
-  {
-    "objectID": "tb-insights.html#tools-used",
-    "href": "tb-insights.html#tools-used",
-    "title": "Tuberculosis Insights",
-    "section": "",
-    "text": "Python (Pandas) – for cleaning and reshaping messy datasets\nMySQL – for structuring and storing cleaned data\nTableau – for building interactive dashboards"
-  },
-  {
-    "objectID": "tb-insights.html#downloadables",
-    "href": "tb-insights.html#downloadables",
-    "title": "Tuberculosis Insights",
-    "section": "",
-    "text": "Presentation Slides (PDF)"
-  },
-  {
-    "objectID": "tb-insights.html#case-study-deck",
-    "href": "tb-insights.html#case-study-deck",
-    "title": "Tuberculosis Insights",
-    "section": "",
-    "text": "Download Slides (PDF)"
-  },
-  {
-    "objectID": "projects.html#big-data-church-attendance-full-write-up-coming-soon-10102025",
-    "href": "projects.html#big-data-church-attendance-full-write-up-coming-soon-10102025",
+    "objectID": "projects.html",
+    "href": "projects.html",
     "title": "My Projects",
-    "section": "Big Data – Church Attendance: (Full Write-up) Coming Soon 10/10/2025",
-    "text": "Big Data – Church Attendance: (Full Write-up) Coming Soon 10/10/2025\n\nTools: Polars, Marimo, Plotly\nGoal: Normalize, clean, and pull data from parquet files to pull insights about church attendance\nView the temporary write-up"
+    "section": "",
+    "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report"
   },
   {
-    "objectID": "projects.html#big-data-church-attendance-analysis-full-write-up-coming-10102025",
-    "href": "projects.html#big-data-church-attendance-analysis-full-write-up-coming-10102025",
+    "objectID": "projects.html#heart-disease-classification",
+    "href": "projects.html#heart-disease-classification",
     "title": "My Projects",
-    "section": "Big Data — Church Attendance Analysis (Full write-up coming 10/10/2025)",
-    "text": "Big Data — Church Attendance Analysis (Full write-up coming 10/10/2025)\n\nTools: Polars, Marimo, Plotly\nGoal: Clean, normalize, and analyze large parquet datasets to uncover patterns in church attendance across LDS and other denominations.\nOutcome: Produced interactive visual dashboards (device usage, hourly attendance trends, and brand co-visitation) enabling clear comparison between LDS and non-LDS locations.\nView the temporary write-up"
+    "section": "",
+    "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report"
+  },
+  {
+    "objectID": "projects.html#bike-rentals-prediction",
+    "href": "projects.html#bike-rentals-prediction",
+    "title": "My Projects",
+    "section": "Bike Rentals Prediction",
+    "text": "Bike Rentals Prediction\nForecasting pedal power with deep learning and pandemic-aware features.\n\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals using time-based and COVID-era features\nOutcome: Achieved 89% R² accuracy with a dropout-regularized neural net\nRead the full report"
+  },
+  {
+    "objectID": "projects.html#housing-price-prediction",
+    "href": "projects.html#housing-price-prediction",
+    "title": "My Projects",
+    "section": "Housing Price Prediction",
+    "text": "Housing Price Prediction\nUnlocking the mystery of what makes homes expensive (besides the granite countertops).\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\nOutcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\nRead the full report"
   },
   {
     "objectID": "projects.html#big-data-church-attendance-analysis-full-write-up-coming-soon",
@@ -740,6 +705,20 @@
     "title": "My Projects",
     "section": "Big Data — Church Attendance Analysis (Full write-up coming soon)",
     "text": "Big Data — Church Attendance Analysis (Full write-up coming soon)\n\nTools: Polars, Marimo, Plotly\nGoal: Clean, normalize, and analyze large parquet datasets to uncover patterns in church attendance across LDS and other denominations.\nOutcome: Produced interactive visual dashboards (device usage, hourly attendance trends, and brand co-visitation) enabling clear comparison between LDS and non-LDS locations.\nView the temporary write-up"
+  },
+  {
+    "objectID": "projects.html#pawesome-pet-services-database-redesign",
+    "href": "projects.html#pawesome-pet-services-database-redesign",
+    "title": "My Projects",
+    "section": "Pawesome Pet Services Database Redesign",
+    "text": "Pawesome Pet Services Database Redesign\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "📄 Resume\nDownload My Resume (PDF)\nOr view it embedded below:"
   },
   {
     "objectID": "VAD-Statistical-Tagging-Chatbot.html",

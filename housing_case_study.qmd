@@ -12,10 +12,10 @@ format:
 ## Housing Price Prediction
 This project focused on predicting home prices using machine learning models. The goal was to uncover the key features driving housing prices and to create a reliable model for real-world estimation.
 
-## 📌 Project Summary
+## Project Summary
 This case study, conducted for Reddic Housing LLC, explored how location, property features, and engineered variables impact housing prices. Our final model blended XGBoost and Random Forest to maximize predictive accuracy.
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 - **Python** for scripting and modeling
 - **Jupyter Notebook** for interactive development
 - **Pandas & NumPy** for data cleaning and transformation
@@ -23,21 +23,21 @@ This case study, conducted for Reddic Housing LLC, explored how location, proper
 - **Matplotlib / Seaborn** for visualizations
 - **Quarto** for documentation and report generation
 
-## 🔄 Key Techniques Used
+## Key Techniques Used
 
-✅ **Feature Engineering**  
+**Feature Engineering**  
 Added custom variables like luxury score, age, and view rating to enrich input data
 
-✅ **Model Blending**  
+**Model Blending**  
 Combined XGBoost and Random Forest regressors to improve stability and accuracy
 
-✅ **Error Handling**  
+**Error Handling**  
 Applied outlier smoothing and tested multiple metrics (RMSE, R², median error)
 
-✅ **Location Awareness**  
+**Location Awareness**  
 Used latitude and longitude directly to proxy proximity to important amenities (parks, schools, etc.)
 
-## 🧪 SQL Scenario Highlights
+## SQL Scenario Highlights
 As part of the supporting analysis, we explored CSV data using filtering and logic conditions. Examples include:
 
 - **Range Filtering**: Only properties above/below certain price thresholds
@@ -45,14 +45,14 @@ As part of the supporting analysis, we explored CSV data using filtering and log
 - **Aggregation**: Calculated average prices by region or view score
 - **Join Simulation**: Merged multiple CSV-derived frames for composite analysis
 
-## 📊 Results Summary
+## Results Summary
 - **Median Error**: $33,842.78
 - **RMSE**: $109,329.21
 - **R² Score**: 0.9108 (91% variance explained)
 
 The combination of models and domain-based feature engineering led to strong performance on unseen test data.
 
-## 📈 Visuals
+## Visuals
 
 ![](Assets/residualplot.png){width=80%}  
 *Figure 1. Predicted vs Actual Housing Prices*
@@ -60,7 +60,7 @@ The combination of models and domain-based feature engineering led to strong per
 ![](Assets/TopFeatures.png){width=80%}  
 *Figure 2. Most Influential Features*
 
-## 📥 Supplementary Materials
+## Supplementary Materials
 - [Executive Summary (PDF)](Assets/CSE%20450%20ExecutiveSummary.pdf)
 - [Case Study Introduction (PDF)](Assets/Case%20Study%20Introduction.pdf)
 - [Discussion Questions (PDF)](Assets/Case%20Study%20Discussion%20Questions.pdf)
@@ -69,5 +69,5 @@ The combination of models and domain-based feature engineering led to strong per
 
 ---
 
-> 🔗 [View the full Colab Notebook](https://colab.research.google.com/drive/1EHN_zcpFBuJI-P756Xa9-eHYACQZSbxG?usp=sharing) for reproducible code and model walkthrough.
+> [View the full Colab Notebook](https://colab.research.google.com/drive/1EHN_zcpFBuJI-P756Xa9-eHYACQZSbxG?usp=sharing) for reproducible code and model walkthrough.
 

@@ -128,23 +128,23 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#pawesome-pet-services-database-redesign" id="toc-pawesome-pet-services-database-redesign" class="nav-link active" data-scroll-target="#pawesome-pet-services-database-redesign">Pawesome Pet Services: Database Redesign</a>
   <ul class="collapse">
-  <li><a href="#key-changes" id="toc-key-changes" class="nav-link" data-scroll-target="#key-changes">🐾 Key Changes</a>
+  <li><a href="#key-changes" id="toc-key-changes" class="nav-link" data-scroll-target="#key-changes">Key Changes</a>
   <ul class="collapse">
-  <li><a href="#dropped-columns" id="toc-dropped-columns" class="nav-link" data-scroll-target="#dropped-columns">✅ Dropped Columns</a></li>
-  <li><a href="#added-new-tables" id="toc-added-new-tables" class="nav-link" data-scroll-target="#added-new-tables">✅ Added New Tables</a></li>
-  <li><a href="#restructured-relationships" id="toc-restructured-relationships" class="nav-link" data-scroll-target="#restructured-relationships">✅ Restructured Relationships</a></li>
+  <li><a href="#dropped-columns" id="toc-dropped-columns" class="nav-link" data-scroll-target="#dropped-columns">Dropped Columns</a></li>
+  <li><a href="#added-new-tables" id="toc-added-new-tables" class="nav-link" data-scroll-target="#added-new-tables">Added New Tables</a></li>
+  <li><a href="#restructured-relationships" id="toc-restructured-relationships" class="nav-link" data-scroll-target="#restructured-relationships">Restructured Relationships</a></li>
   </ul></li>
-  <li><a href="#erd-diagram" id="toc-erd-diagram" class="nav-link" data-scroll-target="#erd-diagram">🗂️ ERD Diagram</a></li>
-  <li><a href="#outcome" id="toc-outcome" class="nav-link" data-scroll-target="#outcome">📌 Outcome</a></li>
-  <li><a href="#tools-used" id="toc-tools-used" class="nav-link" data-scroll-target="#tools-used">⚙️ Tools Used</a></li>
+  <li><a href="#erd-diagram" id="toc-erd-diagram" class="nav-link" data-scroll-target="#erd-diagram">ERD Diagram</a></li>
+  <li><a href="#outcome" id="toc-outcome" class="nav-link" data-scroll-target="#outcome">Outcome</a></li>
+  <li><a href="#tools-used" id="toc-tools-used" class="nav-link" data-scroll-target="#tools-used">Tools Used</a></li>
   <li><a href="#this-redesign-enables-better-scalability-and-maintainability-as-the-company-continues-to-grow." id="toc-this-redesign-enables-better-scalability-and-maintainability-as-the-company-continues-to-grow." class="nav-link" data-scroll-target="#this-redesign-enables-better-scalability-and-maintainability-as-the-company-continues-to-grow.">This redesign enables better scalability and maintainability as the company continues to grow.</a></li>
-  <li><a href="#sql-scenario-highlights" id="toc-sql-scenario-highlights" class="nav-link" data-scroll-target="#sql-scenario-highlights">🧮 SQL Scenario Highlights</a>
+  <li><a href="#sql-scenario-highlights" id="toc-sql-scenario-highlights" class="nav-link" data-scroll-target="#sql-scenario-highlights">SQL Scenario Highlights</a>
   <ul class="collapse">
-  <li><a href="#filtering-and-conditions" id="toc-filtering-and-conditions" class="nav-link" data-scroll-target="#filtering-and-conditions">🔍 Filtering and Conditions</a></li>
-  <li><a href="#advanced-joins" id="toc-advanced-joins" class="nav-link" data-scroll-target="#advanced-joins">🔗 Advanced Joins</a></li>
-  <li><a href="#set-operators" id="toc-set-operators" class="nav-link" data-scroll-target="#set-operators">🧰 Set Operators</a></li>
+  <li><a href="#filtering-and-conditions" id="toc-filtering-and-conditions" class="nav-link" data-scroll-target="#filtering-and-conditions">Filtering and Conditions</a></li>
+  <li><a href="#advanced-joins" id="toc-advanced-joins" class="nav-link" data-scroll-target="#advanced-joins">Advanced Joins</a></li>
+  <li><a href="#set-operators" id="toc-set-operators" class="nav-link" data-scroll-target="#set-operators">Set Operators</a></li>
   </ul></li>
-  <li><a href="#related-files" id="toc-related-files" class="nav-link" data-scroll-target="#related-files">📥 Related Files</a></li>
+  <li><a href="#related-files" id="toc-related-files" class="nav-link" data-scroll-target="#related-files">Related Files</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -175,16 +175,16 @@ ul.task-list li input[type="checkbox"] {
 <h1>Pawesome Pet Services: Database Redesign</h1>
 <p>This project involved restructuring and expanding the <strong>Pawesome Pet Services</strong> database to better meet the needs of a growing business. The redesign improves the management of services, appointments, and pet information by creating more scalable and normalized relationships.</p>
 <section id="key-changes" class="level2">
-<h2 class="anchored" data-anchor-id="key-changes">🐾 Key Changes</h2>
+<h2 class="anchored" data-anchor-id="key-changes">Key Changes</h2>
 <section id="dropped-columns" class="level3">
-<h3 class="anchored" data-anchor-id="dropped-columns">✅ Dropped Columns</h3>
+<h3 class="anchored" data-anchor-id="dropped-columns">Dropped Columns</h3>
 <ul>
 <li>Removed <code>service</code> from the <code>Appointments</code> table</li>
 <li>Removed <code>breed</code> and <code>species</code> from the <code>Pets</code> table</li>
 </ul>
 </section>
 <section id="added-new-tables" class="level3">
-<h3 class="anchored" data-anchor-id="added-new-tables">✅ Added New Tables</h3>
+<h3 class="anchored" data-anchor-id="added-new-tables">Added New Tables</h3>
 <ul>
 <li><strong><code>services</code></strong>: Tracks available services and their descriptions</li>
 <li><strong><code>breeds</code></strong>: Stores pet breed and species info</li>
@@ -192,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="restructured-relationships" class="level3">
-<h3 class="anchored" data-anchor-id="restructured-relationships">✅ Restructured Relationships</h3>
+<h3 class="anchored" data-anchor-id="restructured-relationships">Restructured Relationships</h3>
 <ul>
 <li>One-to-many: Pets ➝ Breeds</li>
 <li>Many-to-many: Appointments ⬌ Services</li>
@@ -200,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="erd-diagram" class="level2">
-<h2 class="anchored" data-anchor-id="erd-diagram">🗂️ ERD Diagram</h2>
+<h2 class="anchored" data-anchor-id="erd-diagram">ERD Diagram</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Assets/EDR_Diagram.png" class="img-fluid figure-img"></p>
@@ -209,11 +209,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="outcome" class="level2">
-<h2 class="anchored" data-anchor-id="outcome">📌 Outcome</h2>
+<h2 class="anchored" data-anchor-id="outcome">Outcome</h2>
 <p>The updated schema supports: - Accurate service tracking per appointment - Organized breed/species classification - Cleaner queries through normalization</p>
 </section>
 <section id="tools-used" class="level2">
-<h2 class="anchored" data-anchor-id="tools-used">⚙️ Tools Used</h2>
+<h2 class="anchored" data-anchor-id="tools-used">Tools Used</h2>
 <ul>
 <li><strong>MySQL Workbench</strong> for modeling and DDL execution</li>
 <li><strong>ERD Diagram</strong> for schema visualization</li>
@@ -223,10 +223,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="this-redesign-enables-better-scalability-and-maintainability-as-the-company-continues-to-grow.">This redesign enables better scalability and maintainability as the company continues to grow.</h2>
 </section>
 <section id="sql-scenario-highlights" class="level2">
-<h2 class="anchored" data-anchor-id="sql-scenario-highlights">🧮 SQL Scenario Highlights</h2>
+<h2 class="anchored" data-anchor-id="sql-scenario-highlights">SQL Scenario Highlights</h2>
 <p>As part of the database redesign and validation process, I wrote and executed several SQL queries to test relationships, filtering, and compound logic in the new schema.</p>
 <section id="filtering-and-conditions" class="level3">
-<h3 class="anchored" data-anchor-id="filtering-and-conditions">🔍 Filtering and Conditions</h3>
+<h3 class="anchored" data-anchor-id="filtering-and-conditions">Filtering and Conditions</h3>
 <ul>
 <li><strong>Upcoming Appointments</strong>: Queried appointments after a certain date<br>
 </li>
@@ -238,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="advanced-joins" class="level3">
-<h3 class="anchored" data-anchor-id="advanced-joins">🔗 Advanced Joins</h3>
+<h3 class="anchored" data-anchor-id="advanced-joins">Advanced Joins</h3>
 <ul>
 <li><strong>Cross Join</strong>: Combined every pet with every client to simulate matching scenarios<br>
 </li>
@@ -252,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="set-operators" class="level3">
-<h3 class="anchored" data-anchor-id="set-operators">🧰 Set Operators</h3>
+<h3 class="anchored" data-anchor-id="set-operators">Set Operators</h3>
 <ul>
 <li><strong>UNION</strong>: Combined client and pet emails<br>
 </li>
@@ -266,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="related-files" class="level2">
-<h2 class="anchored" data-anchor-id="related-files">📥 Related Files</h2>
+<h2 class="anchored" data-anchor-id="related-files">Related Files</h2>
 <ul>
 <li><a href="Assets/Week 2 Assignment_ Enhancing the Pawesome Pet Services Database.pdf">Assignment PDF</a></li>
 <li><a href="Assets/Week 3 Assignment Filtering Result Sets in SQL (1).sql">Filtering and Conditions Example</a></li>

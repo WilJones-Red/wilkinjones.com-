@@ -740,5 +740,47 @@
     "title": "My Projects",
     "section": "Big Data — Church Attendance Analysis (Full write-up coming soon)",
     "text": "Big Data — Church Attendance Analysis (Full write-up coming soon)\n\nTools: Polars, Marimo, Plotly\nGoal: Clean, normalize, and analyze large parquet datasets to uncover patterns in church attendance across LDS and other denominations.\nOutcome: Produced interactive visual dashboards (device usage, hourly attendance trends, and brand co-visitation) enabling clear comparison between LDS and non-LDS locations.\nView the temporary write-up"
+  },
+  {
+    "objectID": "VAD-Statistical-Tagging-Chatbot.html",
+    "href": "VAD-Statistical-Tagging-Chatbot.html",
+    "title": "Emotionally Adaptive Chatbots — Building Empathy with AI",
+    "section": "",
+    "text": "The objective of this project is to design and prototype a VAD (Valence–Arousal–Dominance)-driven AI chatbot capable of detecting emotional tone in text and adapting its responses accordingly. The system aims to model empathy at scale – enabling AI to respond more naturally, reduce frustration, and improve user trust and satisfaction in customer interactions.\nUnlike most chatbots that focus purely on semantic accuracy, this project introduces an emotional dimension to communication. By quantifying emotion along three measurable axes – valence (positivity), arousal (intensity), and dominance (control) – the AI can dynamically adjust tone, phrasing, and pacing to match the user’s mood.\nThe first application focus is customer service, where tone and empathy have measurable business impact:\n\nFaster conflict resolution\nHigher customer satisfaction\nReduced escalation to human agents\n\nThis study represents Phase 1 of a broader initiative to integrate emotion-aware intelligence into conversational systems, paving the way for emotionally contextual AI experiences across industries."
+  },
+  {
+    "objectID": "VAD-Statistical-Tagging-Chatbot.html#data-source-candidates",
+    "href": "VAD-Statistical-Tagging-Chatbot.html#data-source-candidates",
+    "title": "Emotionally Adaptive Chatbots — Building Empathy with AI",
+    "section": "Data Source Candidates",
+    "text": "Data Source Candidates\n\n\n\n\n\n\n\n\nSource\nDescription\nEmotion Value\n\n\n\n\nCustomer Service Chat Logs (anonymized)\nReal-world transcripts showing frustration, satisfaction, or confusion\nHigh realism for tone detection\n\n\nMinecraft Server Chat Logs\nOrganic, expressive text — ideal for modeling emotional intensity and humor\nGreat for training contextual VAD detection\n\n\nOpen Datasets (GoEmotions, EmoBank)\nPublic emotion-labeled corpora with VAD mappings\nFoundation for baseline modeling\n\n\nSynthetic Data\nGenerated conversational snippets to fill emotional “gaps”\nBalanced representation across emotion ranges"
+  },
+  {
+    "objectID": "VAD-Statistical-Tagging-Chatbot.html#labeling-strategy",
+    "href": "VAD-Statistical-Tagging-Chatbot.html#labeling-strategy",
+    "title": "Emotionally Adaptive Chatbots — Building Empathy with AI",
+    "section": "Labeling Strategy",
+    "text": "Labeling Strategy\nEach chat message or utterance will be annotated along the Valence–Arousal–Dominance scale:\n\n\n\nDimension\nScale\nDescription\n\n\n\n\nValence\n−1.0 → +1.0\nPositive vs. negative feeling\n\n\nArousal\n0.0 → 1.0\nCalm vs. intense energy\n\n\nDominance\n0.0 → 1.0\nPowerless vs. confident control\n\n\n\nA semi-manual process will be used:\n\nHuman labeling of seed data (for calibration and interpretability).\n\nModel-assisted VAD prediction using pretrained emotion lexicons.\n\nCross-validation and normalization to maintain consistency.\n\nExample schema:\n\n\n\n\n\n\n\n\n\n\ntimestamp\nuser_input\nvalence\narousal\ndominance\n\n\n\n\n2025-10-12 18:21:10\n“I’ve already tried that three times!”\n−0.7\n0.9\n0.4\n\n\n2025-10-12 18:22:05\n“That worked perfectly, thanks!”\n+0.9\n0.7\n0.8"
+  },
+  {
+    "objectID": "VAD-Statistical-Tagging-Chatbot.html#emotional-space-visualization",
+    "href": "VAD-Statistical-Tagging-Chatbot.html#emotional-space-visualization",
+    "title": "Emotionally Adaptive Chatbots — Building Empathy with AI",
+    "section": "Emotional Space Visualization",
+    "text": "Emotional Space Visualization\nBelow is an example 3D visualization of the Valence–Arousal–Dominance (VAD) space used to model emotional tone within our chatbot.\n\n\n\n3D VAD Emotion Space"
+  },
+  {
+    "objectID": "VAD-Statistical-Tagging-Chatbot.html#engineered-emotional-features",
+    "href": "VAD-Statistical-Tagging-Chatbot.html#engineered-emotional-features",
+    "title": "Emotionally Adaptive Chatbots — Building Empathy with AI",
+    "section": "Engineered Emotional Features",
+    "text": "Engineered Emotional Features\n\n\n\n\n\n\n\nFeature Name\nDescription\n\n\n\n\nemotional_shift\nMeasures the change in valence between consecutive messages to detect mood recovery or escalation.\n\n\nengagement_intensity\nWeighted blend of arousal and dominance — measures emotional activation.\n\n\nresponse_alignment\nQuantifies how closely the bot’s tone mirrors the user’s VAD state (empathy consistency).\n\n\n\nThese features form the foundation for an adaptive response layer, which governs how the chatbot replies based on emotional input."
+  },
+  {
+    "objectID": "VAD-Statistical-Tagging-Chatbot.html#prototype-model-flow",
+    "href": "VAD-Statistical-Tagging-Chatbot.html#prototype-model-flow",
+    "title": "Emotionally Adaptive Chatbots — Building Empathy with AI",
+    "section": "Prototype Model Flow",
+    "text": "Prototype Model Flow\n\nInput Layer: User sends a message.\n\nVAD Classifier: Predicts valence, arousal, dominance.\n\nEmotion Policy Engine: Chooses appropriate tone (empathetic, neutral, excited, etc.).\n\nResponse Generator: Produces a reply that matches both semantic and emotional context.\n\nFeedback Loop: Monitors next message VAD to measure emotional improvement.\n\nUser Message → VAD Inference → Emotion Policy → Adaptive Response → Feedback & Memory"
   }
 ]

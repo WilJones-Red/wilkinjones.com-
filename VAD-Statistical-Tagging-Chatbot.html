@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Wil Jones">
+<meta name="dcterms.date" content="2025-10-15">
+
+<title>Emotionally Adaptive Chatbots — Building Empathy with AI – Wilkin Jones</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Wilkin Jones</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./VAD-Statistical-Tagging-Chatbot.html" aria-current="page"> 
+<span class="menu-text">Senior Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#business-justification" id="toc-business-justification" class="nav-link" data-scroll-target="#business-justification">Business Justification</a></li>
+  <li><a href="#data-acquisition-plan" id="toc-data-acquisition-plan" class="nav-link" data-scroll-target="#data-acquisition-plan">Data Acquisition Plan</a>
+  <ul class="collapse">
+  <li><a href="#data-source-candidates" id="toc-data-source-candidates" class="nav-link" data-scroll-target="#data-source-candidates">Data Source Candidates</a></li>
+  <li><a href="#labeling-strategy" id="toc-labeling-strategy" class="nav-link" data-scroll-target="#labeling-strategy">Labeling Strategy</a></li>
+  </ul></li>
+  <li><a href="#feature-engineering-and-conceptual-model" id="toc-feature-engineering-and-conceptual-model" class="nav-link" data-scroll-target="#feature-engineering-and-conceptual-model">Feature Engineering and Conceptual Model</a>
+  <ul class="collapse">
+  <li><a href="#emotional-space-visualization" id="toc-emotional-space-visualization" class="nav-link" data-scroll-target="#emotional-space-visualization">Emotional Space Visualization</a></li>
+  <li><a href="#engineered-emotional-features" id="toc-engineered-emotional-features" class="nav-link" data-scroll-target="#engineered-emotional-features">Engineered Emotional Features</a></li>
+  <li><a href="#prototype-model-flow" id="toc-prototype-model-flow" class="nav-link" data-scroll-target="#prototype-model-flow">Prototype Model Flow</a></li>
+  </ul></li>
+  <li><a href="#implementation-roadmap-phase-1" id="toc-implementation-roadmap-phase-1" class="nav-link" data-scroll-target="#implementation-roadmap-phase-1">Implementation Roadmap (Phase 1)</a></li>
+  <li><a href="#expected-outcomes" id="toc-expected-outcomes" class="nav-link" data-scroll-target="#expected-outcomes">Expected Outcomes</a></li>
+  <li><a href="#next-steps-and-future-posts" id="toc-next-steps-and-future-posts" class="nav-link" data-scroll-target="#next-steps-and-future-posts">Next Steps and Future Posts</a></li>
+  <li><a href="#supporting-assets-planned" id="toc-supporting-assets-planned" class="nav-link" data-scroll-target="#supporting-assets-planned">Supporting Assets (Planned)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Emotionally Adaptive Chatbots — Building Empathy with AI</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Wil Jones </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 15, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="objective" class="level1">
+<h1>Objective</h1>
+<p>The objective of this project is to design and prototype a <strong>VAD (Valence–Arousal–Dominance)-driven AI chatbot</strong> capable of detecting emotional tone in text and adapting its responses accordingly. The system aims to model <em>empathy at scale</em> – enabling AI to respond more naturally, reduce frustration, and improve user trust and satisfaction in customer interactions.</p>
+<p>Unlike most chatbots that focus purely on semantic accuracy, this project introduces an <strong>emotional dimension</strong> to communication. By quantifying emotion along three measurable axes – valence (positivity), arousal (intensity), and dominance (control) – the AI can dynamically adjust tone, phrasing, and pacing to match the user’s mood.</p>
+<p>The first application focus is <strong>customer service</strong>, where tone and empathy have measurable business impact:</p>
+<ul>
+<li><strong>Faster conflict resolution</strong></li>
+<li><strong>Higher customer satisfaction</strong></li>
+<li><strong>Reduced escalation to human agents</strong></li>
+</ul>
+<p>This study represents <strong>Phase 1</strong> of a broader initiative to integrate emotion-aware intelligence into conversational systems, paving the way for emotionally contextual AI experiences across industries.</p>
+<hr>
+</section>
+<section id="business-justification" class="level1">
+<h1>Business Justification</h1>
+<p>Customer service interactions are one of the most emotion-sensitive touchpoints for any business. Research consistently shows that:</p>
+<ul>
+<li>68% of customers leave after feeling “unheard” or “mistreated.”</li>
+<li>Empathetic tone alone can increase resolution satisfaction by 20–30%.</li>
+<li>Emotionally aware automation can reduce human escalations by up to 50%.</li>
+</ul>
+<p>Despite these stakes, <strong>most AI support systems lack affective awareness</strong> – they detect what was said, not how it was said. This leads to robotic replies that often <em>escalate frustration instead of diffusing it.</em></p>
+<p>An <strong>emotionally adaptive chatbot</strong> could transform these interactions by:</p>
+<ul>
+<li>Detecting low-valence, high-arousal messages (signs of anger or stress).</li>
+<li>Shifting language toward calm, empathetic phrasing.</li>
+<li>Reinforcing positive emotions when valence is high (e.g., celebratory tones for success).</li>
+</ul>
+<p><strong>Business Impact Summary:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 45%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Area</th>
+<th>Before VAD Integration</th>
+<th>After VAD Integration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Customer satisfaction</td>
+<td>Flat or declining</td>
+<td>↑ Significantly (more empathy)</td>
+</tr>
+<tr class="even">
+<td>Escalation rate</td>
+<td>High</td>
+<td>↓ 30–50%</td>
+</tr>
+<tr class="odd">
+<td>Brand perception</td>
+<td>“Automated and cold”</td>
+<td>“Human, emotionally intelligent”</td>
+</tr>
+<tr class="even">
+<td>Agent load</td>
+<td>Reactive</td>
+<td>Proactively managed via emotion detection</td>
+</tr>
+</tbody>
+</table>
+<p>This project’s goal is not only technical but <em>transformational</em> – to make AI a <strong>brand ambassador of empathy</strong>, not just efficiency.</p>
+<hr>
+</section>
+<section id="data-acquisition-plan" class="level1">
+<h1>Data Acquisition Plan</h1>
+<p>The success of a VAD-driven chatbot relies on the quality and emotional diversity of its data.<br>
+This project will develop its dataset through a <strong>hybrid acquisition approach</strong>, combining <strong>real-world data</strong>, <strong>synthetic augmentation</strong>, and <strong>manual labeling</strong>.</p>
+<section id="data-source-candidates" class="level2">
+<h2 class="anchored" data-anchor-id="data-source-candidates">Data Source Candidates</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 36%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Description</th>
+<th>Emotion Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Customer Service Chat Logs (anonymized)</strong></td>
+<td>Real-world transcripts showing frustration, satisfaction, or confusion</td>
+<td>High realism for tone detection</td>
+</tr>
+<tr class="even">
+<td><strong>Minecraft Server Chat Logs</strong></td>
+<td>Organic, expressive text — ideal for modeling emotional intensity and humor</td>
+<td>Great for training contextual VAD detection</td>
+</tr>
+<tr class="odd">
+<td><strong>Open Datasets (GoEmotions, EmoBank)</strong></td>
+<td>Public emotion-labeled corpora with VAD mappings</td>
+<td>Foundation for baseline modeling</td>
+</tr>
+<tr class="even">
+<td><strong>Synthetic Data</strong></td>
+<td>Generated conversational snippets to fill emotional “gaps”</td>
+<td>Balanced representation across emotion ranges</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="labeling-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="labeling-strategy">Labeling Strategy</h2>
+<p>Each chat message or utterance will be annotated along the <strong>Valence–Arousal–Dominance</strong> scale:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Scale</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Valence</strong></td>
+<td>−1.0 → +1.0</td>
+<td>Positive vs.&nbsp;negative feeling</td>
+</tr>
+<tr class="even">
+<td><strong>Arousal</strong></td>
+<td>0.0 → 1.0</td>
+<td>Calm vs.&nbsp;intense energy</td>
+</tr>
+<tr class="odd">
+<td><strong>Dominance</strong></td>
+<td>0.0 → 1.0</td>
+<td>Powerless vs.&nbsp;confident control</td>
+</tr>
+</tbody>
+</table>
+<p>A semi-manual process will be used:</p>
+<ol type="1">
+<li>Human labeling of seed data (for calibration and interpretability).<br>
+</li>
+<li>Model-assisted VAD prediction using pretrained emotion lexicons.<br>
+</li>
+<li>Cross-validation and normalization to maintain consistency.</li>
+</ol>
+<p>Example schema:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 22%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>timestamp</th>
+<th>user_input</th>
+<th>valence</th>
+<th>arousal</th>
+<th>dominance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2025-10-12 18:21:10</td>
+<td>“I’ve already tried that three times!”</td>
+<td>−0.7</td>
+<td>0.9</td>
+<td>0.4</td>
+</tr>
+<tr class="even">
+<td>2025-10-12 18:22:05</td>
+<td>“That worked perfectly, thanks!”</td>
+<td>+0.9</td>
+<td>0.7</td>
+<td>0.8</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="feature-engineering-and-conceptual-model" class="level1">
+<h1>Feature Engineering and Conceptual Model</h1>
+<section id="emotional-space-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="emotional-space-visualization">Emotional Space Visualization</h2>
+<p>Below is an example 3D visualization of the Valence–Arousal–Dominance (VAD) space used to model emotional tone within our chatbot.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/Chatbot/Graph.png" class="center img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>3D VAD Emotion Space</figcaption>
+</figure>
+</div>
+</section>
+<section id="engineered-emotional-features" class="level2">
+<h2 class="anchored" data-anchor-id="engineered-emotional-features">Engineered Emotional Features</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>emotional_shift</code></td>
+<td>Measures the change in valence between consecutive messages to detect mood recovery or escalation.</td>
+</tr>
+<tr class="even">
+<td><code>engagement_intensity</code></td>
+<td>Weighted blend of arousal and dominance — measures emotional activation.</td>
+</tr>
+<tr class="odd">
+<td><code>response_alignment</code></td>
+<td>Quantifies how closely the bot’s tone mirrors the user’s VAD state (empathy consistency).</td>
+</tr>
+</tbody>
+</table>
+<p>These features form the foundation for an <strong>adaptive response layer</strong>, which governs how the chatbot replies based on emotional input.</p>
+</section>
+<section id="prototype-model-flow" class="level2">
+<h2 class="anchored" data-anchor-id="prototype-model-flow">Prototype Model Flow</h2>
+<ol type="1">
+<li><strong>Input Layer:</strong> User sends a message.<br>
+</li>
+<li><strong>VAD Classifier:</strong> Predicts valence, arousal, dominance.<br>
+</li>
+<li><strong>Emotion Policy Engine:</strong> Chooses appropriate tone (empathetic, neutral, excited, etc.).<br>
+</li>
+<li><strong>Response Generator:</strong> Produces a reply that matches both semantic and emotional context.<br>
+</li>
+<li><strong>Feedback Loop:</strong> Monitors next message VAD to measure emotional improvement.</li>
+</ol>
+<pre class="text"><code>User Message → VAD Inference → Emotion Policy → Adaptive Response → Feedback &amp; Memory</code></pre>
+<hr>
+</section>
+</section>
+<section id="implementation-roadmap-phase-1" class="level1">
+<h1>Implementation Roadmap (Phase 1)</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 38%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Description</th>
+<th>Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Data Acquisition &amp; Labeling</strong></td>
+<td>Gather chat logs, preprocess, and annotate VAD values.</td>
+<td>Initial labeled dataset</td>
+</tr>
+<tr class="even">
+<td><strong>2. Exploratory Analysis</strong></td>
+<td>Visualize emotional distributions and clusters.</td>
+<td>VAD 3D scatter and heatmaps</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Prototype Model Development</strong></td>
+<td>Fine-tune transformer model (text → VAD regression).</td>
+<td>Baseline emotion detection model</td>
+</tr>
+<tr class="even">
+<td><strong>4. Empathy Policy Layer</strong></td>
+<td>Develop rule-based tone adaptation logic.</td>
+<td>Adaptive chatbot module</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Evaluation &amp; Metrics</strong></td>
+<td>Test emotional accuracy and satisfaction lift.</td>
+<td>Empathy effectiveness report</td>
+</tr>
+</tbody>
+</table>
+<p>Each phase will produce tangible outputs suitable for publication and iteration in future blog posts.</p>
+<hr>
+</section>
+<section id="expected-outcomes" class="level1">
+<h1>Expected Outcomes</h1>
+<p>This project aims to produce a <strong>working emotional intelligence layer</strong> for conversational AI that can:</p>
+<ul>
+<li>Detect user frustration early (low valence, high arousal).</li>
+<li>De-escalate conflict via empathetic tone.</li>
+<li>Sustain positive engagement over long interactions.</li>
+<li>Adapt communication style per emotional context.</li>
+</ul>
+<p>The anticipated result is a <strong>chatbot that feels more human</strong>, both linguistically and psychologically.<br>
+Beyond customer service, this framework could later expand into healthcare, education, and personal productivity systems – anywhere empathy and tone influence human experience.</p>
+<hr>
+</section>
+<section id="next-steps-and-future-posts" class="level1">
+<h1>Next Steps and Future Posts</h1>
+<p>Future blog posts in this series will document:</p>
+<ol type="1">
+<li><strong>Data Collection and Labeling Results</strong> — including real examples from chat data.<br>
+</li>
+<li><strong>VAD Distribution Visuals and Feature Insights.</strong><br>
+</li>
+<li><strong>Model Architecture Deep Dive</strong> — including code snippets and evaluation metrics.<br>
+</li>
+<li><strong>Empathy Layer Demonstration</strong> — with real-time emotional adaptation in simulated conversations.</li>
+</ol>
+<p>The final milestone will showcase an <strong>interactive demo</strong> where users can experience the chatbot’s emotional adaptability firsthand.</p>
+<hr>
+</section>
+<section id="supporting-assets-planned" class="level1">
+<h1>Supporting Assets (Planned)</h1>
+<ul>
+<li><strong>Notebook 1:</strong> Data extraction and preprocessing pipeline<br>
+</li>
+<li><strong>Notebook 2:</strong> VAD labeling and feature visualization<br>
+</li>
+<li><strong>Notebook 3:</strong> Model prototyping and policy testing<br>
+</li>
+<li><strong>Notebook 4:</strong> Business impact simulation and presentation visuals</li>
+</ul>
+<p>These assets will be included in future posts to ensure transparency and reproducibility as the project evolves.</p>
+<hr>
+<p><em>This proposal marks the foundation for building emotionally aware, data-driven AI systems – capable of understanding not only language but human experience itself.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 Wilkin Jones</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

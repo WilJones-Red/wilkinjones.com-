@@ -29,7 +29,7 @@ Unlocking the mystery of what makes homes expensive (besides the granite counter
 -   **Outcome**: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance
 -   [Read the full report](housing_case_study.qmd)
 
-## Big Data — Church Attendance Analysis (Full write-up coming 10/10/2025)
+## Big Data — Church Attendance Analysis (Full write-up coming soon)
 
 -   **Tools:** Polars, Marimo, Plotly
 -   **Goal:** Clean, normalize, and analyze large parquet datasets to uncover patterns in church attendance across LDS and other denominations.

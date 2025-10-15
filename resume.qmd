@@ -4,7 +4,7 @@ title: "Resume"
 
 # 📄 Resume
 
-[Download My Resume (PDF)](Assets/resume.pdf)
+[Download My Resume (PDF)](Assets/resume2.pdf)
 
 Or view it embedded below:
 

@@ -4,8 +4,8 @@ title: "Resume"
 
 # 📄 Resume
 
-[Download My Resume (PDF)](Assets/resume2.pdf)
+[Download My Resume (PDF)](Assets/Wilkin_Jones_Internship_Resume_100825.pdf)
 
 Or view it embedded below:
 
-<iframe src="Assets/resume2.pdf" width="100%" height="600px"></iframe>
+<iframe src="Assets/Wilkin_Jones_Internship_Resume_100825.pdf" width="100%" height="600px"></iframe>

@@ -12,7 +12,7 @@ from sentence_transformers import SentenceTransformer
 # Load models
 
 word_wizard = spacy.load("en_core_web_sm")
-text_ninja = SentenceTransformer("all-MiniLM-L6-v2")
+text_ninja = SentenceTransformer("all-MiniLM-L6-v2")w
 
 # Custom stop words to exclude from keyword extraction
 JUNK_WORDS = {

@@ -9,8 +9,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Senior Project"
-        href: VAD-Statistical-Tagging-Chatbot.qmd  
+      - text: "Senior Projects"
+        href: senior-projects.qmd  
       - text: "Projects"
         href: projects.qmd
       - text: "About"

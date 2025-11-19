@@ -22,11 +22,11 @@ Welcome to my senior project research on text embedded AI models. These represen
 
 **Building Empathy with AI Through VAD Emotion Detection**
 
-This groundbreaking project teaches AI to detect and respond to human emotions in text. Using Valence-Arousal-Dominance (VAD) scoring across **300,000+ labeled entries**, we achieved variance scores above **0.70**, enabling chatbots that don't just understand words, but *feelings*.
+This groundbreaking project teaches AI to detect and respond to human emotions in text. Using Valence-Arousal-Dominance (VAD) scoring, I achieved variance scores above **0.70** with over 300,000 labeled entries, enabling chatbots that don't just understand words, but *feelings*.
 
 **Key Achievements:**
-- 300K+ emotion-labeled text entries
 - Variance scores > 0.70 across all VAD dimensions
+- Over 300,000 emotion-labeled text entries
 - Real-time emotional tone adaptation
 - Customer service empathy modeling
 
@@ -88,7 +88,7 @@ The **pretrained text embeddings** and **semantic similarity techniques** develo
 - **Natural Language Processing (NLP)**: spaCy, NLTK, text preprocessing
 - **Machine Learning**: Sentence Transformers, embeddings, transfer learning
 - **Deep Learning**: Pretrained models, fine-tuning, semantic similarity
-- **Data Engineering**: Large-scale text corpus management (300K+ entries)
+- **Data Engineering**: Large-scale text corpus management
 - **Web Development**: Flask applications, deployment pipelines
 - **Statistical Analysis**: Variance analysis, scoring algorithms
 - **Cloud Deployment**: Render.com web services

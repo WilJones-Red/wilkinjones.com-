@@ -11,9 +11,9 @@ format:
 
 Let me cut right to the chase with some exciting news:
 
-**We did it.**
+**I did it.**
 
-After months of data collection, labeling, and model refinement, our **VAD (Valence-Arousal-Dominance) emotion detection system** has achieved **variance scores above 0.70** across all three emotional dimensions.
+After months of data collection, labeling, and model refinement, my **VAD (Valence-Arousal-Dominance) emotion detection system** has achieved **variance scores above 0.70** across all three emotional dimensions.
 
 For those keeping score at home, that's:
 
@@ -21,9 +21,7 @@ For those keeping score at home, that's:
 **Arousal (energy/intensity):** >0.70 variance  
 **Dominance (control/confidence):** >0.70 variance
 
-But here's the real kicker -- we accomplished this with **over 300,000 labeled text entries**.
-
-That's not a typo. **Three hundred thousand** real conversations, messages, and interactions -- all tagged with emotional context.
+I accomplished this with **over 300,000 labeled text entries** from real conversations, messages, and interactions.
 
 This isn't just a technical achievement. This is proof that AI can be taught to understand **how people feel**, not just what they say.
 
@@ -31,11 +29,11 @@ This isn't just a technical achievement. This is proof that AI can be taught to 
 
 # What This Means for Emotionally Intelligent AI
 
-When we started this project, the goal was straightforward: build a chatbot that could detect when someone is frustrated, happy, or anxious and respond appropriately.
+When I started this project, the goal was straightforward: build a chatbot that could detect when someone is frustrated, happy, or anxious and respond appropriately.
 
-But hitting >0.70 variance across 300K+ entries means we've accomplished something bigger:
+But hitting >0.70 variance means I've accomplished something bigger:
 
-**We've taught AI to understand emotional context at scale.**
+**I've taught AI to understand emotional context at scale.**
 
 Here's why that matters:
 
@@ -49,7 +47,7 @@ But real human emotion? That's three-dimensional:
 - **Arousal**: Are they calm or intense? (low energy vs. high energy)
 - **Dominance**: Do they feel in control or powerless? (confident vs. submissive)
 
-With variance above 0.70, our model can now distinguish between:
+With variance above 0.70, the model can now distinguish between:
 
 - **Excited** (high valence, high arousal, high dominance): "This is amazing!"
 - **Anxious** (low valence, high arousal, low dominance): "I'm really worried about this"
@@ -60,19 +58,13 @@ Same words? No. Same *feeling*? Absolutely.
 
 That's the power of semantic embeddings and pretrained text models.
 
-## The Data Engine: 300,000+ Labeled Entries
+## Building the Dataset
 
 You can't fake emotional intelligence with a few hundred examples.
 
 To truly teach AI what "frustrated" *feels* like versus what "annoyed" *feels* like, you need **massive, diverse, real-world data**.
 
-I built that dataset from:
-
-- Customer service interactions
-- Social media conversations
-- Gaming community chats (hello, Minecraft server logs!)
-- Public emotion-labeled datasets (GoEmotions, EmoBank)
-- Manually labeled seed data for calibration
+I built a dataset of over 300,000 labeled entries from customer service interactions, social media conversations, gaming chats, and public emotion-labeled datasets.
 
 The result? An AI that doesn't just recognize keywords but recognizes **emotional patterns** across different writing styles, contexts, and intensities.
 
@@ -80,7 +72,7 @@ The result? An AI that doesn't just recognize keywords but recognizes **emotiona
 
 # Real-World Applications: Customer Service & Beyond
 
-With the emotion detection system working reliably, we can now deploy it in:
+With the emotion detection system working reliably, it can now be deployed in:
 
 **Customer Service Chatbots**  
 Detect frustration early and escalate to humans before customers rage-quit.
@@ -106,7 +98,7 @@ While working on the VAD project, I had a realization:
 
 **If AI can understand emotional context in text... why can't it understand professional context in resumes?**
 
-Think about it. We were using **pretrained text embeddings** (specifically `sentence-transformers` with the `all-MiniLM-L6-v2` model) to convert emotional language into mathematical vectors.
+Think about it. I was using **pretrained text embeddings** (specifically `sentence-transformers` with the `all-MiniLM-L6-v2` model) to convert emotional language into mathematical vectors.
 
 These embeddings don't just capture *words* but capture **meaning**.
 
@@ -213,7 +205,7 @@ Here's the key insight:
 
 Both problems require understanding **context and meaning**, not just matching words.
 
-The 300K+ labeled entries from the VAD project didn't just train an emotion detector but validated that semantic similarity models can capture subtle distinctions in human communication.
+The VAD project didn't just train an emotion detector but validated that semantic similarity models can capture subtle distinctions in human communication.
 
 That's transferable knowledge.
 
@@ -230,7 +222,7 @@ That's transferable knowledge.
 - Testing with small businesses to streamline hiring workflows
 - Exploring integration with existing HR tools
 
-Both projects prove the same thing:
+These projects prove the same thing:
 
 **AI doesn't need to just match patterns. It can understand meaning.**
 

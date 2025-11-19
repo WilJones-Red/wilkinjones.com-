@@ -77,8 +77,7 @@ The **pretrained text embeddings** and **semantic similarity techniques** develo
 |--------|-------------|
 | **Training Data** | 300,000+ labeled text entries |
 | **Model Variance** | >0.70 across all dimensions |
-| **Semantic Accuracy** | 87%+ similarity detection |
-| **Keyword Coverage** | 83%+ intelligent matching |
+| **Resume Scorer Weighting** | 65% semantic + 35% keyword coverage |
 | **Deployment** | Production-ready web applications |
 
 ---

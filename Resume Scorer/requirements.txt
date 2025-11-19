@@ -1,0 +1,8 @@
+sentence-transformers
+spacy
+numpy
+PyPDF2
+python-docx
+flask
+flask-cors
+gunicorn

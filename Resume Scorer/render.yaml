@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: resume-scorer
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python -m spacy download en_core_web_sm
+    startCommand: gunicorn app_flask:app
+    healthCheckPath: /health

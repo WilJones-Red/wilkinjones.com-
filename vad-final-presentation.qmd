@@ -214,6 +214,5 @@ All project materials are available for download:
 - [**Download Dataset (VAD.csv)**](Assets/VAD/VAD.csv) - The complete labeled dataset with over 300,000 text samples
 - [**Download Trained Model (vad_regression_model.pkl)**](Assets/VAD/vad_regression_model.pkl) - The Ridge Regression model ready for predictions
 - [**Download Jupyter Notebook (vad.ipynb)**](Assets/VAD/vad.ipynb) - Full code for data processing, training, and evaluation
-- [**View Notebook Online (vad.html)**](Assets/VAD/vad.html) - Browse the notebook in your browser
 
 Feel free to download and experiment with the model yourself!

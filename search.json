@@ -956,7 +956,7 @@
     "href": "vad-final-presentation.html#resources",
     "title": "Emotion Prediction from Text Using VAD Regression Model",
     "section": "Resources",
-    "text": "Resources\nAll project materials are available for download:\n\nDownload Dataset (VAD.csv) - The complete labeled dataset with over 300,000 text samples\nDownload Trained Model (vad_regression_model.pkl) - The Ridge Regression model ready for predictions\nDownload Jupyter Notebook (vad.ipynb) - Full code for data processing, training, and evaluation\nView Notebook Online (vad.html) - Browse the notebook in your browser\n\nFeel free to download and experiment with the model yourself!"
+    "text": "Resources\nAll project materials are available for download:\n\nDownload Dataset (VAD.csv) - The complete labeled dataset with over 300,000 text samples\nDownload Trained Model (vad_regression_model.pkl) - The Ridge Regression model ready for predictions\nDownload Jupyter Notebook (vad.ipynb) - Full code for data processing, training, and evaluation\n\nFeel free to download and experiment with the model yourself!"
   },
   {
     "objectID": "Assets/VAD/vad.html",

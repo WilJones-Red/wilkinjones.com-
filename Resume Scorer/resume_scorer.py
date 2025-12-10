@@ -1,9 +1,3 @@
-# Install dependencies:
-# pip install sentence-transformers spacy
-# python -m spacy download en_core_web_sm
-
-# Import libraries
-
 import spacy
 import numpy as np
 from sentence_transformers import SentenceTransformer

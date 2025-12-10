@@ -1,5 +1,5 @@
 ---
-title: "VAD Emotion Detection: Final Presentation"
+title: "Emotion Prediction from Text Using VAD Regression Model"
 author: "Wil Jones"
 date: "2025-12-10"
 format:
@@ -7,29 +7,213 @@ format:
     toc: true
 ---
 
-# VAD Emotion Detection System - Final Results
+# Research Poster
 
-## Project Overview
+Below is my research poster presented at the capstone showcase. You can zoom in and out to view the details.
 
-::: {.callout-note appearance="simple" icon=false}
-## Read More
-
-This project builds a machine learning model that predicts emotional meaning in text using the Valence–Arousal–Dominance (VAD) framework. A dataset of more than 300,000 labeled text samples was created using EmoBank, synthetic data generation, and game server logs. The text was transformed into embeddings with a SentenceTransformer model, and a multi-output Ridge Regression model was trained to estimate the three VAD dimensions. The final model achieved strong performance in predicting emotional tone and demonstrates an efficient, interpretable approach for emotion analysis in real-time text applications. Read more on my capstone here.
-:::
-
-## Key Achievements
-
-- Variance scores >0.70 across all three emotional dimensions
-- Over 300,000 labeled text entries
-- Real-time emotional tone detection and adaptation
-
-## Applications
-
-- Customer service chatbots
-- Mental health monitoring
-- Educational tools
-- Community moderation
+<iframe src="Assets/VAD/Final-Presentation.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
 
 ---
 
-*Full presentation details and results will be available here shortly.*
+# Introduction
+
+What if I could teach a computer to understand not just the words people say, but how they feel when they say them? That's the question I set out to answer in this project.
+
+I built a machine learning system that predicts emotional meaning from text using a framework called Valence-Arousal-Dominance, or VAD for short. Unlike traditional emotion detection systems that classify text into fixed categories like "happy" or "angry," my approach treats emotions as continuous dimensions. This gives us a much richer and more flexible understanding of how people express themselves.
+
+The result is a lightweight, interpretable model that can analyze emotional tone in real time. It's accurate enough to be useful in real-world applications, from chat moderation to mental health monitoring, and it runs efficiently enough to scale to large datasets.
+
+In this article, I'll walk through how I built the system, what data I used, how well it performs, and where it could be applied.
+
+---
+
+# Background: The VAD Model for Emotions
+
+Most people think of emotions as distinct categories: happy, sad, angry, fearful, and so on. But psychologists have found that emotions are actually better described along continuous dimensions.
+
+The VAD model breaks emotions down into three independent scales:
+
+**Valence** measures how pleasant or unpleasant something feels. A score of 1 might represent deep sadness or despair, while a score of 10 represents joy or contentment.
+
+**Arousal** measures how energized or calm someone is. Low arousal means relaxed or sleepy, while high arousal means excited, anxious, or intense.
+
+**Dominance** measures how in-control or overpowered someone feels. High dominance means feeling powerful or confident, while low dominance means feeling helpless or submissive.
+
+Together, these three dimensions let us capture the emotional meaning of a sentence with much more nuance than a single label ever could. For example, "I feel nervous but excited for tomorrow" might have moderate-to-high valence (hopeful), high arousal (energized), and mid-range dominance (a mix of control and uncertainty).
+
+By predicting VAD scores, we can understand not just whether someone is feeling positive or negative, but exactly what kind of emotion they're expressing.
+
+---
+
+# Data Collection and Labeling
+
+To train a model that predicts VAD scores, I first needed a large dataset of text labeled with emotional ratings. I assembled over 300,000 labeled text samples from three different sources:
+
+**EmoBank:** This is an existing research corpus of sentences that have been manually rated by humans for Valence, Arousal, and Dominance. It's a high-quality foundation dataset that covers a wide range of everyday language.
+
+**Synthetic text:** I used a large language model to generate additional sentences representing a variety of emotional situations. Each generated sentence was assigned estimated VAD scores based on its intended emotional content. This helped me expand coverage to scenarios that might not appear frequently in natural text.
+
+**Game server chat logs:** I collected real messages from a game server and labeled them with VAD scores. This gave me examples of informal, conversational text with slang, abbreviations, and emotional expressions that players use in real time.
+
+All samples in the dataset have three numeric labels (Valence, Arousal, Dominance), typically on a 1 to 10 scale. Before training, I cleaned the data by removing any entries with missing values and converting all VAD scores to numeric floats to ensure consistency.
+
+The result is a diverse, balanced dataset that covers formal writing, casual conversation, and synthetic examples, giving the model a broad understanding of how emotions are expressed in text.
+
+---
+
+# Model Design and Training
+
+## Text Embeddings
+
+Machine learning models can't work directly with text, they need numbers. So the first step is to convert each sentence into a numerical representation called an embedding.
+
+I used a model called **SentenceTransformer**, specifically the `all-MiniLM-L6-v2` variant. This model takes a sentence as input and outputs a fixed-length vector (a list of numbers) that captures the sentence's meaning. These embeddings are high-dimensional but compact, usually 384 numbers per sentence, which makes them efficient for training.
+
+The key advantage of using sentence embeddings is that sentences with similar meanings will have similar embeddings, even if they use different words. For example, "I'm thrilled" and "I'm so excited" would have similar embeddings, which helps the model generalize to new text.
+
+## Regression Model
+
+Once I have embeddings, I need a model that can predict the three VAD scores. I chose **Ridge Regression** with automatic hyperparameter tuning using cross-validation (RidgeCV).
+
+Ridge Regression is a linear model that learns to predict a target value by finding the best weighted combination of input features. The "ridge" part refers to regularization, a technique that prevents the model from overfitting by penalizing overly complex patterns.
+
+Because I'm predicting three targets at once (Valence, Arousal, and Dominance), I wrapped the Ridge model in a **MultiOutputRegressor**. This wrapper trains a separate Ridge model for each target, but they all share the same input embeddings.
+
+## Training Setup
+
+I split the data into 85% training and 15% test, using a fixed random seed (42) for reproducibility. The training set was used to fit the model, and the test set was held out to evaluate how well the model generalizes to unseen text.
+
+Training is straightforward: I feed the sentence embeddings as input and the VAD scores as targets, and the model learns to map one to the other. Because Ridge Regression is a simple linear model, training is fast even on hundreds of thousands of examples.
+
+---
+
+# Results
+
+To evaluate the model, I used two main metrics: R² (coefficient of determination) and Mean Absolute Error (MAE).
+
+**R² scores** tell us how much of the variation in VAD scores the model can explain. A score of 1.0 would mean perfect predictions, while 0.0 would mean the model is no better than just guessing the average score every time.
+
+**MAE** tells us the average size of prediction errors in the same units as the original scores (1 to 10 scale).
+
+Here's what I found on the test set:
+
+## R² Scores
+
+- **Valence: 0.773**
+- **Arousal: 0.655**
+- **Dominance: 0.648**
+
+## Mean Absolute Error (MAE)
+
+- **Valence: 0.868**
+- **Arousal: 0.851**
+- **Dominance: 0.890**
+
+## Interpretation
+
+These results are quite good, especially for such a simple model.
+
+The **Valence** dimension is the easiest for the model to predict, with an R² of 0.773. This makes sense: whether something feels positive or negative is often the most obvious aspect of emotional language.
+
+**Arousal** and **Dominance** are harder, with R² scores around 0.65. These dimensions are more subtle and context-dependent. For example, "I feel calm" and "I feel tired" might both have low arousal, but one feels peaceful while the other feels drained.
+
+The MAE scores are all under 1 point on a 10-point scale, which means the model's predictions are typically very close to the true scores. For practical applications, this level of accuracy is more than sufficient.
+
+Overall, the model achieves strong predictive performance while remaining lightweight and interpretable.
+
+---
+
+# Example Prediction Walkthrough
+
+Let's look at a concrete example to see how the model works in practice.
+
+**Input text:**
+
+> "I feel nervous but excited for tomorrow."
+
+The model predicts approximately:
+
+- **Valence: 6.42**
+- **Arousal: 6.35**
+- **Dominance: 5.94**
+
+## Breaking Down the Prediction
+
+**Valence (6.42)** is slightly above neutral, leaning positive. The word "excited" pulls the score up, even though "nervous" adds some negativity. Overall, the sentence expresses cautious optimism, which is exactly what I'd expect from a valence score in the mid-to-high range.
+
+**Arousal (6.35)** is moderately high. Both "nervous" and "excited" are high-arousal emotions. The person isn't calm or relaxed, they're energized and anticipating something.
+
+**Dominance (5.94)** is right around the middle. The person feels a mix of control ("excited for tomorrow," implying agency) and uncertainty ("nervous," implying some lack of control). This mid-range score reflects that ambiguity.
+
+These predictions make intuitive sense. The model successfully captures the emotional nuance of the sentence without oversimplifying it into a single label like "happy" or "anxious."
+
+---
+
+# Real-World Applications
+
+This system has a wide range of potential applications, especially in areas where understanding emotional tone matters:
+
+**Chat moderation and safety systems:** Automatically detect messages with high negative valence or arousal that might indicate harassment, distress, or conflict. This can help moderators prioritize which conversations need human review.
+
+**Mental health and well-being monitoring:** Track changes in emotional tone over time in therapy apps, journaling platforms, or student wellness tools. (Of course, this must be done with appropriate ethical safeguards and user consent.)
+
+**Player or user sentiment tracking in games or apps:** Understand how players feel during different parts of a game, or how users react to new features. High arousal with low valence might indicate frustration, while high arousal with high valence might indicate excitement.
+
+**Emotionally aware AI companions and NPC behavior:** Build virtual characters or assistants that can detect and respond to the user's emotional state, creating more natural and engaging interactions.
+
+**Social media analysis:** Analyze the emotional tone of posts, comments, or reviews at scale to understand community sentiment or detect harmful content.
+
+**Customer support tone detection:** Help support agents understand how frustrated or satisfied a customer is, or automatically route urgent cases to senior staff.
+
+One of the biggest advantages of this system is that it's lightweight and fast. Because it uses simple embeddings and linear regression, it can process thousands of messages per second, making it realistic for real-time or large-scale applications.
+
+---
+
+# Limitations and Future Work
+
+While the model performs well, it's important to be honest about its limitations.
+
+**VAD labels are subjective.** Different people might rate the same sentence differently based on their own experiences and perspectives. This introduces some noise into the training data, which limits how accurate any model can be.
+
+**Generalization to new domains.** The model was trained on a mix of formal text, conversational chat, and synthetic examples. It might not perform as well on highly specialized text like legal documents, medical records, or poetry.
+
+**Language limitations.** The current system works only on English text. Expanding to other languages would require new training data and potentially different embedding models.
+
+**No uncertainty estimates.** Right now, the model outputs a single prediction for each dimension. It would be useful to also provide a confidence interval or uncertainty estimate, so we know when the model is less sure about its prediction.
+
+## Future Work
+
+There are several ways I could improve and extend this project:
+
+**Expand the training data** to cover more domains, platforms, and text styles. This would help the model generalize better to real-world use cases.
+
+**Experiment with more advanced models.** Instead of linear regression, I could try training a small neural network on top of the embeddings, or even fine-tune a transformer model directly on VAD prediction.
+
+**Add confidence estimates** using techniques like quantile regression or Bayesian methods, so users know when to trust the model's predictions.
+
+**Evaluate on multilingual datasets** and explore whether the same approach works across languages, or if language-specific tuning is needed.
+
+---
+
+# Conclusion
+
+This project demonstrates that combining sentence embeddings with a simple multi-output Ridge Regression model can successfully predict Valence, Arousal, and Dominance scores from text.
+
+The system is interpretable, efficient, and practical for real-time use. It achieves strong predictive performance with R² scores above 0.64 on all three dimensions and mean absolute errors under 1 point on a 10-point scale.
+
+More importantly, it provides a foundation for richer, more nuanced emotion-aware applications. Whether it's moderating online communities, supporting mental health tools, or building emotionally intelligent AI companions, understanding emotional tone is a critical step toward more human-centered technology.
+
+I've made the trained model, dataset, and code available in the `Assets/VAD` folder for anyone who wants to explore, test, or build on this work.
+
+---
+
+## Resources
+
+All project materials are available for download:
+
+- [**Download Dataset (VAD.csv)**](Assets/VAD/VAD.csv) - The complete labeled dataset with over 300,000 text samples
+- [**Download Trained Model (vad_regression_model.pkl)**](Assets/VAD/vad_regression_model.pkl) - The Ridge Regression model ready for predictions
+- [**Download Jupyter Notebook (vad.ipynb)**](Assets/VAD/vad.ipynb) - Full code for data processing, training, and evaluation
+- [**View Notebook Online (vad.html)**](Assets/VAD/vad.html) - Browse the notebook in your browser
+
+Feel free to download and experiment with the model yourself!

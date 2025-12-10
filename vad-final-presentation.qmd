@@ -203,7 +203,7 @@ The system is interpretable, efficient, and practical for real-time use. It achi
 
 More importantly, it provides a foundation for richer, more nuanced emotion-aware applications. Whether it's moderating online communities, supporting mental health tools, or building emotionally intelligent AI companions, understanding emotional tone is a critical step toward more human-centered technology.
 
-I've made the trained model, dataset, and code available in the `Assets/VAD` folder for anyone who wants to explore, test, or build on this work.
+I've made the trained model, dataset, and code available in the resources below for anyone who wants to explore, test, or build on this work.
 
 ---
 

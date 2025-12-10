@@ -56,6 +56,26 @@ Leveraging the breakthroughs from the VAD emotion project, this system uses **se
 
   </div>
 
+  <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+
+### VAD Final Presentation
+
+**Complete Results & Live Demo**
+
+Final presentation of the VAD emotion detection system with comprehensive results, live demonstrations, and future research directions.
+
+**Coming Soon:**
+- Final variance results across all dimensions
+- Live system demonstration
+- Real-world application examples
+- Future research roadmap
+
+**Technologies:** Python, NLP, Sentence Transformers, spaCy, VAD Modeling
+
+<a href="vad-final-presentation.html" style="display: inline-block; margin-top: 1.5rem; background: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; transition: all 0.3s;">View Presentation →</a>
+
+  </div>
+
 </div>
 :::
 

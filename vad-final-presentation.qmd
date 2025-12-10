@@ -1,0 +1,33 @@
+---
+title: "VAD Emotion Detection: Final Presentation"
+author: "Wil Jones"
+date: "2025-12-10"
+format:
+  html:
+    toc: true
+---
+
+# VAD Emotion Detection System - Final Results
+
+*Final presentation and results coming soon.*
+
+## Project Overview
+
+This project developed an AI-powered emotion detection system using Valence-Arousal-Dominance (VAD) scoring to analyze emotional context in text.
+
+## Key Achievements
+
+- Variance scores >0.70 across all three emotional dimensions
+- Over 300,000 labeled text entries
+- Real-time emotional tone detection and adaptation
+
+## Applications
+
+- Customer service chatbots
+- Mental health monitoring
+- Educational tools
+- Community moderation
+
+---
+
+*Full presentation details and results will be available here shortly.*

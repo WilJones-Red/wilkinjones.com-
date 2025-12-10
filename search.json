@@ -894,5 +894,33 @@
     "title": "VAD Emotion Detection Update: Breakthrough Results & New Applications",
     "section": "Building the Dataset",
     "text": "Building the Dataset\nYou can’t fake emotional intelligence with a few hundred examples.\nTo truly teach AI what “frustrated” feels like versus what “annoyed” feels like, you need massive, diverse, real-world data.\nI built a dataset of over 300,000 labeled entries from customer service interactions, social media conversations, gaming chats, and public emotion-labeled datasets.\nThe result? An AI that doesn’t just recognize keywords but recognizes emotional patterns across different writing styles, contexts, and intensities."
+  },
+  {
+    "objectID": "vad-final-presentation.html",
+    "href": "vad-final-presentation.html",
+    "title": "VAD Emotion Detection: Final Presentation",
+    "section": "",
+    "text": "Final presentation and results coming soon.\n\n\nThis project developed an AI-powered emotion detection system using Valence-Arousal-Dominance (VAD) scoring to analyze emotional context in text.\n\n\n\n\nVariance scores &gt;0.70 across all three emotional dimensions\nOver 300,000 labeled text entries\nReal-time emotional tone detection and adaptation\n\n\n\n\n\nCustomer service chatbots\nMental health monitoring\nEducational tools\nCommunity moderation\n\n\nFull presentation details and results will be available here shortly."
+  },
+  {
+    "objectID": "vad-final-presentation.html#project-overview",
+    "href": "vad-final-presentation.html#project-overview",
+    "title": "VAD Emotion Detection: Final Presentation",
+    "section": "",
+    "text": "This project developed an AI-powered emotion detection system using Valence-Arousal-Dominance (VAD) scoring to analyze emotional context in text."
+  },
+  {
+    "objectID": "vad-final-presentation.html#key-achievements",
+    "href": "vad-final-presentation.html#key-achievements",
+    "title": "VAD Emotion Detection: Final Presentation",
+    "section": "",
+    "text": "Variance scores &gt;0.70 across all three emotional dimensions\nOver 300,000 labeled text entries\nReal-time emotional tone detection and adaptation"
+  },
+  {
+    "objectID": "vad-final-presentation.html#applications",
+    "href": "vad-final-presentation.html#applications",
+    "title": "VAD Emotion Detection: Final Presentation",
+    "section": "",
+    "text": "Customer service chatbots\nMental health monitoring\nEducational tools\nCommunity moderation\n\n\nFull presentation details and results will be available here shortly."
   }
 ]

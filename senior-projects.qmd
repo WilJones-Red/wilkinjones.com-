@@ -11,10 +11,10 @@ Welcome to my senior project research on text embedded AI models. These represen
 
 ---
 
-## Featured Projects
+## Featured Articles
 
 ::: {.raw}
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin: 3rem 0;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin: 3rem 0; max-width: 1200px; margin-left: auto; margin-right: auto;">
 
   <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
 
@@ -56,19 +56,13 @@ Leveraging the breakthroughs from the VAD emotion project, this system uses **se
 
   </div>
 
-  <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+  <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease; grid-column: 1 / -1;">
 
 ### VAD Final Presentation
 
 **Complete Results & Live Demo**
 
-Final presentation of the VAD emotion detection system with comprehensive results, live demonstrations, and future research directions.
-
-**Coming Soon:**
-- Final variance results across all dimensions
-- Live system demonstration
-- Real-world application examples
-- Future research roadmap
+This project builds a machine learning model that predicts emotional meaning in text using the Valence–Arousal–Dominance (VAD) framework. A dataset of more than 300,000 labeled text samples was created using EmoBank, synthetic data generation, and game server logs. The text was transformed into embeddings with a SentenceTransformer model, and a multi-output Ridge Regression model was trained to estimate the three VAD dimensions. The final model achieved strong performance in predicting emotional tone and demonstrates an efficient, interpretable approach for emotion analysis in real-time text applications.
 
 **Technologies:** Python, NLP, Sentence Transformers, spaCy, VAD Modeling
 
@@ -77,7 +71,6 @@ Final presentation of the VAD emotion detection system with comprehensive result
   </div>
 
 </div>
-:::
 
 ---
 
@@ -137,3 +130,5 @@ Interested in collaborating, learning more, or testing these systems?
 ---
 
 *These projects represent the intersection of emotional intelligence, natural language understanding, and practical AI applications, built with real data, real code, and real impact.*
+
+:::

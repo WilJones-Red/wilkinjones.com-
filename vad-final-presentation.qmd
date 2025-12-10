@@ -9,11 +9,13 @@ format:
 
 # VAD Emotion Detection System - Final Results
 
-*Final presentation and results coming soon.*
-
 ## Project Overview
 
-This project developed an AI-powered emotion detection system using Valence-Arousal-Dominance (VAD) scoring to analyze emotional context in text.
+::: {.callout-note appearance="simple" icon=false}
+## Read More
+
+This project builds a machine learning model that predicts emotional meaning in text using the Valence–Arousal–Dominance (VAD) framework. A dataset of more than 300,000 labeled text samples was created using EmoBank, synthetic data generation, and game server logs. The text was transformed into embeddings with a SentenceTransformer model, and a multi-output Ridge Regression model was trained to estimate the three VAD dimensions. The final model achieved strong performance in predicting emotional tone and demonstrates an efficient, interpretable approach for emotion analysis in real-time text applications. Read more on my capstone here.
+:::
 
 ## Key Achievements
 

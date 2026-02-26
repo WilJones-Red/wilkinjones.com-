@@ -5,7 +5,21 @@ format:
     toc: false
 ---
 
-# Senior Projects in Natural Language Processing & Emotional AI
+<!-- ✅ Load AOS Animation Styles + Script -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- ✅ Initialize AOS -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof AOS !== "undefined") {
+      AOS.init({ once: true });
+      console.log("✅ AOS initialized");
+    } else {
+      console.warn("❌ AOS failed to load.");
+    }
+  });
+</script>
 
 Welcome to my senior project research on text embedded AI models. These represent my exploration into teaching machines to understand not just *what* people say, but *how* they say it and what it *means*.
 
@@ -16,13 +30,13 @@ Welcome to my senior project research on text embedded AI models. These represen
 ::: {.raw}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin: 3rem 0; max-width: 1200px; margin-left: auto; margin-right: auto;">
 
-  <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+  <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" style="background: #7EC8E3; color: white; padding: 2.5rem; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
 
 ### Emotionally Adaptive Chatbots
 
 **Building Empathy with AI Through VAD Emotion Detection**
 
-This groundbreaking project teaches AI to detect and respond to human emotions in text. Using Valence-Arousal-Dominance (VAD) scoring, I achieved variance scores above **0.70** with over 300,000 labeled entries, enabling chatbots that don't just understand words, but *feelings*.
+This project uses AI to detect and respond to human emotions in text. Using Valence-Arousal-Dominance (VAD) scoring, I achieved variance scores above 0.70 with over 300,000 labeled entries, enabling chatbots to interpret emotional context alongside meaning.
 
 **Key Achievements:**
 - Variance scores > 0.70 across all VAD dimensions
@@ -36,7 +50,7 @@ This groundbreaking project teaches AI to detect and respond to human emotions i
 
   </div>
 
-  <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+  <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" style="background: #93C5D9; color: white; padding: 2.5rem; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
 
 ### AI-Powered Resume Scoring System
 
@@ -56,7 +70,7 @@ Leveraging the breakthroughs from the VAD emotion project, this system uses **se
 
   </div>
 
-  <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease; grid-column: 1 / -1;">
+  <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" style="background: #5DADE2; color: white; padding: 2.5rem; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease; grid-column: 1 / -1;">
 
 ### VAD Final Presentation
 
@@ -74,61 +88,3 @@ This project builds a machine learning model that predicts emotional meaning in 
 
 ---
 
-## The Connection: Transfer Learning in Action
-
-These projects aren't just separate experiments. They're connected by a powerful insight:
-
-> **When you teach AI to understand one type of context (emotions), you unlock the ability to understand all types of context (skills, intent, meaning).**
-
-The **pretrained text embeddings** and **semantic similarity techniques** developed for emotion detection became the foundation for the resume scoring system. This is transfer learning in action: knowledge from one domain (emotional intelligence) accelerating breakthroughs in another (professional skill matching).
-
----
-
-## Research Impact
-
-| Metric | Achievement |
-|--------|-------------|
-| **Training Data** | 300,000+ labeled text entries |
-| **Model Variance** | >0.70 across all dimensions |
-| **Resume Scorer Weighting** | 65% semantic + 35% keyword coverage |
-| **Deployment** | Production-ready web applications |
-
----
-
-## Technologies & Skills Demonstrated
-
-- **Natural Language Processing (NLP)**: spaCy, NLTK, text preprocessing
-- **Machine Learning**: Sentence Transformers, embeddings, transfer learning
-- **Deep Learning**: Pretrained models, fine-tuning, semantic similarity
-- **Data Engineering**: Large-scale text corpus management
-- **Web Development**: Flask applications, deployment pipelines
-- **Statistical Analysis**: Variance analysis, scoring algorithms
-- **Cloud Deployment**: Render.com web services
-
----
-
-## What's Next
-
-These projects represent Phase 1 of an ongoing research initiative. Future developments include:
-
-- **Industry-specific semantic models** for specialized domains
-- **Real-time feedback systems** for resume optimization
-- **Multi-document ranking algorithms** for candidate comparison
-- **Integration with enterprise ATS platforms**
-- **Expanded emotion detection** for mental health and education applications
-
----
-
-## Connect
-
-Interested in collaborating, learning more, or testing these systems?
-
-**Email:** [official@wilkinjones.com](mailto:official@wilkinjones.com)  
-**Schedule a Call:** [calendly.com/official-wilkinjones](https://calendly.com/official-wilkinjones)  
-**LinkedIn:** [Connect with me](https://linkedin.com)  
-
----
-
-*These projects represent the intersection of emotional intelligence, natural language understanding, and practical AI applications, built with real data, real code, and real impact.*
-
-:::

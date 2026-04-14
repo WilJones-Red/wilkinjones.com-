@@ -8,7 +8,7 @@ website:
   navbar:
     left:
       - text: "Home"
-        href: index.qmd
+        href: index.html
       - text: "Senior Projects"
         href: senior-projects.qmd  
       - text: "Projects"

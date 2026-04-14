@@ -1,0 +1,29 @@
+---
+title: “”
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
+    page-layout: full
+---
+
+<div class=”hero-section”>
+  <img src=”Assets/profile.png” class=”hero-profile-img” alt=”Wilkin Jones”>
+  <h1 class=”hero-title”>Hi, I’m Wilkin Jones, and I am a<br><span class=”hero-role”>Data Analyst</span></h1>
+  <p class=”hero-desc”>
+    Biology student turned data analyst, still driven by the same curiosity — only now the puzzles are datasets.
+    I specialize in transforming raw, messy data into clear insights using Python, SQL, and machine learning.
+    I thrive on building dashboards, predictive models, and automation tools that turn complexity into decisions.
+  </p>
+  <div class=”hero-buttons”>
+    <a href=”projects.html” class=”hero-btn”>
+      <i class=”bi bi-graph-up”></i> View Projects
+    </a>
+    <a href=”resume.html” class=”hero-btn”>
+      <i class=”bi bi-file-earmark-person”></i> My Resume
+    </a>
+  </div>
+</div>
+
+

@@ -5,6 +5,48 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* === ALWAYS-COLLAPSED NAVBAR (hamburger at all sizes) === */
+
+/* Force the container to wrap so the collapsed menu drops below */
+.navbar-expand-lg > .container-fluid,
+.navbar-expand-lg > .navbar-container {
+  flex-wrap: wrap !important;
+}
+
+/* Always show the toggler, put it on the left */
+.navbar-expand-lg .navbar-toggler {
+  display: flex !important;
+  order: 1;
+}
+
+/* Brand pushed to the right */
+.navbar-brand-container {
+  order: 2;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+/* Hide search icon — clean look */
+#quarto-search {
+  display: none !important;
+}
+
+/* Keep nav links hidden until toggled */
+.navbar-expand-lg .navbar-collapse {
+  display: none !important;
+  flex-basis: 100%;
+  order: 3;
+}
+.navbar-expand-lg .navbar-collapse.show,
+.navbar-expand-lg .navbar-collapse.collapsing {
+  display: block !important;
+}
+
+/* Force nav items to stack vertically in the dropdown */
+.navbar-expand-lg .navbar-collapse .navbar-nav {
+  flex-direction: column !important;
+}
+
 /* === NAVBAR LINK EFFECTS === */
 .navbar-nav .nav-link {
   color: #f8f9fa !important;
@@ -101,4 +143,78 @@
   opacity: 1;
   transform: translateY(0);
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* === HERO SECTION === */
+.hero-section {
+  background: radial-gradient(ellipse at 70% 40%, #0a3d8f 0%, #051c45 55%, #020d1f 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero-profile-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.75rem;
+  animation: pulse 2s infinite;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: clamp(1.2rem, 3.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+}
+
+.hero-line1,
+.hero-role {
+  display: block;
+}
+
+.hero-desc {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  font-weight: 500;
+  max-width: 660px;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.85rem;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.hero-btn:hover {
+  background: #ffffff;
+  color: #051c45;
+  border-color: #ffffff;
+  text-decoration: none;
 }

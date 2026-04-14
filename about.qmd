@@ -28,27 +28,22 @@
   });
 </script>
 
-# About Me
-
-<div class="section-box" data-aos="fade-up">
-I'm a data enthusiast focused on turning complex information into clear, actionable insights.  
-What started as curiosity has evolved into hands-on experience building Python scripts, writing SQL queries, and creating clean, effective visualizations.  
-I enjoy solving real-world problems with data and helping others make informed decisions.
-
-Outside of work, I enjoy hiking, gaming, and spending time with my family.
-</div>
-
 <div class="section-box" data-aos="fade-up">
 
 ## Skills Overview
 
-### Programming Languages  
-- Python  
-- SQL  
+### Programming Languages
+- Python
+- R
+- R-Markdown
+- SQL
 
-### Currently Learning  
-- Machine Learning  
-- Time Series Forecasting  
+### R Packages
+- Tidyverse, Dplyr, MASS, DT, Kable, Pander, Car
+
+### Currently Learning
+- Machine Learning
+- Time Series Forecasting
 
 </div>
 

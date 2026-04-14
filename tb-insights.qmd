@@ -8,22 +8,22 @@ format:
 
 This Tableau dashboard explores trends in tuberculosis (TB) cases globally using World Health Organization data. I analyzed key dimensions like **country**, **age group**, and **gender** to identify at-risk populations.
 
-## 🔍 Key Findings
+## Key Findings
 
 - India and China account for the majority of TB cases worldwide
-- The 25–34 age group consistently had the highest number of cases
+- The 25 to 34 age group consistently had the highest number of cases
 - Males reported significantly more cases than females across all years
 
-## 🛠 Tools Used
+## Tools Used
 
-- **Python (Pandas)** – for cleaning and reshaping messy datasets
-- **MySQL** – for structuring and storing cleaned data
-- **Tableau** – for building interactive dashboards
+- **Python (Pandas):** for cleaning and reshaping the WHO datasets
+- **MySQL:** for structuring and storing the cleaned data
+- **Tableau:** for building the interactive dashboard
 
-## 📥 Downloadables
+## Downloadables
 
 - [Presentation Slides (PDF)](Assets/tb-insights.pdf)
 
-## 📥 Case Study Deck
+## Case Study Deck
 
 - [Download Slides (PDF)](Case Study 7.pdf)

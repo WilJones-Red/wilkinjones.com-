@@ -45,6 +45,15 @@ I built a special topics course for BYU-Idaho and put together a full bootcamp f
 -   **Goal:** Give students a hands-on foundation in Agentic AI, from prompt engineering through multi-step agent workflows
 -   [View the bootcamp](https://wiljones-red.github.io/Agentic_Bootcamp/)
 
+## Fox in the Sawdust: AI-Powered Competitive Intelligence
+
+A small custom woodshop needed to stay competitive against bigger players with dedicated marketing teams. I built a 10-agent autonomous pipeline that runs a full competitive research brief from a single button click — collecting, extracting, analyzing, and reporting in about two minutes.
+
+-   **Tools:** Node.js, OpenAI (gpt-4o-mini, gpt-5.4-mini), vanilla JS, SVG visualization
+-   **Goal:** Replace ~3 hours of weekly manual competitor research with an automated, grounded intelligence pipeline
+-   **Outcome:** Pricing recommendations backed by real competitor URLs and comparable product matching, delivered through an actionable approve/dismiss/edit workflow
+-   [Read the full case study](case-study-agentic-ai.qmd)
+
 ## Heart Disease Classification
 
 Can patient data tell us whether someone has heart disease before it becomes obvious? I explored that question by training a classification model on clinical measurements, with the goal of flagging high-risk patients early.

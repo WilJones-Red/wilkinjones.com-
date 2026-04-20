@@ -179,28 +179,28 @@
     "href": "projects.html",
     "title": "My Projects",
     "section": "",
-    "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report"
+    "text": "These studies were completed in R using formal experimental design methods including ANOVA, randomized block designs, and split-plot designs."
   },
   {
     "objectID": "projects.html#heart-disease-classification",
     "href": "projects.html#heart-disease-classification",
     "title": "My Projects",
-    "section": "",
-    "text": "Using machine learning to predict the presence of heart disease from patient data.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Classify whether a patient has heart disease based on clinical measurements\nOutcome: Achieved an F1 score of 0.84 on the validation set and 0.75 on the holdout set\nRead the full report"
+    "section": "Heart Disease Classification",
+    "text": "Heart Disease Classification\nCan patient data tell us whether someone has heart disease before it becomes obvious? I explored that question by training a classification model on clinical measurements, with the goal of flagging high-risk patients early.\n\nTools: Python, XGBoost, Scikit-learn, Pandas, Matplotlib, Seaborn\nGoal: Build a reliable classifier that identifies heart disease from routine clinical data\nOutcome: Achieved an F1 score of 0.84 on validation and 0.75 on the holdout set, which held up well given the class imbalance\nRead the full report"
   },
   {
     "objectID": "projects.html#bike-rentals-prediction",
     "href": "projects.html#bike-rentals-prediction",
     "title": "My Projects",
     "section": "Bike Rentals Prediction",
-    "text": "Bike Rentals Prediction\nForecasting pedal power with deep learning and pandemic-aware features.\n\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals using time-based and COVID-era features\nOutcome: Achieved 89% R² accuracy with a dropout-regularized neural net\nRead the full report"
+    "text": "Bike Rentals Prediction\nBike rental demand does not just follow the weather, it follows the world. I built a neural network that folds COVID-era disruptions into the feature set alongside the usual time and weather signals.\n\nTools: Python, Keras, Scikit-learn, Pandas, Matplotlib\nGoal: Predict hourly bike rentals by capturing pandemic-era patterns the standard features would miss\nOutcome: Achieved 89% R² with a dropout-regularized net that generalized well to unseen data\nRead the full report"
   },
   {
     "objectID": "projects.html#housing-price-prediction",
     "href": "projects.html#housing-price-prediction",
     "title": "My Projects",
     "section": "Housing Price Prediction",
-    "text": "Housing Price Prediction\nUnlocking the mystery of what makes homes expensive (besides the granite countertops).\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Used machine learning to uncover which features drive housing prices — from luxury scores to longitude\nOutcome: Our model predicted prices with 91% accuracy (R²), blending interpretability and performance\nRead the full report"
+    "text": "Housing Price Prediction\nWhat actually drives housing prices? I set out to answer that by running machine learning models on real estate data, testing everything from room counts to neighborhood patterns.\n\nTools: Python, Jupyter, Seaborn, XGBoost, Random Forest\nGoal: Identify which features most influence sale price, then build a model worth trusting\nOutcome: Hit 91% R² by combining interpretable features with a boosted ensemble approach\nRead the full report"
   },
   {
     "objectID": "projects.html#big-data-church-attendance-analysis-full-write-up-coming-soon",
@@ -214,7 +214,7 @@
     "href": "projects.html#pawesome-pet-services-database-redesign",
     "title": "My Projects",
     "section": "Pawesome Pet Services Database Redesign",
-    "text": "Pawesome Pet Services Database Redesign\n\nTools: MySQL Workbench, ERD modeling\n\nGoal: Normalize and restructure the schema to better manage pet services and appointments\n\nView the full write-up"
+    "text": "Pawesome Pet Services Database Redesign\nThe original schema had grown messy over time and was making simple queries harder than they needed to be. I redesigned it from scratch using proper normalization principles.\n\nTools: MySQL Workbench, ERD modeling\nGoal: Rebuild the database structure to cleanly handle pet profiles, services, and scheduled appointments\nView the full write-up"
   },
   {
     "objectID": "index.html",
@@ -969,28 +969,147 @@
     "objectID": "projects.html#experimental-design-case-studies",
     "href": "projects.html#experimental-design-case-studies",
     "title": "My Projects",
-    "section": "Experimental Design Case Studies",
-    "text": "Experimental Design Case Studies\nThese studies were completed in R using formal experimental design methods including ANOVA, randomized block designs, and split-plot designs."
+    "section": "",
+    "text": "These studies were completed in R using formal experimental design methods including ANOVA, randomized block designs, and split-plot designs."
   },
   {
     "objectID": "projects.html#paper-airplane-flight-study",
     "href": "projects.html#paper-airplane-flight-study",
     "title": "My Projects",
     "section": "Paper Airplane Flight Study",
-    "text": "Paper Airplane Flight Study\nDoes paper type or fold design affect how far a plane flies? A two-factor ANOVA to find out.\n\nTools: R, R-Markdown, Two-Factor ANOVA\nGoal: Test the effects of paper type and fold design on flight distance\nDesign: Completely randomized 2×2 factorial design\nRead the full report"
+    "text": "Paper Airplane Flight Study\nA proper scientific question, tested with paper and patience: does the type of paper or the way you fold it actually change how far a plane flies?\n\nTools: R, R-Markdown, Two-Factor ANOVA\nGoal: Measure whether paper type and fold design each affect flight distance, and whether the two factors interact\nDesign: Completely randomized 2x2 factorial design\nRead the full report"
   },
   {
     "objectID": "projects.html#minecraft-weapon-comparison",
     "href": "projects.html#minecraft-weapon-comparison",
     "title": "My Projects",
     "section": "Minecraft Weapon Comparison",
-    "text": "Minecraft Weapon Comparison\nWhich weapon deals the most damage — sword, axe, or trident? A controlled experiment inside Minecraft.\n\nTools: R, R-Markdown, Randomized Complete Block Design\nGoal: Compare weapon effectiveness on damage absorbed across blocked sessions\nDesign: Randomized complete block design with session as the blocking factor\nRead the full report"
+    "text": "Minecraft Weapon Comparison\nThis one started as a fun idea and turned into a legitimate experiment. I wanted to know which weapon in Minecraft actually performs best, controlling for session-to-session variation.\n\nTools: R, R-Markdown, Randomized Complete Block Design\nGoal: Test whether sword, axe, or trident deals more effective damage when session effects are accounted for\nDesign: Randomized complete block design with gaming session as the blocking variable\nRead the full report"
   },
   {
     "objectID": "projects.html#paper-towel-absorption-study",
     "href": "projects.html#paper-towel-absorption-study",
     "title": "My Projects",
     "section": "Paper Towel Absorption Study",
-    "text": "Paper Towel Absorption Study\nTesting whether water temperature and brand affect how much a paper towel absorbs.\n\nTools: R, R-Markdown, Split-Plot ANOVA\nGoal: Determine the effects of water temperature and towel brand on absorption\nDesign: Split-plot design with temperature as the whole-plot factor and brand as the sub-plot\nRead the full report"
+    "text": "Paper Towel Absorption Study\nDoes water temperature change how well a paper towel absorbs? Does the brand matter more? I ran a split-plot experiment to separate out both effects and find out.\n\nTools: R, R-Markdown, Split-Plot ANOVA\nGoal: Evaluate how temperature and brand independently and jointly affect absorption\nDesign: Split-plot design with temperature as the whole-plot factor and brand at the sub-plot level\nRead the full report"
+  },
+  {
+    "objectID": "case-study-agentic-ai.html",
+    "href": "case-study-agentic-ai.html",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "",
+    "text": "Here’s the situation: a small custom woodworking business called Fox in the Sawdust was going up against bigger regional players — companies like John Thomas Furniture and Modern Home Idaho — who have entire marketing teams and dedicated pricing analysts. The owner? He had none of that. No bandwidth to spend hours each week manually checking what competitors were charging, how their messaging was shifting, or where they were positioning themselves in the market.\nSo what was driving his pricing and product decisions? Gut feel. And while gut feel has its place, it’s not exactly a scalable strategy.\nThat’s where this project comes in."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#own-scout",
+    "href": "case-study-agentic-ai.html#own-scout",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "1. Own Scout",
+    "text": "1. Own Scout\nModel: gpt-4o-mini · Context Cap: 50K · LLM Calls: None\nThis is the one agent in the entire pipeline that makes zero LLM calls. It’s a pure fetch-and-discover agent that visits the client’s homepage and known category pages (/dining-tables/, /dining-chairs/, /custom-projects/), then uses regex to find product URLs under /store/.\nWhy no LLM? Because your own website doesn’t need interpretation. It just needs scraping. Spending tokens to “understand” pages you already control is waste. Fetch-and-regex is faster, cheaper, and completely deterministic. This agent just does the legwork so the next one can do the thinking."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#own-extractor",
+    "href": "case-study-agentic-ai.html#own-extractor",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "2. Own Extractor",
+    "text": "2. Own Extractor\nModel: gpt-5.4-mini · Context Cap: 50K · LLM Calls: 1\nThe own extractor takes all that raw page content from the scout and pulls out every unique product listing with its price. Its instructions are deliberately narrow: “You are a product listing extractor. Read website content and extract every unique product with its price. Respond with valid JSON only.”\nIt deduplicates, skips low-value items like accessories and hardware, and outputs a clean list of products and prices. If the LLM call fails for some reason, this agent has a regex-based fallback. No other agent in the pipeline needs one, because the client’s own listings are the one dataset predictable enough for regex to handle.\nThis list becomes the foundation for everything pricing-related downstream."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#competitor-scout",
+    "href": "case-study-agentic-ai.html#competitor-scout",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "3. Competitor Scout",
+    "text": "3. Competitor Scout\nModel: gpt-4o-mini · Context Cap: 50K · LLM Calls: 3\nThis is the most complex agent in the pipeline, and honestly, it’s one of the most fun to watch work. The competitor scout doesn’t just fetch a homepage and hope for the best. It navigates competitor sites using a three-phase crawl:\n\nPhase 1: Homepage fetch. Grabs the competitor’s root page and extracts all internal links.\nPhase 2: Link picker. An LLM call reviews the discovered URLs and picks up to 8 category or listing pages most likely to contain product links.\nPhase 3: Product page picker. A second LLM call selects up to 12 individual product detail pages, specifically the ones most likely to have actual dollar amounts.\n\nAfter all three phases, a third LLM call performs the main competitive analysis. Every signal follows a strict format: “[Competitor domain] [what they do] [why that matters for Fox in the Sawdust]”. And the agent is explicitly told: never fabricate pricing data. If a competitor hides their prices, that itself becomes a signal.\nThe three-call architecture costs more per competitor, but it means the agent actually finds product pages instead of guessing from homepage copy. On a typical run with 3 competitors, this agent accounts for ~9 LLM calls, the most of any single agent."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#extractor",
+    "href": "case-study-agentic-ai.html#extractor",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "4. Extractor",
+    "text": "4. Extractor\nModel: gpt-5.4-mini · Context Cap: 2M · LLM Calls: 1\nThe extractor takes the free-text observations from the competitor scout and normalizes them into a structured comparison format. Where the scout produces narrative observations, the extractor produces rows in a table: competitor name, offer focus, pricing visibility (Low/Medium/High), trust signals, messaging shifts, and data source type.\nIts context cap is 2M, the largest in the pipeline, because it receives the full raw crawl data, which can be substantial when competitors have rich product pages.\nThis normalization step is what makes everything downstream possible. The analyst and recommender don’t have to parse free text. They work with clean, structured competitor profiles."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#wood-expert",
+    "href": "case-study-agentic-ai.html#wood-expert",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "5. Wood Expert",
+    "text": "5. Wood Expert\nModel: gpt-5.4-mini · Context Cap: 2M · LLM Calls: 1\nThis is the domain expert, and honestly, this is the agent that makes the whole system actually smart instead of just fast.\nThe wood expert knows the difference between white oak and red oak, understands why a mortise-and-tenon joint costs more than a pocket-screw joint, and can tell whether two tables from different makers are actually comparable.\nIt takes the client’s product catalog and the competitor listings, then identifies comparable products, specifically items that share the same category and similar characteristics. The output includes a similarity score (minimum 0.5), a match reason, and a category. This feeds directly into the pricing engine.\nWithout this agent, the system would be comparing a high-end custom dining table to an entry-level mass-produced piece and calling it a pricing insight. Not helpful."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#site-analysis",
+    "href": "case-study-agentic-ai.html#site-analysis",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "6. Site Analysis",
+    "text": "6. Site Analysis\nModel: Global default · Context Cap: 50K · LLM Calls: 1\nThe site analysis agent turns the lens inward. Given the client’s own website content and the structured competitor data, it performs a SWOT-style evaluation: strengths, weaknesses, opportunities, and a summary.\nIts prompt includes a line that matters a lot: “Be specific and honest. This analysis drives the recommendations.”\nEarly versions of this agent produced generic fluff like “improve your SEO.” The current version is grounded: if a competitor surfaces a key element prominently on their homepage while the client’s equivalent is buried deeper in the navigation, that kind of specific, comparative observation is what makes the downstream recommendations actionable."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#analyst",
+    "href": "case-study-agentic-ai.html#analyst",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "7. Analyst",
+    "text": "7. Analyst\nModel: gpt-5.4-mini · Context Cap: 2M · LLM Calls: 1\nThe analyst is the strategic brain of the pipeline. It cross-references the structured competitor data with the internal site analysis and produces exactly 5 insights, each with a theme, evidence, impact assessment, priority, and source URL.\nHere’s the key constraint: “Every insight tells the client what THEIR site does, what competitors do differently, and what they should do about it. Never describe a competitor without also describing what the client currently does.”\nThis comparative framing was a deliberate choice. Early versions would say things like “a regional competitor has strong trust messaging.” Interesting, but not useful. The current version says something like: “The client’s site lacks a visible craftsmanship guarantee. Competitor A has one above the fold. Adding a similar block would address this gap.” Same data, completely different utility.\nPriorities must also be distributed. The agent can’t mark everything as High, which prevents the action queue from becoming a wall of equal-urgency items."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#recommender",
+    "href": "case-study-agentic-ai.html#recommender",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "8. Recommender",
+    "text": "8. Recommender\nModel: gpt-5.4-mini · Context Cap: 2M · LLM Calls: 1\nThe recommender turns insights into specific, approval-ready actions. It takes the analyst’s insights, the competitor data, and the original context, then produces exactly 9 actions: 3 UX improvements, 3 pricing recommendations, and 3 quoting workflow changes.\nEvery recommendation must start with hedged language: “Suggest testing:”, “Consider adding:”, or “Review whether:”. This isn’t about being wishy-washy. It’s a design choice. The business owner approves actions; the system suggests them.\nPricing recommendations have to reference actual dollar figures. So instead of “raise your prices,” you get something like: “Suggest testing: raising Product X from its current price to a higher tier, since comparable items from a regional competitor start significantly above that.” Grounded in real data, not abstract percentages.\nEach action includes impact level, effort estimate, owner, category, rationale, and a source URL, all surfaced as approvable cards in the dashboard.\n\n\n\nPricing recommendations grounded in real competitor data"
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#guardrail",
+    "href": "case-study-agentic-ai.html#guardrail",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "9. Guardrail",
+    "text": "9. Guardrail\nModel: gpt-5.4-mini · Context Cap: 2M · LLM Calls: 1\nThe guardrail is the final check before the report gets generated. It receives the full output from every preceding agent and looks for problems.\nFirst pass: regex-based. Four patterns catch the most common LLM overstatements:\n\nPercentage guarantees (“guaranteed 30% increase”)\nCertainty claims (“will definitely improve”)\nAbsolute claims (“always works”)\nUnverified proof claims (“proven to double”)\n\nIf any action text matches these, it’s flagged before the LLM even sees it.\nSecond pass: LLM review. The full policy check: JSON format intact, context budgets respected, recommendations framed as suggestions, no unsourced pricing claims, and human approval required for all actions.\nThe output is binary: \"passed\" or \"review-needed\". If anything gets flagged, the report includes exactly what was caught and why. The business owner sees it all."
+  },
+  {
+    "objectID": "case-study-agentic-ai.html#report-generator",
+    "href": "case-study-agentic-ai.html#report-generator",
+    "title": "Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust",
+    "section": "10. Report Generator",
+    "text": "10. Report Generator\nModel: gpt-5.4-mini · Context Cap: 50K · LLM Calls: 1\nThe final agent pulls everything together: approved actions, strategic insights, site analysis, competitor overview, and guardrail status. It synthesizes them into a polished weekly intelligence report.\nIts prompt: “You are a senior strategist writing a polished weekly competitive intelligence report for a small business owner. The report should be clear, direct, and immediately useful. No filler.”\nThe output includes a report title, executive summary, strategic context, and the top 3 priority next steps. In the dashboard, this renders as a multi-page document with a cover, sections, insight cards, action rows, and guardrail status, all styled in the dark woodshop theme.\nThe context cap here is intentionally lower (50K vs. 2M for the analysts) because the report agent should be working with already-distilled insights, not re-processing raw data.\n\n\n\nA generated weekly intelligence report"
+  },
+  {
+    "objectID": "projects.html#ai-and-machine-learning",
+    "href": "projects.html#ai-and-machine-learning",
+    "title": "My Projects",
+    "section": "AI and Machine Learning",
+    "text": "AI and Machine Learning"
+  },
+  {
+    "objectID": "projects.html#agentic-ai-bootcamp",
+    "href": "projects.html#agentic-ai-bootcamp",
+    "title": "My Projects",
+    "section": "Agentic AI Bootcamp",
+    "text": "Agentic AI Bootcamp\nI built a special topics course for BYU-Idaho and put together a full bootcamp for the school’s data science society, covering how to design and deploy AI agents from the ground up.\n\nTools: LangChain, LangSmith, RAG, MCP\nGoal: Give students a hands-on foundation in Agentic AI, from prompt engineering through multi-step agent workflows\nView the bootcamp"
+  },
+  {
+    "objectID": "projects.html#fox-in-the-sawdust-ai-powered-competitive-intelligence",
+    "href": "projects.html#fox-in-the-sawdust-ai-powered-competitive-intelligence",
+    "title": "My Projects",
+    "section": "Fox in the Sawdust — AI-Powered Competitive Intelligence",
+    "text": "Fox in the Sawdust — AI-Powered Competitive Intelligence\nA small custom woodshop needed to stay competitive against bigger players with dedicated marketing teams. I built a 10-agent autonomous pipeline that runs a full competitive research brief from a single button click — collecting, extracting, analyzing, and reporting in about two minutes.\n\nTools: Node.js, OpenAI (gpt-4o-mini, gpt-5.4-mini), vanilla JS, SVG visualization\nGoal: Replace ~3 hours of weekly manual competitor research with an automated, grounded intelligence pipeline\nOutcome: Pricing recommendations backed by real competitor URLs and comparable product matching, delivered through an actionable approve/dismiss/edit workflow\nRead the full case study"
+  },
+  {
+    "objectID": "projects.html#data-analysis-and-visualization",
+    "href": "projects.html#data-analysis-and-visualization",
+    "title": "My Projects",
+    "section": "Data Analysis and Visualization",
+    "text": "Data Analysis and Visualization"
+  },
+  {
+    "objectID": "projects.html#tuberculosis-global-trends",
+    "href": "projects.html#tuberculosis-global-trends",
+    "title": "My Projects",
+    "section": "Tuberculosis Global Trends",
+    "text": "Tuberculosis Global Trends\nI dug into WHO tuberculosis data to surface patterns that are easy to miss in raw numbers. The goal was to build something a public health team could actually use to spot at-risk populations quickly.\n\nTools: Python (Pandas), MySQL, Tableau\nGoal: Identify global TB trends by country, age group, and gender using cleaned WHO data\nOutcome: Built an interactive Tableau dashboard that makes regional and demographic patterns immediately visible\nView the full report"
+  },
+  {
+    "objectID": "projects.html#sql-and-database-design",
+    "href": "projects.html#sql-and-database-design",
+    "title": "My Projects",
+    "section": "SQL and Database Design",
+    "text": "SQL and Database Design"
   }
 ]

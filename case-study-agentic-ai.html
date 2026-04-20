@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Wil Jones">
+
+<title>Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust – Wilkin Jones</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Wilkin Jones</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./senior-projects.html"> 
+<span class="menu-text">Senior Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link active" data-scroll-target="#the-problem">The Problem</a></li>
+  <li><a href="#the-approach" id="toc-the-approach" class="nav-link" data-scroll-target="#the-approach">The Approach</a></li>
+  <li><a href="#meet-the-agents" id="toc-meet-the-agents" class="nav-link" data-scroll-target="#meet-the-agents">Meet the Agents</a>
+  <ul class="collapse">
+  <li><a href="#own-scout" id="toc-own-scout" class="nav-link" data-scroll-target="#own-scout">1. Own Scout</a></li>
+  <li><a href="#own-extractor" id="toc-own-extractor" class="nav-link" data-scroll-target="#own-extractor">2. Own Extractor</a></li>
+  <li><a href="#competitor-scout" id="toc-competitor-scout" class="nav-link" data-scroll-target="#competitor-scout">3. Competitor Scout</a></li>
+  <li><a href="#extractor" id="toc-extractor" class="nav-link" data-scroll-target="#extractor">4. Extractor</a></li>
+  <li><a href="#wood-expert" id="toc-wood-expert" class="nav-link" data-scroll-target="#wood-expert">5. Wood Expert</a></li>
+  <li><a href="#site-analysis" id="toc-site-analysis" class="nav-link" data-scroll-target="#site-analysis">6. Site Analysis</a></li>
+  <li><a href="#analyst" id="toc-analyst" class="nav-link" data-scroll-target="#analyst">7. Analyst</a></li>
+  <li><a href="#recommender" id="toc-recommender" class="nav-link" data-scroll-target="#recommender">8. Recommender</a></li>
+  <li><a href="#guardrail" id="toc-guardrail" class="nav-link" data-scroll-target="#guardrail">9. Guardrail</a></li>
+  <li><a href="#report-generator" id="toc-report-generator" class="nav-link" data-scroll-target="#report-generator">10. Report Generator</a></li>
+  </ul></li>
+  <li><a href="#pipeline-architecture" id="toc-pipeline-architecture" class="nav-link" data-scroll-target="#pipeline-architecture">Pipeline Architecture</a></li>
+  <li><a href="#the-interface" id="toc-the-interface" class="nav-link" data-scroll-target="#the-interface">The Interface</a></li>
+  <li><a href="#key-design-decisions" id="toc-key-design-decisions" class="nav-link" data-scroll-target="#key-design-decisions">Key Design Decisions</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#what-id-do-differently" id="toc-what-id-do-differently" class="nav-link" data-scroll-target="#what-id-do-differently">What I’d Do Differently</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Case Study: AI-Powered Competitive Intelligence for Fox in the Sawdust</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Wil Jones </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><img src="Assets/ai-agent/Agent-workflow.png" class="img-fluid"></p>
+<section id="the-problem" class="level1">
+<h1>The Problem</h1>
+<p>The owner of <strong>Fox in the Sawdust</strong> is a skilled craftsman who already knows his market well. He’s built a reputation on quality, understands his materials, and prices his work with confidence earned through years of experience. But he also recognized something that most small business owners don’t: the competitive landscape moves faster than any one person can track manually.</p>
+<p>Larger regional competitors have dedicated marketing teams and pricing analysts monitoring the market full-time. For a one-person operation, spending three hours a week browsing competitor sites isn’t just tedious. It’s time taken away from the craft and the customers.</p>
+<p>He came to me with a clear vision: he wanted an AI-powered system that could do that research automatically, on demand, and deliver results he could actually act on. He understood that agentic AI isn’t a gimmick. It’s the kind of tool that lets a small business operate with the intelligence of a much larger one. That kind of forward thinking is exactly what made this project possible.</p>
+</section>
+<section id="the-approach" class="level1">
+<h1>The Approach</h1>
+<p>I built a fully autonomous multi-agent intelligence pipeline for Fox in the Sawdust. In plain English: you click one button, and a team of AI agents goes out, collects competitor data, analyzes it, builds a strategy, validates it, and hands you a polished report, all in about two minutes.</p>
+<p>Instead of one giant prompt doing everything (which would be messy and unreliable), the system breaks the work into a <strong>10-agent pipeline</strong>. Each agent has one clear job, and they pass their output to the next agent in line, like an assembly line built for intelligence.</p>
+<p>Here’s the bird’s-eye view:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 32%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Agent(s)</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Collection</td>
+<td><code>own_scout</code>, <code>comp_scout</code></td>
+<td>Crawls the owner’s site and competitor sites for raw content</td>
+</tr>
+<tr class="even">
+<td>Extraction</td>
+<td><code>own_extractor</code>, <code>extractor</code>, <code>wood_expert</code></td>
+<td>Pulls out product listings, pricing, materials, and woodworking details</td>
+</tr>
+<tr class="odd">
+<td>Analysis</td>
+<td><code>site_analysis</code>, <code>analyst</code></td>
+<td>Evaluates site structure, tone, and competitive positioning</td>
+</tr>
+<tr class="even">
+<td>Strategy</td>
+<td><code>recommender</code></td>
+<td>Generates prioritized, actionable recommendations</td>
+</tr>
+<tr class="odd">
+<td>Validation</td>
+<td><code>guardrail</code></td>
+<td>Flags any made-up claims and checks pricing math</td>
+</tr>
+<tr class="even">
+<td>Output</td>
+<td><code>report_gen</code></td>
+<td>Compiles everything into a structured intelligence report</td>
+</tr>
+</tbody>
+</table>
+<p>Each agent has its own system prompt, context budget, output format, and rate limit. Where agents don’t depend on each other, they run in parallel. A sliding-window rate limiter and per-agent context caps keep API costs predictable and prevent token blowout.</p>
+</section>
+<section id="meet-the-agents" class="level1">
+<h1>Meet the Agents</h1>
+<section id="own-scout" class="level2">
+<h2 class="anchored" data-anchor-id="own-scout">1. Own Scout</h2>
+<p><strong>Model:</strong> gpt-4o-mini · <strong>Context Cap:</strong> 50K · <strong>LLM Calls:</strong> None</p>
+<p>This is the one agent in the entire pipeline that makes zero LLM calls. It’s a pure fetch-and-discover agent that visits the client’s homepage and known category pages (<code>/dining-tables/</code>, <code>/dining-chairs/</code>, <code>/custom-projects/</code>), then uses regex to find product URLs under <code>/store/</code>.</p>
+<p>Why no LLM? Because your own website doesn’t need interpretation. It just needs scraping. Spending tokens to “understand” pages you already control is waste. Fetch-and-regex is faster, cheaper, and completely deterministic. This agent just does the legwork so the next one can do the thinking.</p>
+</section>
+<section id="own-extractor" class="level2">
+<h2 class="anchored" data-anchor-id="own-extractor">2. Own Extractor</h2>
+<p><strong>Model:</strong> gpt-5.4-mini · <strong>Context Cap:</strong> 50K · <strong>LLM Calls:</strong> 1</p>
+<p>The own extractor takes all that raw page content from the scout and pulls out every unique product listing with its price. Its instructions are deliberately narrow: <em>“You are a product listing extractor. Read website content and extract every unique product with its price. Respond with valid JSON only.”</em></p>
+<p>It deduplicates, skips low-value items like accessories and hardware, and outputs a clean list of products and prices. If the LLM call fails for some reason, this agent has a regex-based fallback. No other agent in the pipeline needs one, because the client’s own listings are the one dataset predictable enough for regex to handle.</p>
+<p>This list becomes the foundation for everything pricing-related downstream.</p>
+</section>
+<section id="competitor-scout" class="level2">
+<h2 class="anchored" data-anchor-id="competitor-scout">3. Competitor Scout</h2>
+<p><strong>Model:</strong> gpt-4o-mini · <strong>Context Cap:</strong> 50K · <strong>LLM Calls:</strong> 3</p>
+<p>This is the most complex agent in the pipeline, and honestly, it’s one of the most fun to watch work. The competitor scout doesn’t just fetch a homepage and hope for the best. It <strong>navigates</strong> competitor sites using a three-phase crawl:</p>
+<ol type="1">
+<li><strong>Phase 1: Homepage fetch.</strong> Grabs the competitor’s root page and extracts all internal links.</li>
+<li><strong>Phase 2: Link picker.</strong> An LLM call reviews the discovered URLs and picks up to 8 category or listing pages most likely to contain product links.</li>
+<li><strong>Phase 3: Product page picker.</strong> A second LLM call selects up to 12 individual product detail pages, specifically the ones most likely to have actual dollar amounts.</li>
+</ol>
+<p>After all three phases, a third LLM call performs the main competitive analysis. Every signal follows a strict format: <em>“[Competitor domain] [what they do] [why that matters for Fox in the Sawdust]”</em>. And the agent is explicitly told: never fabricate pricing data. If a competitor hides their prices, that itself becomes a signal.</p>
+<p>The three-call architecture costs more per competitor, but it means the agent actually <em>finds</em> product pages instead of guessing from homepage copy. On a typical run with 3 competitors, this agent accounts for ~9 LLM calls, the most of any single agent.</p>
+</section>
+<section id="extractor" class="level2">
+<h2 class="anchored" data-anchor-id="extractor">4. Extractor</h2>
+<p><strong>Model:</strong> gpt-5.4-mini · <strong>Context Cap:</strong> 2M · <strong>LLM Calls:</strong> 1</p>
+<p>The extractor takes the free-text observations from the competitor scout and normalizes them into a structured comparison format. Where the scout produces narrative observations, the extractor produces rows in a table: competitor name, offer focus, pricing visibility (Low/Medium/High), trust signals, messaging shifts, and data source type.</p>
+<p>Its context cap is 2M, the largest in the pipeline, because it receives the full raw crawl data, which can be substantial when competitors have rich product pages.</p>
+<p>This normalization step is what makes everything downstream possible. The analyst and recommender don’t have to parse free text. They work with clean, structured competitor profiles.</p>
+</section>
+<section id="wood-expert" class="level2">
+<h2 class="anchored" data-anchor-id="wood-expert">5. Wood Expert</h2>
+<p><strong>Model:</strong> gpt-5.4-mini · <strong>Context Cap:</strong> 2M · <strong>LLM Calls:</strong> 1</p>
+<p>This is the domain expert, and honestly, this is the agent that makes the whole system actually <em>smart</em> instead of just fast.</p>
+<p>The wood expert knows the difference between white oak and red oak, understands why a mortise-and-tenon joint costs more than a pocket-screw joint, and can tell whether two tables from different makers are actually comparable.</p>
+<p>It takes the client’s product catalog and the competitor listings, then identifies <strong>comparable products</strong>, specifically items that share the same category and similar characteristics. The output includes a similarity score (minimum 0.5), a match reason, and a category. This feeds directly into the pricing engine.</p>
+<p>Without this agent, the system would be comparing a high-end custom dining table to an entry-level mass-produced piece and calling it a pricing insight. Not helpful.</p>
+</section>
+<section id="site-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="site-analysis">6. Site Analysis</h2>
+<p><strong>Model:</strong> Global default · <strong>Context Cap:</strong> 50K · <strong>LLM Calls:</strong> 1</p>
+<p>The site analysis agent turns the lens inward. Given the client’s own website content and the structured competitor data, it performs a SWOT-style evaluation: strengths, weaknesses, opportunities, and a summary.</p>
+<p>Its prompt includes a line that matters a lot: <em>“Be specific and honest. This analysis drives the recommendations.”</em></p>
+<p>Early versions of this agent produced generic fluff like “improve your SEO.” The current version is grounded: if a competitor surfaces a key element prominently on their homepage while the client’s equivalent is buried deeper in the navigation, that kind of specific, comparative observation is what makes the downstream recommendations actionable.</p>
+</section>
+<section id="analyst" class="level2">
+<h2 class="anchored" data-anchor-id="analyst">7. Analyst</h2>
+<p><strong>Model:</strong> gpt-5.4-mini · <strong>Context Cap:</strong> 2M · <strong>LLM Calls:</strong> 1</p>
+<p>The analyst is the strategic brain of the pipeline. It cross-references the structured competitor data with the internal site analysis and produces exactly <strong>5 insights</strong>, each with a theme, evidence, impact assessment, priority, and source URL.</p>
+<p>Here’s the key constraint: <em>“Every insight tells the client what THEIR site does, what competitors do differently, and what they should do about it. Never describe a competitor without also describing what the client currently does.”</em></p>
+<p>This comparative framing was a deliberate choice. Early versions would say things like “a regional competitor has strong trust messaging.” Interesting, but not useful. The current version says something like: “The client’s site lacks a visible craftsmanship guarantee. Competitor A has one above the fold. Adding a similar block would address this gap.” Same data, completely different utility.</p>
+<p>Priorities must also be distributed. The agent can’t mark everything as High, which prevents the action queue from becoming a wall of equal-urgency items.</p>
+</section>
+<section id="recommender" class="level2">
+<h2 class="anchored" data-anchor-id="recommender">8. Recommender</h2>
+<p><strong>Model:</strong> gpt-5.4-mini · <strong>Context Cap:</strong> 2M · <strong>LLM Calls:</strong> 1</p>
+<p>The recommender turns insights into specific, approval-ready actions. It takes the analyst’s insights, the competitor data, and the original context, then produces exactly <strong>9 actions</strong>: 3 UX improvements, 3 pricing recommendations, and 3 quoting workflow changes.</p>
+<p>Every recommendation must start with hedged language: <em>“Suggest testing:”</em>, <em>“Consider adding:”</em>, or <em>“Review whether:”</em>. This isn’t about being wishy-washy. It’s a design choice. The business owner approves actions; the system suggests them.</p>
+<p>Pricing recommendations have to reference actual dollar figures. So instead of “raise your prices,” you get something like: <em>“Suggest testing: raising Product X from its current price to a higher tier, since comparable items from a regional competitor start significantly above that.”</em> Grounded in real data, not abstract percentages.</p>
+<p>Each action includes impact level, effort estimate, owner, category, rationale, and a source URL, all surfaced as approvable cards in the dashboard.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/ai-agent/price_comparisons.png" class="img-fluid figure-img"></p>
+<figcaption>Pricing recommendations grounded in real competitor data</figcaption>
+</figure>
+</div>
+</section>
+<section id="guardrail" class="level2">
+<h2 class="anchored" data-anchor-id="guardrail">9. Guardrail</h2>
+<p><strong>Model:</strong> gpt-5.4-mini · <strong>Context Cap:</strong> 2M · <strong>LLM Calls:</strong> 1</p>
+<p>The guardrail is the final check before the report gets generated. It receives the full output from every preceding agent and looks for problems.</p>
+<p><strong>First pass: regex-based.</strong> Four patterns catch the most common LLM overstatements:</p>
+<ul>
+<li>Percentage guarantees (<em>“guaranteed 30% increase”</em>)</li>
+<li>Certainty claims (<em>“will definitely improve”</em>)</li>
+<li>Absolute claims (<em>“always works”</em>)</li>
+<li>Unverified proof claims (<em>“proven to double”</em>)</li>
+</ul>
+<p>If any action text matches these, it’s flagged before the LLM even sees it.</p>
+<p><strong>Second pass: LLM review.</strong> The full policy check: JSON format intact, context budgets respected, recommendations framed as suggestions, no unsourced pricing claims, and human approval required for all actions.</p>
+<p>The output is binary: <code>"passed"</code> or <code>"review-needed"</code>. If anything gets flagged, the report includes exactly what was caught and why. The business owner sees it all.</p>
+</section>
+<section id="report-generator" class="level2">
+<h2 class="anchored" data-anchor-id="report-generator">10. Report Generator</h2>
+<p><strong>Model:</strong> gpt-5.4-mini · <strong>Context Cap:</strong> 50K · <strong>LLM Calls:</strong> 1</p>
+<p>The final agent pulls everything together: approved actions, strategic insights, site analysis, competitor overview, and guardrail status. It synthesizes them into a polished weekly intelligence report.</p>
+<p>Its prompt: <em>“You are a senior strategist writing a polished weekly competitive intelligence report for a small business owner. The report should be clear, direct, and immediately useful. No filler.”</em></p>
+<p>The output includes a report title, executive summary, strategic context, and the top 3 priority next steps. In the dashboard, this renders as a multi-page document with a cover, sections, insight cards, action rows, and guardrail status, all styled in the dark woodshop theme.</p>
+<p>The context cap here is intentionally lower (50K vs.&nbsp;2M for the analysts) because the report agent should be working with already-distilled insights, not re-processing raw data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/ai-agent/generated_report.png" class="img-fluid figure-img"></p>
+<figcaption>A generated weekly intelligence report</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="pipeline-architecture" class="level1">
+<h1>Pipeline Architecture</h1>
+<p>Here’s how the data flows:</p>
+<pre><code>own_scout → own_extractor → comp_scout → extractor ──┬── site_analysis → analyst → recommender → guardrail → report_gen
+                                                      └── wood_expert ──┘</code></pre>
+<p>Most of the pipeline is sequential, with each agent’s output feeding the next. The one exception: <code>extractor</code> and <code>wood_expert</code> run in parallel, since they both depend on the competitor scout’s output but don’t depend on each other.</p>
+<p>Every agent call is wrapped by the <code>executeAgent</code> runner, which handles:</p>
+<ol type="1">
+<li><strong>Rate limiting:</strong> per-agent, 60-second sliding window</li>
+<li><strong>Context cap enforcement:</strong> serializes the payload and checks against the agent’s limit</li>
+<li><strong>Execution:</strong> runs the agent’s function</li>
+<li><strong>Validation:</strong> checks the output against the agent’s declared schema</li>
+<li><strong>Metadata:</strong> returns context usage stats, truncation info, and schema compliance</li>
+</ol>
+<p>Here’s the full agent lineup:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Agent</th>
+<th>Model</th>
+<th>Context Cap</th>
+<th>Rate Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>own_scout</code></td>
+<td>gpt-4o-mini</td>
+<td>50K</td>
+<td>12/min</td>
+</tr>
+<tr class="even">
+<td><code>own_extractor</code></td>
+<td>gpt-5.4-mini</td>
+<td>50K</td>
+<td>20/min</td>
+</tr>
+<tr class="odd">
+<td><code>comp_scout</code></td>
+<td>gpt-4o-mini</td>
+<td>50K</td>
+<td>12/min</td>
+</tr>
+<tr class="even">
+<td><code>extractor</code></td>
+<td>gpt-5.4-mini</td>
+<td>2M</td>
+<td>20/min</td>
+</tr>
+<tr class="odd">
+<td><code>wood_expert</code></td>
+<td>gpt-5.4-mini</td>
+<td>2M</td>
+<td>12/min</td>
+</tr>
+<tr class="even">
+<td><code>site_analysis</code></td>
+<td>global default</td>
+<td>50K</td>
+<td>10/min</td>
+</tr>
+<tr class="odd">
+<td><code>analyst</code></td>
+<td>gpt-5.4-mini</td>
+<td>2M</td>
+<td>10/min</td>
+</tr>
+<tr class="even">
+<td><code>recommender</code></td>
+<td>gpt-5.4-mini</td>
+<td>2M</td>
+<td>8/min</td>
+</tr>
+<tr class="odd">
+<td><code>guardrail</code></td>
+<td>gpt-5.4-mini</td>
+<td>2M</td>
+<td>30/min</td>
+</tr>
+<tr class="even">
+<td><code>report_gen</code></td>
+<td>gpt-5.4-mini</td>
+<td>50K</td>
+<td>6/min</td>
+</tr>
+</tbody>
+</table>
+<p>The scouts use the smaller <code>gpt-4o-mini</code>, which is perfect for page discovery and link picking where deep reasoning isn’t needed. Everything from extraction onward uses the more capable <code>gpt-5.4-mini</code> for the analytical heavy lifting.</p>
+</section>
+<section id="the-interface" class="level1">
+<h1>The Interface</h1>
+<p>The dashboard is a single-page vanilla JS application. No React, no Vue, no framework at all. And that’s on purpose.</p>
+<p>The priorities were:</p>
+<ul>
+<li><strong>Zero build step.</strong> Edit, save, refresh. The Node server auto-serves static files.</li>
+<li><strong>Full visibility into agent execution.</strong> A brain-network visualization renders all 10 agents as 3D sphere nodes with SVG radial gradients, live status coloring (pending → active → complete/capped/error), and animated edge connections showing data flow. It’s genuinely cool to watch.</li>
+<li><strong>Actionable output, not just reports.</strong> An Action Queue surfaces each recommendation as an approvable/dismissable card with impact and effort tags. The owner can edit recommendations before applying them.</li>
+<li><strong>Pricing dashboard.</strong> Per-product cards showing current vs.&nbsp;recommended pricing, percentage diffs, source citations, and expandable rationale.</li>
+</ul>
+<p>The whole UI runs a dark woodshop theme: deep <code>#0e0b09</code> background, amber <code>#d4883e</code> accents, glassmorphism panels with blurred backdrops, JetBrains Mono for data, Lato for headings. Everything lives in a single <code>&lt;style&gt;</code> block for zero-dependency deployment.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Assets/ai-agent/dashboard.png" class="img-fluid figure-img"></p>
+<figcaption>The dashboard with agent network visualization and action queue</figcaption>
+</figure>
+</div>
+</section>
+<section id="key-design-decisions" class="level1">
+<h1>Key Design Decisions</h1>
+<p><strong>No framework, on purpose.</strong> The entire client is ~4,000 lines in one <code>app.js</code>. For a tool with one user and one purpose, React or Vue would add complexity without adding value. DOM manipulation is direct and predictable.</p>
+<p><strong>Context caps per agent, not globally.</strong> Each agent has a tuned context cap. Truncation happens inside each agent’s <code>run()</code> function, so every agent controls what it keeps and what it drops.</p>
+<p><strong>Guardrail as a pipeline stage, not a wrapper.</strong> Instead of filtering recommendations after the fact, the guardrail agent receives the full recommendation set and validates pricing math, source attribution, and factual claims <em>before</em> the report gets generated. It’s a first-class citizen in the pipeline.</p>
+<p><strong>Three-phase competitor crawling.</strong> Rather than dumping a homepage into an LLM and asking “what do you see?”, the comp_scout navigates intelligently: discover links, pick category pages, pick product pages, then analyze. This dramatically improves the quality of pricing data captured.</p>
+<p><strong>A domain expert in the loop.</strong> The wood expert exists because generic LLMs don’t know that a white oak trestle table and a red oak farmhouse table aren’t comparable products. Injecting domain expertise at the extraction layer prevents bad comparisons from polluting the entire pipeline.</p>
+<p><strong>SVG over Canvas for the network visualization.</strong> CSS-styleable, inspectable, and animatable without a rendering loop. Radial gradients fake 3D sphere lighting, and shadow/specular-highlight ellipses sell the depth.</p>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<ul>
+<li><strong>Weekly research time:</strong> From ~3 hours of manual browsing → one button click and a 2-minute pipeline run</li>
+<li><strong>Pricing confidence:</strong> Recommendations grounded in actual competitor URLs and comparable product matching, not intuition</li>
+<li><strong>Action conversion:</strong> The approve/dismiss/edit queue format turned a passive report into an active workflow</li>
+<li><strong>Deployment:</strong> Single <code>node server.js</code> on any machine. No Docker, no cloud dependency, no build pipeline</li>
+<li><strong>Cost per run:</strong> ~15 LLM calls across 10 agents. Scouts use the cheaper model, heavy analysis uses the capable one, and context caps prevent runaway token usage</li>
+</ul>
+</section>
+<section id="what-id-do-differently" class="level1">
+<h1>What I’d Do Differently</h1>
+<p>Nothing is ever truly done, and this project is no exception. Here’s what’s on my mind for the next iteration:</p>
+<ul>
+<li><strong>Add a summarization pass before report generation.</strong> Right now the report agent receives the full data payload. A dedicated summarization step would cut token cost and improve coherence on big runs.</li>
+<li><strong>Build incremental diffing.</strong> The system re-crawls everything each run. A diff layer that highlights <em>what changed</em> since last week would dramatically increase signal quality.</li>
+<li><strong>Add persistent action tracking.</strong> Applied actions currently have no memory. Tying them back into the next run’s context (“you already added a trust block last week”) would prevent redundant recommendations.</li>
+<li><strong>Parallelize the scouts.</strong> The own scout and comp scout could run simultaneously since they don’t depend on each other. Currently sequential because the pipeline was built incrementally, but parallelizing them would shave ~30 seconds off total run time.</li>
+</ul>
+<hr>
+<p><em>Built as a solo internal tool for a real business with a real owner who saw where the industry is heading. Agentic AI isn’t about replacing human judgment. It’s about giving smart operators the intelligence layer they’ve always deserved. The owner of Fox in the Sawdust didn’t need to be sold on the concept. He understood immediately that a system like this would let him compete on information, not just craftsmanship. That’s the kind of client who makes great tools possible.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 Wilkin Jones</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -6,7 +6,7 @@ format:
     toc: true
 ---
 
-![](Assets/ai-agent/Agent-workflow.png)
+![](Assets/Ai-agent/Agent-workflow.png)
 
 # The Problem
 
@@ -125,7 +125,7 @@ Pricing recommendations have to reference actual dollar figures. So instead of "
 
 Each action includes impact level, effort estimate, owner, category, rationale, and a source URL, all surfaced as approvable cards in the dashboard.
 
-![Pricing recommendations grounded in real competitor data](Assets/ai-agent/price_comparisons.png)
+![Pricing recommendations grounded in real competitor data](Assets/Ai-agent/price_comparisons.png)
 
 ## 9. Guardrail
 
@@ -158,7 +158,7 @@ The output includes a report title, executive summary, strategic context, and th
 
 The context cap here is intentionally lower (50K vs. 2M for the analysts) because the report agent should be working with already-distilled insights, not re-processing raw data.
 
-![A generated weekly intelligence report](Assets/ai-agent/generated_report.png)
+![A generated weekly intelligence report](Assets/Ai-agent/generated_report.png)
 
 # Pipeline Architecture
 
@@ -209,7 +209,7 @@ The priorities were:
 
 The whole UI runs a dark woodshop theme: deep `#0e0b09` background, amber `#d4883e` accents, glassmorphism panels with blurred backdrops, JetBrains Mono for data, Lato for headings. Everything lives in a single `<style>` block for zero-dependency deployment.
 
-![The dashboard with agent network visualization and action queue](Assets/ai-agent/dashboard.png)
+![The dashboard with agent network visualization and action queue](Assets/Ai-agent/dashboard.png)
 
 # Key Design Decisions
 
